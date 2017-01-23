@@ -1,4 +1,4 @@
 Backup
 *.Greg
-*/*.cydsn/codegentemp
-*/*.cydsn/CortexM3
+*.cydsn/codegentemp
+*.cydsn/CortexM3
