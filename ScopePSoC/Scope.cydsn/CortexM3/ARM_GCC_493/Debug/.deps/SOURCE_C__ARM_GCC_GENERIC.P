@@ -1,0 +1,214 @@
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/CortexM3/ARM_GCC_493/Debug/main.o : C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADCClock.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1_Bypass.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1_Bypass_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1_IRQ.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2_Bypass.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2_Bypass_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2_IRQ.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Amux_Trigger.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Button.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Button_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CYDMAC.H C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CYFITTER.H C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyDmac.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyFlash.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyLib.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CySpc.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyTriggerClock.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DMA_Channel_1_dma.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DMA_Channel_2_dma.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_0.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_0_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_1.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_1_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_2.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_2_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_3.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_3_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_4.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_4_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_0.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_0_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_1.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_1_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_2.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_2_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_3.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_3_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_4.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_4_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Digital_Input_Status.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Digital_Out_Control.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Digital_PWM.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/External_Trigger.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/External_Trigger_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/LED.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/LED_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Noise_Clock.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PRS.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOutB_0.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOutB_0_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOut_0.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOut_0_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWM_Clock.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWM_Sample_Buffer.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/SampleClock.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_A.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_A_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_B.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_B_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trig_Buf.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trig_Out.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trig_Out_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trigger_Comp.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trigger_Control.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trigger_Status.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dm.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dm_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dp.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dp_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_audio.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_cdc.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_cydmac.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_hid.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_midi.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_msc.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_pvt.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Vtrigger.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Buf.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Clock.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Control.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC_VDAC8.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC_Wave1_DMA_dma.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC_Wave2_DMA_dma.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Gnd.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Gnd_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Out.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Out_aliases.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cm3.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cmFunc.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cmInstr.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cyPm.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cydevice.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cyfitter.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cypins.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cytypes.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/project.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/device.h C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/main.c 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADCClock.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1_Bypass.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1_Bypass_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_1_IRQ.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2_Bypass.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2_Bypass_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/ADC_2_IRQ.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Amux_Trigger.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Button.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Button_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CYDMAC.H : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CYFITTER.H : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/CyTriggerClock.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DMA_Channel_1_dma.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DMA_Channel_2_dma.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_0.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_0_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_1.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_1_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_2.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_2_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_3.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_3_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_4.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigIn_4_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_0.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_0_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_1.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_1_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_2.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_2_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_3.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_3_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_4.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/DigOut_4_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Digital_Input_Status.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Digital_Out_Control.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Digital_PWM.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/External_Trigger.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/External_Trigger_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/LED.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/LED_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Noise_Clock.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PRS.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOutB_0.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOutB_0_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOut_0.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWMOut_0_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWM_Clock.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/PWM_Sample_Buffer.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/SampleClock.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_A.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_A_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_B.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Scope_B_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trig_Buf.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trig_Out.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trig_Out_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trigger_Comp.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trigger_Control.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Trigger_Status.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dm.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dm_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dp.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_Dp_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_audio.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_cdc.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_cydmac.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_hid.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_midi.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_msc.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/USBUART_pvt.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Vtrigger.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Buf.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Clock.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Control.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC_VDAC8.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC_Wave1_DMA_dma.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_DAC_Wave2_DMA_dma.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Gnd.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Gnd_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Out.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/Wave_Out_aliases.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cmFunc.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/core_cmInstr.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/device.h : 
+
+C:/SVN/apps/trunk/Cypress\ Academy/PSoC-121-Analog/Scope/ScopePSoC/Scope.cydsn/main.c : 
+

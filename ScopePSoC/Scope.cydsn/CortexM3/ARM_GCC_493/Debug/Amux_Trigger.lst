@@ -1,0 +1,815 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Amux_Trigger.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.data
+  19              		.type	Amux_Trigger_lastChannel, %object
+  20              		.size	Amux_Trigger_lastChannel, 1
+  21              	Amux_Trigger_lastChannel:
+  22 0000 FF       		.byte	-1
+  23              		.section	.text.Amux_Trigger_Start,"ax",%progbits
+  24              		.align	2
+  25              		.global	Amux_Trigger_Start
+  26              		.thumb
+  27              		.thumb_func
+  28              		.type	Amux_Trigger_Start, %function
+  29              	Amux_Trigger_Start:
+  30              	.LFB0:
+  31              		.file 1 "Generated_Source\\PSoC5\\Amux_Trigger.c"
+   1:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Amux_Trigger.c **** * File Name: Amux_Trigger.c
+   3:Generated_Source\PSoC5/Amux_Trigger.c **** * Version 1.80
+   4:Generated_Source\PSoC5/Amux_Trigger.c **** *
+   5:Generated_Source\PSoC5/Amux_Trigger.c **** *  Description:
+   6:Generated_Source\PSoC5/Amux_Trigger.c **** *    This file contains all functions required for the analog multiplexer
+   7:Generated_Source\PSoC5/Amux_Trigger.c **** *    AMux User Module.
+   8:Generated_Source\PSoC5/Amux_Trigger.c **** *
+   9:Generated_Source\PSoC5/Amux_Trigger.c **** *   Note:
+  10:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  11:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************
+  12:Generated_Source\PSoC5/Amux_Trigger.c **** * Copyright 2008-2010, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/Amux_Trigger.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC5/Amux_Trigger.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC5/Amux_Trigger.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************/
+  17:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  18:Generated_Source\PSoC5/Amux_Trigger.c **** #include "Amux_Trigger.h"
+  19:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  20:Generated_Source\PSoC5/Amux_Trigger.c **** static uint8 Amux_Trigger_lastChannel = Amux_Trigger_NULL_CHANNEL;
+  21:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  22:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  23:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+  24:Generated_Source\PSoC5/Amux_Trigger.c **** * Function Name: Amux_Trigger_Start
+  25:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************
+  26:Generated_Source\PSoC5/Amux_Trigger.c **** * Summary:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 2
+
+
+  27:Generated_Source\PSoC5/Amux_Trigger.c **** *  Disconnect all channels.
+  28:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  29:Generated_Source\PSoC5/Amux_Trigger.c **** * Parameters:
+  30:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+  31:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  32:Generated_Source\PSoC5/Amux_Trigger.c **** * Return:
+  33:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+  34:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  35:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************/
+  36:Generated_Source\PSoC5/Amux_Trigger.c **** void Amux_Trigger_Start(void) 
+  37:Generated_Source\PSoC5/Amux_Trigger.c **** {
+  32              		.loc 1 37 0
+  33              		.cfi_startproc
+  34              		@ args = 0, pretend = 0, frame = 8
+  35              		@ frame_needed = 1, uses_anonymous_args = 0
+  36 0000 80B5     		push	{r7, lr}
+  37              		.cfi_def_cfa_offset 8
+  38              		.cfi_offset 7, -8
+  39              		.cfi_offset 14, -4
+  40 0002 82B0     		sub	sp, sp, #8
+  41              		.cfi_def_cfa_offset 16
+  42 0004 00AF     		add	r7, sp, #0
+  43              		.cfi_def_cfa_register 7
+  38:Generated_Source\PSoC5/Amux_Trigger.c ****     uint8 chan;
+  39:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  40:Generated_Source\PSoC5/Amux_Trigger.c ****     for(chan = 0u; chan < Amux_Trigger_CHANNELS ; chan++)
+  44              		.loc 1 40 0
+  45 0006 0023     		movs	r3, #0
+  46 0008 FB71     		strb	r3, [r7, #7]
+  47 000a 06E0     		b	.L2
+  48              	.L3:
+  41:Generated_Source\PSoC5/Amux_Trigger.c ****     {
+  42:Generated_Source\PSoC5/Amux_Trigger.c **** #if (Amux_Trigger_MUXTYPE == Amux_Trigger_MUX_SINGLE)
+  43:Generated_Source\PSoC5/Amux_Trigger.c ****         Amux_Trigger_Unset(chan);
+  49              		.loc 1 43 0 discriminator 3
+  50 000c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+  51 000e 1846     		mov	r0, r3
+  52 0010 FFF7FEFF 		bl	Amux_Trigger_Unset
+  40:Generated_Source\PSoC5/Amux_Trigger.c ****     {
+  53              		.loc 1 40 0 discriminator 3
+  54 0014 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+  55 0016 0133     		adds	r3, r3, #1
+  56 0018 FB71     		strb	r3, [r7, #7]
+  57              	.L2:
+  40:Generated_Source\PSoC5/Amux_Trigger.c ****     {
+  58              		.loc 1 40 0 is_stmt 0 discriminator 1
+  59 001a FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+  60 001c 012B     		cmp	r3, #1
+  61 001e F5D9     		bls	.L3
+  44:Generated_Source\PSoC5/Amux_Trigger.c **** #else
+  45:Generated_Source\PSoC5/Amux_Trigger.c ****         Amux_Trigger_CYAMUXSIDE_A_Unset(chan);
+  46:Generated_Source\PSoC5/Amux_Trigger.c ****         Amux_Trigger_CYAMUXSIDE_B_Unset(chan);
+  47:Generated_Source\PSoC5/Amux_Trigger.c **** #endif
+  48:Generated_Source\PSoC5/Amux_Trigger.c ****     }
+  49:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  50:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_lastChannel = Amux_Trigger_NULL_CHANNEL;
+  62              		.loc 1 50 0 is_stmt 1
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 3
+
+
+  63 0020 024B     		ldr	r3, .L4
+  64 0022 FF22     		movs	r2, #255
+  65 0024 1A70     		strb	r2, [r3]
+  51:Generated_Source\PSoC5/Amux_Trigger.c **** }
+  66              		.loc 1 51 0
+  67 0026 0837     		adds	r7, r7, #8
+  68              		.cfi_def_cfa_offset 8
+  69 0028 BD46     		mov	sp, r7
+  70              		.cfi_def_cfa_register 13
+  71              		@ sp needed
+  72 002a 80BD     		pop	{r7, pc}
+  73              	.L5:
+  74              		.align	2
+  75              	.L4:
+  76 002c 00000000 		.word	Amux_Trigger_lastChannel
+  77              		.cfi_endproc
+  78              	.LFE0:
+  79              		.size	Amux_Trigger_Start, .-Amux_Trigger_Start
+  80              		.section	.text.Amux_Trigger_FastSelect,"ax",%progbits
+  81              		.align	2
+  82              		.global	Amux_Trigger_FastSelect
+  83              		.thumb
+  84              		.thumb_func
+  85              		.type	Amux_Trigger_FastSelect, %function
+  86              	Amux_Trigger_FastSelect:
+  87              	.LFB1:
+  52:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  53:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  54:Generated_Source\PSoC5/Amux_Trigger.c **** #if (!Amux_Trigger_ATMOSTONE)
+  55:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+  56:Generated_Source\PSoC5/Amux_Trigger.c **** * Function Name: Amux_Trigger_Select
+  57:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************
+  58:Generated_Source\PSoC5/Amux_Trigger.c **** * Summary:
+  59:Generated_Source\PSoC5/Amux_Trigger.c **** *  This functions first disconnects all channels then connects the given
+  60:Generated_Source\PSoC5/Amux_Trigger.c **** *  channel.
+  61:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  62:Generated_Source\PSoC5/Amux_Trigger.c **** * Parameters:
+  63:Generated_Source\PSoC5/Amux_Trigger.c **** *  channel:  The channel to connect to the common terminal.
+  64:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  65:Generated_Source\PSoC5/Amux_Trigger.c **** * Return:
+  66:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+  67:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  68:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************/
+  69:Generated_Source\PSoC5/Amux_Trigger.c **** void Amux_Trigger_Select(uint8 channel) 
+  70:Generated_Source\PSoC5/Amux_Trigger.c **** {
+  71:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_DisconnectAll();        /* Disconnect all previous connections */
+  72:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_Connect(channel);       /* Make the given selection */
+  73:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_lastChannel = channel;  /* Update last channel */
+  74:Generated_Source\PSoC5/Amux_Trigger.c **** }
+  75:Generated_Source\PSoC5/Amux_Trigger.c **** #endif
+  76:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  77:Generated_Source\PSoC5/Amux_Trigger.c **** 
+  78:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+  79:Generated_Source\PSoC5/Amux_Trigger.c **** * Function Name: Amux_Trigger_FastSelect
+  80:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************
+  81:Generated_Source\PSoC5/Amux_Trigger.c **** * Summary:
+  82:Generated_Source\PSoC5/Amux_Trigger.c **** *  This function first disconnects the last connection made with FastSelect or
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 4
+
+
+  83:Generated_Source\PSoC5/Amux_Trigger.c **** *  Select, then connects the given channel. The FastSelect function is similar
+  84:Generated_Source\PSoC5/Amux_Trigger.c **** *  to the Select function, except it is faster since it only disconnects the
+  85:Generated_Source\PSoC5/Amux_Trigger.c **** *  last channel selected rather than all channels.
+  86:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  87:Generated_Source\PSoC5/Amux_Trigger.c **** * Parameters:
+  88:Generated_Source\PSoC5/Amux_Trigger.c **** *  channel:  The channel to connect to the common terminal.
+  89:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  90:Generated_Source\PSoC5/Amux_Trigger.c **** * Return:
+  91:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+  92:Generated_Source\PSoC5/Amux_Trigger.c **** *
+  93:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************/
+  94:Generated_Source\PSoC5/Amux_Trigger.c **** void Amux_Trigger_FastSelect(uint8 channel) 
+  95:Generated_Source\PSoC5/Amux_Trigger.c **** {
+  88              		.loc 1 95 0
+  89              		.cfi_startproc
+  90              		@ args = 0, pretend = 0, frame = 8
+  91              		@ frame_needed = 1, uses_anonymous_args = 0
+  92 0000 80B5     		push	{r7, lr}
+  93              		.cfi_def_cfa_offset 8
+  94              		.cfi_offset 7, -8
+  95              		.cfi_offset 14, -4
+  96 0002 82B0     		sub	sp, sp, #8
+  97              		.cfi_def_cfa_offset 16
+  98 0004 00AF     		add	r7, sp, #0
+  99              		.cfi_def_cfa_register 7
+ 100 0006 0346     		mov	r3, r0
+ 101 0008 FB71     		strb	r3, [r7, #7]
+  96:Generated_Source\PSoC5/Amux_Trigger.c ****     /* Disconnect the last valid channel */
+  97:Generated_Source\PSoC5/Amux_Trigger.c ****     if( Amux_Trigger_lastChannel != Amux_Trigger_NULL_CHANNEL)
+ 102              		.loc 1 97 0
+ 103 000a 094B     		ldr	r3, .L8
+ 104 000c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 105 000e FF2B     		cmp	r3, #255
+ 106 0010 04D0     		beq	.L7
+  98:Generated_Source\PSoC5/Amux_Trigger.c ****     {
+  99:Generated_Source\PSoC5/Amux_Trigger.c ****         Amux_Trigger_Disconnect(Amux_Trigger_lastChannel);
+ 107              		.loc 1 99 0
+ 108 0012 074B     		ldr	r3, .L8
+ 109 0014 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 110 0016 1846     		mov	r0, r3
+ 111 0018 FFF7FEFF 		bl	Amux_Trigger_Unset
+ 112              	.L7:
+ 100:Generated_Source\PSoC5/Amux_Trigger.c ****     }
+ 101:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ 102:Generated_Source\PSoC5/Amux_Trigger.c ****     /* Make the new channel connection */
+ 103:Generated_Source\PSoC5/Amux_Trigger.c **** #if (Amux_Trigger_MUXTYPE == Amux_Trigger_MUX_SINGLE)
+ 104:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_Set(channel);
+ 113              		.loc 1 104 0
+ 114 001c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 115 001e 1846     		mov	r0, r3
+ 116 0020 FFF7FEFF 		bl	Amux_Trigger_Set
+ 105:Generated_Source\PSoC5/Amux_Trigger.c **** #else
+ 106:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_CYAMUXSIDE_A_Set(channel);
+ 107:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_CYAMUXSIDE_B_Set(channel);
+ 108:Generated_Source\PSoC5/Amux_Trigger.c **** #endif
+ 109:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ 110:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 5
+
+
+ 111:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_lastChannel = channel;   /* Update last channel */
+ 117              		.loc 1 111 0
+ 118 0024 024A     		ldr	r2, .L8
+ 119 0026 FB79     		ldrb	r3, [r7, #7]
+ 120 0028 1370     		strb	r3, [r2]
+ 112:Generated_Source\PSoC5/Amux_Trigger.c **** }
+ 121              		.loc 1 112 0
+ 122 002a 0837     		adds	r7, r7, #8
+ 123              		.cfi_def_cfa_offset 8
+ 124 002c BD46     		mov	sp, r7
+ 125              		.cfi_def_cfa_register 13
+ 126              		@ sp needed
+ 127 002e 80BD     		pop	{r7, pc}
+ 128              	.L9:
+ 129              		.align	2
+ 130              	.L8:
+ 131 0030 00000000 		.word	Amux_Trigger_lastChannel
+ 132              		.cfi_endproc
+ 133              	.LFE1:
+ 134              		.size	Amux_Trigger_FastSelect, .-Amux_Trigger_FastSelect
+ 135              		.section	.text.Amux_Trigger_DisconnectAll,"ax",%progbits
+ 136              		.align	2
+ 137              		.global	Amux_Trigger_DisconnectAll
+ 138              		.thumb
+ 139              		.thumb_func
+ 140              		.type	Amux_Trigger_DisconnectAll, %function
+ 141              	Amux_Trigger_DisconnectAll:
+ 142              	.LFB2:
+ 113:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ 114:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ 115:Generated_Source\PSoC5/Amux_Trigger.c **** #if (Amux_Trigger_MUXTYPE == Amux_Trigger_MUX_DIFF)
+ 116:Generated_Source\PSoC5/Amux_Trigger.c **** #if (!Amux_Trigger_ATMOSTONE)
+ 117:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+ 118:Generated_Source\PSoC5/Amux_Trigger.c **** * Function Name: Amux_Trigger_Connect
+ 119:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************
+ 120:Generated_Source\PSoC5/Amux_Trigger.c **** * Summary:
+ 121:Generated_Source\PSoC5/Amux_Trigger.c **** *  This function connects the given channel without affecting other connections.
+ 122:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 123:Generated_Source\PSoC5/Amux_Trigger.c **** * Parameters:
+ 124:Generated_Source\PSoC5/Amux_Trigger.c **** *  channel:  The channel to connect to the common terminal.
+ 125:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 126:Generated_Source\PSoC5/Amux_Trigger.c **** * Return:
+ 127:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+ 128:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 129:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************/
+ 130:Generated_Source\PSoC5/Amux_Trigger.c **** void Amux_Trigger_Connect(uint8 channel) 
+ 131:Generated_Source\PSoC5/Amux_Trigger.c **** {
+ 132:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_CYAMUXSIDE_A_Set(channel);
+ 133:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_CYAMUXSIDE_B_Set(channel);
+ 134:Generated_Source\PSoC5/Amux_Trigger.c **** }
+ 135:Generated_Source\PSoC5/Amux_Trigger.c **** #endif
+ 136:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ 137:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+ 138:Generated_Source\PSoC5/Amux_Trigger.c **** * Function Name: Amux_Trigger_Disconnect
+ 139:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************
+ 140:Generated_Source\PSoC5/Amux_Trigger.c **** * Summary:
+ 141:Generated_Source\PSoC5/Amux_Trigger.c **** *  This function disconnects the given channel from the common or output
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 6
+
+
+ 142:Generated_Source\PSoC5/Amux_Trigger.c **** *  terminal without affecting other connections.
+ 143:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 144:Generated_Source\PSoC5/Amux_Trigger.c **** * Parameters:
+ 145:Generated_Source\PSoC5/Amux_Trigger.c **** *  channel:  The channel to disconnect from the common terminal.
+ 146:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 147:Generated_Source\PSoC5/Amux_Trigger.c **** * Return:
+ 148:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+ 149:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 150:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************/
+ 151:Generated_Source\PSoC5/Amux_Trigger.c **** void Amux_Trigger_Disconnect(uint8 channel) 
+ 152:Generated_Source\PSoC5/Amux_Trigger.c **** {
+ 153:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_CYAMUXSIDE_A_Unset(channel);
+ 154:Generated_Source\PSoC5/Amux_Trigger.c ****     Amux_Trigger_CYAMUXSIDE_B_Unset(channel);
+ 155:Generated_Source\PSoC5/Amux_Trigger.c **** }
+ 156:Generated_Source\PSoC5/Amux_Trigger.c **** #endif
+ 157:Generated_Source\PSoC5/Amux_Trigger.c **** 
+ 158:Generated_Source\PSoC5/Amux_Trigger.c **** #if (Amux_Trigger_ATMOSTONE)
+ 159:Generated_Source\PSoC5/Amux_Trigger.c **** /*******************************************************************************
+ 160:Generated_Source\PSoC5/Amux_Trigger.c **** * Function Name: Amux_Trigger_DisconnectAll
+ 161:Generated_Source\PSoC5/Amux_Trigger.c **** ********************************************************************************
+ 162:Generated_Source\PSoC5/Amux_Trigger.c **** * Summary:
+ 163:Generated_Source\PSoC5/Amux_Trigger.c **** *  This function disconnects all channels.
+ 164:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 165:Generated_Source\PSoC5/Amux_Trigger.c **** * Parameters:
+ 166:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+ 167:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 168:Generated_Source\PSoC5/Amux_Trigger.c **** * Return:
+ 169:Generated_Source\PSoC5/Amux_Trigger.c **** *  void
+ 170:Generated_Source\PSoC5/Amux_Trigger.c **** *
+ 171:Generated_Source\PSoC5/Amux_Trigger.c **** *******************************************************************************/
+ 172:Generated_Source\PSoC5/Amux_Trigger.c **** void Amux_Trigger_DisconnectAll(void) 
+ 173:Generated_Source\PSoC5/Amux_Trigger.c **** {
+ 143              		.loc 1 173 0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 1, uses_anonymous_args = 0
+ 147 0000 80B5     		push	{r7, lr}
+ 148              		.cfi_def_cfa_offset 8
+ 149              		.cfi_offset 7, -8
+ 150              		.cfi_offset 14, -4
+ 151 0002 00AF     		add	r7, sp, #0
+ 152              		.cfi_def_cfa_register 7
+ 174:Generated_Source\PSoC5/Amux_Trigger.c ****     if(Amux_Trigger_lastChannel != Amux_Trigger_NULL_CHANNEL) 
+ 153              		.loc 1 174 0
+ 154 0004 064B     		ldr	r3, .L12
+ 155 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 156 0008 FF2B     		cmp	r3, #255
+ 157 000a 07D0     		beq	.L10
+ 175:Generated_Source\PSoC5/Amux_Trigger.c ****     {
+ 176:Generated_Source\PSoC5/Amux_Trigger.c ****         Amux_Trigger_Disconnect(Amux_Trigger_lastChannel);
+ 158              		.loc 1 176 0
+ 159 000c 044B     		ldr	r3, .L12
+ 160 000e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 161 0010 1846     		mov	r0, r3
+ 162 0012 FFF7FEFF 		bl	Amux_Trigger_Unset
+ 177:Generated_Source\PSoC5/Amux_Trigger.c ****         Amux_Trigger_lastChannel = Amux_Trigger_NULL_CHANNEL;
+ 163              		.loc 1 177 0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 7
+
+
+ 164 0016 024B     		ldr	r3, .L12
+ 165 0018 FF22     		movs	r2, #255
+ 166 001a 1A70     		strb	r2, [r3]
+ 167              	.L10:
+ 178:Generated_Source\PSoC5/Amux_Trigger.c ****     }
+ 179:Generated_Source\PSoC5/Amux_Trigger.c **** }
+ 168              		.loc 1 179 0
+ 169 001c 80BD     		pop	{r7, pc}
+ 170              	.L13:
+ 171 001e 00BF     		.align	2
+ 172              	.L12:
+ 173 0020 00000000 		.word	Amux_Trigger_lastChannel
+ 174              		.cfi_endproc
+ 175              	.LFE2:
+ 176              		.size	Amux_Trigger_DisconnectAll, .-Amux_Trigger_DisconnectAll
+ 177              		.text
+ 178              	.Letext0:
+ 179              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 180              		.section	.debug_info,"",%progbits
+ 181              	.Ldebug_info0:
+ 182 0000 F3000000 		.4byte	0xf3
+ 183 0004 0400     		.2byte	0x4
+ 184 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 185 000a 04       		.byte	0x4
+ 186 000b 01       		.uleb128 0x1
+ 187 000c 2E000000 		.4byte	.LASF16
+ 188 0010 01       		.byte	0x1
+ 189 0011 08000000 		.4byte	.LASF17
+ 190 0015 E3000000 		.4byte	.LASF18
+ 191 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 192 001d 00000000 		.4byte	0
+ 193 0021 00000000 		.4byte	.Ldebug_line0
+ 194 0025 02       		.uleb128 0x2
+ 195 0026 01       		.byte	0x1
+ 196 0027 06       		.byte	0x6
+ 197 0028 EB010000 		.4byte	.LASF0
+ 198 002c 02       		.uleb128 0x2
+ 199 002d 01       		.byte	0x1
+ 200 002e 08       		.byte	0x8
+ 201 002f D5000000 		.4byte	.LASF1
+ 202 0033 02       		.uleb128 0x2
+ 203 0034 02       		.byte	0x2
+ 204 0035 05       		.byte	0x5
+ 205 0036 D2010000 		.4byte	.LASF2
+ 206 003a 02       		.uleb128 0x2
+ 207 003b 02       		.byte	0x2
+ 208 003c 07       		.byte	0x7
+ 209 003d 49010000 		.4byte	.LASF3
+ 210 0041 02       		.uleb128 0x2
+ 211 0042 04       		.byte	0x4
+ 212 0043 05       		.byte	0x5
+ 213 0044 E2010000 		.4byte	.LASF4
+ 214 0048 02       		.uleb128 0x2
+ 215 0049 04       		.byte	0x4
+ 216 004a 07       		.byte	0x7
+ 217 004b 37010000 		.4byte	.LASF5
+ 218 004f 02       		.uleb128 0x2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 8
+
+
+ 219 0050 08       		.byte	0x8
+ 220 0051 05       		.byte	0x5
+ 221 0052 BF010000 		.4byte	.LASF6
+ 222 0056 02       		.uleb128 0x2
+ 223 0057 08       		.byte	0x8
+ 224 0058 07       		.byte	0x7
+ 225 0059 A3010000 		.4byte	.LASF7
+ 226 005d 03       		.uleb128 0x3
+ 227 005e 04       		.byte	0x4
+ 228 005f 05       		.byte	0x5
+ 229 0060 696E7400 		.ascii	"int\000"
+ 230 0064 02       		.uleb128 0x2
+ 231 0065 04       		.byte	0x4
+ 232 0066 07       		.byte	0x7
+ 233 0067 96010000 		.4byte	.LASF8
+ 234 006b 04       		.uleb128 0x4
+ 235 006c DC010000 		.4byte	.LASF19
+ 236 0070 02       		.byte	0x2
+ 237 0071 9201     		.2byte	0x192
+ 238 0073 2C000000 		.4byte	0x2c
+ 239 0077 02       		.uleb128 0x2
+ 240 0078 04       		.byte	0x4
+ 241 0079 04       		.byte	0x4
+ 242 007a CF000000 		.4byte	.LASF9
+ 243 007e 02       		.uleb128 0x2
+ 244 007f 08       		.byte	0x8
+ 245 0080 04       		.byte	0x4
+ 246 0081 77010000 		.4byte	.LASF10
+ 247 0085 02       		.uleb128 0x2
+ 248 0086 01       		.byte	0x1
+ 249 0087 08       		.byte	0x8
+ 250 0088 CD010000 		.4byte	.LASF11
+ 251 008c 05       		.uleb128 0x5
+ 252 008d BC000000 		.4byte	.LASF12
+ 253 0091 01       		.byte	0x1
+ 254 0092 24       		.byte	0x24
+ 255 0093 00000000 		.4byte	.LFB0
+ 256 0097 30000000 		.4byte	.LFE0-.LFB0
+ 257 009b 01       		.uleb128 0x1
+ 258 009c 9C       		.byte	0x9c
+ 259 009d B0000000 		.4byte	0xb0
+ 260 00a1 06       		.uleb128 0x6
+ 261 00a2 BA010000 		.4byte	.LASF14
+ 262 00a6 01       		.byte	0x1
+ 263 00a7 26       		.byte	0x26
+ 264 00a8 6B000000 		.4byte	0x6b
+ 265 00ac 02       		.uleb128 0x2
+ 266 00ad 91       		.byte	0x91
+ 267 00ae 77       		.sleb128 -9
+ 268 00af 00       		.byte	0
+ 269 00b0 05       		.uleb128 0x5
+ 270 00b1 7E010000 		.4byte	.LASF13
+ 271 00b5 01       		.byte	0x1
+ 272 00b6 5E       		.byte	0x5e
+ 273 00b7 00000000 		.4byte	.LFB1
+ 274 00bb 34000000 		.4byte	.LFE1-.LFB1
+ 275 00bf 01       		.uleb128 0x1
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 9
+
+
+ 276 00c0 9C       		.byte	0x9c
+ 277 00c1 D4000000 		.4byte	0xd4
+ 278 00c5 07       		.uleb128 0x7
+ 279 00c6 00000000 		.4byte	.LASF20
+ 280 00ca 01       		.byte	0x1
+ 281 00cb 5E       		.byte	0x5e
+ 282 00cc 6B000000 		.4byte	0x6b
+ 283 00d0 02       		.uleb128 0x2
+ 284 00d1 91       		.byte	0x91
+ 285 00d2 77       		.sleb128 -9
+ 286 00d3 00       		.byte	0
+ 287 00d4 08       		.uleb128 0x8
+ 288 00d5 5C010000 		.4byte	.LASF21
+ 289 00d9 01       		.byte	0x1
+ 290 00da AC       		.byte	0xac
+ 291 00db 00000000 		.4byte	.LFB2
+ 292 00df 24000000 		.4byte	.LFE2-.LFB2
+ 293 00e3 01       		.uleb128 0x1
+ 294 00e4 9C       		.byte	0x9c
+ 295 00e5 06       		.uleb128 0x6
+ 296 00e6 F7010000 		.4byte	.LASF15
+ 297 00ea 01       		.byte	0x1
+ 298 00eb 14       		.byte	0x14
+ 299 00ec 6B000000 		.4byte	0x6b
+ 300 00f0 05       		.uleb128 0x5
+ 301 00f1 03       		.byte	0x3
+ 302 00f2 00000000 		.4byte	Amux_Trigger_lastChannel
+ 303 00f6 00       		.byte	0
+ 304              		.section	.debug_abbrev,"",%progbits
+ 305              	.Ldebug_abbrev0:
+ 306 0000 01       		.uleb128 0x1
+ 307 0001 11       		.uleb128 0x11
+ 308 0002 01       		.byte	0x1
+ 309 0003 25       		.uleb128 0x25
+ 310 0004 0E       		.uleb128 0xe
+ 311 0005 13       		.uleb128 0x13
+ 312 0006 0B       		.uleb128 0xb
+ 313 0007 03       		.uleb128 0x3
+ 314 0008 0E       		.uleb128 0xe
+ 315 0009 1B       		.uleb128 0x1b
+ 316 000a 0E       		.uleb128 0xe
+ 317 000b 55       		.uleb128 0x55
+ 318 000c 17       		.uleb128 0x17
+ 319 000d 11       		.uleb128 0x11
+ 320 000e 01       		.uleb128 0x1
+ 321 000f 10       		.uleb128 0x10
+ 322 0010 17       		.uleb128 0x17
+ 323 0011 00       		.byte	0
+ 324 0012 00       		.byte	0
+ 325 0013 02       		.uleb128 0x2
+ 326 0014 24       		.uleb128 0x24
+ 327 0015 00       		.byte	0
+ 328 0016 0B       		.uleb128 0xb
+ 329 0017 0B       		.uleb128 0xb
+ 330 0018 3E       		.uleb128 0x3e
+ 331 0019 0B       		.uleb128 0xb
+ 332 001a 03       		.uleb128 0x3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 10
+
+
+ 333 001b 0E       		.uleb128 0xe
+ 334 001c 00       		.byte	0
+ 335 001d 00       		.byte	0
+ 336 001e 03       		.uleb128 0x3
+ 337 001f 24       		.uleb128 0x24
+ 338 0020 00       		.byte	0
+ 339 0021 0B       		.uleb128 0xb
+ 340 0022 0B       		.uleb128 0xb
+ 341 0023 3E       		.uleb128 0x3e
+ 342 0024 0B       		.uleb128 0xb
+ 343 0025 03       		.uleb128 0x3
+ 344 0026 08       		.uleb128 0x8
+ 345 0027 00       		.byte	0
+ 346 0028 00       		.byte	0
+ 347 0029 04       		.uleb128 0x4
+ 348 002a 16       		.uleb128 0x16
+ 349 002b 00       		.byte	0
+ 350 002c 03       		.uleb128 0x3
+ 351 002d 0E       		.uleb128 0xe
+ 352 002e 3A       		.uleb128 0x3a
+ 353 002f 0B       		.uleb128 0xb
+ 354 0030 3B       		.uleb128 0x3b
+ 355 0031 05       		.uleb128 0x5
+ 356 0032 49       		.uleb128 0x49
+ 357 0033 13       		.uleb128 0x13
+ 358 0034 00       		.byte	0
+ 359 0035 00       		.byte	0
+ 360 0036 05       		.uleb128 0x5
+ 361 0037 2E       		.uleb128 0x2e
+ 362 0038 01       		.byte	0x1
+ 363 0039 3F       		.uleb128 0x3f
+ 364 003a 19       		.uleb128 0x19
+ 365 003b 03       		.uleb128 0x3
+ 366 003c 0E       		.uleb128 0xe
+ 367 003d 3A       		.uleb128 0x3a
+ 368 003e 0B       		.uleb128 0xb
+ 369 003f 3B       		.uleb128 0x3b
+ 370 0040 0B       		.uleb128 0xb
+ 371 0041 27       		.uleb128 0x27
+ 372 0042 19       		.uleb128 0x19
+ 373 0043 11       		.uleb128 0x11
+ 374 0044 01       		.uleb128 0x1
+ 375 0045 12       		.uleb128 0x12
+ 376 0046 06       		.uleb128 0x6
+ 377 0047 40       		.uleb128 0x40
+ 378 0048 18       		.uleb128 0x18
+ 379 0049 9642     		.uleb128 0x2116
+ 380 004b 19       		.uleb128 0x19
+ 381 004c 01       		.uleb128 0x1
+ 382 004d 13       		.uleb128 0x13
+ 383 004e 00       		.byte	0
+ 384 004f 00       		.byte	0
+ 385 0050 06       		.uleb128 0x6
+ 386 0051 34       		.uleb128 0x34
+ 387 0052 00       		.byte	0
+ 388 0053 03       		.uleb128 0x3
+ 389 0054 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 11
+
+
+ 390 0055 3A       		.uleb128 0x3a
+ 391 0056 0B       		.uleb128 0xb
+ 392 0057 3B       		.uleb128 0x3b
+ 393 0058 0B       		.uleb128 0xb
+ 394 0059 49       		.uleb128 0x49
+ 395 005a 13       		.uleb128 0x13
+ 396 005b 02       		.uleb128 0x2
+ 397 005c 18       		.uleb128 0x18
+ 398 005d 00       		.byte	0
+ 399 005e 00       		.byte	0
+ 400 005f 07       		.uleb128 0x7
+ 401 0060 05       		.uleb128 0x5
+ 402 0061 00       		.byte	0
+ 403 0062 03       		.uleb128 0x3
+ 404 0063 0E       		.uleb128 0xe
+ 405 0064 3A       		.uleb128 0x3a
+ 406 0065 0B       		.uleb128 0xb
+ 407 0066 3B       		.uleb128 0x3b
+ 408 0067 0B       		.uleb128 0xb
+ 409 0068 49       		.uleb128 0x49
+ 410 0069 13       		.uleb128 0x13
+ 411 006a 02       		.uleb128 0x2
+ 412 006b 18       		.uleb128 0x18
+ 413 006c 00       		.byte	0
+ 414 006d 00       		.byte	0
+ 415 006e 08       		.uleb128 0x8
+ 416 006f 2E       		.uleb128 0x2e
+ 417 0070 00       		.byte	0
+ 418 0071 3F       		.uleb128 0x3f
+ 419 0072 19       		.uleb128 0x19
+ 420 0073 03       		.uleb128 0x3
+ 421 0074 0E       		.uleb128 0xe
+ 422 0075 3A       		.uleb128 0x3a
+ 423 0076 0B       		.uleb128 0xb
+ 424 0077 3B       		.uleb128 0x3b
+ 425 0078 0B       		.uleb128 0xb
+ 426 0079 27       		.uleb128 0x27
+ 427 007a 19       		.uleb128 0x19
+ 428 007b 11       		.uleb128 0x11
+ 429 007c 01       		.uleb128 0x1
+ 430 007d 12       		.uleb128 0x12
+ 431 007e 06       		.uleb128 0x6
+ 432 007f 40       		.uleb128 0x40
+ 433 0080 18       		.uleb128 0x18
+ 434 0081 9642     		.uleb128 0x2116
+ 435 0083 19       		.uleb128 0x19
+ 436 0084 00       		.byte	0
+ 437 0085 00       		.byte	0
+ 438 0086 00       		.byte	0
+ 439              		.section	.debug_aranges,"",%progbits
+ 440 0000 2C000000 		.4byte	0x2c
+ 441 0004 0200     		.2byte	0x2
+ 442 0006 00000000 		.4byte	.Ldebug_info0
+ 443 000a 04       		.byte	0x4
+ 444 000b 00       		.byte	0
+ 445 000c 0000     		.2byte	0
+ 446 000e 0000     		.2byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 12
+
+
+ 447 0010 00000000 		.4byte	.LFB0
+ 448 0014 30000000 		.4byte	.LFE0-.LFB0
+ 449 0018 00000000 		.4byte	.LFB1
+ 450 001c 34000000 		.4byte	.LFE1-.LFB1
+ 451 0020 00000000 		.4byte	.LFB2
+ 452 0024 24000000 		.4byte	.LFE2-.LFB2
+ 453 0028 00000000 		.4byte	0
+ 454 002c 00000000 		.4byte	0
+ 455              		.section	.debug_ranges,"",%progbits
+ 456              	.Ldebug_ranges0:
+ 457 0000 00000000 		.4byte	.LFB0
+ 458 0004 30000000 		.4byte	.LFE0
+ 459 0008 00000000 		.4byte	.LFB1
+ 460 000c 34000000 		.4byte	.LFE1
+ 461 0010 00000000 		.4byte	.LFB2
+ 462 0014 24000000 		.4byte	.LFE2
+ 463 0018 00000000 		.4byte	0
+ 464 001c 00000000 		.4byte	0
+ 465              		.section	.debug_line,"",%progbits
+ 466              	.Ldebug_line0:
+ 467 0000 9D000000 		.section	.debug_str,"MS",%progbits,1
+ 467      02004900 
+ 467      00000201 
+ 467      FB0E0D00 
+ 467      01010101 
+ 468              	.LASF20:
+ 469 0000 6368616E 		.ascii	"channel\000"
+ 469      6E656C00 
+ 470              	.LASF17:
+ 471 0008 47656E65 		.ascii	"Generated_Source\\PSoC5\\Amux_Trigger.c\000"
+ 471      72617465 
+ 471      645F536F 
+ 471      75726365 
+ 471      5C50536F 
+ 472              	.LASF16:
+ 473 002e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 473      4320342E 
+ 473      392E3320 
+ 473      32303135 
+ 473      30333033 
+ 474 0061 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 474      20726576 
+ 474      6973696F 
+ 474      6E203232 
+ 474      31323230 
+ 475 0094 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 475      66756E63 
+ 475      74696F6E 
+ 475      2D736563 
+ 475      74696F6E 
+ 476              	.LASF12:
+ 477 00bc 416D7578 		.ascii	"Amux_Trigger_Start\000"
+ 477      5F547269 
+ 477      67676572 
+ 477      5F537461 
+ 477      727400
+ 478              	.LASF9:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 13
+
+
+ 479 00cf 666C6F61 		.ascii	"float\000"
+ 479      7400
+ 480              	.LASF1:
+ 481 00d5 756E7369 		.ascii	"unsigned char\000"
+ 481      676E6564 
+ 481      20636861 
+ 481      7200
+ 482              	.LASF18:
+ 483 00e3 433A5C53 		.ascii	"C:\\SVN\\apps\\trunk\\Cypress Academy\\PSoC-121-Ana"
+ 483      564E5C61 
+ 483      7070735C 
+ 483      7472756E 
+ 483      6B5C4379 
+ 484 0111 6C6F675C 		.ascii	"log\\Scope\\KEES_Scope\\PSoC\\Scope.cydsn\000"
+ 484      53636F70 
+ 484      655C4B45 
+ 484      45535F53 
+ 484      636F7065 
+ 485              	.LASF5:
+ 486 0137 6C6F6E67 		.ascii	"long unsigned int\000"
+ 486      20756E73 
+ 486      69676E65 
+ 486      6420696E 
+ 486      7400
+ 487              	.LASF3:
+ 488 0149 73686F72 		.ascii	"short unsigned int\000"
+ 488      7420756E 
+ 488      7369676E 
+ 488      65642069 
+ 488      6E7400
+ 489              	.LASF21:
+ 490 015c 416D7578 		.ascii	"Amux_Trigger_DisconnectAll\000"
+ 490      5F547269 
+ 490      67676572 
+ 490      5F446973 
+ 490      636F6E6E 
+ 491              	.LASF10:
+ 492 0177 646F7562 		.ascii	"double\000"
+ 492      6C6500
+ 493              	.LASF13:
+ 494 017e 416D7578 		.ascii	"Amux_Trigger_FastSelect\000"
+ 494      5F547269 
+ 494      67676572 
+ 494      5F466173 
+ 494      7453656C 
+ 495              	.LASF8:
+ 496 0196 756E7369 		.ascii	"unsigned int\000"
+ 496      676E6564 
+ 496      20696E74 
+ 496      00
+ 497              	.LASF7:
+ 498 01a3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 498      206C6F6E 
+ 498      6720756E 
+ 498      7369676E 
+ 498      65642069 
+ 499              	.LASF14:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccn3bwxf.s 			page 14
+
+
+ 500 01ba 6368616E 		.ascii	"chan\000"
+ 500      00
+ 501              	.LASF6:
+ 502 01bf 6C6F6E67 		.ascii	"long long int\000"
+ 502      206C6F6E 
+ 502      6720696E 
+ 502      7400
+ 503              	.LASF11:
+ 504 01cd 63686172 		.ascii	"char\000"
+ 504      00
+ 505              	.LASF2:
+ 506 01d2 73686F72 		.ascii	"short int\000"
+ 506      7420696E 
+ 506      7400
+ 507              	.LASF19:
+ 508 01dc 75696E74 		.ascii	"uint8\000"
+ 508      3800
+ 509              	.LASF4:
+ 510 01e2 6C6F6E67 		.ascii	"long int\000"
+ 510      20696E74 
+ 510      00
+ 511              	.LASF0:
+ 512 01eb 7369676E 		.ascii	"signed char\000"
+ 512      65642063 
+ 512      68617200 
+ 513              	.LASF15:
+ 514 01f7 416D7578 		.ascii	"Amux_Trigger_lastChannel\000"
+ 514      5F547269 
+ 514      67676572 
+ 514      5F6C6173 
+ 514      74436861 
+ 515              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -1,0 +1,967 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Trig_Buf.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	Trig_Buf_initVar
+  19              		.bss
+  20              		.type	Trig_Buf_initVar, %object
+  21              		.size	Trig_Buf_initVar, 1
+  22              	Trig_Buf_initVar:
+  23 0000 00       		.space	1
+  24              		.section	.text.Trig_Buf_Init,"ax",%progbits
+  25              		.align	2
+  26              		.global	Trig_Buf_Init
+  27              		.thumb
+  28              		.thumb_func
+  29              		.type	Trig_Buf_Init, %function
+  30              	Trig_Buf_Init:
+  31              	.LFB0:
+  32              		.file 1 "Generated_Source\\PSoC5\\Trig_Buf.c"
+   1:Generated_Source\PSoC5/Trig_Buf.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Trig_Buf.c **** * File Name: Trig_Buf.c
+   3:Generated_Source\PSoC5/Trig_Buf.c **** * Version 1.90
+   4:Generated_Source\PSoC5/Trig_Buf.c **** *
+   5:Generated_Source\PSoC5/Trig_Buf.c **** * Description:
+   6:Generated_Source\PSoC5/Trig_Buf.c **** *  This file provides the source code to the API for OpAmp (Analog Buffer) 
+   7:Generated_Source\PSoC5/Trig_Buf.c **** *  Component.
+   8:Generated_Source\PSoC5/Trig_Buf.c **** *
+   9:Generated_Source\PSoC5/Trig_Buf.c **** * Note:
+  10:Generated_Source\PSoC5/Trig_Buf.c **** *
+  11:Generated_Source\PSoC5/Trig_Buf.c **** ********************************************************************************
+  12:Generated_Source\PSoC5/Trig_Buf.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/Trig_Buf.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC5/Trig_Buf.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC5/Trig_Buf.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC5/Trig_Buf.c **** *******************************************************************************/
+  17:Generated_Source\PSoC5/Trig_Buf.c **** 
+  18:Generated_Source\PSoC5/Trig_Buf.c **** #include "Trig_Buf.h"
+  19:Generated_Source\PSoC5/Trig_Buf.c **** 
+  20:Generated_Source\PSoC5/Trig_Buf.c **** uint8 Trig_Buf_initVar = 0u;
+  21:Generated_Source\PSoC5/Trig_Buf.c **** 
+  22:Generated_Source\PSoC5/Trig_Buf.c **** 
+  23:Generated_Source\PSoC5/Trig_Buf.c **** /*******************************************************************************   
+  24:Generated_Source\PSoC5/Trig_Buf.c **** * Function Name: Trig_Buf_Init
+  25:Generated_Source\PSoC5/Trig_Buf.c **** ********************************************************************************
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 2
+
+
+  26:Generated_Source\PSoC5/Trig_Buf.c **** *
+  27:Generated_Source\PSoC5/Trig_Buf.c **** * Summary:
+  28:Generated_Source\PSoC5/Trig_Buf.c **** *  Initialize component's parameters to the parameters set by user in the 
+  29:Generated_Source\PSoC5/Trig_Buf.c **** *  customizer of the component placed onto schematic. Usually called in 
+  30:Generated_Source\PSoC5/Trig_Buf.c **** *  Trig_Buf_Start().
+  31:Generated_Source\PSoC5/Trig_Buf.c **** *
+  32:Generated_Source\PSoC5/Trig_Buf.c **** * Parameters:
+  33:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+  34:Generated_Source\PSoC5/Trig_Buf.c **** *
+  35:Generated_Source\PSoC5/Trig_Buf.c **** * Return:
+  36:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+  37:Generated_Source\PSoC5/Trig_Buf.c **** *
+  38:Generated_Source\PSoC5/Trig_Buf.c **** *******************************************************************************/
+  39:Generated_Source\PSoC5/Trig_Buf.c **** void Trig_Buf_Init(void) 
+  40:Generated_Source\PSoC5/Trig_Buf.c **** {
+  33              		.loc 1 40 0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 1, uses_anonymous_args = 0
+  37 0000 80B5     		push	{r7, lr}
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 7, -8
+  40              		.cfi_offset 14, -4
+  41 0002 00AF     		add	r7, sp, #0
+  42              		.cfi_def_cfa_register 7
+  41:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_SetPower(Trig_Buf_DEFAULT_POWER);
+  43              		.loc 1 41 0
+  44 0004 0320     		movs	r0, #3
+  45 0006 FFF7FEFF 		bl	Trig_Buf_SetPower
+  42:Generated_Source\PSoC5/Trig_Buf.c **** }
+  46              		.loc 1 42 0
+  47 000a 80BD     		pop	{r7, pc}
+  48              		.cfi_endproc
+  49              	.LFE0:
+  50              		.size	Trig_Buf_Init, .-Trig_Buf_Init
+  51              		.section	.text.Trig_Buf_Enable,"ax",%progbits
+  52              		.align	2
+  53              		.global	Trig_Buf_Enable
+  54              		.thumb
+  55              		.thumb_func
+  56              		.type	Trig_Buf_Enable, %function
+  57              	Trig_Buf_Enable:
+  58              	.LFB1:
+  43:Generated_Source\PSoC5/Trig_Buf.c **** 
+  44:Generated_Source\PSoC5/Trig_Buf.c **** 
+  45:Generated_Source\PSoC5/Trig_Buf.c **** /*******************************************************************************   
+  46:Generated_Source\PSoC5/Trig_Buf.c **** * Function Name: Trig_Buf_Enable
+  47:Generated_Source\PSoC5/Trig_Buf.c **** ********************************************************************************
+  48:Generated_Source\PSoC5/Trig_Buf.c **** *
+  49:Generated_Source\PSoC5/Trig_Buf.c **** * Summary:
+  50:Generated_Source\PSoC5/Trig_Buf.c **** *  Enables the OpAmp block operation
+  51:Generated_Source\PSoC5/Trig_Buf.c **** *
+  52:Generated_Source\PSoC5/Trig_Buf.c **** * Parameters:
+  53:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+  54:Generated_Source\PSoC5/Trig_Buf.c **** *
+  55:Generated_Source\PSoC5/Trig_Buf.c **** * Return:
+  56:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 3
+
+
+  57:Generated_Source\PSoC5/Trig_Buf.c **** *
+  58:Generated_Source\PSoC5/Trig_Buf.c **** *******************************************************************************/
+  59:Generated_Source\PSoC5/Trig_Buf.c **** void Trig_Buf_Enable(void) 
+  60:Generated_Source\PSoC5/Trig_Buf.c **** {
+  59              		.loc 1 60 0
+  60              		.cfi_startproc
+  61              		@ args = 0, pretend = 0, frame = 0
+  62              		@ frame_needed = 1, uses_anonymous_args = 0
+  63              		@ link register save eliminated.
+  64 0000 80B4     		push	{r7}
+  65              		.cfi_def_cfa_offset 4
+  66              		.cfi_offset 7, -4
+  67 0002 00AF     		add	r7, sp, #0
+  68              		.cfi_def_cfa_register 7
+  61:Generated_Source\PSoC5/Trig_Buf.c ****     /* Enable negative charge pumps in ANIF */
+  62:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_PUMP_CR1_REG  |= (Trig_Buf_PUMP_CR1_CLKSEL | Trig_Buf_PUMP_CR1_FORCE);
+  69              		.loc 1 62 0
+  70 0004 0D4A     		ldr	r2, .L3
+  71 0006 0D4B     		ldr	r3, .L3
+  72 0008 1B78     		ldrb	r3, [r3]
+  73 000a DBB2     		uxtb	r3, r3
+  74 000c 43F06003 		orr	r3, r3, #96
+  75 0010 DBB2     		uxtb	r3, r3
+  76 0012 1370     		strb	r3, [r2]
+  63:Generated_Source\PSoC5/Trig_Buf.c **** 
+  64:Generated_Source\PSoC5/Trig_Buf.c ****     /* Enable power to buffer in active mode */
+  65:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_PM_ACT_CFG_REG |= Trig_Buf_ACT_PWR_EN;
+  77              		.loc 1 65 0
+  78 0014 0A4A     		ldr	r2, .L3+4
+  79 0016 0A4B     		ldr	r3, .L3+4
+  80 0018 1B78     		ldrb	r3, [r3]
+  81 001a DBB2     		uxtb	r3, r3
+  82 001c 43F00203 		orr	r3, r3, #2
+  83 0020 DBB2     		uxtb	r3, r3
+  84 0022 1370     		strb	r3, [r2]
+  66:Generated_Source\PSoC5/Trig_Buf.c **** 
+  67:Generated_Source\PSoC5/Trig_Buf.c ****     /* Enable power to buffer in alternative active mode */
+  68:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_PM_STBY_CFG_REG |= Trig_Buf_STBY_PWR_EN;
+  85              		.loc 1 68 0
+  86 0024 074A     		ldr	r2, .L3+8
+  87 0026 074B     		ldr	r3, .L3+8
+  88 0028 1B78     		ldrb	r3, [r3]
+  89 002a DBB2     		uxtb	r3, r3
+  90 002c 43F00203 		orr	r3, r3, #2
+  91 0030 DBB2     		uxtb	r3, r3
+  92 0032 1370     		strb	r3, [r2]
+  69:Generated_Source\PSoC5/Trig_Buf.c **** }
+  93              		.loc 1 69 0
+  94 0034 BD46     		mov	sp, r7
+  95              		.cfi_def_cfa_register 13
+  96              		@ sp needed
+  97 0036 5DF8047B 		ldr	r7, [sp], #4
+  98              		.cfi_restore 7
+  99              		.cfi_def_cfa_offset 0
+ 100 003a 7047     		bx	lr
+ 101              	.L4:
+ 102              		.align	2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 4
+
+
+ 103              	.L3:
+ 104 003c 77580040 		.word	1073764471
+ 105 0040 A4430040 		.word	1073759140
+ 106 0044 B4430040 		.word	1073759156
+ 107              		.cfi_endproc
+ 108              	.LFE1:
+ 109              		.size	Trig_Buf_Enable, .-Trig_Buf_Enable
+ 110              		.section	.text.Trig_Buf_Start,"ax",%progbits
+ 111              		.align	2
+ 112              		.global	Trig_Buf_Start
+ 113              		.thumb
+ 114              		.thumb_func
+ 115              		.type	Trig_Buf_Start, %function
+ 116              	Trig_Buf_Start:
+ 117              	.LFB2:
+  70:Generated_Source\PSoC5/Trig_Buf.c **** 
+  71:Generated_Source\PSoC5/Trig_Buf.c **** 
+  72:Generated_Source\PSoC5/Trig_Buf.c **** /*******************************************************************************
+  73:Generated_Source\PSoC5/Trig_Buf.c **** * Function Name:   Trig_Buf_Start
+  74:Generated_Source\PSoC5/Trig_Buf.c **** ********************************************************************************
+  75:Generated_Source\PSoC5/Trig_Buf.c **** *
+  76:Generated_Source\PSoC5/Trig_Buf.c **** * Summary:
+  77:Generated_Source\PSoC5/Trig_Buf.c **** *  The start function initializes the Analog Buffer with the default values and 
+  78:Generated_Source\PSoC5/Trig_Buf.c **** *  sets the power to the given level. A power level of 0, is same as 
+  79:Generated_Source\PSoC5/Trig_Buf.c **** *  executing the stop function.
+  80:Generated_Source\PSoC5/Trig_Buf.c **** *
+  81:Generated_Source\PSoC5/Trig_Buf.c **** * Parameters:
+  82:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+  83:Generated_Source\PSoC5/Trig_Buf.c **** *
+  84:Generated_Source\PSoC5/Trig_Buf.c **** * Return:
+  85:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+  86:Generated_Source\PSoC5/Trig_Buf.c **** *
+  87:Generated_Source\PSoC5/Trig_Buf.c **** * Global variables:
+  88:Generated_Source\PSoC5/Trig_Buf.c **** *  Trig_Buf_initVar: Used to check the initial configuration, modified 
+  89:Generated_Source\PSoC5/Trig_Buf.c **** *  when this function is called for the first time.
+  90:Generated_Source\PSoC5/Trig_Buf.c **** *
+  91:Generated_Source\PSoC5/Trig_Buf.c **** *******************************************************************************/
+  92:Generated_Source\PSoC5/Trig_Buf.c **** void Trig_Buf_Start(void) 
+  93:Generated_Source\PSoC5/Trig_Buf.c **** {
+ 118              		.loc 1 93 0
+ 119              		.cfi_startproc
+ 120              		@ args = 0, pretend = 0, frame = 0
+ 121              		@ frame_needed = 1, uses_anonymous_args = 0
+ 122 0000 80B5     		push	{r7, lr}
+ 123              		.cfi_def_cfa_offset 8
+ 124              		.cfi_offset 7, -8
+ 125              		.cfi_offset 14, -4
+ 126 0002 00AF     		add	r7, sp, #0
+ 127              		.cfi_def_cfa_register 7
+  94:Generated_Source\PSoC5/Trig_Buf.c ****     if(Trig_Buf_initVar == 0u)
+ 128              		.loc 1 94 0
+ 129 0004 054B     		ldr	r3, .L7
+ 130 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 131 0008 002B     		cmp	r3, #0
+ 132 000a 04D1     		bne	.L6
+  95:Generated_Source\PSoC5/Trig_Buf.c ****     {
+  96:Generated_Source\PSoC5/Trig_Buf.c ****         Trig_Buf_initVar = 1u;
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 5
+
+
+ 133              		.loc 1 96 0
+ 134 000c 034B     		ldr	r3, .L7
+ 135 000e 0122     		movs	r2, #1
+ 136 0010 1A70     		strb	r2, [r3]
+  97:Generated_Source\PSoC5/Trig_Buf.c ****         Trig_Buf_Init();
+ 137              		.loc 1 97 0
+ 138 0012 FFF7FEFF 		bl	Trig_Buf_Init
+ 139              	.L6:
+  98:Generated_Source\PSoC5/Trig_Buf.c ****     }
+  99:Generated_Source\PSoC5/Trig_Buf.c **** 
+ 100:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_Enable();
+ 140              		.loc 1 100 0
+ 141 0016 FFF7FEFF 		bl	Trig_Buf_Enable
+ 101:Generated_Source\PSoC5/Trig_Buf.c **** }
+ 142              		.loc 1 101 0
+ 143 001a 80BD     		pop	{r7, pc}
+ 144              	.L8:
+ 145              		.align	2
+ 146              	.L7:
+ 147 001c 00000000 		.word	Trig_Buf_initVar
+ 148              		.cfi_endproc
+ 149              	.LFE2:
+ 150              		.size	Trig_Buf_Start, .-Trig_Buf_Start
+ 151              		.section	.text.Trig_Buf_Stop,"ax",%progbits
+ 152              		.align	2
+ 153              		.global	Trig_Buf_Stop
+ 154              		.thumb
+ 155              		.thumb_func
+ 156              		.type	Trig_Buf_Stop, %function
+ 157              	Trig_Buf_Stop:
+ 158              	.LFB3:
+ 102:Generated_Source\PSoC5/Trig_Buf.c **** 
+ 103:Generated_Source\PSoC5/Trig_Buf.c **** 
+ 104:Generated_Source\PSoC5/Trig_Buf.c **** /*******************************************************************************
+ 105:Generated_Source\PSoC5/Trig_Buf.c **** * Function Name: Trig_Buf_Stop
+ 106:Generated_Source\PSoC5/Trig_Buf.c **** ********************************************************************************
+ 107:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 108:Generated_Source\PSoC5/Trig_Buf.c **** * Summary:
+ 109:Generated_Source\PSoC5/Trig_Buf.c **** *  Powers down amplifier to lowest power state.
+ 110:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 111:Generated_Source\PSoC5/Trig_Buf.c **** * Parameters:
+ 112:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+ 113:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 114:Generated_Source\PSoC5/Trig_Buf.c **** * Return:
+ 115:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+ 116:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 117:Generated_Source\PSoC5/Trig_Buf.c **** *******************************************************************************/
+ 118:Generated_Source\PSoC5/Trig_Buf.c **** void Trig_Buf_Stop(void) 
+ 119:Generated_Source\PSoC5/Trig_Buf.c **** {
+ 159              		.loc 1 119 0
+ 160              		.cfi_startproc
+ 161              		@ args = 0, pretend = 0, frame = 0
+ 162              		@ frame_needed = 1, uses_anonymous_args = 0
+ 163              		@ link register save eliminated.
+ 164 0000 80B4     		push	{r7}
+ 165              		.cfi_def_cfa_offset 4
+ 166              		.cfi_offset 7, -4
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 6
+
+
+ 167 0002 00AF     		add	r7, sp, #0
+ 168              		.cfi_def_cfa_register 7
+ 120:Generated_Source\PSoC5/Trig_Buf.c ****     /* Disable power to buffer in active mode template */
+ 121:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_PM_ACT_CFG_REG &= (uint8)(~Trig_Buf_ACT_PWR_EN);
+ 169              		.loc 1 121 0
+ 170 0004 104A     		ldr	r2, .L11
+ 171 0006 104B     		ldr	r3, .L11
+ 172 0008 1B78     		ldrb	r3, [r3]
+ 173 000a DBB2     		uxtb	r3, r3
+ 174 000c 23F00203 		bic	r3, r3, #2
+ 175 0010 DBB2     		uxtb	r3, r3
+ 176 0012 1370     		strb	r3, [r2]
+ 122:Generated_Source\PSoC5/Trig_Buf.c **** 
+ 123:Generated_Source\PSoC5/Trig_Buf.c ****     /* Disable power to buffer in alternative active mode template */
+ 124:Generated_Source\PSoC5/Trig_Buf.c ****     Trig_Buf_PM_STBY_CFG_REG &= (uint8)(~Trig_Buf_STBY_PWR_EN);
+ 177              		.loc 1 124 0
+ 178 0014 0D4A     		ldr	r2, .L11+4
+ 179 0016 0D4B     		ldr	r3, .L11+4
+ 180 0018 1B78     		ldrb	r3, [r3]
+ 181 001a DBB2     		uxtb	r3, r3
+ 182 001c 23F00203 		bic	r3, r3, #2
+ 183 0020 DBB2     		uxtb	r3, r3
+ 184 0022 1370     		strb	r3, [r2]
+ 125:Generated_Source\PSoC5/Trig_Buf.c ****     
+ 126:Generated_Source\PSoC5/Trig_Buf.c ****     /* Disable negative charge pumps for ANIF only if all ABuf is turned OFF */
+ 127:Generated_Source\PSoC5/Trig_Buf.c ****     if(Trig_Buf_PM_ACT_CFG_REG == 0u)
+ 185              		.loc 1 127 0
+ 186 0024 084B     		ldr	r3, .L11
+ 187 0026 1B78     		ldrb	r3, [r3]
+ 188 0028 DBB2     		uxtb	r3, r3
+ 189 002a 002B     		cmp	r3, #0
+ 190 002c 07D1     		bne	.L9
+ 128:Generated_Source\PSoC5/Trig_Buf.c ****     {
+ 129:Generated_Source\PSoC5/Trig_Buf.c ****         Trig_Buf_PUMP_CR1_REG &= (uint8)(~(Trig_Buf_PUMP_CR1_CLKSEL | Trig_Buf_PUMP_CR1_FORCE));
+ 191              		.loc 1 129 0
+ 192 002e 084A     		ldr	r2, .L11+8
+ 193 0030 074B     		ldr	r3, .L11+8
+ 194 0032 1B78     		ldrb	r3, [r3]
+ 195 0034 DBB2     		uxtb	r3, r3
+ 196 0036 23F06003 		bic	r3, r3, #96
+ 197 003a DBB2     		uxtb	r3, r3
+ 198 003c 1370     		strb	r3, [r2]
+ 199              	.L9:
+ 130:Generated_Source\PSoC5/Trig_Buf.c ****     }
+ 131:Generated_Source\PSoC5/Trig_Buf.c **** }
+ 200              		.loc 1 131 0
+ 201 003e BD46     		mov	sp, r7
+ 202              		.cfi_def_cfa_register 13
+ 203              		@ sp needed
+ 204 0040 5DF8047B 		ldr	r7, [sp], #4
+ 205              		.cfi_restore 7
+ 206              		.cfi_def_cfa_offset 0
+ 207 0044 7047     		bx	lr
+ 208              	.L12:
+ 209 0046 00BF     		.align	2
+ 210              	.L11:
+ 211 0048 A4430040 		.word	1073759140
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 7
+
+
+ 212 004c B4430040 		.word	1073759156
+ 213 0050 77580040 		.word	1073764471
+ 214              		.cfi_endproc
+ 215              	.LFE3:
+ 216              		.size	Trig_Buf_Stop, .-Trig_Buf_Stop
+ 217              		.section	.text.Trig_Buf_SetPower,"ax",%progbits
+ 218              		.align	2
+ 219              		.global	Trig_Buf_SetPower
+ 220              		.thumb
+ 221              		.thumb_func
+ 222              		.type	Trig_Buf_SetPower, %function
+ 223              	Trig_Buf_SetPower:
+ 224              	.LFB4:
+ 132:Generated_Source\PSoC5/Trig_Buf.c **** 
+ 133:Generated_Source\PSoC5/Trig_Buf.c **** 
+ 134:Generated_Source\PSoC5/Trig_Buf.c **** /*******************************************************************************
+ 135:Generated_Source\PSoC5/Trig_Buf.c **** * Function Name: Trig_Buf_SetPower
+ 136:Generated_Source\PSoC5/Trig_Buf.c **** ********************************************************************************
+ 137:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 138:Generated_Source\PSoC5/Trig_Buf.c **** * Summary:
+ 139:Generated_Source\PSoC5/Trig_Buf.c **** *  Sets power level of Analog buffer.
+ 140:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 141:Generated_Source\PSoC5/Trig_Buf.c **** * Parameters: 
+ 142:Generated_Source\PSoC5/Trig_Buf.c **** *  power: PSoC3: Sets power level between low (1) and high power (3).
+ 143:Generated_Source\PSoC5/Trig_Buf.c **** *         PSoC5: Sets power level High (0)
+ 144:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 145:Generated_Source\PSoC5/Trig_Buf.c **** * Return:
+ 146:Generated_Source\PSoC5/Trig_Buf.c **** *  void
+ 147:Generated_Source\PSoC5/Trig_Buf.c **** *
+ 148:Generated_Source\PSoC5/Trig_Buf.c **** **********************************************************************************/
+ 149:Generated_Source\PSoC5/Trig_Buf.c **** void Trig_Buf_SetPower(uint8 power) 
+ 150:Generated_Source\PSoC5/Trig_Buf.c **** {
+ 225              		.loc 1 150 0
+ 226              		.cfi_startproc
+ 227              		@ args = 0, pretend = 0, frame = 8
+ 228              		@ frame_needed = 1, uses_anonymous_args = 0
+ 229              		@ link register save eliminated.
+ 230 0000 80B4     		push	{r7}
+ 231              		.cfi_def_cfa_offset 4
+ 232              		.cfi_offset 7, -4
+ 233 0002 83B0     		sub	sp, sp, #12
+ 234              		.cfi_def_cfa_offset 16
+ 235 0004 00AF     		add	r7, sp, #0
+ 236              		.cfi_def_cfa_register 7
+ 237 0006 0346     		mov	r3, r0
+ 238 0008 FB71     		strb	r3, [r7, #7]
+ 151:Generated_Source\PSoC5/Trig_Buf.c ****     #if (CY_PSOC3 || CY_PSOC5LP)
+ 152:Generated_Source\PSoC5/Trig_Buf.c ****         Trig_Buf_CR_REG &= (uint8)(~Trig_Buf_PWR_MASK);
+ 239              		.loc 1 152 0
+ 240 000a 0C4A     		ldr	r2, .L14
+ 241 000c 0B4B     		ldr	r3, .L14
+ 242 000e 1B78     		ldrb	r3, [r3]
+ 243 0010 DBB2     		uxtb	r3, r3
+ 244 0012 23F00303 		bic	r3, r3, #3
+ 245 0016 DBB2     		uxtb	r3, r3
+ 246 0018 1370     		strb	r3, [r2]
+ 153:Generated_Source\PSoC5/Trig_Buf.c ****         Trig_Buf_CR_REG |= power & Trig_Buf_PWR_MASK;      /* Set device power */
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 8
+
+
+ 247              		.loc 1 153 0
+ 248 001a 0849     		ldr	r1, .L14
+ 249 001c 074B     		ldr	r3, .L14
+ 250 001e 1B78     		ldrb	r3, [r3]
+ 251 0020 DAB2     		uxtb	r2, r3
+ 252 0022 FB79     		ldrb	r3, [r7, #7]
+ 253 0024 03F00303 		and	r3, r3, #3
+ 254 0028 DBB2     		uxtb	r3, r3
+ 255 002a 1343     		orrs	r3, r3, r2
+ 256 002c DBB2     		uxtb	r3, r3
+ 257 002e 0B70     		strb	r3, [r1]
+ 154:Generated_Source\PSoC5/Trig_Buf.c ****     #else
+ 155:Generated_Source\PSoC5/Trig_Buf.c ****         CYASSERT(Trig_Buf_HIGHPOWER == power);
+ 156:Generated_Source\PSoC5/Trig_Buf.c ****     #endif /* CY_PSOC3 || CY_PSOC5LP */
+ 157:Generated_Source\PSoC5/Trig_Buf.c **** }
+ 258              		.loc 1 157 0
+ 259 0030 0C37     		adds	r7, r7, #12
+ 260              		.cfi_def_cfa_offset 4
+ 261 0032 BD46     		mov	sp, r7
+ 262              		.cfi_def_cfa_register 13
+ 263              		@ sp needed
+ 264 0034 5DF8047B 		ldr	r7, [sp], #4
+ 265              		.cfi_restore 7
+ 266              		.cfi_def_cfa_offset 0
+ 267 0038 7047     		bx	lr
+ 268              	.L15:
+ 269 003a 00BF     		.align	2
+ 270              	.L14:
+ 271 003c 5A580040 		.word	1073764442
+ 272              		.cfi_endproc
+ 273              	.LFE4:
+ 274              		.size	Trig_Buf_SetPower, .-Trig_Buf_SetPower
+ 275              		.text
+ 276              	.Letext0:
+ 277              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 278              		.section	.debug_info,"",%progbits
+ 279              	.Ldebug_info0:
+ 280 0000 1A010000 		.4byte	0x11a
+ 281 0004 0400     		.2byte	0x4
+ 282 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 283 000a 04       		.byte	0x4
+ 284 000b 01       		.uleb128 0x1
+ 285 000c EC000000 		.4byte	.LASF19
+ 286 0010 01       		.byte	0x1
+ 287 0011 AE010000 		.4byte	.LASF20
+ 288 0015 7C000000 		.4byte	.LASF21
+ 289 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 290 001d 00000000 		.4byte	0
+ 291 0021 00000000 		.4byte	.Ldebug_line0
+ 292 0025 02       		.uleb128 0x2
+ 293 0026 01       		.byte	0x1
+ 294 0027 06       		.byte	0x6
+ 295 0028 A2010000 		.4byte	.LASF0
+ 296 002c 02       		.uleb128 0x2
+ 297 002d 01       		.byte	0x1
+ 298 002e 08       		.byte	0x8
+ 299 002f D0000000 		.4byte	.LASF1
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 9
+
+
+ 300 0033 02       		.uleb128 0x2
+ 301 0034 02       		.byte	0x2
+ 302 0035 05       		.byte	0x5
+ 303 0036 D6010000 		.4byte	.LASF2
+ 304 003a 02       		.uleb128 0x2
+ 305 003b 02       		.byte	0x2
+ 306 003c 07       		.byte	0x7
+ 307 003d 8F010000 		.4byte	.LASF3
+ 308 0041 02       		.uleb128 0x2
+ 309 0042 04       		.byte	0x4
+ 310 0043 05       		.byte	0x5
+ 311 0044 E3000000 		.4byte	.LASF4
+ 312 0048 02       		.uleb128 0x2
+ 313 0049 04       		.byte	0x4
+ 314 004a 07       		.byte	0x7
+ 315 004b 30000000 		.4byte	.LASF5
+ 316 004f 02       		.uleb128 0x2
+ 317 0050 08       		.byte	0x8
+ 318 0051 05       		.byte	0x5
+ 319 0052 00000000 		.4byte	.LASF6
+ 320 0056 02       		.uleb128 0x2
+ 321 0057 08       		.byte	0x8
+ 322 0058 07       		.byte	0x7
+ 323 0059 42000000 		.4byte	.LASF7
+ 324 005d 03       		.uleb128 0x3
+ 325 005e 04       		.byte	0x4
+ 326 005f 05       		.byte	0x5
+ 327 0060 696E7400 		.ascii	"int\000"
+ 328 0064 02       		.uleb128 0x2
+ 329 0065 04       		.byte	0x4
+ 330 0066 07       		.byte	0x7
+ 331 0067 0E000000 		.4byte	.LASF8
+ 332 006b 04       		.uleb128 0x4
+ 333 006c 2A000000 		.4byte	.LASF12
+ 334 0070 02       		.byte	0x2
+ 335 0071 9201     		.2byte	0x192
+ 336 0073 2C000000 		.4byte	0x2c
+ 337 0077 02       		.uleb128 0x2
+ 338 0078 04       		.byte	0x4
+ 339 0079 04       		.byte	0x4
+ 340 007a D0010000 		.4byte	.LASF9
+ 341 007e 02       		.uleb128 0x2
+ 342 007f 08       		.byte	0x8
+ 343 0080 04       		.byte	0x4
+ 344 0081 88010000 		.4byte	.LASF10
+ 345 0085 02       		.uleb128 0x2
+ 346 0086 01       		.byte	0x1
+ 347 0087 08       		.byte	0x8
+ 348 0088 DE000000 		.4byte	.LASF11
+ 349 008c 04       		.uleb128 0x4
+ 350 008d E0010000 		.4byte	.LASF13
+ 351 0091 02       		.byte	0x2
+ 352 0092 3C02     		.2byte	0x23c
+ 353 0094 98000000 		.4byte	0x98
+ 354 0098 05       		.uleb128 0x5
+ 355 0099 6B000000 		.4byte	0x6b
+ 356 009d 02       		.uleb128 0x2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 10
+
+
+ 357 009e 04       		.byte	0x4
+ 358 009f 07       		.byte	0x7
+ 359 00a0 03020000 		.4byte	.LASF14
+ 360 00a4 06       		.uleb128 0x6
+ 361 00a5 7A010000 		.4byte	.LASF15
+ 362 00a9 01       		.byte	0x1
+ 363 00aa 27       		.byte	0x27
+ 364 00ab 00000000 		.4byte	.LFB0
+ 365 00af 0C000000 		.4byte	.LFE0-.LFB0
+ 366 00b3 01       		.uleb128 0x1
+ 367 00b4 9C       		.byte	0x9c
+ 368 00b5 07       		.uleb128 0x7
+ 369 00b6 F3010000 		.4byte	.LASF16
+ 370 00ba 01       		.byte	0x1
+ 371 00bb 3B       		.byte	0x3b
+ 372 00bc 00000000 		.4byte	.LFB1
+ 373 00c0 48000000 		.4byte	.LFE1-.LFB1
+ 374 00c4 01       		.uleb128 0x1
+ 375 00c5 9C       		.byte	0x9c
+ 376 00c6 06       		.uleb128 0x6
+ 377 00c7 1B000000 		.4byte	.LASF17
+ 378 00cb 01       		.byte	0x1
+ 379 00cc 5C       		.byte	0x5c
+ 380 00cd 00000000 		.4byte	.LFB2
+ 381 00d1 20000000 		.4byte	.LFE2-.LFB2
+ 382 00d5 01       		.uleb128 0x1
+ 383 00d6 9C       		.byte	0x9c
+ 384 00d7 07       		.uleb128 0x7
+ 385 00d8 E5010000 		.4byte	.LASF18
+ 386 00dc 01       		.byte	0x1
+ 387 00dd 76       		.byte	0x76
+ 388 00de 00000000 		.4byte	.LFB3
+ 389 00e2 54000000 		.4byte	.LFE3-.LFB3
+ 390 00e6 01       		.uleb128 0x1
+ 391 00e7 9C       		.byte	0x9c
+ 392 00e8 08       		.uleb128 0x8
+ 393 00e9 6A000000 		.4byte	.LASF22
+ 394 00ed 01       		.byte	0x1
+ 395 00ee 95       		.byte	0x95
+ 396 00ef 00000000 		.4byte	.LFB4
+ 397 00f3 40000000 		.4byte	.LFE4-.LFB4
+ 398 00f7 01       		.uleb128 0x1
+ 399 00f8 9C       		.byte	0x9c
+ 400 00f9 0C010000 		.4byte	0x10c
+ 401 00fd 09       		.uleb128 0x9
+ 402 00fe 0C020000 		.4byte	.LASF23
+ 403 0102 01       		.byte	0x1
+ 404 0103 95       		.byte	0x95
+ 405 0104 6B000000 		.4byte	0x6b
+ 406 0108 02       		.uleb128 0x2
+ 407 0109 91       		.byte	0x91
+ 408 010a 77       		.sleb128 -9
+ 409 010b 00       		.byte	0
+ 410 010c 0A       		.uleb128 0xa
+ 411 010d 59000000 		.4byte	.LASF24
+ 412 0111 01       		.byte	0x1
+ 413 0112 14       		.byte	0x14
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 11
+
+
+ 414 0113 6B000000 		.4byte	0x6b
+ 415 0117 05       		.uleb128 0x5
+ 416 0118 03       		.byte	0x3
+ 417 0119 00000000 		.4byte	Trig_Buf_initVar
+ 418 011d 00       		.byte	0
+ 419              		.section	.debug_abbrev,"",%progbits
+ 420              	.Ldebug_abbrev0:
+ 421 0000 01       		.uleb128 0x1
+ 422 0001 11       		.uleb128 0x11
+ 423 0002 01       		.byte	0x1
+ 424 0003 25       		.uleb128 0x25
+ 425 0004 0E       		.uleb128 0xe
+ 426 0005 13       		.uleb128 0x13
+ 427 0006 0B       		.uleb128 0xb
+ 428 0007 03       		.uleb128 0x3
+ 429 0008 0E       		.uleb128 0xe
+ 430 0009 1B       		.uleb128 0x1b
+ 431 000a 0E       		.uleb128 0xe
+ 432 000b 55       		.uleb128 0x55
+ 433 000c 17       		.uleb128 0x17
+ 434 000d 11       		.uleb128 0x11
+ 435 000e 01       		.uleb128 0x1
+ 436 000f 10       		.uleb128 0x10
+ 437 0010 17       		.uleb128 0x17
+ 438 0011 00       		.byte	0
+ 439 0012 00       		.byte	0
+ 440 0013 02       		.uleb128 0x2
+ 441 0014 24       		.uleb128 0x24
+ 442 0015 00       		.byte	0
+ 443 0016 0B       		.uleb128 0xb
+ 444 0017 0B       		.uleb128 0xb
+ 445 0018 3E       		.uleb128 0x3e
+ 446 0019 0B       		.uleb128 0xb
+ 447 001a 03       		.uleb128 0x3
+ 448 001b 0E       		.uleb128 0xe
+ 449 001c 00       		.byte	0
+ 450 001d 00       		.byte	0
+ 451 001e 03       		.uleb128 0x3
+ 452 001f 24       		.uleb128 0x24
+ 453 0020 00       		.byte	0
+ 454 0021 0B       		.uleb128 0xb
+ 455 0022 0B       		.uleb128 0xb
+ 456 0023 3E       		.uleb128 0x3e
+ 457 0024 0B       		.uleb128 0xb
+ 458 0025 03       		.uleb128 0x3
+ 459 0026 08       		.uleb128 0x8
+ 460 0027 00       		.byte	0
+ 461 0028 00       		.byte	0
+ 462 0029 04       		.uleb128 0x4
+ 463 002a 16       		.uleb128 0x16
+ 464 002b 00       		.byte	0
+ 465 002c 03       		.uleb128 0x3
+ 466 002d 0E       		.uleb128 0xe
+ 467 002e 3A       		.uleb128 0x3a
+ 468 002f 0B       		.uleb128 0xb
+ 469 0030 3B       		.uleb128 0x3b
+ 470 0031 05       		.uleb128 0x5
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 12
+
+
+ 471 0032 49       		.uleb128 0x49
+ 472 0033 13       		.uleb128 0x13
+ 473 0034 00       		.byte	0
+ 474 0035 00       		.byte	0
+ 475 0036 05       		.uleb128 0x5
+ 476 0037 35       		.uleb128 0x35
+ 477 0038 00       		.byte	0
+ 478 0039 49       		.uleb128 0x49
+ 479 003a 13       		.uleb128 0x13
+ 480 003b 00       		.byte	0
+ 481 003c 00       		.byte	0
+ 482 003d 06       		.uleb128 0x6
+ 483 003e 2E       		.uleb128 0x2e
+ 484 003f 00       		.byte	0
+ 485 0040 3F       		.uleb128 0x3f
+ 486 0041 19       		.uleb128 0x19
+ 487 0042 03       		.uleb128 0x3
+ 488 0043 0E       		.uleb128 0xe
+ 489 0044 3A       		.uleb128 0x3a
+ 490 0045 0B       		.uleb128 0xb
+ 491 0046 3B       		.uleb128 0x3b
+ 492 0047 0B       		.uleb128 0xb
+ 493 0048 27       		.uleb128 0x27
+ 494 0049 19       		.uleb128 0x19
+ 495 004a 11       		.uleb128 0x11
+ 496 004b 01       		.uleb128 0x1
+ 497 004c 12       		.uleb128 0x12
+ 498 004d 06       		.uleb128 0x6
+ 499 004e 40       		.uleb128 0x40
+ 500 004f 18       		.uleb128 0x18
+ 501 0050 9642     		.uleb128 0x2116
+ 502 0052 19       		.uleb128 0x19
+ 503 0053 00       		.byte	0
+ 504 0054 00       		.byte	0
+ 505 0055 07       		.uleb128 0x7
+ 506 0056 2E       		.uleb128 0x2e
+ 507 0057 00       		.byte	0
+ 508 0058 3F       		.uleb128 0x3f
+ 509 0059 19       		.uleb128 0x19
+ 510 005a 03       		.uleb128 0x3
+ 511 005b 0E       		.uleb128 0xe
+ 512 005c 3A       		.uleb128 0x3a
+ 513 005d 0B       		.uleb128 0xb
+ 514 005e 3B       		.uleb128 0x3b
+ 515 005f 0B       		.uleb128 0xb
+ 516 0060 27       		.uleb128 0x27
+ 517 0061 19       		.uleb128 0x19
+ 518 0062 11       		.uleb128 0x11
+ 519 0063 01       		.uleb128 0x1
+ 520 0064 12       		.uleb128 0x12
+ 521 0065 06       		.uleb128 0x6
+ 522 0066 40       		.uleb128 0x40
+ 523 0067 18       		.uleb128 0x18
+ 524 0068 9742     		.uleb128 0x2117
+ 525 006a 19       		.uleb128 0x19
+ 526 006b 00       		.byte	0
+ 527 006c 00       		.byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 13
+
+
+ 528 006d 08       		.uleb128 0x8
+ 529 006e 2E       		.uleb128 0x2e
+ 530 006f 01       		.byte	0x1
+ 531 0070 3F       		.uleb128 0x3f
+ 532 0071 19       		.uleb128 0x19
+ 533 0072 03       		.uleb128 0x3
+ 534 0073 0E       		.uleb128 0xe
+ 535 0074 3A       		.uleb128 0x3a
+ 536 0075 0B       		.uleb128 0xb
+ 537 0076 3B       		.uleb128 0x3b
+ 538 0077 0B       		.uleb128 0xb
+ 539 0078 27       		.uleb128 0x27
+ 540 0079 19       		.uleb128 0x19
+ 541 007a 11       		.uleb128 0x11
+ 542 007b 01       		.uleb128 0x1
+ 543 007c 12       		.uleb128 0x12
+ 544 007d 06       		.uleb128 0x6
+ 545 007e 40       		.uleb128 0x40
+ 546 007f 18       		.uleb128 0x18
+ 547 0080 9742     		.uleb128 0x2117
+ 548 0082 19       		.uleb128 0x19
+ 549 0083 01       		.uleb128 0x1
+ 550 0084 13       		.uleb128 0x13
+ 551 0085 00       		.byte	0
+ 552 0086 00       		.byte	0
+ 553 0087 09       		.uleb128 0x9
+ 554 0088 05       		.uleb128 0x5
+ 555 0089 00       		.byte	0
+ 556 008a 03       		.uleb128 0x3
+ 557 008b 0E       		.uleb128 0xe
+ 558 008c 3A       		.uleb128 0x3a
+ 559 008d 0B       		.uleb128 0xb
+ 560 008e 3B       		.uleb128 0x3b
+ 561 008f 0B       		.uleb128 0xb
+ 562 0090 49       		.uleb128 0x49
+ 563 0091 13       		.uleb128 0x13
+ 564 0092 02       		.uleb128 0x2
+ 565 0093 18       		.uleb128 0x18
+ 566 0094 00       		.byte	0
+ 567 0095 00       		.byte	0
+ 568 0096 0A       		.uleb128 0xa
+ 569 0097 34       		.uleb128 0x34
+ 570 0098 00       		.byte	0
+ 571 0099 03       		.uleb128 0x3
+ 572 009a 0E       		.uleb128 0xe
+ 573 009b 3A       		.uleb128 0x3a
+ 574 009c 0B       		.uleb128 0xb
+ 575 009d 3B       		.uleb128 0x3b
+ 576 009e 0B       		.uleb128 0xb
+ 577 009f 49       		.uleb128 0x49
+ 578 00a0 13       		.uleb128 0x13
+ 579 00a1 3F       		.uleb128 0x3f
+ 580 00a2 19       		.uleb128 0x19
+ 581 00a3 02       		.uleb128 0x2
+ 582 00a4 18       		.uleb128 0x18
+ 583 00a5 00       		.byte	0
+ 584 00a6 00       		.byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 14
+
+
+ 585 00a7 00       		.byte	0
+ 586              		.section	.debug_aranges,"",%progbits
+ 587 0000 3C000000 		.4byte	0x3c
+ 588 0004 0200     		.2byte	0x2
+ 589 0006 00000000 		.4byte	.Ldebug_info0
+ 590 000a 04       		.byte	0x4
+ 591 000b 00       		.byte	0
+ 592 000c 0000     		.2byte	0
+ 593 000e 0000     		.2byte	0
+ 594 0010 00000000 		.4byte	.LFB0
+ 595 0014 0C000000 		.4byte	.LFE0-.LFB0
+ 596 0018 00000000 		.4byte	.LFB1
+ 597 001c 48000000 		.4byte	.LFE1-.LFB1
+ 598 0020 00000000 		.4byte	.LFB2
+ 599 0024 20000000 		.4byte	.LFE2-.LFB2
+ 600 0028 00000000 		.4byte	.LFB3
+ 601 002c 54000000 		.4byte	.LFE3-.LFB3
+ 602 0030 00000000 		.4byte	.LFB4
+ 603 0034 40000000 		.4byte	.LFE4-.LFB4
+ 604 0038 00000000 		.4byte	0
+ 605 003c 00000000 		.4byte	0
+ 606              		.section	.debug_ranges,"",%progbits
+ 607              	.Ldebug_ranges0:
+ 608 0000 00000000 		.4byte	.LFB0
+ 609 0004 0C000000 		.4byte	.LFE0
+ 610 0008 00000000 		.4byte	.LFB1
+ 611 000c 48000000 		.4byte	.LFE1
+ 612 0010 00000000 		.4byte	.LFB2
+ 613 0014 20000000 		.4byte	.LFE2
+ 614 0018 00000000 		.4byte	.LFB3
+ 615 001c 54000000 		.4byte	.LFE3
+ 616 0020 00000000 		.4byte	.LFB4
+ 617 0024 40000000 		.4byte	.LFE4
+ 618 0028 00000000 		.4byte	0
+ 619 002c 00000000 		.4byte	0
+ 620              		.section	.debug_line,"",%progbits
+ 621              	.Ldebug_line0:
+ 622 0000 AC000000 		.section	.debug_str,"MS",%progbits,1
+ 622      02004500 
+ 622      00000201 
+ 622      FB0E0D00 
+ 622      01010101 
+ 623              	.LASF6:
+ 624 0000 6C6F6E67 		.ascii	"long long int\000"
+ 624      206C6F6E 
+ 624      6720696E 
+ 624      7400
+ 625              	.LASF8:
+ 626 000e 756E7369 		.ascii	"unsigned int\000"
+ 626      676E6564 
+ 626      20696E74 
+ 626      00
+ 627              	.LASF17:
+ 628 001b 54726967 		.ascii	"Trig_Buf_Start\000"
+ 628      5F427566 
+ 628      5F537461 
+ 628      727400
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 15
+
+
+ 629              	.LASF12:
+ 630 002a 75696E74 		.ascii	"uint8\000"
+ 630      3800
+ 631              	.LASF5:
+ 632 0030 6C6F6E67 		.ascii	"long unsigned int\000"
+ 632      20756E73 
+ 632      69676E65 
+ 632      6420696E 
+ 632      7400
+ 633              	.LASF7:
+ 634 0042 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 634      206C6F6E 
+ 634      6720756E 
+ 634      7369676E 
+ 634      65642069 
+ 635              	.LASF24:
+ 636 0059 54726967 		.ascii	"Trig_Buf_initVar\000"
+ 636      5F427566 
+ 636      5F696E69 
+ 636      74566172 
+ 636      00
+ 637              	.LASF22:
+ 638 006a 54726967 		.ascii	"Trig_Buf_SetPower\000"
+ 638      5F427566 
+ 638      5F536574 
+ 638      506F7765 
+ 638      7200
+ 639              	.LASF21:
+ 640 007c 433A5C53 		.ascii	"C:\\SVN\\apps\\trunk\\Cypress Academy\\PSoC-121-Ana"
+ 640      564E5C61 
+ 640      7070735C 
+ 640      7472756E 
+ 640      6B5C4379 
+ 641 00aa 6C6F675C 		.ascii	"log\\Scope\\KEES_Scope\\PSoC\\Scope.cydsn\000"
+ 641      53636F70 
+ 641      655C4B45 
+ 641      45535F53 
+ 641      636F7065 
+ 642              	.LASF1:
+ 643 00d0 756E7369 		.ascii	"unsigned char\000"
+ 643      676E6564 
+ 643      20636861 
+ 643      7200
+ 644              	.LASF11:
+ 645 00de 63686172 		.ascii	"char\000"
+ 645      00
+ 646              	.LASF4:
+ 647 00e3 6C6F6E67 		.ascii	"long int\000"
+ 647      20696E74 
+ 647      00
+ 648              	.LASF19:
+ 649 00ec 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 649      4320342E 
+ 649      392E3320 
+ 649      32303135 
+ 649      30333033 
+ 650 011f 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 16
+
+
+ 650      20726576 
+ 650      6973696F 
+ 650      6E203232 
+ 650      31323230 
+ 651 0152 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 651      66756E63 
+ 651      74696F6E 
+ 651      2D736563 
+ 651      74696F6E 
+ 652              	.LASF15:
+ 653 017a 54726967 		.ascii	"Trig_Buf_Init\000"
+ 653      5F427566 
+ 653      5F496E69 
+ 653      7400
+ 654              	.LASF10:
+ 655 0188 646F7562 		.ascii	"double\000"
+ 655      6C6500
+ 656              	.LASF3:
+ 657 018f 73686F72 		.ascii	"short unsigned int\000"
+ 657      7420756E 
+ 657      7369676E 
+ 657      65642069 
+ 657      6E7400
+ 658              	.LASF0:
+ 659 01a2 7369676E 		.ascii	"signed char\000"
+ 659      65642063 
+ 659      68617200 
+ 660              	.LASF20:
+ 661 01ae 47656E65 		.ascii	"Generated_Source\\PSoC5\\Trig_Buf.c\000"
+ 661      72617465 
+ 661      645F536F 
+ 661      75726365 
+ 661      5C50536F 
+ 662              	.LASF9:
+ 663 01d0 666C6F61 		.ascii	"float\000"
+ 663      7400
+ 664              	.LASF2:
+ 665 01d6 73686F72 		.ascii	"short int\000"
+ 665      7420696E 
+ 665      7400
+ 666              	.LASF13:
+ 667 01e0 72656738 		.ascii	"reg8\000"
+ 667      00
+ 668              	.LASF18:
+ 669 01e5 54726967 		.ascii	"Trig_Buf_Stop\000"
+ 669      5F427566 
+ 669      5F53746F 
+ 669      7000
+ 670              	.LASF16:
+ 671 01f3 54726967 		.ascii	"Trig_Buf_Enable\000"
+ 671      5F427566 
+ 671      5F456E61 
+ 671      626C6500 
+ 672              	.LASF14:
+ 673 0203 73697A65 		.ascii	"sizetype\000"
+ 673      74797065 
+ 673      00
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccFRpfhi.s 			page 17
+
+
+ 674              	.LASF23:
+ 675 020c 706F7765 		.ascii	"power\000"
+ 675      7200
+ 676              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

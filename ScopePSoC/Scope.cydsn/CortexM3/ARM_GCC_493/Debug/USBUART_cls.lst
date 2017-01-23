@@ -1,0 +1,923 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"USBUART_cls.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.USBUART_DispatchClassRqst,"ax",%progbits
+  19              		.align	2
+  20              		.global	USBUART_DispatchClassRqst
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	USBUART_DispatchClassRqst, %function
+  24              	USBUART_DispatchClassRqst:
+  25              	.LFB0:
+  26              		.file 1 "Generated_Source\\PSoC5\\USBUART_cls.c"
+   1:Generated_Source\PSoC5/USBUART_cls.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC5/USBUART_cls.c **** * \file USBUART_cls.c
+   3:Generated_Source\PSoC5/USBUART_cls.c **** * \version 3.10
+   4:Generated_Source\PSoC5/USBUART_cls.c **** *
+   5:Generated_Source\PSoC5/USBUART_cls.c **** * \brief
+   6:Generated_Source\PSoC5/USBUART_cls.c **** *  This file contains the USB Class request handler.
+   7:Generated_Source\PSoC5/USBUART_cls.c **** *
+   8:Generated_Source\PSoC5/USBUART_cls.c **** ********************************************************************************
+   9:Generated_Source\PSoC5/USBUART_cls.c **** * \copyright
+  10:Generated_Source\PSoC5/USBUART_cls.c **** * Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  11:Generated_Source\PSoC5/USBUART_cls.c **** * You may use this file only in accordance with the license, terms, conditions,
+  12:Generated_Source\PSoC5/USBUART_cls.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  13:Generated_Source\PSoC5/USBUART_cls.c **** * the software package with which this file was provided.
+  14:Generated_Source\PSoC5/USBUART_cls.c **** *******************************************************************************/
+  15:Generated_Source\PSoC5/USBUART_cls.c **** 
+  16:Generated_Source\PSoC5/USBUART_cls.c **** #include "USBUART_pvt.h"
+  17:Generated_Source\PSoC5/USBUART_cls.c **** 
+  18:Generated_Source\PSoC5/USBUART_cls.c **** 
+  19:Generated_Source\PSoC5/USBUART_cls.c **** #if(USBUART_EXTERN_CLS == USBUART_FALSE)
+  20:Generated_Source\PSoC5/USBUART_cls.c **** 
+  21:Generated_Source\PSoC5/USBUART_cls.c **** /***************************************
+  22:Generated_Source\PSoC5/USBUART_cls.c **** * User Implemented Class Driver Declarations.
+  23:Generated_Source\PSoC5/USBUART_cls.c **** ***************************************/
+  24:Generated_Source\PSoC5/USBUART_cls.c **** /* `#START USER_DEFINED_CLASS_DECLARATIONS` Place your declaration here */
+  25:Generated_Source\PSoC5/USBUART_cls.c **** 
+  26:Generated_Source\PSoC5/USBUART_cls.c **** /* `#END` */
+  27:Generated_Source\PSoC5/USBUART_cls.c **** 
+  28:Generated_Source\PSoC5/USBUART_cls.c **** 
+  29:Generated_Source\PSoC5/USBUART_cls.c **** /*******************************************************************************
+  30:Generated_Source\PSoC5/USBUART_cls.c **** * Function Name: USBUART_DispatchClassRqst
+  31:Generated_Source\PSoC5/USBUART_cls.c **** ****************************************************************************//**
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 2
+
+
+  32:Generated_Source\PSoC5/USBUART_cls.c **** *  This routine dispatches class specific requests depend on interface class.
+  33:Generated_Source\PSoC5/USBUART_cls.c **** *
+  34:Generated_Source\PSoC5/USBUART_cls.c **** * \return
+  35:Generated_Source\PSoC5/USBUART_cls.c **** *  requestHandled.
+  36:Generated_Source\PSoC5/USBUART_cls.c **** *
+  37:Generated_Source\PSoC5/USBUART_cls.c **** * \reentrant
+  38:Generated_Source\PSoC5/USBUART_cls.c **** *  No.
+  39:Generated_Source\PSoC5/USBUART_cls.c **** *
+  40:Generated_Source\PSoC5/USBUART_cls.c **** *******************************************************************************/
+  41:Generated_Source\PSoC5/USBUART_cls.c **** uint8 USBUART_DispatchClassRqst(void) 
+  42:Generated_Source\PSoC5/USBUART_cls.c **** {
+  27              		.loc 1 42 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 80B5     		push	{r7, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 7, -8
+  34              		.cfi_offset 14, -4
+  35 0002 82B0     		sub	sp, sp, #8
+  36              		.cfi_def_cfa_offset 16
+  37 0004 00AF     		add	r7, sp, #0
+  38              		.cfi_def_cfa_register 7
+  43:Generated_Source\PSoC5/USBUART_cls.c ****     uint8 requestHandled;
+  44:Generated_Source\PSoC5/USBUART_cls.c ****     uint8 interfaceNumber;
+  45:Generated_Source\PSoC5/USBUART_cls.c **** 
+  46:Generated_Source\PSoC5/USBUART_cls.c ****     /* Get interface to which request is intended. */
+  47:Generated_Source\PSoC5/USBUART_cls.c ****     switch (USBUART_bmRequestTypeReg & USBUART_RQST_RCPT_MASK)
+  39              		.loc 1 47 0
+  40 0006 1A4B     		ldr	r3, .L12
+  41 0008 1B78     		ldrb	r3, [r3]
+  42 000a DBB2     		uxtb	r3, r3
+  43 000c 03F00303 		and	r3, r3, #3
+  44 0010 012B     		cmp	r3, #1
+  45 0012 02D0     		beq	.L3
+  46 0014 022B     		cmp	r3, #2
+  47 0016 04D0     		beq	.L4
+  48 0018 12E0     		b	.L10
+  49              	.L3:
+  48:Generated_Source\PSoC5/USBUART_cls.c ****     {
+  49:Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_RQST_RCPT_IFC:
+  50:Generated_Source\PSoC5/USBUART_cls.c ****             /* Class-specific request directed to interface: wIndexLoReg 
+  51:Generated_Source\PSoC5/USBUART_cls.c ****             * contains interface number.
+  52:Generated_Source\PSoC5/USBUART_cls.c ****             */
+  53:Generated_Source\PSoC5/USBUART_cls.c ****             interfaceNumber = (uint8) USBUART_wIndexLoReg;
+  50              		.loc 1 53 0
+  51 001a 154B     		ldr	r3, .L12
+  52 001c 1B79     		ldrb	r3, [r3, #4]
+  53 001e BB71     		strb	r3, [r7, #6]
+  54:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  54              		.loc 1 54 0
+  55 0020 11E0     		b	.L5
+  56              	.L4:
+  55:Generated_Source\PSoC5/USBUART_cls.c ****         
+  56:Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_RQST_RCPT_EP:
+  57:Generated_Source\PSoC5/USBUART_cls.c ****             /* Class-specific request directed to endpoint: wIndexLoReg contains 
+  58:Generated_Source\PSoC5/USBUART_cls.c ****             * endpoint number. Find interface related to endpoint, 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 3
+
+
+  59:Generated_Source\PSoC5/USBUART_cls.c ****             */
+  60:Generated_Source\PSoC5/USBUART_cls.c ****             interfaceNumber = USBUART_EP[USBUART_wIndexLoReg & USBUART_DIR_UNUSED].interface;
+  57              		.loc 1 60 0
+  58 0022 134B     		ldr	r3, .L12
+  59 0024 1B79     		ldrb	r3, [r3, #4]
+  60 0026 DBB2     		uxtb	r3, r3
+  61 0028 03F07F02 		and	r2, r3, #127
+  62 002c 1149     		ldr	r1, .L12+4
+  63 002e 1346     		mov	r3, r2
+  64 0030 5B00     		lsls	r3, r3, #1
+  65 0032 1344     		add	r3, r3, r2
+  66 0034 9B00     		lsls	r3, r3, #2
+  67 0036 0B44     		add	r3, r3, r1
+  68 0038 0833     		adds	r3, r3, #8
+  69 003a 9B78     		ldrb	r3, [r3, #2]
+  70 003c BB71     		strb	r3, [r7, #6]
+  61:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  71              		.loc 1 61 0
+  72 003e 02E0     		b	.L5
+  73              	.L10:
+  62:Generated_Source\PSoC5/USBUART_cls.c ****             
+  63:Generated_Source\PSoC5/USBUART_cls.c ****         default:
+  64:Generated_Source\PSoC5/USBUART_cls.c ****             /* Default interface is zero. */
+  65:Generated_Source\PSoC5/USBUART_cls.c ****             interfaceNumber = 0u;
+  74              		.loc 1 65 0
+  75 0040 0023     		movs	r3, #0
+  76 0042 BB71     		strb	r3, [r7, #6]
+  66:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  77              		.loc 1 66 0
+  78 0044 00BF     		nop
+  79              	.L5:
+  67:Generated_Source\PSoC5/USBUART_cls.c ****     }
+  68:Generated_Source\PSoC5/USBUART_cls.c **** 
+  69:Generated_Source\PSoC5/USBUART_cls.c **** #if (defined(USBUART_ENABLE_HID_CLASS) ||\
+  70:Generated_Source\PSoC5/USBUART_cls.c ****             defined(USBUART_ENABLE_AUDIO_CLASS) ||\
+  71:Generated_Source\PSoC5/USBUART_cls.c ****             defined(USBUART_ENABLE_CDC_CLASS) ||\
+  72:Generated_Source\PSoC5/USBUART_cls.c ****             USBUART_ENABLE_MSC_CLASS)
+  73:Generated_Source\PSoC5/USBUART_cls.c **** 
+  74:Generated_Source\PSoC5/USBUART_cls.c ****     /* Handle class request depends on interface type. */
+  75:Generated_Source\PSoC5/USBUART_cls.c ****     switch (USBUART_interfaceClass[interfaceNumber])
+  80              		.loc 1 75 0
+  81 0046 0C4B     		ldr	r3, .L12+8
+  82 0048 1A68     		ldr	r2, [r3]
+  83 004a BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+  84 004c 1344     		add	r3, r3, r2
+  85 004e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  86 0050 022B     		cmp	r3, #2
+  87 0052 04D1     		bne	.L11
+  76:Generated_Source\PSoC5/USBUART_cls.c ****     {
+  77:Generated_Source\PSoC5/USBUART_cls.c ****     #if defined(USBUART_ENABLE_HID_CLASS)
+  78:Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_CLASS_HID:
+  79:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_DispatchHIDClassRqst();
+  80:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  81:Generated_Source\PSoC5/USBUART_cls.c ****     #endif /* (USBUART_ENABLE_HID_CLASS) */
+  82:Generated_Source\PSoC5/USBUART_cls.c ****             
+  83:Generated_Source\PSoC5/USBUART_cls.c ****     #if defined(USBUART_ENABLE_AUDIO_CLASS)
+  84:Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_CLASS_AUDIO:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 4
+
+
+  85:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_DispatchAUDIOClassRqst();
+  86:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  87:Generated_Source\PSoC5/USBUART_cls.c ****     #endif /* (USBUART_CLASS_AUDIO) */
+  88:Generated_Source\PSoC5/USBUART_cls.c ****             
+  89:Generated_Source\PSoC5/USBUART_cls.c ****     #if defined(USBUART_ENABLE_CDC_CLASS)
+  90:Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_CLASS_CDC:
+  91:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_DispatchCDCClassRqst();
+  88              		.loc 1 91 0
+  89 0054 FFF7FEFF 		bl	USBUART_DispatchCDCClassRqst
+  90 0058 0346     		mov	r3, r0
+  91 005a FB71     		strb	r3, [r7, #7]
+  92:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  92              		.loc 1 92 0
+  93 005c 02E0     		b	.L8
+  94              	.L11:
+  93:Generated_Source\PSoC5/USBUART_cls.c ****     #endif /* (USBUART_ENABLE_CDC_CLASS) */
+  94:Generated_Source\PSoC5/USBUART_cls.c ****         
+  95:Generated_Source\PSoC5/USBUART_cls.c ****     #if (USBUART_ENABLE_MSC_CLASS)
+  96:Generated_Source\PSoC5/USBUART_cls.c ****         case USBUART_CLASS_MSD:
+  97:Generated_Source\PSoC5/USBUART_cls.c ****         #if (USBUART_HANDLE_MSC_REQUESTS)
+  98:Generated_Source\PSoC5/USBUART_cls.c ****             /* MSC requests are handled by the component. */
+  99:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_DispatchMSCClassRqst();
+ 100:Generated_Source\PSoC5/USBUART_cls.c ****         #elif defined(USBUART_DISPATCH_MSC_CLASS_RQST_CALLBACK)
+ 101:Generated_Source\PSoC5/USBUART_cls.c ****             /* MSC requests are handled by user defined callbcak. */
+ 102:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_DispatchMSCClassRqst_Callback();
+ 103:Generated_Source\PSoC5/USBUART_cls.c ****         #else
+ 104:Generated_Source\PSoC5/USBUART_cls.c ****             /* MSC requests are not handled. */
+ 105:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_FALSE;
+ 106:Generated_Source\PSoC5/USBUART_cls.c ****         #endif /* (USBUART_HANDLE_MSC_REQUESTS) */
+ 107:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+ 108:Generated_Source\PSoC5/USBUART_cls.c ****     #endif /* (USBUART_ENABLE_MSC_CLASS) */
+ 109:Generated_Source\PSoC5/USBUART_cls.c ****         
+ 110:Generated_Source\PSoC5/USBUART_cls.c ****         default:
+ 111:Generated_Source\PSoC5/USBUART_cls.c ****             /* Request is not handled: unknown class request type. */
+ 112:Generated_Source\PSoC5/USBUART_cls.c ****             requestHandled = USBUART_FALSE;
+  95              		.loc 1 112 0
+  96 005e 0023     		movs	r3, #0
+  97 0060 FB71     		strb	r3, [r7, #7]
+ 113:Generated_Source\PSoC5/USBUART_cls.c ****             break;
+  98              		.loc 1 113 0
+  99 0062 00BF     		nop
+ 100              	.L8:
+ 114:Generated_Source\PSoC5/USBUART_cls.c ****     }
+ 115:Generated_Source\PSoC5/USBUART_cls.c **** #else /*No class is defined*/
+ 116:Generated_Source\PSoC5/USBUART_cls.c ****     if (0u != interfaceNumber)
+ 117:Generated_Source\PSoC5/USBUART_cls.c ****     {
+ 118:Generated_Source\PSoC5/USBUART_cls.c ****         /* Suppress warning message */
+ 119:Generated_Source\PSoC5/USBUART_cls.c ****     }
+ 120:Generated_Source\PSoC5/USBUART_cls.c ****     requestHandled = USBUART_FALSE;
+ 121:Generated_Source\PSoC5/USBUART_cls.c **** #endif /*HID or AUDIO or MSC or CDC class enabled*/
+ 122:Generated_Source\PSoC5/USBUART_cls.c **** 
+ 123:Generated_Source\PSoC5/USBUART_cls.c ****     /* `#START USER_DEFINED_CLASS_CODE` Place your Class request here */
+ 124:Generated_Source\PSoC5/USBUART_cls.c **** 
+ 125:Generated_Source\PSoC5/USBUART_cls.c ****     /* `#END` */
+ 126:Generated_Source\PSoC5/USBUART_cls.c **** 
+ 127:Generated_Source\PSoC5/USBUART_cls.c **** #ifdef USBUART_DISPATCH_CLASS_RQST_CALLBACK
+ 128:Generated_Source\PSoC5/USBUART_cls.c ****     if (USBUART_FALSE == requestHandled)
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 5
+
+
+ 129:Generated_Source\PSoC5/USBUART_cls.c ****     {
+ 130:Generated_Source\PSoC5/USBUART_cls.c ****         requestHandled = USBUART_DispatchClassRqst_Callback(interfaceNumber);
+ 131:Generated_Source\PSoC5/USBUART_cls.c ****     }
+ 132:Generated_Source\PSoC5/USBUART_cls.c **** #endif /* (USBUART_DISPATCH_CLASS_RQST_CALLBACK) */
+ 133:Generated_Source\PSoC5/USBUART_cls.c **** 
+ 134:Generated_Source\PSoC5/USBUART_cls.c ****     return (requestHandled);
+ 101              		.loc 1 134 0
+ 102 0064 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 135:Generated_Source\PSoC5/USBUART_cls.c **** }
+ 103              		.loc 1 135 0
+ 104 0066 1846     		mov	r0, r3
+ 105 0068 0837     		adds	r7, r7, #8
+ 106              		.cfi_def_cfa_offset 8
+ 107 006a BD46     		mov	sp, r7
+ 108              		.cfi_def_cfa_register 13
+ 109              		@ sp needed
+ 110 006c 80BD     		pop	{r7, pc}
+ 111              	.L13:
+ 112 006e 00BF     		.align	2
+ 113              	.L12:
+ 114 0070 00600040 		.word	1073766400
+ 115 0074 00000000 		.word	USBUART_EP
+ 116 0078 00000000 		.word	USBUART_interfaceClass
+ 117              		.cfi_endproc
+ 118              	.LFE0:
+ 119              		.size	USBUART_DispatchClassRqst, .-USBUART_DispatchClassRqst
+ 120              		.text
+ 121              	.Letext0:
+ 122              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 123              		.file 3 "Generated_Source\\PSoC5\\USBUART.h"
+ 124              		.file 4 "Generated_Source\\PSoC5\\USBUART_pvt.h"
+ 125              		.section	.debug_info,"",%progbits
+ 126              	.Ldebug_info0:
+ 127 0000 B8010000 		.4byte	0x1b8
+ 128 0004 0400     		.2byte	0x4
+ 129 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 130 000a 04       		.byte	0x4
+ 131 000b 01       		.uleb128 0x1
+ 132 000c E3000000 		.4byte	.LASF31
+ 133 0010 01       		.byte	0x1
+ 134 0011 2A020000 		.4byte	.LASF32
+ 135 0015 5A000000 		.4byte	.LASF33
+ 136 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 137 001d 00000000 		.4byte	0
+ 138 0021 00000000 		.4byte	.Ldebug_line0
+ 139 0025 02       		.uleb128 0x2
+ 140 0026 01       		.byte	0x1
+ 141 0027 06       		.byte	0x6
+ 142 0028 89020000 		.4byte	.LASF0
+ 143 002c 02       		.uleb128 0x2
+ 144 002d 01       		.byte	0x1
+ 145 002e 08       		.byte	0x8
+ 146 002f D5000000 		.4byte	.LASF1
+ 147 0033 02       		.uleb128 0x2
+ 148 0034 02       		.byte	0x2
+ 149 0035 05       		.byte	0x5
+ 150 0036 4F020000 		.4byte	.LASF2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 6
+
+
+ 151 003a 02       		.uleb128 0x2
+ 152 003b 02       		.byte	0x2
+ 153 003c 07       		.byte	0x7
+ 154 003d 00000000 		.4byte	.LASF3
+ 155 0041 02       		.uleb128 0x2
+ 156 0042 04       		.byte	0x4
+ 157 0043 05       		.byte	0x5
+ 158 0044 69020000 		.4byte	.LASF4
+ 159 0048 02       		.uleb128 0x2
+ 160 0049 04       		.byte	0x4
+ 161 004a 07       		.byte	0x7
+ 162 004b AE000000 		.4byte	.LASF5
+ 163 004f 02       		.uleb128 0x2
+ 164 0050 08       		.byte	0x8
+ 165 0051 05       		.byte	0x5
+ 166 0052 0C020000 		.4byte	.LASF6
+ 167 0056 02       		.uleb128 0x2
+ 168 0057 08       		.byte	0x8
+ 169 0058 07       		.byte	0x7
+ 170 0059 A9010000 		.4byte	.LASF7
+ 171 005d 03       		.uleb128 0x3
+ 172 005e 04       		.byte	0x4
+ 173 005f 05       		.byte	0x5
+ 174 0060 696E7400 		.ascii	"int\000"
+ 175 0064 02       		.uleb128 0x2
+ 176 0065 04       		.byte	0x4
+ 177 0066 07       		.byte	0x7
+ 178 0067 9C010000 		.4byte	.LASF8
+ 179 006b 04       		.uleb128 0x4
+ 180 006c 59020000 		.4byte	.LASF9
+ 181 0070 02       		.byte	0x2
+ 182 0071 9201     		.2byte	0x192
+ 183 0073 2C000000 		.4byte	0x2c
+ 184 0077 04       		.uleb128 0x4
+ 185 0078 8A010000 		.4byte	.LASF10
+ 186 007c 02       		.byte	0x2
+ 187 007d 9301     		.2byte	0x193
+ 188 007f 3A000000 		.4byte	0x3a
+ 189 0083 02       		.uleb128 0x2
+ 190 0084 04       		.byte	0x4
+ 191 0085 04       		.byte	0x4
+ 192 0086 40000000 		.4byte	.LASF11
+ 193 008a 02       		.uleb128 0x2
+ 194 008b 08       		.byte	0x8
+ 195 008c 04       		.byte	0x4
+ 196 008d 71010000 		.4byte	.LASF12
+ 197 0091 02       		.uleb128 0x2
+ 198 0092 01       		.byte	0x1
+ 199 0093 08       		.byte	0x8
+ 200 0094 1A020000 		.4byte	.LASF13
+ 201 0098 02       		.uleb128 0x2
+ 202 0099 04       		.byte	0x4
+ 203 009a 07       		.byte	0x7
+ 204 009b FC010000 		.4byte	.LASF14
+ 205 009f 05       		.uleb128 0x5
+ 206 00a0 0C       		.byte	0xc
+ 207 00a1 03       		.byte	0x3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 7
+
+
+ 208 00a2 8E       		.byte	0x8e
+ 209 00a3 14010000 		.4byte	0x114
+ 210 00a7 06       		.uleb128 0x6
+ 211 00a8 78010000 		.4byte	.LASF15
+ 212 00ac 03       		.byte	0x3
+ 213 00ad 90       		.byte	0x90
+ 214 00ae 6B000000 		.4byte	0x6b
+ 215 00b2 00       		.byte	0
+ 216 00b3 06       		.uleb128 0x6
+ 217 00b4 91010000 		.4byte	.LASF16
+ 218 00b8 03       		.byte	0x3
+ 219 00b9 91       		.byte	0x91
+ 220 00ba 6B000000 		.4byte	0x6b
+ 221 00be 01       		.byte	0x1
+ 222 00bf 06       		.uleb128 0x6
+ 223 00c0 C0010000 		.4byte	.LASF17
+ 224 00c4 03       		.byte	0x3
+ 225 00c5 92       		.byte	0x92
+ 226 00c6 6B000000 		.4byte	0x6b
+ 227 00ca 02       		.byte	0x2
+ 228 00cb 06       		.uleb128 0x6
+ 229 00cc 46000000 		.4byte	.LASF18
+ 230 00d0 03       		.byte	0x3
+ 231 00d1 93       		.byte	0x93
+ 232 00d2 6B000000 		.4byte	0x6b
+ 233 00d6 03       		.byte	0x3
+ 234 00d7 06       		.uleb128 0x6
+ 235 00d8 C0000000 		.4byte	.LASF19
+ 236 00dc 03       		.byte	0x3
+ 237 00dd 94       		.byte	0x94
+ 238 00de 6B000000 		.4byte	0x6b
+ 239 00e2 04       		.byte	0x4
+ 240 00e3 06       		.uleb128 0x6
+ 241 00e4 05020000 		.4byte	.LASF20
+ 242 00e8 03       		.byte	0x3
+ 243 00e9 95       		.byte	0x95
+ 244 00ea 6B000000 		.4byte	0x6b
+ 245 00ee 05       		.byte	0x5
+ 246 00ef 06       		.uleb128 0x6
+ 247 00f0 7F010000 		.4byte	.LASF21
+ 248 00f4 03       		.byte	0x3
+ 249 00f5 96       		.byte	0x96
+ 250 00f6 77000000 		.4byte	0x77
+ 251 00fa 06       		.byte	0x6
+ 252 00fb 06       		.uleb128 0x6
+ 253 00fc 1F020000 		.4byte	.LASF22
+ 254 0100 03       		.byte	0x3
+ 255 0101 97       		.byte	0x97
+ 256 0102 77000000 		.4byte	0x77
+ 257 0106 08       		.byte	0x8
+ 258 0107 06       		.uleb128 0x6
+ 259 0108 5F020000 		.4byte	.LASF23
+ 260 010c 03       		.byte	0x3
+ 261 010d 98       		.byte	0x98
+ 262 010e 6B000000 		.4byte	0x6b
+ 263 0112 0A       		.byte	0xa
+ 264 0113 00       		.byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 8
+
+
+ 265 0114 07       		.uleb128 0x7
+ 266 0115 72020000 		.4byte	.LASF24
+ 267 0119 03       		.byte	0x3
+ 268 011a 99       		.byte	0x99
+ 269 011b 9F000000 		.4byte	0x9f
+ 270 011f 05       		.uleb128 0x5
+ 271 0120 08       		.byte	0x8
+ 272 0121 03       		.byte	0x3
+ 273 0122 C6       		.byte	0xc6
+ 274 0123 34010000 		.4byte	0x134
+ 275 0127 06       		.uleb128 0x6
+ 276 0128 2A000000 		.4byte	.LASF25
+ 277 012c 03       		.byte	0x3
+ 278 012d C8       		.byte	0xc8
+ 279 012e 34010000 		.4byte	0x134
+ 280 0132 00       		.byte	0
+ 281 0133 00       		.byte	0
+ 282 0134 08       		.uleb128 0x8
+ 283 0135 6B000000 		.4byte	0x6b
+ 284 0139 44010000 		.4byte	0x144
+ 285 013d 09       		.uleb128 0x9
+ 286 013e 98000000 		.4byte	0x98
+ 287 0142 07       		.byte	0x7
+ 288 0143 00       		.byte	0
+ 289 0144 07       		.uleb128 0x7
+ 290 0145 E4010000 		.4byte	.LASF26
+ 291 0149 03       		.byte	0x3
+ 292 014a C9       		.byte	0xc9
+ 293 014b 1F010000 		.4byte	0x11f
+ 294 014f 0A       		.uleb128 0xa
+ 295 0150 CA010000 		.4byte	.LASF34
+ 296 0154 01       		.byte	0x1
+ 297 0155 29       		.byte	0x29
+ 298 0156 6B000000 		.4byte	0x6b
+ 299 015a 00000000 		.4byte	.LFB0
+ 300 015e 7C000000 		.4byte	.LFE0-.LFB0
+ 301 0162 01       		.uleb128 0x1
+ 302 0163 9C       		.byte	0x9c
+ 303 0164 85010000 		.4byte	0x185
+ 304 0168 0B       		.uleb128 0xb
+ 305 0169 31000000 		.4byte	.LASF27
+ 306 016d 01       		.byte	0x1
+ 307 016e 2B       		.byte	0x2b
+ 308 016f 6B000000 		.4byte	0x6b
+ 309 0173 02       		.uleb128 0x2
+ 310 0174 91       		.byte	0x91
+ 311 0175 77       		.sleb128 -9
+ 312 0176 0B       		.uleb128 0xb
+ 313 0177 C5000000 		.4byte	.LASF28
+ 314 017b 01       		.byte	0x1
+ 315 017c 2C       		.byte	0x2c
+ 316 017d 6B000000 		.4byte	0x6b
+ 317 0181 02       		.uleb128 0x2
+ 318 0182 91       		.byte	0x91
+ 319 0183 76       		.sleb128 -10
+ 320 0184 00       		.byte	0
+ 321 0185 0C       		.uleb128 0xc
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 9
+
+
+ 322 0186 13000000 		.4byte	.LASF29
+ 323 018a 04       		.byte	0x4
+ 324 018b 77       		.byte	0x77
+ 325 018c 90010000 		.4byte	0x190
+ 326 0190 0D       		.uleb128 0xd
+ 327 0191 04       		.byte	0x4
+ 328 0192 96010000 		.4byte	0x196
+ 329 0196 0E       		.uleb128 0xe
+ 330 0197 6B000000 		.4byte	0x6b
+ 331 019b 08       		.uleb128 0x8
+ 332 019c 14010000 		.4byte	0x114
+ 333 01a0 AB010000 		.4byte	0x1ab
+ 334 01a4 09       		.uleb128 0x9
+ 335 01a5 98000000 		.4byte	0x98
+ 336 01a9 08       		.byte	0x8
+ 337 01aa 00       		.byte	0
+ 338 01ab 0C       		.uleb128 0xc
+ 339 01ac 4F000000 		.4byte	.LASF30
+ 340 01b0 04       		.byte	0x4
+ 341 01b1 79       		.byte	0x79
+ 342 01b2 B6010000 		.4byte	0x1b6
+ 343 01b6 0F       		.uleb128 0xf
+ 344 01b7 9B010000 		.4byte	0x19b
+ 345 01bb 00       		.byte	0
+ 346              		.section	.debug_abbrev,"",%progbits
+ 347              	.Ldebug_abbrev0:
+ 348 0000 01       		.uleb128 0x1
+ 349 0001 11       		.uleb128 0x11
+ 350 0002 01       		.byte	0x1
+ 351 0003 25       		.uleb128 0x25
+ 352 0004 0E       		.uleb128 0xe
+ 353 0005 13       		.uleb128 0x13
+ 354 0006 0B       		.uleb128 0xb
+ 355 0007 03       		.uleb128 0x3
+ 356 0008 0E       		.uleb128 0xe
+ 357 0009 1B       		.uleb128 0x1b
+ 358 000a 0E       		.uleb128 0xe
+ 359 000b 55       		.uleb128 0x55
+ 360 000c 17       		.uleb128 0x17
+ 361 000d 11       		.uleb128 0x11
+ 362 000e 01       		.uleb128 0x1
+ 363 000f 10       		.uleb128 0x10
+ 364 0010 17       		.uleb128 0x17
+ 365 0011 00       		.byte	0
+ 366 0012 00       		.byte	0
+ 367 0013 02       		.uleb128 0x2
+ 368 0014 24       		.uleb128 0x24
+ 369 0015 00       		.byte	0
+ 370 0016 0B       		.uleb128 0xb
+ 371 0017 0B       		.uleb128 0xb
+ 372 0018 3E       		.uleb128 0x3e
+ 373 0019 0B       		.uleb128 0xb
+ 374 001a 03       		.uleb128 0x3
+ 375 001b 0E       		.uleb128 0xe
+ 376 001c 00       		.byte	0
+ 377 001d 00       		.byte	0
+ 378 001e 03       		.uleb128 0x3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 10
+
+
+ 379 001f 24       		.uleb128 0x24
+ 380 0020 00       		.byte	0
+ 381 0021 0B       		.uleb128 0xb
+ 382 0022 0B       		.uleb128 0xb
+ 383 0023 3E       		.uleb128 0x3e
+ 384 0024 0B       		.uleb128 0xb
+ 385 0025 03       		.uleb128 0x3
+ 386 0026 08       		.uleb128 0x8
+ 387 0027 00       		.byte	0
+ 388 0028 00       		.byte	0
+ 389 0029 04       		.uleb128 0x4
+ 390 002a 16       		.uleb128 0x16
+ 391 002b 00       		.byte	0
+ 392 002c 03       		.uleb128 0x3
+ 393 002d 0E       		.uleb128 0xe
+ 394 002e 3A       		.uleb128 0x3a
+ 395 002f 0B       		.uleb128 0xb
+ 396 0030 3B       		.uleb128 0x3b
+ 397 0031 05       		.uleb128 0x5
+ 398 0032 49       		.uleb128 0x49
+ 399 0033 13       		.uleb128 0x13
+ 400 0034 00       		.byte	0
+ 401 0035 00       		.byte	0
+ 402 0036 05       		.uleb128 0x5
+ 403 0037 13       		.uleb128 0x13
+ 404 0038 01       		.byte	0x1
+ 405 0039 0B       		.uleb128 0xb
+ 406 003a 0B       		.uleb128 0xb
+ 407 003b 3A       		.uleb128 0x3a
+ 408 003c 0B       		.uleb128 0xb
+ 409 003d 3B       		.uleb128 0x3b
+ 410 003e 0B       		.uleb128 0xb
+ 411 003f 01       		.uleb128 0x1
+ 412 0040 13       		.uleb128 0x13
+ 413 0041 00       		.byte	0
+ 414 0042 00       		.byte	0
+ 415 0043 06       		.uleb128 0x6
+ 416 0044 0D       		.uleb128 0xd
+ 417 0045 00       		.byte	0
+ 418 0046 03       		.uleb128 0x3
+ 419 0047 0E       		.uleb128 0xe
+ 420 0048 3A       		.uleb128 0x3a
+ 421 0049 0B       		.uleb128 0xb
+ 422 004a 3B       		.uleb128 0x3b
+ 423 004b 0B       		.uleb128 0xb
+ 424 004c 49       		.uleb128 0x49
+ 425 004d 13       		.uleb128 0x13
+ 426 004e 38       		.uleb128 0x38
+ 427 004f 0B       		.uleb128 0xb
+ 428 0050 00       		.byte	0
+ 429 0051 00       		.byte	0
+ 430 0052 07       		.uleb128 0x7
+ 431 0053 16       		.uleb128 0x16
+ 432 0054 00       		.byte	0
+ 433 0055 03       		.uleb128 0x3
+ 434 0056 0E       		.uleb128 0xe
+ 435 0057 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 11
+
+
+ 436 0058 0B       		.uleb128 0xb
+ 437 0059 3B       		.uleb128 0x3b
+ 438 005a 0B       		.uleb128 0xb
+ 439 005b 49       		.uleb128 0x49
+ 440 005c 13       		.uleb128 0x13
+ 441 005d 00       		.byte	0
+ 442 005e 00       		.byte	0
+ 443 005f 08       		.uleb128 0x8
+ 444 0060 01       		.uleb128 0x1
+ 445 0061 01       		.byte	0x1
+ 446 0062 49       		.uleb128 0x49
+ 447 0063 13       		.uleb128 0x13
+ 448 0064 01       		.uleb128 0x1
+ 449 0065 13       		.uleb128 0x13
+ 450 0066 00       		.byte	0
+ 451 0067 00       		.byte	0
+ 452 0068 09       		.uleb128 0x9
+ 453 0069 21       		.uleb128 0x21
+ 454 006a 00       		.byte	0
+ 455 006b 49       		.uleb128 0x49
+ 456 006c 13       		.uleb128 0x13
+ 457 006d 2F       		.uleb128 0x2f
+ 458 006e 0B       		.uleb128 0xb
+ 459 006f 00       		.byte	0
+ 460 0070 00       		.byte	0
+ 461 0071 0A       		.uleb128 0xa
+ 462 0072 2E       		.uleb128 0x2e
+ 463 0073 01       		.byte	0x1
+ 464 0074 3F       		.uleb128 0x3f
+ 465 0075 19       		.uleb128 0x19
+ 466 0076 03       		.uleb128 0x3
+ 467 0077 0E       		.uleb128 0xe
+ 468 0078 3A       		.uleb128 0x3a
+ 469 0079 0B       		.uleb128 0xb
+ 470 007a 3B       		.uleb128 0x3b
+ 471 007b 0B       		.uleb128 0xb
+ 472 007c 27       		.uleb128 0x27
+ 473 007d 19       		.uleb128 0x19
+ 474 007e 49       		.uleb128 0x49
+ 475 007f 13       		.uleb128 0x13
+ 476 0080 11       		.uleb128 0x11
+ 477 0081 01       		.uleb128 0x1
+ 478 0082 12       		.uleb128 0x12
+ 479 0083 06       		.uleb128 0x6
+ 480 0084 40       		.uleb128 0x40
+ 481 0085 18       		.uleb128 0x18
+ 482 0086 9642     		.uleb128 0x2116
+ 483 0088 19       		.uleb128 0x19
+ 484 0089 01       		.uleb128 0x1
+ 485 008a 13       		.uleb128 0x13
+ 486 008b 00       		.byte	0
+ 487 008c 00       		.byte	0
+ 488 008d 0B       		.uleb128 0xb
+ 489 008e 34       		.uleb128 0x34
+ 490 008f 00       		.byte	0
+ 491 0090 03       		.uleb128 0x3
+ 492 0091 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 12
+
+
+ 493 0092 3A       		.uleb128 0x3a
+ 494 0093 0B       		.uleb128 0xb
+ 495 0094 3B       		.uleb128 0x3b
+ 496 0095 0B       		.uleb128 0xb
+ 497 0096 49       		.uleb128 0x49
+ 498 0097 13       		.uleb128 0x13
+ 499 0098 02       		.uleb128 0x2
+ 500 0099 18       		.uleb128 0x18
+ 501 009a 00       		.byte	0
+ 502 009b 00       		.byte	0
+ 503 009c 0C       		.uleb128 0xc
+ 504 009d 34       		.uleb128 0x34
+ 505 009e 00       		.byte	0
+ 506 009f 03       		.uleb128 0x3
+ 507 00a0 0E       		.uleb128 0xe
+ 508 00a1 3A       		.uleb128 0x3a
+ 509 00a2 0B       		.uleb128 0xb
+ 510 00a3 3B       		.uleb128 0x3b
+ 511 00a4 0B       		.uleb128 0xb
+ 512 00a5 49       		.uleb128 0x49
+ 513 00a6 13       		.uleb128 0x13
+ 514 00a7 3F       		.uleb128 0x3f
+ 515 00a8 19       		.uleb128 0x19
+ 516 00a9 3C       		.uleb128 0x3c
+ 517 00aa 19       		.uleb128 0x19
+ 518 00ab 00       		.byte	0
+ 519 00ac 00       		.byte	0
+ 520 00ad 0D       		.uleb128 0xd
+ 521 00ae 0F       		.uleb128 0xf
+ 522 00af 00       		.byte	0
+ 523 00b0 0B       		.uleb128 0xb
+ 524 00b1 0B       		.uleb128 0xb
+ 525 00b2 49       		.uleb128 0x49
+ 526 00b3 13       		.uleb128 0x13
+ 527 00b4 00       		.byte	0
+ 528 00b5 00       		.byte	0
+ 529 00b6 0E       		.uleb128 0xe
+ 530 00b7 26       		.uleb128 0x26
+ 531 00b8 00       		.byte	0
+ 532 00b9 49       		.uleb128 0x49
+ 533 00ba 13       		.uleb128 0x13
+ 534 00bb 00       		.byte	0
+ 535 00bc 00       		.byte	0
+ 536 00bd 0F       		.uleb128 0xf
+ 537 00be 35       		.uleb128 0x35
+ 538 00bf 00       		.byte	0
+ 539 00c0 49       		.uleb128 0x49
+ 540 00c1 13       		.uleb128 0x13
+ 541 00c2 00       		.byte	0
+ 542 00c3 00       		.byte	0
+ 543 00c4 00       		.byte	0
+ 544              		.section	.debug_aranges,"",%progbits
+ 545 0000 1C000000 		.4byte	0x1c
+ 546 0004 0200     		.2byte	0x2
+ 547 0006 00000000 		.4byte	.Ldebug_info0
+ 548 000a 04       		.byte	0x4
+ 549 000b 00       		.byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 13
+
+
+ 550 000c 0000     		.2byte	0
+ 551 000e 0000     		.2byte	0
+ 552 0010 00000000 		.4byte	.LFB0
+ 553 0014 7C000000 		.4byte	.LFE0-.LFB0
+ 554 0018 00000000 		.4byte	0
+ 555 001c 00000000 		.4byte	0
+ 556              		.section	.debug_ranges,"",%progbits
+ 557              	.Ldebug_ranges0:
+ 558 0000 00000000 		.4byte	.LFB0
+ 559 0004 7C000000 		.4byte	.LFE0
+ 560 0008 00000000 		.4byte	0
+ 561 000c 00000000 		.4byte	0
+ 562              		.section	.debug_line,"",%progbits
+ 563              	.Ldebug_line0:
+ 564 0000 91000000 		.section	.debug_str,"MS",%progbits,1
+ 564      02006600 
+ 564      00000201 
+ 564      FB0E0D00 
+ 564      01010101 
+ 565              	.LASF3:
+ 566 0000 73686F72 		.ascii	"short unsigned int\000"
+ 566      7420756E 
+ 566      7369676E 
+ 566      65642069 
+ 566      6E7400
+ 567              	.LASF29:
+ 568 0013 55534255 		.ascii	"USBUART_interfaceClass\000"
+ 568      4152545F 
+ 568      696E7465 
+ 568      72666163 
+ 568      65436C61 
+ 569              	.LASF25:
+ 570 002a 65704461 		.ascii	"epData\000"
+ 570      746100
+ 571              	.LASF27:
+ 572 0031 72657175 		.ascii	"requestHandled\000"
+ 572      65737448 
+ 572      616E646C 
+ 572      656400
+ 573              	.LASF11:
+ 574 0040 666C6F61 		.ascii	"float\000"
+ 574      7400
+ 575              	.LASF18:
+ 576 0046 6570546F 		.ascii	"epToggle\000"
+ 576      67676C65 
+ 576      00
+ 577              	.LASF30:
+ 578 004f 55534255 		.ascii	"USBUART_EP\000"
+ 578      4152545F 
+ 578      455000
+ 579              	.LASF33:
+ 580 005a 433A5C53 		.ascii	"C:\\SVN\\apps\\trunk\\Cypress Academy\\PSoC-121-Ana"
+ 580      564E5C61 
+ 580      7070735C 
+ 580      7472756E 
+ 580      6B5C4379 
+ 581 0088 6C6F675C 		.ascii	"log\\Scope\\KEES_Scope\\PSoC\\Scope.cydsn\000"
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 14
+
+
+ 581      53636F70 
+ 581      655C4B45 
+ 581      45535F53 
+ 581      636F7065 
+ 582              	.LASF5:
+ 583 00ae 6C6F6E67 		.ascii	"long unsigned int\000"
+ 583      20756E73 
+ 583      69676E65 
+ 583      6420696E 
+ 583      7400
+ 584              	.LASF19:
+ 585 00c0 61646472 		.ascii	"addr\000"
+ 585      00
+ 586              	.LASF28:
+ 587 00c5 696E7465 		.ascii	"interfaceNumber\000"
+ 587      72666163 
+ 587      654E756D 
+ 587      62657200 
+ 588              	.LASF1:
+ 589 00d5 756E7369 		.ascii	"unsigned char\000"
+ 589      676E6564 
+ 589      20636861 
+ 589      7200
+ 590              	.LASF31:
+ 591 00e3 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 591      4320342E 
+ 591      392E3320 
+ 591      32303135 
+ 591      30333033 
+ 592 0116 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 592      20726576 
+ 592      6973696F 
+ 592      6E203232 
+ 592      31323230 
+ 593 0149 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 593      66756E63 
+ 593      74696F6E 
+ 593      2D736563 
+ 593      74696F6E 
+ 594              	.LASF12:
+ 595 0171 646F7562 		.ascii	"double\000"
+ 595      6C6500
+ 596              	.LASF15:
+ 597 0178 61747472 		.ascii	"attrib\000"
+ 597      696200
+ 598              	.LASF21:
+ 599 017f 62756666 		.ascii	"buffOffset\000"
+ 599      4F666673 
+ 599      657400
+ 600              	.LASF10:
+ 601 018a 75696E74 		.ascii	"uint16\000"
+ 601      313600
+ 602              	.LASF16:
+ 603 0191 61706945 		.ascii	"apiEpState\000"
+ 603      70537461 
+ 603      746500
+ 604              	.LASF8:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 15
+
+
+ 605 019c 756E7369 		.ascii	"unsigned int\000"
+ 605      676E6564 
+ 605      20696E74 
+ 605      00
+ 606              	.LASF7:
+ 607 01a9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 607      206C6F6E 
+ 607      6720756E 
+ 607      7369676E 
+ 607      65642069 
+ 608              	.LASF17:
+ 609 01c0 68774570 		.ascii	"hwEpState\000"
+ 609      53746174 
+ 609      6500
+ 610              	.LASF34:
+ 611 01ca 55534255 		.ascii	"USBUART_DispatchClassRqst\000"
+ 611      4152545F 
+ 611      44697370 
+ 611      61746368 
+ 611      436C6173 
+ 612              	.LASF26:
+ 613 01e4 55534255 		.ascii	"USBUART_ep0_data_struct\000"
+ 613      4152545F 
+ 613      6570305F 
+ 613      64617461 
+ 613      5F737472 
+ 614              	.LASF14:
+ 615 01fc 73697A65 		.ascii	"sizetype\000"
+ 615      74797065 
+ 615      00
+ 616              	.LASF20:
+ 617 0205 65704D6F 		.ascii	"epMode\000"
+ 617      646500
+ 618              	.LASF6:
+ 619 020c 6C6F6E67 		.ascii	"long long int\000"
+ 619      206C6F6E 
+ 619      6720696E 
+ 619      7400
+ 620              	.LASF13:
+ 621 021a 63686172 		.ascii	"char\000"
+ 621      00
+ 622              	.LASF22:
+ 623 021f 62756666 		.ascii	"bufferSize\000"
+ 623      65725369 
+ 623      7A6500
+ 624              	.LASF32:
+ 625 022a 47656E65 		.ascii	"Generated_Source\\PSoC5\\USBUART_cls.c\000"
+ 625      72617465 
+ 625      645F536F 
+ 625      75726365 
+ 625      5C50536F 
+ 626              	.LASF2:
+ 627 024f 73686F72 		.ascii	"short int\000"
+ 627      7420696E 
+ 627      7400
+ 628              	.LASF9:
+ 629 0259 75696E74 		.ascii	"uint8\000"
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cc7XuFn2.s 			page 16
+
+
+ 629      3800
+ 630              	.LASF23:
+ 631 025f 696E7465 		.ascii	"interface\000"
+ 631      72666163 
+ 631      6500
+ 632              	.LASF4:
+ 633 0269 6C6F6E67 		.ascii	"long int\000"
+ 633      20696E74 
+ 633      00
+ 634              	.LASF24:
+ 635 0272 545F5553 		.ascii	"T_USBUART_EP_CTL_BLOCK\000"
+ 635      42554152 
+ 635      545F4550 
+ 635      5F43544C 
+ 635      5F424C4F 
+ 636              	.LASF0:
+ 637 0289 7369676E 		.ascii	"signed char\000"
+ 637      65642063 
+ 637      68617200 
+ 638              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

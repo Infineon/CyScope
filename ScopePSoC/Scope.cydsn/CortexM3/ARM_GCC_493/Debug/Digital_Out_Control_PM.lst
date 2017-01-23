@@ -1,0 +1,772 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Digital_Out_Control_PM.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.bss
+  19              		.align	2
+  20              	Digital_Out_Control_backup:
+  21 0000 00       		.space	1
+  22 0001 000000   		.section	.text.Digital_Out_Control_SaveConfig,"ax",%progbits
+  23              		.align	2
+  24              		.global	Digital_Out_Control_SaveConfig
+  25              		.thumb
+  26              		.thumb_func
+  27              		.type	Digital_Out_Control_SaveConfig, %function
+  28              	Digital_Out_Control_SaveConfig:
+  29              	.LFB0:
+  30              		.file 1 "Generated_Source\\PSoC5\\Digital_Out_Control_PM.c"
+   1:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * File Name: Digital_Out_Control_PM.c
+   3:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Version 1.80
+   4:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+   5:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Description:
+   6:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  This file contains the setup, control, and status commands to support 
+   7:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  the component operation in the low power mode. 
+   8:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+   9:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Note:
+  10:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  11:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** ********************************************************************************
+  12:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Copyright 2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *******************************************************************************/
+  17:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  18:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** #include "Digital_Out_Control.h"
+  19:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  20:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** /* Check for removal by optimization */
+  21:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** #if !defined(Digital_Out_Control_Sync_ctrl_reg__REMOVED)
+  22:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  23:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** static Digital_Out_Control_BACKUP_STRUCT  Digital_Out_Control_backup = {0u};
+  24:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  25:Generated_Source\PSoC5/Digital_Out_Control_PM.c ****     
+  26:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** /*******************************************************************************
+  27:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Function Name: Digital_Out_Control_SaveConfig
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 2
+
+
+  28:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** ********************************************************************************
+  29:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  30:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Summary:
+  31:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  Saves the control register value.
+  32:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  33:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Parameters:
+  34:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  35:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  36:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Return:
+  37:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  38:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  39:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *******************************************************************************/
+  40:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** void Digital_Out_Control_SaveConfig(void) 
+  41:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** {
+  31              		.loc 1 41 0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 1, uses_anonymous_args = 0
+  35              		@ link register save eliminated.
+  36 0000 80B4     		push	{r7}
+  37              		.cfi_def_cfa_offset 4
+  38              		.cfi_offset 7, -4
+  39 0002 00AF     		add	r7, sp, #0
+  40              		.cfi_def_cfa_register 7
+  42:Generated_Source\PSoC5/Digital_Out_Control_PM.c ****     Digital_Out_Control_backup.controlState = Digital_Out_Control_Control;
+  41              		.loc 1 42 0
+  42 0004 044B     		ldr	r3, .L2
+  43 0006 1B78     		ldrb	r3, [r3]
+  44 0008 DAB2     		uxtb	r2, r3
+  45 000a 044B     		ldr	r3, .L2+4
+  46 000c 1A70     		strb	r2, [r3]
+  43:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** }
+  47              		.loc 1 43 0
+  48 000e BD46     		mov	sp, r7
+  49              		.cfi_def_cfa_register 13
+  50              		@ sp needed
+  51 0010 5DF8047B 		ldr	r7, [sp], #4
+  52              		.cfi_restore 7
+  53              		.cfi_def_cfa_offset 0
+  54 0014 7047     		bx	lr
+  55              	.L3:
+  56 0016 00BF     		.align	2
+  57              	.L2:
+  58 0018 72640040 		.word	1073767538
+  59 001c 00000000 		.word	Digital_Out_Control_backup
+  60              		.cfi_endproc
+  61              	.LFE0:
+  62              		.size	Digital_Out_Control_SaveConfig, .-Digital_Out_Control_SaveConfig
+  63              		.section	.text.Digital_Out_Control_RestoreConfig,"ax",%progbits
+  64              		.align	2
+  65              		.global	Digital_Out_Control_RestoreConfig
+  66              		.thumb
+  67              		.thumb_func
+  68              		.type	Digital_Out_Control_RestoreConfig, %function
+  69              	Digital_Out_Control_RestoreConfig:
+  70              	.LFB1:
+  44:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 3
+
+
+  45:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  46:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** /*******************************************************************************
+  47:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Function Name: Digital_Out_Control_RestoreConfig
+  48:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** ********************************************************************************
+  49:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  50:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Summary:
+  51:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  Restores the control register value.
+  52:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  53:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Parameters:
+  54:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  55:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  56:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Return:
+  57:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  58:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  59:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  60:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *******************************************************************************/
+  61:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** void Digital_Out_Control_RestoreConfig(void) 
+  62:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** {
+  71              		.loc 1 62 0
+  72              		.cfi_startproc
+  73              		@ args = 0, pretend = 0, frame = 0
+  74              		@ frame_needed = 1, uses_anonymous_args = 0
+  75              		@ link register save eliminated.
+  76 0000 80B4     		push	{r7}
+  77              		.cfi_def_cfa_offset 4
+  78              		.cfi_offset 7, -4
+  79 0002 00AF     		add	r7, sp, #0
+  80              		.cfi_def_cfa_register 7
+  63:Generated_Source\PSoC5/Digital_Out_Control_PM.c ****      Digital_Out_Control_Control = Digital_Out_Control_backup.controlState;
+  81              		.loc 1 63 0
+  82 0004 034B     		ldr	r3, .L5
+  83 0006 044A     		ldr	r2, .L5+4
+  84 0008 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+  85 000a 1A70     		strb	r2, [r3]
+  64:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** }
+  86              		.loc 1 64 0
+  87 000c BD46     		mov	sp, r7
+  88              		.cfi_def_cfa_register 13
+  89              		@ sp needed
+  90 000e 5DF8047B 		ldr	r7, [sp], #4
+  91              		.cfi_restore 7
+  92              		.cfi_def_cfa_offset 0
+  93 0012 7047     		bx	lr
+  94              	.L6:
+  95              		.align	2
+  96              	.L5:
+  97 0014 72640040 		.word	1073767538
+  98 0018 00000000 		.word	Digital_Out_Control_backup
+  99              		.cfi_endproc
+ 100              	.LFE1:
+ 101              		.size	Digital_Out_Control_RestoreConfig, .-Digital_Out_Control_RestoreConfig
+ 102              		.section	.text.Digital_Out_Control_Sleep,"ax",%progbits
+ 103              		.align	2
+ 104              		.global	Digital_Out_Control_Sleep
+ 105              		.thumb
+ 106              		.thumb_func
+ 107              		.type	Digital_Out_Control_Sleep, %function
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 4
+
+
+ 108              	Digital_Out_Control_Sleep:
+ 109              	.LFB2:
+  65:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  66:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  67:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** /*******************************************************************************
+  68:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Function Name: Digital_Out_Control_Sleep
+  69:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** ********************************************************************************
+  70:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  71:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Summary:
+  72:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  Prepares the component for entering the low power mode.
+  73:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  74:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Parameters:
+  75:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  76:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  77:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Return:
+  78:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  79:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  80:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *******************************************************************************/
+  81:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** void Digital_Out_Control_Sleep(void) 
+  82:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** {
+ 110              		.loc 1 82 0
+ 111              		.cfi_startproc
+ 112              		@ args = 0, pretend = 0, frame = 0
+ 113              		@ frame_needed = 1, uses_anonymous_args = 0
+ 114 0000 80B5     		push	{r7, lr}
+ 115              		.cfi_def_cfa_offset 8
+ 116              		.cfi_offset 7, -8
+ 117              		.cfi_offset 14, -4
+ 118 0002 00AF     		add	r7, sp, #0
+ 119              		.cfi_def_cfa_register 7
+  83:Generated_Source\PSoC5/Digital_Out_Control_PM.c ****     Digital_Out_Control_SaveConfig();
+ 120              		.loc 1 83 0
+ 121 0004 FFF7FEFF 		bl	Digital_Out_Control_SaveConfig
+  84:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** }
+ 122              		.loc 1 84 0
+ 123 0008 80BD     		pop	{r7, pc}
+ 124              		.cfi_endproc
+ 125              	.LFE2:
+ 126              		.size	Digital_Out_Control_Sleep, .-Digital_Out_Control_Sleep
+ 127 000a 00BF     		.section	.text.Digital_Out_Control_Wakeup,"ax",%progbits
+ 128              		.align	2
+ 129              		.global	Digital_Out_Control_Wakeup
+ 130              		.thumb
+ 131              		.thumb_func
+ 132              		.type	Digital_Out_Control_Wakeup, %function
+ 133              	Digital_Out_Control_Wakeup:
+ 134              	.LFB3:
+  85:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  86:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** 
+  87:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** /*******************************************************************************
+  88:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Function Name: Digital_Out_Control_Wakeup
+  89:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** ********************************************************************************
+  90:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  91:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Summary:
+  92:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  Restores the component after waking up from the low power mode.
+  93:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  94:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Parameters:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 5
+
+
+  95:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  96:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+  97:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** * Return:
+  98:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *  None
+  99:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *
+ 100:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** *******************************************************************************/
+ 101:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** void Digital_Out_Control_Wakeup(void)  
+ 102:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** {
+ 135              		.loc 1 102 0
+ 136              		.cfi_startproc
+ 137              		@ args = 0, pretend = 0, frame = 0
+ 138              		@ frame_needed = 1, uses_anonymous_args = 0
+ 139 0000 80B5     		push	{r7, lr}
+ 140              		.cfi_def_cfa_offset 8
+ 141              		.cfi_offset 7, -8
+ 142              		.cfi_offset 14, -4
+ 143 0002 00AF     		add	r7, sp, #0
+ 144              		.cfi_def_cfa_register 7
+ 103:Generated_Source\PSoC5/Digital_Out_Control_PM.c ****     Digital_Out_Control_RestoreConfig();
+ 145              		.loc 1 103 0
+ 146 0004 FFF7FEFF 		bl	Digital_Out_Control_RestoreConfig
+ 104:Generated_Source\PSoC5/Digital_Out_Control_PM.c **** }
+ 147              		.loc 1 104 0
+ 148 0008 80BD     		pop	{r7, pc}
+ 149              		.cfi_endproc
+ 150              	.LFE3:
+ 151              		.size	Digital_Out_Control_Wakeup, .-Digital_Out_Control_Wakeup
+ 152 000a 00BF     		.text
+ 153              	.Letext0:
+ 154              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 155              		.file 3 "Generated_Source\\PSoC5\\Digital_Out_Control.h"
+ 156              		.section	.debug_info,"",%progbits
+ 157              	.Ldebug_info0:
+ 158 0000 0F010000 		.4byte	0x10f
+ 159 0004 0400     		.2byte	0x4
+ 160 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 161 000a 04       		.byte	0x4
+ 162 000b 01       		.uleb128 0x1
+ 163 000c 3A000000 		.4byte	.LASF19
+ 164 0010 01       		.byte	0x1
+ 165 0011 F6000000 		.4byte	.LASF20
+ 166 0015 26010000 		.4byte	.LASF21
+ 167 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 168 001d 00000000 		.4byte	0
+ 169 0021 00000000 		.4byte	.Ldebug_line0
+ 170 0025 02       		.uleb128 0x2
+ 171 0026 01       		.byte	0x1
+ 172 0027 06       		.byte	0x6
+ 173 0028 4C020000 		.4byte	.LASF0
+ 174 002c 02       		.uleb128 0x2
+ 175 002d 01       		.byte	0x1
+ 176 002e 08       		.byte	0x8
+ 177 002f E8000000 		.4byte	.LASF1
+ 178 0033 02       		.uleb128 0x2
+ 179 0034 02       		.byte	0x2
+ 180 0035 05       		.byte	0x5
+ 181 0036 33020000 		.4byte	.LASF2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 6
+
+
+ 182 003a 02       		.uleb128 0x2
+ 183 003b 02       		.byte	0x2
+ 184 003c 07       		.byte	0x7
+ 185 003d 8C010000 		.4byte	.LASF3
+ 186 0041 02       		.uleb128 0x2
+ 187 0042 04       		.byte	0x4
+ 188 0043 05       		.byte	0x5
+ 189 0044 43020000 		.4byte	.LASF4
+ 190 0048 02       		.uleb128 0x2
+ 191 0049 04       		.byte	0x4
+ 192 004a 07       		.byte	0x7
+ 193 004b 7A010000 		.4byte	.LASF5
+ 194 004f 02       		.uleb128 0x2
+ 195 0050 08       		.byte	0x8
+ 196 0051 05       		.byte	0x5
+ 197 0052 20020000 		.4byte	.LASF6
+ 198 0056 02       		.uleb128 0x2
+ 199 0057 08       		.byte	0x8
+ 200 0058 07       		.byte	0x7
+ 201 0059 C0010000 		.4byte	.LASF7
+ 202 005d 03       		.uleb128 0x3
+ 203 005e 04       		.byte	0x4
+ 204 005f 05       		.byte	0x5
+ 205 0060 696E7400 		.ascii	"int\000"
+ 206 0064 02       		.uleb128 0x2
+ 207 0065 04       		.byte	0x4
+ 208 0066 07       		.byte	0x7
+ 209 0067 B3010000 		.4byte	.LASF8
+ 210 006b 04       		.uleb128 0x4
+ 211 006c 3D020000 		.4byte	.LASF12
+ 212 0070 02       		.byte	0x2
+ 213 0071 9201     		.2byte	0x192
+ 214 0073 2C000000 		.4byte	0x2c
+ 215 0077 02       		.uleb128 0x2
+ 216 0078 04       		.byte	0x4
+ 217 0079 04       		.byte	0x4
+ 218 007a E2000000 		.4byte	.LASF9
+ 219 007e 02       		.uleb128 0x2
+ 220 007f 08       		.byte	0x8
+ 221 0080 04       		.byte	0x4
+ 222 0081 AC010000 		.4byte	.LASF10
+ 223 0085 02       		.uleb128 0x2
+ 224 0086 01       		.byte	0x1
+ 225 0087 08       		.byte	0x8
+ 226 0088 2E020000 		.4byte	.LASF11
+ 227 008c 04       		.uleb128 0x4
+ 228 008d 1B020000 		.4byte	.LASF13
+ 229 0091 02       		.byte	0x2
+ 230 0092 3C02     		.2byte	0x23c
+ 231 0094 98000000 		.4byte	0x98
+ 232 0098 05       		.uleb128 0x5
+ 233 0099 6B000000 		.4byte	0x6b
+ 234 009d 06       		.uleb128 0x6
+ 235 009e 01       		.byte	0x1
+ 236 009f 03       		.byte	0x3
+ 237 00a0 1C       		.byte	0x1c
+ 238 00a1 B2000000 		.4byte	0xb2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 7
+
+
+ 239 00a5 07       		.uleb128 0x7
+ 240 00a6 9F010000 		.4byte	.LASF22
+ 241 00aa 03       		.byte	0x3
+ 242 00ab 1E       		.byte	0x1e
+ 243 00ac 6B000000 		.4byte	0x6b
+ 244 00b0 00       		.byte	0
+ 245 00b1 00       		.byte	0
+ 246 00b2 08       		.uleb128 0x8
+ 247 00b3 D7010000 		.4byte	.LASF14
+ 248 00b7 03       		.byte	0x3
+ 249 00b8 20       		.byte	0x20
+ 250 00b9 9D000000 		.4byte	0x9d
+ 251 00bd 09       		.uleb128 0x9
+ 252 00be 00000000 		.4byte	.LASF15
+ 253 00c2 01       		.byte	0x1
+ 254 00c3 28       		.byte	0x28
+ 255 00c4 00000000 		.4byte	.LFB0
+ 256 00c8 20000000 		.4byte	.LFE0-.LFB0
+ 257 00cc 01       		.uleb128 0x1
+ 258 00cd 9C       		.byte	0x9c
+ 259 00ce 09       		.uleb128 0x9
+ 260 00cf F9010000 		.4byte	.LASF16
+ 261 00d3 01       		.byte	0x1
+ 262 00d4 3D       		.byte	0x3d
+ 263 00d5 00000000 		.4byte	.LFB1
+ 264 00d9 1C000000 		.4byte	.LFE1-.LFB1
+ 265 00dd 01       		.uleb128 0x1
+ 266 00de 9C       		.byte	0x9c
+ 267 00df 0A       		.uleb128 0xa
+ 268 00e0 C8000000 		.4byte	.LASF17
+ 269 00e4 01       		.byte	0x1
+ 270 00e5 51       		.byte	0x51
+ 271 00e6 00000000 		.4byte	.LFB2
+ 272 00ea 0A000000 		.4byte	.LFE2-.LFB2
+ 273 00ee 01       		.uleb128 0x1
+ 274 00ef 9C       		.byte	0x9c
+ 275 00f0 0A       		.uleb128 0xa
+ 276 00f1 1F000000 		.4byte	.LASF18
+ 277 00f5 01       		.byte	0x1
+ 278 00f6 65       		.byte	0x65
+ 279 00f7 00000000 		.4byte	.LFB3
+ 280 00fb 0A000000 		.4byte	.LFE3-.LFB3
+ 281 00ff 01       		.uleb128 0x1
+ 282 0100 9C       		.byte	0x9c
+ 283 0101 0B       		.uleb128 0xb
+ 284 0102 58020000 		.4byte	.LASF23
+ 285 0106 01       		.byte	0x1
+ 286 0107 17       		.byte	0x17
+ 287 0108 B2000000 		.4byte	0xb2
+ 288 010c 05       		.uleb128 0x5
+ 289 010d 03       		.byte	0x3
+ 290 010e 00000000 		.4byte	Digital_Out_Control_backup
+ 291 0112 00       		.byte	0
+ 292              		.section	.debug_abbrev,"",%progbits
+ 293              	.Ldebug_abbrev0:
+ 294 0000 01       		.uleb128 0x1
+ 295 0001 11       		.uleb128 0x11
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 8
+
+
+ 296 0002 01       		.byte	0x1
+ 297 0003 25       		.uleb128 0x25
+ 298 0004 0E       		.uleb128 0xe
+ 299 0005 13       		.uleb128 0x13
+ 300 0006 0B       		.uleb128 0xb
+ 301 0007 03       		.uleb128 0x3
+ 302 0008 0E       		.uleb128 0xe
+ 303 0009 1B       		.uleb128 0x1b
+ 304 000a 0E       		.uleb128 0xe
+ 305 000b 55       		.uleb128 0x55
+ 306 000c 17       		.uleb128 0x17
+ 307 000d 11       		.uleb128 0x11
+ 308 000e 01       		.uleb128 0x1
+ 309 000f 10       		.uleb128 0x10
+ 310 0010 17       		.uleb128 0x17
+ 311 0011 00       		.byte	0
+ 312 0012 00       		.byte	0
+ 313 0013 02       		.uleb128 0x2
+ 314 0014 24       		.uleb128 0x24
+ 315 0015 00       		.byte	0
+ 316 0016 0B       		.uleb128 0xb
+ 317 0017 0B       		.uleb128 0xb
+ 318 0018 3E       		.uleb128 0x3e
+ 319 0019 0B       		.uleb128 0xb
+ 320 001a 03       		.uleb128 0x3
+ 321 001b 0E       		.uleb128 0xe
+ 322 001c 00       		.byte	0
+ 323 001d 00       		.byte	0
+ 324 001e 03       		.uleb128 0x3
+ 325 001f 24       		.uleb128 0x24
+ 326 0020 00       		.byte	0
+ 327 0021 0B       		.uleb128 0xb
+ 328 0022 0B       		.uleb128 0xb
+ 329 0023 3E       		.uleb128 0x3e
+ 330 0024 0B       		.uleb128 0xb
+ 331 0025 03       		.uleb128 0x3
+ 332 0026 08       		.uleb128 0x8
+ 333 0027 00       		.byte	0
+ 334 0028 00       		.byte	0
+ 335 0029 04       		.uleb128 0x4
+ 336 002a 16       		.uleb128 0x16
+ 337 002b 00       		.byte	0
+ 338 002c 03       		.uleb128 0x3
+ 339 002d 0E       		.uleb128 0xe
+ 340 002e 3A       		.uleb128 0x3a
+ 341 002f 0B       		.uleb128 0xb
+ 342 0030 3B       		.uleb128 0x3b
+ 343 0031 05       		.uleb128 0x5
+ 344 0032 49       		.uleb128 0x49
+ 345 0033 13       		.uleb128 0x13
+ 346 0034 00       		.byte	0
+ 347 0035 00       		.byte	0
+ 348 0036 05       		.uleb128 0x5
+ 349 0037 35       		.uleb128 0x35
+ 350 0038 00       		.byte	0
+ 351 0039 49       		.uleb128 0x49
+ 352 003a 13       		.uleb128 0x13
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 9
+
+
+ 353 003b 00       		.byte	0
+ 354 003c 00       		.byte	0
+ 355 003d 06       		.uleb128 0x6
+ 356 003e 13       		.uleb128 0x13
+ 357 003f 01       		.byte	0x1
+ 358 0040 0B       		.uleb128 0xb
+ 359 0041 0B       		.uleb128 0xb
+ 360 0042 3A       		.uleb128 0x3a
+ 361 0043 0B       		.uleb128 0xb
+ 362 0044 3B       		.uleb128 0x3b
+ 363 0045 0B       		.uleb128 0xb
+ 364 0046 01       		.uleb128 0x1
+ 365 0047 13       		.uleb128 0x13
+ 366 0048 00       		.byte	0
+ 367 0049 00       		.byte	0
+ 368 004a 07       		.uleb128 0x7
+ 369 004b 0D       		.uleb128 0xd
+ 370 004c 00       		.byte	0
+ 371 004d 03       		.uleb128 0x3
+ 372 004e 0E       		.uleb128 0xe
+ 373 004f 3A       		.uleb128 0x3a
+ 374 0050 0B       		.uleb128 0xb
+ 375 0051 3B       		.uleb128 0x3b
+ 376 0052 0B       		.uleb128 0xb
+ 377 0053 49       		.uleb128 0x49
+ 378 0054 13       		.uleb128 0x13
+ 379 0055 38       		.uleb128 0x38
+ 380 0056 0B       		.uleb128 0xb
+ 381 0057 00       		.byte	0
+ 382 0058 00       		.byte	0
+ 383 0059 08       		.uleb128 0x8
+ 384 005a 16       		.uleb128 0x16
+ 385 005b 00       		.byte	0
+ 386 005c 03       		.uleb128 0x3
+ 387 005d 0E       		.uleb128 0xe
+ 388 005e 3A       		.uleb128 0x3a
+ 389 005f 0B       		.uleb128 0xb
+ 390 0060 3B       		.uleb128 0x3b
+ 391 0061 0B       		.uleb128 0xb
+ 392 0062 49       		.uleb128 0x49
+ 393 0063 13       		.uleb128 0x13
+ 394 0064 00       		.byte	0
+ 395 0065 00       		.byte	0
+ 396 0066 09       		.uleb128 0x9
+ 397 0067 2E       		.uleb128 0x2e
+ 398 0068 00       		.byte	0
+ 399 0069 3F       		.uleb128 0x3f
+ 400 006a 19       		.uleb128 0x19
+ 401 006b 03       		.uleb128 0x3
+ 402 006c 0E       		.uleb128 0xe
+ 403 006d 3A       		.uleb128 0x3a
+ 404 006e 0B       		.uleb128 0xb
+ 405 006f 3B       		.uleb128 0x3b
+ 406 0070 0B       		.uleb128 0xb
+ 407 0071 27       		.uleb128 0x27
+ 408 0072 19       		.uleb128 0x19
+ 409 0073 11       		.uleb128 0x11
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 10
+
+
+ 410 0074 01       		.uleb128 0x1
+ 411 0075 12       		.uleb128 0x12
+ 412 0076 06       		.uleb128 0x6
+ 413 0077 40       		.uleb128 0x40
+ 414 0078 18       		.uleb128 0x18
+ 415 0079 9742     		.uleb128 0x2117
+ 416 007b 19       		.uleb128 0x19
+ 417 007c 00       		.byte	0
+ 418 007d 00       		.byte	0
+ 419 007e 0A       		.uleb128 0xa
+ 420 007f 2E       		.uleb128 0x2e
+ 421 0080 00       		.byte	0
+ 422 0081 3F       		.uleb128 0x3f
+ 423 0082 19       		.uleb128 0x19
+ 424 0083 03       		.uleb128 0x3
+ 425 0084 0E       		.uleb128 0xe
+ 426 0085 3A       		.uleb128 0x3a
+ 427 0086 0B       		.uleb128 0xb
+ 428 0087 3B       		.uleb128 0x3b
+ 429 0088 0B       		.uleb128 0xb
+ 430 0089 27       		.uleb128 0x27
+ 431 008a 19       		.uleb128 0x19
+ 432 008b 11       		.uleb128 0x11
+ 433 008c 01       		.uleb128 0x1
+ 434 008d 12       		.uleb128 0x12
+ 435 008e 06       		.uleb128 0x6
+ 436 008f 40       		.uleb128 0x40
+ 437 0090 18       		.uleb128 0x18
+ 438 0091 9642     		.uleb128 0x2116
+ 439 0093 19       		.uleb128 0x19
+ 440 0094 00       		.byte	0
+ 441 0095 00       		.byte	0
+ 442 0096 0B       		.uleb128 0xb
+ 443 0097 34       		.uleb128 0x34
+ 444 0098 00       		.byte	0
+ 445 0099 03       		.uleb128 0x3
+ 446 009a 0E       		.uleb128 0xe
+ 447 009b 3A       		.uleb128 0x3a
+ 448 009c 0B       		.uleb128 0xb
+ 449 009d 3B       		.uleb128 0x3b
+ 450 009e 0B       		.uleb128 0xb
+ 451 009f 49       		.uleb128 0x49
+ 452 00a0 13       		.uleb128 0x13
+ 453 00a1 02       		.uleb128 0x2
+ 454 00a2 18       		.uleb128 0x18
+ 455 00a3 00       		.byte	0
+ 456 00a4 00       		.byte	0
+ 457 00a5 00       		.byte	0
+ 458              		.section	.debug_aranges,"",%progbits
+ 459 0000 34000000 		.4byte	0x34
+ 460 0004 0200     		.2byte	0x2
+ 461 0006 00000000 		.4byte	.Ldebug_info0
+ 462 000a 04       		.byte	0x4
+ 463 000b 00       		.byte	0
+ 464 000c 0000     		.2byte	0
+ 465 000e 0000     		.2byte	0
+ 466 0010 00000000 		.4byte	.LFB0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 11
+
+
+ 467 0014 20000000 		.4byte	.LFE0-.LFB0
+ 468 0018 00000000 		.4byte	.LFB1
+ 469 001c 1C000000 		.4byte	.LFE1-.LFB1
+ 470 0020 00000000 		.4byte	.LFB2
+ 471 0024 0A000000 		.4byte	.LFE2-.LFB2
+ 472 0028 00000000 		.4byte	.LFB3
+ 473 002c 0A000000 		.4byte	.LFE3-.LFB3
+ 474 0030 00000000 		.4byte	0
+ 475 0034 00000000 		.4byte	0
+ 476              		.section	.debug_ranges,"",%progbits
+ 477              	.Ldebug_ranges0:
+ 478 0000 00000000 		.4byte	.LFB0
+ 479 0004 20000000 		.4byte	.LFE0
+ 480 0008 00000000 		.4byte	.LFB1
+ 481 000c 1C000000 		.4byte	.LFE1
+ 482 0010 00000000 		.4byte	.LFB2
+ 483 0014 0A000000 		.4byte	.LFE2
+ 484 0018 00000000 		.4byte	.LFB3
+ 485 001c 0A000000 		.4byte	.LFE3
+ 486 0020 00000000 		.4byte	0
+ 487 0024 00000000 		.4byte	0
+ 488              		.section	.debug_line,"",%progbits
+ 489              	.Ldebug_line0:
+ 490 0000 B8000000 		.section	.debug_str,"MS",%progbits,1
+ 490      02006C00 
+ 490      00000201 
+ 490      FB0E0D00 
+ 490      01010101 
+ 491              	.LASF15:
+ 492 0000 44696769 		.ascii	"Digital_Out_Control_SaveConfig\000"
+ 492      74616C5F 
+ 492      4F75745F 
+ 492      436F6E74 
+ 492      726F6C5F 
+ 493              	.LASF18:
+ 494 001f 44696769 		.ascii	"Digital_Out_Control_Wakeup\000"
+ 494      74616C5F 
+ 494      4F75745F 
+ 494      436F6E74 
+ 494      726F6C5F 
+ 495              	.LASF19:
+ 496 003a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 496      4320342E 
+ 496      392E3320 
+ 496      32303135 
+ 496      30333033 
+ 497 006d 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 497      20726576 
+ 497      6973696F 
+ 497      6E203232 
+ 497      31323230 
+ 498 00a0 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 498      66756E63 
+ 498      74696F6E 
+ 498      2D736563 
+ 498      74696F6E 
+ 499              	.LASF17:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 12
+
+
+ 500 00c8 44696769 		.ascii	"Digital_Out_Control_Sleep\000"
+ 500      74616C5F 
+ 500      4F75745F 
+ 500      436F6E74 
+ 500      726F6C5F 
+ 501              	.LASF9:
+ 502 00e2 666C6F61 		.ascii	"float\000"
+ 502      7400
+ 503              	.LASF1:
+ 504 00e8 756E7369 		.ascii	"unsigned char\000"
+ 504      676E6564 
+ 504      20636861 
+ 504      7200
+ 505              	.LASF20:
+ 506 00f6 47656E65 		.ascii	"Generated_Source\\PSoC5\\Digital_Out_Control_PM.c\000"
+ 506      72617465 
+ 506      645F536F 
+ 506      75726365 
+ 506      5C50536F 
+ 507              	.LASF21:
+ 508 0126 433A5C53 		.ascii	"C:\\SVN\\apps\\trunk\\Cypress Academy\\PSoC-121-Ana"
+ 508      564E5C61 
+ 508      7070735C 
+ 508      7472756E 
+ 508      6B5C4379 
+ 509 0154 6C6F675C 		.ascii	"log\\Scope\\KEES_Scope\\PSoC\\Scope.cydsn\000"
+ 509      53636F70 
+ 509      655C4B45 
+ 509      45535F53 
+ 509      636F7065 
+ 510              	.LASF5:
+ 511 017a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 511      20756E73 
+ 511      69676E65 
+ 511      6420696E 
+ 511      7400
+ 512              	.LASF3:
+ 513 018c 73686F72 		.ascii	"short unsigned int\000"
+ 513      7420756E 
+ 513      7369676E 
+ 513      65642069 
+ 513      6E7400
+ 514              	.LASF22:
+ 515 019f 636F6E74 		.ascii	"controlState\000"
+ 515      726F6C53 
+ 515      74617465 
+ 515      00
+ 516              	.LASF10:
+ 517 01ac 646F7562 		.ascii	"double\000"
+ 517      6C6500
+ 518              	.LASF8:
+ 519 01b3 756E7369 		.ascii	"unsigned int\000"
+ 519      676E6564 
+ 519      20696E74 
+ 519      00
+ 520              	.LASF7:
+ 521 01c0 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\cckn4sbk.s 			page 13
+
+
+ 521      206C6F6E 
+ 521      6720756E 
+ 521      7369676E 
+ 521      65642069 
+ 522              	.LASF14:
+ 523 01d7 44696769 		.ascii	"Digital_Out_Control_BACKUP_STRUCT\000"
+ 523      74616C5F 
+ 523      4F75745F 
+ 523      436F6E74 
+ 523      726F6C5F 
+ 524              	.LASF16:
+ 525 01f9 44696769 		.ascii	"Digital_Out_Control_RestoreConfig\000"
+ 525      74616C5F 
+ 525      4F75745F 
+ 525      436F6E74 
+ 525      726F6C5F 
+ 526              	.LASF13:
+ 527 021b 72656738 		.ascii	"reg8\000"
+ 527      00
+ 528              	.LASF6:
+ 529 0220 6C6F6E67 		.ascii	"long long int\000"
+ 529      206C6F6E 
+ 529      6720696E 
+ 529      7400
+ 530              	.LASF11:
+ 531 022e 63686172 		.ascii	"char\000"
+ 531      00
+ 532              	.LASF2:
+ 533 0233 73686F72 		.ascii	"short int\000"
+ 533      7420696E 
+ 533      7400
+ 534              	.LASF12:
+ 535 023d 75696E74 		.ascii	"uint8\000"
+ 535      3800
+ 536              	.LASF4:
+ 537 0243 6C6F6E67 		.ascii	"long int\000"
+ 537      20696E74 
+ 537      00
+ 538              	.LASF0:
+ 539 024c 7369676E 		.ascii	"signed char\000"
+ 539      65642063 
+ 539      68617200 
+ 540              	.LASF23:
+ 541 0258 44696769 		.ascii	"Digital_Out_Control_backup\000"
+ 541      74616C5F 
+ 541      4F75745F 
+ 541      436F6E74 
+ 541      726F6C5F 
+ 542              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

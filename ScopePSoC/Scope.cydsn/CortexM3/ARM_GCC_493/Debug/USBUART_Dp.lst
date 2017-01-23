@@ -1,0 +1,1099 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"USBUART_Dp.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.USBUART_Dp_Write,"ax",%progbits
+  19              		.align	2
+  20              		.global	USBUART_Dp_Write
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	USBUART_Dp_Write, %function
+  24              	USBUART_Dp_Write:
+  25              	.LFB0:
+  26              		.file 1 "Generated_Source\\PSoC5\\USBUART_Dp.c"
+   1:Generated_Source\PSoC5/USBUART_Dp.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/USBUART_Dp.c **** * File Name: USBUART_Dp.c  
+   3:Generated_Source\PSoC5/USBUART_Dp.c **** * Version 2.20
+   4:Generated_Source\PSoC5/USBUART_Dp.c **** *
+   5:Generated_Source\PSoC5/USBUART_Dp.c **** * Description:
+   6:Generated_Source\PSoC5/USBUART_Dp.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:Generated_Source\PSoC5/USBUART_Dp.c **** *
+   8:Generated_Source\PSoC5/USBUART_Dp.c **** * Note:
+   9:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  10:Generated_Source\PSoC5/USBUART_Dp.c **** ********************************************************************************
+  11:Generated_Source\PSoC5/USBUART_Dp.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC5/USBUART_Dp.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC5/USBUART_Dp.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC5/USBUART_Dp.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC5/USBUART_Dp.c **** *******************************************************************************/
+  16:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  17:Generated_Source\PSoC5/USBUART_Dp.c **** #include "cytypes.h"
+  18:Generated_Source\PSoC5/USBUART_Dp.c **** #include "USBUART_Dp.h"
+  19:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  20:Generated_Source\PSoC5/USBUART_Dp.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:Generated_Source\PSoC5/USBUART_Dp.c **** #if !(CY_PSOC5A &&\
+  22:Generated_Source\PSoC5/USBUART_Dp.c **** 	 USBUART_Dp__PORT == 15 && ((USBUART_Dp__MASK & 0xC0) != 0))
+  23:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  24:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  25:Generated_Source\PSoC5/USBUART_Dp.c **** /*******************************************************************************
+  26:Generated_Source\PSoC5/USBUART_Dp.c **** * Function Name: USBUART_Dp_Write
+  27:Generated_Source\PSoC5/USBUART_Dp.c **** ****************************************************************************//**
+  28:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  29:Generated_Source\PSoC5/USBUART_Dp.c **** * \brief Writes the value to the physical port (data output register), masking
+  30:Generated_Source\PSoC5/USBUART_Dp.c **** *  and shifting the bits appropriately. 
+  31:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 2
+
+
+  32:Generated_Source\PSoC5/USBUART_Dp.c **** * The data output register controls the signal applied to the physical pin in 
+  33:Generated_Source\PSoC5/USBUART_Dp.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  34:Generated_Source\PSoC5/USBUART_Dp.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  35:Generated_Source\PSoC5/USBUART_Dp.c **** * bit banding).
+  36:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  37:Generated_Source\PSoC5/USBUART_Dp.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  38:Generated_Source\PSoC5/USBUART_Dp.c **** * as it is driven by the hardware signal attached to it.
+  39:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  40:Generated_Source\PSoC5/USBUART_Dp.c **** * \param value
+  41:Generated_Source\PSoC5/USBUART_Dp.c **** *  Value to write to the component instance.
+  42:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  43:Generated_Source\PSoC5/USBUART_Dp.c **** * \return 
+  44:Generated_Source\PSoC5/USBUART_Dp.c **** *  None 
+  45:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  46:Generated_Source\PSoC5/USBUART_Dp.c **** * \sideeffect
+  47:Generated_Source\PSoC5/USBUART_Dp.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+  48:Generated_Source\PSoC5/USBUART_Dp.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+  49:Generated_Source\PSoC5/USBUART_Dp.c **** *  interrupts this function and performs writes to the Pins component data 
+  50:Generated_Source\PSoC5/USBUART_Dp.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+  51:Generated_Source\PSoC5/USBUART_Dp.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+  52:Generated_Source\PSoC5/USBUART_Dp.c **** *  this function.
+  53:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  54:Generated_Source\PSoC5/USBUART_Dp.c **** * \funcusage
+  55:Generated_Source\PSoC5/USBUART_Dp.c **** *  \snippet USBUART_Dp_SUT.c usage_USBUART_Dp_Write
+  56:Generated_Source\PSoC5/USBUART_Dp.c **** *******************************************************************************/
+  57:Generated_Source\PSoC5/USBUART_Dp.c **** void USBUART_Dp_Write(uint8 value)
+  58:Generated_Source\PSoC5/USBUART_Dp.c **** {
+  27              		.loc 1 58 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 16
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32 0000 80B4     		push	{r7}
+  33              		.cfi_def_cfa_offset 4
+  34              		.cfi_offset 7, -4
+  35 0002 85B0     		sub	sp, sp, #20
+  36              		.cfi_def_cfa_offset 24
+  37 0004 00AF     		add	r7, sp, #0
+  38              		.cfi_def_cfa_register 7
+  39 0006 0346     		mov	r3, r0
+  40 0008 FB71     		strb	r3, [r7, #7]
+  59:Generated_Source\PSoC5/USBUART_Dp.c ****     uint8 staticBits = (USBUART_Dp_DR & (uint8)(~USBUART_Dp_MASK));
+  41              		.loc 1 59 0
+  42 000a 0B4B     		ldr	r3, .L2
+  43 000c 1B78     		ldrb	r3, [r3]
+  44 000e DBB2     		uxtb	r3, r3
+  45 0010 23F04003 		bic	r3, r3, #64
+  46 0014 FB73     		strb	r3, [r7, #15]
+  60:Generated_Source\PSoC5/USBUART_Dp.c ****     USBUART_Dp_DR = staticBits | ((uint8)(value << USBUART_Dp_SHIFT) & USBUART_Dp_MASK);
+  47              		.loc 1 60 0
+  48 0016 0849     		ldr	r1, .L2
+  49 0018 FB79     		ldrb	r3, [r7, #7]
+  50 001a 9B01     		lsls	r3, r3, #6
+  51 001c DBB2     		uxtb	r3, r3
+  52 001e 03F04003 		and	r3, r3, #64
+  53 0022 DAB2     		uxtb	r2, r3
+  54 0024 FB7B     		ldrb	r3, [r7, #15]
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 3
+
+
+  55 0026 1343     		orrs	r3, r3, r2
+  56 0028 DBB2     		uxtb	r3, r3
+  57 002a 0B70     		strb	r3, [r1]
+  61:Generated_Source\PSoC5/USBUART_Dp.c **** }
+  58              		.loc 1 61 0
+  59 002c 1437     		adds	r7, r7, #20
+  60              		.cfi_def_cfa_offset 4
+  61 002e BD46     		mov	sp, r7
+  62              		.cfi_def_cfa_register 13
+  63              		@ sp needed
+  64 0030 5DF8047B 		ldr	r7, [sp], #4
+  65              		.cfi_restore 7
+  66              		.cfi_def_cfa_offset 0
+  67 0034 7047     		bx	lr
+  68              	.L3:
+  69 0036 00BF     		.align	2
+  70              	.L2:
+  71 0038 F0510040 		.word	1073762800
+  72              		.cfi_endproc
+  73              	.LFE0:
+  74              		.size	USBUART_Dp_Write, .-USBUART_Dp_Write
+  75              		.section	.text.USBUART_Dp_SetDriveMode,"ax",%progbits
+  76              		.align	2
+  77              		.global	USBUART_Dp_SetDriveMode
+  78              		.thumb
+  79              		.thumb_func
+  80              		.type	USBUART_Dp_SetDriveMode, %function
+  81              	USBUART_Dp_SetDriveMode:
+  82              	.LFB1:
+  62:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  63:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  64:Generated_Source\PSoC5/USBUART_Dp.c **** /*******************************************************************************
+  65:Generated_Source\PSoC5/USBUART_Dp.c **** * Function Name: USBUART_Dp_SetDriveMode
+  66:Generated_Source\PSoC5/USBUART_Dp.c **** ****************************************************************************//**
+  67:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  68:Generated_Source\PSoC5/USBUART_Dp.c **** * \brief Sets the drive mode for each of the Pins component's pins.
+  69:Generated_Source\PSoC5/USBUART_Dp.c **** * 
+  70:Generated_Source\PSoC5/USBUART_Dp.c **** * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  71:Generated_Source\PSoC5/USBUART_Dp.c **** * Per-Pin APIs if you wish to control individual pin's drive modes.
+  72:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  73:Generated_Source\PSoC5/USBUART_Dp.c **** * \param mode
+  74:Generated_Source\PSoC5/USBUART_Dp.c **** *  Mode for the selected signals. Valid options are documented in 
+  75:Generated_Source\PSoC5/USBUART_Dp.c **** *  \ref driveMode.
+  76:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  77:Generated_Source\PSoC5/USBUART_Dp.c **** * \return
+  78:Generated_Source\PSoC5/USBUART_Dp.c **** *  None
+  79:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  80:Generated_Source\PSoC5/USBUART_Dp.c **** * \sideeffect
+  81:Generated_Source\PSoC5/USBUART_Dp.c **** *  If you use read-modify-write operations that are not atomic, the ISR can
+  82:Generated_Source\PSoC5/USBUART_Dp.c **** *  cause corruption of this function. An ISR that interrupts this function 
+  83:Generated_Source\PSoC5/USBUART_Dp.c **** *  and performs writes to the Pins component Drive Mode registers can cause 
+  84:Generated_Source\PSoC5/USBUART_Dp.c **** *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  85:Generated_Source\PSoC5/USBUART_Dp.c **** *  APIs (primary method) or disable interrupts around this function.
+  86:Generated_Source\PSoC5/USBUART_Dp.c **** *
+  87:Generated_Source\PSoC5/USBUART_Dp.c **** * \funcusage
+  88:Generated_Source\PSoC5/USBUART_Dp.c **** *  \snippet USBUART_Dp_SUT.c usage_USBUART_Dp_SetDriveMode
+  89:Generated_Source\PSoC5/USBUART_Dp.c **** *******************************************************************************/
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 4
+
+
+  90:Generated_Source\PSoC5/USBUART_Dp.c **** void USBUART_Dp_SetDriveMode(uint8 mode)
+  91:Generated_Source\PSoC5/USBUART_Dp.c **** {
+  83              		.loc 1 91 0
+  84              		.cfi_startproc
+  85              		@ args = 0, pretend = 0, frame = 8
+  86              		@ frame_needed = 1, uses_anonymous_args = 0
+  87              		@ link register save eliminated.
+  88 0000 80B4     		push	{r7}
+  89              		.cfi_def_cfa_offset 4
+  90              		.cfi_offset 7, -4
+  91 0002 83B0     		sub	sp, sp, #12
+  92              		.cfi_def_cfa_offset 16
+  93 0004 00AF     		add	r7, sp, #0
+  94              		.cfi_def_cfa_register 7
+  95 0006 0346     		mov	r3, r0
+  96 0008 FB71     		strb	r3, [r7, #7]
+  92:Generated_Source\PSoC5/USBUART_Dp.c **** 	CyPins_SetPinDriveMode(USBUART_Dp_0, mode);
+  97              		.loc 1 92 0
+  98 000a 0A4B     		ldr	r3, .L5
+  99 000c 094A     		ldr	r2, .L5
+ 100 000e 1278     		ldrb	r2, [r2]
+ 101 0010 D2B2     		uxtb	r2, r2
+ 102 0012 D2B2     		uxtb	r2, r2
+ 103 0014 22F00E02 		bic	r2, r2, #14
+ 104 0018 D1B2     		uxtb	r1, r2
+ 105 001a FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
+ 106 001c 02F00E02 		and	r2, r2, #14
+ 107 0020 D2B2     		uxtb	r2, r2
+ 108 0022 0A43     		orrs	r2, r2, r1
+ 109 0024 D2B2     		uxtb	r2, r2
+ 110 0026 D2B2     		uxtb	r2, r2
+ 111 0028 1A70     		strb	r2, [r3]
+  93:Generated_Source\PSoC5/USBUART_Dp.c **** }
+ 112              		.loc 1 93 0
+ 113 002a 0C37     		adds	r7, r7, #12
+ 114              		.cfi_def_cfa_offset 4
+ 115 002c BD46     		mov	sp, r7
+ 116              		.cfi_def_cfa_register 13
+ 117              		@ sp needed
+ 118 002e 5DF8047B 		ldr	r7, [sp], #4
+ 119              		.cfi_restore 7
+ 120              		.cfi_def_cfa_offset 0
+ 121 0032 7047     		bx	lr
+ 122              	.L6:
+ 123              		.align	2
+ 124              	.L5:
+ 125 0034 7E500040 		.word	1073762430
+ 126              		.cfi_endproc
+ 127              	.LFE1:
+ 128              		.size	USBUART_Dp_SetDriveMode, .-USBUART_Dp_SetDriveMode
+ 129              		.section	.text.USBUART_Dp_Read,"ax",%progbits
+ 130              		.align	2
+ 131              		.global	USBUART_Dp_Read
+ 132              		.thumb
+ 133              		.thumb_func
+ 134              		.type	USBUART_Dp_Read, %function
+ 135              	USBUART_Dp_Read:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 5
+
+
+ 136              	.LFB2:
+  94:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  95:Generated_Source\PSoC5/USBUART_Dp.c **** 
+  96:Generated_Source\PSoC5/USBUART_Dp.c **** /*******************************************************************************
+  97:Generated_Source\PSoC5/USBUART_Dp.c **** * Function Name: USBUART_Dp_Read
+  98:Generated_Source\PSoC5/USBUART_Dp.c **** ****************************************************************************//**
+  99:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 100:Generated_Source\PSoC5/USBUART_Dp.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 101:Generated_Source\PSoC5/USBUART_Dp.c **** *  the required bits according to the width and bit position of the component
+ 102:Generated_Source\PSoC5/USBUART_Dp.c **** *  instance. 
+ 103:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 104:Generated_Source\PSoC5/USBUART_Dp.c **** * The pin's status register returns the current logic level present on the 
+ 105:Generated_Source\PSoC5/USBUART_Dp.c **** * physical pin.
+ 106:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 107:Generated_Source\PSoC5/USBUART_Dp.c **** * \return 
+ 108:Generated_Source\PSoC5/USBUART_Dp.c **** *  The current value for the pins in the component as a right justified number.
+ 109:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 110:Generated_Source\PSoC5/USBUART_Dp.c **** * \funcusage
+ 111:Generated_Source\PSoC5/USBUART_Dp.c **** *  \snippet USBUART_Dp_SUT.c usage_USBUART_Dp_Read  
+ 112:Generated_Source\PSoC5/USBUART_Dp.c **** *******************************************************************************/
+ 113:Generated_Source\PSoC5/USBUART_Dp.c **** uint8 USBUART_Dp_Read(void)
+ 114:Generated_Source\PSoC5/USBUART_Dp.c **** {
+ 137              		.loc 1 114 0
+ 138              		.cfi_startproc
+ 139              		@ args = 0, pretend = 0, frame = 0
+ 140              		@ frame_needed = 1, uses_anonymous_args = 0
+ 141              		@ link register save eliminated.
+ 142 0000 80B4     		push	{r7}
+ 143              		.cfi_def_cfa_offset 4
+ 144              		.cfi_offset 7, -4
+ 145 0002 00AF     		add	r7, sp, #0
+ 146              		.cfi_def_cfa_register 7
+ 115:Generated_Source\PSoC5/USBUART_Dp.c ****     return (USBUART_Dp_PS & USBUART_Dp_MASK) >> USBUART_Dp_SHIFT;
+ 147              		.loc 1 115 0
+ 148 0004 054B     		ldr	r3, .L9
+ 149 0006 1B78     		ldrb	r3, [r3]
+ 150 0008 DBB2     		uxtb	r3, r3
+ 151 000a 03F04003 		and	r3, r3, #64
+ 152 000e 9B09     		lsrs	r3, r3, #6
+ 153 0010 DBB2     		uxtb	r3, r3
+ 116:Generated_Source\PSoC5/USBUART_Dp.c **** }
+ 154              		.loc 1 116 0
+ 155 0012 1846     		mov	r0, r3
+ 156 0014 BD46     		mov	sp, r7
+ 157              		.cfi_def_cfa_register 13
+ 158              		@ sp needed
+ 159 0016 5DF8047B 		ldr	r7, [sp], #4
+ 160              		.cfi_restore 7
+ 161              		.cfi_def_cfa_offset 0
+ 162 001a 7047     		bx	lr
+ 163              	.L10:
+ 164              		.align	2
+ 165              	.L9:
+ 166 001c F1510040 		.word	1073762801
+ 167              		.cfi_endproc
+ 168              	.LFE2:
+ 169              		.size	USBUART_Dp_Read, .-USBUART_Dp_Read
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 6
+
+
+ 170              		.section	.text.USBUART_Dp_ReadDataReg,"ax",%progbits
+ 171              		.align	2
+ 172              		.global	USBUART_Dp_ReadDataReg
+ 173              		.thumb
+ 174              		.thumb_func
+ 175              		.type	USBUART_Dp_ReadDataReg, %function
+ 176              	USBUART_Dp_ReadDataReg:
+ 177              	.LFB3:
+ 117:Generated_Source\PSoC5/USBUART_Dp.c **** 
+ 118:Generated_Source\PSoC5/USBUART_Dp.c **** 
+ 119:Generated_Source\PSoC5/USBUART_Dp.c **** /*******************************************************************************
+ 120:Generated_Source\PSoC5/USBUART_Dp.c **** * Function Name: USBUART_Dp_ReadDataReg
+ 121:Generated_Source\PSoC5/USBUART_Dp.c **** ****************************************************************************//**
+ 122:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 123:Generated_Source\PSoC5/USBUART_Dp.c **** * \brief Reads the associated physical port's data output register and masks 
+ 124:Generated_Source\PSoC5/USBUART_Dp.c **** *  the correct bits according to the width and bit position of the component 
+ 125:Generated_Source\PSoC5/USBUART_Dp.c **** *  instance. 
+ 126:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 127:Generated_Source\PSoC5/USBUART_Dp.c **** * The data output register controls the signal applied to the physical pin in 
+ 128:Generated_Source\PSoC5/USBUART_Dp.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 129:Generated_Source\PSoC5/USBUART_Dp.c **** * preferred USBUART_Dp_Read() API because the 
+ 130:Generated_Source\PSoC5/USBUART_Dp.c **** * USBUART_Dp_ReadDataReg() reads the data register instead of the status 
+ 131:Generated_Source\PSoC5/USBUART_Dp.c **** * register. For output pins this is a useful function to determine the value 
+ 132:Generated_Source\PSoC5/USBUART_Dp.c **** * just written to the pin.
+ 133:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 134:Generated_Source\PSoC5/USBUART_Dp.c **** * \return 
+ 135:Generated_Source\PSoC5/USBUART_Dp.c **** *  The current value of the data register masked and shifted into a right 
+ 136:Generated_Source\PSoC5/USBUART_Dp.c **** *  justified number for the component instance.
+ 137:Generated_Source\PSoC5/USBUART_Dp.c **** *
+ 138:Generated_Source\PSoC5/USBUART_Dp.c **** * \funcusage
+ 139:Generated_Source\PSoC5/USBUART_Dp.c **** *  \snippet USBUART_Dp_SUT.c usage_USBUART_Dp_ReadDataReg 
+ 140:Generated_Source\PSoC5/USBUART_Dp.c **** *******************************************************************************/
+ 141:Generated_Source\PSoC5/USBUART_Dp.c **** uint8 USBUART_Dp_ReadDataReg(void)
+ 142:Generated_Source\PSoC5/USBUART_Dp.c **** {
+ 178              		.loc 1 142 0
+ 179              		.cfi_startproc
+ 180              		@ args = 0, pretend = 0, frame = 0
+ 181              		@ frame_needed = 1, uses_anonymous_args = 0
+ 182              		@ link register save eliminated.
+ 183 0000 80B4     		push	{r7}
+ 184              		.cfi_def_cfa_offset 4
+ 185              		.cfi_offset 7, -4
+ 186 0002 00AF     		add	r7, sp, #0
+ 187              		.cfi_def_cfa_register 7
+ 143:Generated_Source\PSoC5/USBUART_Dp.c ****     return (USBUART_Dp_DR & USBUART_Dp_MASK) >> USBUART_Dp_SHIFT;
+ 188              		.loc 1 143 0
+ 189 0004 054B     		ldr	r3, .L13
+ 190 0006 1B78     		ldrb	r3, [r3]
+ 191 0008 DBB2     		uxtb	r3, r3
+ 192 000a 03F04003 		and	r3, r3, #64
+ 193 000e 9B09     		lsrs	r3, r3, #6
+ 194 0010 DBB2     		uxtb	r3, r3
+ 144:Generated_Source\PSoC5/USBUART_Dp.c **** }
+ 195              		.loc 1 144 0
+ 196 0012 1846     		mov	r0, r3
+ 197 0014 BD46     		mov	sp, r7
+ 198              		.cfi_def_cfa_register 13
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 7
+
+
+ 199              		@ sp needed
+ 200 0016 5DF8047B 		ldr	r7, [sp], #4
+ 201              		.cfi_restore 7
+ 202              		.cfi_def_cfa_offset 0
+ 203 001a 7047     		bx	lr
+ 204              	.L14:
+ 205              		.align	2
+ 206              	.L13:
+ 207 001c F0510040 		.word	1073762800
+ 208              		.cfi_endproc
+ 209              	.LFE3:
+ 210              		.size	USBUART_Dp_ReadDataReg, .-USBUART_Dp_ReadDataReg
+ 211              		.section	.text.USBUART_Dp_SetInterruptMode,"ax",%progbits
+ 212              		.align	2
+ 213              		.global	USBUART_Dp_SetInterruptMode
+ 214              		.thumb
+ 215              		.thumb_func
+ 216              		.type	USBUART_Dp_SetInterruptMode, %function
+ 217              	USBUART_Dp_SetInterruptMode:
+ 218              	.LFB4:
+ 145:Generated_Source\PSoC5/USBUART_Dp.c **** 
+ 146:Generated_Source\PSoC5/USBUART_Dp.c **** 
+ 147:Generated_Source\PSoC5/USBUART_Dp.c **** /* If interrupt is connected for this Pins component */ 
+ 148:Generated_Source\PSoC5/USBUART_Dp.c **** #if defined(USBUART_Dp_INTSTAT) 
+ 149:Generated_Source\PSoC5/USBUART_Dp.c **** 
+ 150:Generated_Source\PSoC5/USBUART_Dp.c ****     /*******************************************************************************
+ 151:Generated_Source\PSoC5/USBUART_Dp.c ****     * Function Name: USBUART_Dp_SetInterruptMode
+ 152:Generated_Source\PSoC5/USBUART_Dp.c ****     ****************************************************************************//**
+ 153:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 154:Generated_Source\PSoC5/USBUART_Dp.c ****     * \brief Configures the interrupt mode for each of the Pins component's
+ 155:Generated_Source\PSoC5/USBUART_Dp.c ****     *  pins. Alternatively you may set the interrupt mode for all the pins
+ 156:Generated_Source\PSoC5/USBUART_Dp.c ****     *  specified in the Pins component.
+ 157:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 158:Generated_Source\PSoC5/USBUART_Dp.c ****     *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
+ 159:Generated_Source\PSoC5/USBUART_Dp.c ****     *  interrupt may trigger it.
+ 160:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 161:Generated_Source\PSoC5/USBUART_Dp.c ****     * \param position
+ 162:Generated_Source\PSoC5/USBUART_Dp.c ****     *  The pin position as listed in the Pins component. You may OR these to be 
+ 163:Generated_Source\PSoC5/USBUART_Dp.c ****     *  able to configure the interrupt mode of multiple pins within a Pins 
+ 164:Generated_Source\PSoC5/USBUART_Dp.c ****     *  component. Or you may use USBUART_Dp_INTR_ALL to configure the
+ 165:Generated_Source\PSoC5/USBUART_Dp.c ****     *  interrupt mode of all the pins in the Pins component.       
+ 166:Generated_Source\PSoC5/USBUART_Dp.c ****     *  - USBUART_Dp_0_INTR       (First pin in the list)
+ 167:Generated_Source\PSoC5/USBUART_Dp.c ****     *  - USBUART_Dp_1_INTR       (Second pin in the list)
+ 168:Generated_Source\PSoC5/USBUART_Dp.c ****     *  - ...
+ 169:Generated_Source\PSoC5/USBUART_Dp.c ****     *  - USBUART_Dp_INTR_ALL     (All pins in Pins component)
+ 170:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 171:Generated_Source\PSoC5/USBUART_Dp.c ****     * \param mode
+ 172:Generated_Source\PSoC5/USBUART_Dp.c ****     *  Interrupt mode for the selected pins. Valid options are documented in
+ 173:Generated_Source\PSoC5/USBUART_Dp.c ****     *  \ref intrMode.
+ 174:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 175:Generated_Source\PSoC5/USBUART_Dp.c ****     * \return 
+ 176:Generated_Source\PSoC5/USBUART_Dp.c ****     *  None
+ 177:Generated_Source\PSoC5/USBUART_Dp.c ****     *  
+ 178:Generated_Source\PSoC5/USBUART_Dp.c ****     * \sideeffect
+ 179:Generated_Source\PSoC5/USBUART_Dp.c ****     *  It is recommended that the interrupt be disabled before calling this 
+ 180:Generated_Source\PSoC5/USBUART_Dp.c ****     *  function to avoid unintended interrupt requests. Note that the interrupt
+ 181:Generated_Source\PSoC5/USBUART_Dp.c ****     *  type is port wide, and therefore will trigger for any enabled pin on the 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 8
+
+
+ 182:Generated_Source\PSoC5/USBUART_Dp.c ****     *  port.
+ 183:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 184:Generated_Source\PSoC5/USBUART_Dp.c ****     * \funcusage
+ 185:Generated_Source\PSoC5/USBUART_Dp.c ****     *  \snippet USBUART_Dp_SUT.c usage_USBUART_Dp_SetInterruptMode
+ 186:Generated_Source\PSoC5/USBUART_Dp.c ****     *******************************************************************************/
+ 187:Generated_Source\PSoC5/USBUART_Dp.c ****     void USBUART_Dp_SetInterruptMode(uint16 position, uint16 mode)
+ 188:Generated_Source\PSoC5/USBUART_Dp.c ****     {
+ 219              		.loc 1 188 0
+ 220              		.cfi_startproc
+ 221              		@ args = 0, pretend = 0, frame = 8
+ 222              		@ frame_needed = 1, uses_anonymous_args = 0
+ 223              		@ link register save eliminated.
+ 224 0000 80B4     		push	{r7}
+ 225              		.cfi_def_cfa_offset 4
+ 226              		.cfi_offset 7, -4
+ 227 0002 83B0     		sub	sp, sp, #12
+ 228              		.cfi_def_cfa_offset 16
+ 229 0004 00AF     		add	r7, sp, #0
+ 230              		.cfi_def_cfa_register 7
+ 231 0006 0346     		mov	r3, r0
+ 232 0008 0A46     		mov	r2, r1
+ 233 000a FB80     		strh	r3, [r7, #6]	@ movhi
+ 234 000c 1346     		mov	r3, r2	@ movhi
+ 235 000e BB80     		strh	r3, [r7, #4]	@ movhi
+ 189:Generated_Source\PSoC5/USBUART_Dp.c **** 		if((position & USBUART_Dp_0_INTR) != 0u) 
+ 236              		.loc 1 189 0
+ 237 0010 FB88     		ldrh	r3, [r7, #6]
+ 238 0012 03F04003 		and	r3, r3, #64
+ 239 0016 002B     		cmp	r3, #0
+ 240 0018 03D0     		beq	.L15
+ 190:Generated_Source\PSoC5/USBUART_Dp.c **** 		{ 
+ 191:Generated_Source\PSoC5/USBUART_Dp.c **** 			 USBUART_Dp_0_INTTYPE_REG = (uint8)mode; 
+ 241              		.loc 1 191 0
+ 242 001a 044B     		ldr	r3, .L17
+ 243 001c BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 244 001e D2B2     		uxtb	r2, r2
+ 245 0020 1A70     		strb	r2, [r3]
+ 246              	.L15:
+ 192:Generated_Source\PSoC5/USBUART_Dp.c **** 		}
+ 193:Generated_Source\PSoC5/USBUART_Dp.c ****     }
+ 247              		.loc 1 193 0
+ 248 0022 0C37     		adds	r7, r7, #12
+ 249              		.cfi_def_cfa_offset 4
+ 250 0024 BD46     		mov	sp, r7
+ 251              		.cfi_def_cfa_register 13
+ 252              		@ sp needed
+ 253 0026 5DF8047B 		ldr	r7, [sp], #4
+ 254              		.cfi_restore 7
+ 255              		.cfi_def_cfa_offset 0
+ 256 002a 7047     		bx	lr
+ 257              	.L18:
+ 258              		.align	2
+ 259              	.L17:
+ 260 002c 7E450040 		.word	1073759614
+ 261              		.cfi_endproc
+ 262              	.LFE4:
+ 263              		.size	USBUART_Dp_SetInterruptMode, .-USBUART_Dp_SetInterruptMode
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 9
+
+
+ 264              		.section	.text.USBUART_Dp_ClearInterrupt,"ax",%progbits
+ 265              		.align	2
+ 266              		.global	USBUART_Dp_ClearInterrupt
+ 267              		.thumb
+ 268              		.thumb_func
+ 269              		.type	USBUART_Dp_ClearInterrupt, %function
+ 270              	USBUART_Dp_ClearInterrupt:
+ 271              	.LFB5:
+ 194:Generated_Source\PSoC5/USBUART_Dp.c ****     
+ 195:Generated_Source\PSoC5/USBUART_Dp.c ****     
+ 196:Generated_Source\PSoC5/USBUART_Dp.c ****     /*******************************************************************************
+ 197:Generated_Source\PSoC5/USBUART_Dp.c ****     * Function Name: USBUART_Dp_ClearInterrupt
+ 198:Generated_Source\PSoC5/USBUART_Dp.c ****     ****************************************************************************//**
+ 199:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 200:Generated_Source\PSoC5/USBUART_Dp.c ****     * \brief Clears any active interrupts attached with the component and returns 
+ 201:Generated_Source\PSoC5/USBUART_Dp.c ****     *  the value of the interrupt status register allowing determination of which
+ 202:Generated_Source\PSoC5/USBUART_Dp.c ****     *  pins generated an interrupt event.
+ 203:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 204:Generated_Source\PSoC5/USBUART_Dp.c ****     * \return 
+ 205:Generated_Source\PSoC5/USBUART_Dp.c ****     *  The right-shifted current value of the interrupt status register. Each pin 
+ 206:Generated_Source\PSoC5/USBUART_Dp.c ****     *  has one bit set if it generated an interrupt event. For example, bit 0 is 
+ 207:Generated_Source\PSoC5/USBUART_Dp.c ****     *  for pin 0 and bit 1 is for pin 1 of the Pins component.
+ 208:Generated_Source\PSoC5/USBUART_Dp.c ****     *  
+ 209:Generated_Source\PSoC5/USBUART_Dp.c ****     * \sideeffect
+ 210:Generated_Source\PSoC5/USBUART_Dp.c ****     *  Clears all bits of the physical port's interrupt status register, not just
+ 211:Generated_Source\PSoC5/USBUART_Dp.c ****     *  those associated with the Pins component.
+ 212:Generated_Source\PSoC5/USBUART_Dp.c ****     *
+ 213:Generated_Source\PSoC5/USBUART_Dp.c ****     * \funcusage
+ 214:Generated_Source\PSoC5/USBUART_Dp.c ****     *  \snippet USBUART_Dp_SUT.c usage_USBUART_Dp_ClearInterrupt
+ 215:Generated_Source\PSoC5/USBUART_Dp.c ****     *******************************************************************************/
+ 216:Generated_Source\PSoC5/USBUART_Dp.c ****     uint8 USBUART_Dp_ClearInterrupt(void)
+ 217:Generated_Source\PSoC5/USBUART_Dp.c ****     {
+ 272              		.loc 1 217 0
+ 273              		.cfi_startproc
+ 274              		@ args = 0, pretend = 0, frame = 0
+ 275              		@ frame_needed = 1, uses_anonymous_args = 0
+ 276              		@ link register save eliminated.
+ 277 0000 80B4     		push	{r7}
+ 278              		.cfi_def_cfa_offset 4
+ 279              		.cfi_offset 7, -4
+ 280 0002 00AF     		add	r7, sp, #0
+ 281              		.cfi_def_cfa_register 7
+ 218:Generated_Source\PSoC5/USBUART_Dp.c ****         return (USBUART_Dp_INTSTAT & USBUART_Dp_MASK) >> USBUART_Dp_SHIFT;
+ 282              		.loc 1 218 0
+ 283 0004 054B     		ldr	r3, .L21
+ 284 0006 1B78     		ldrb	r3, [r3]
+ 285 0008 DBB2     		uxtb	r3, r3
+ 286 000a 03F04003 		and	r3, r3, #64
+ 287 000e 9B09     		lsrs	r3, r3, #6
+ 288 0010 DBB2     		uxtb	r3, r3
+ 219:Generated_Source\PSoC5/USBUART_Dp.c ****     }
+ 289              		.loc 1 219 0
+ 290 0012 1846     		mov	r0, r3
+ 291 0014 BD46     		mov	sp, r7
+ 292              		.cfi_def_cfa_register 13
+ 293              		@ sp needed
+ 294 0016 5DF8047B 		ldr	r7, [sp], #4
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 10
+
+
+ 295              		.cfi_restore 7
+ 296              		.cfi_def_cfa_offset 0
+ 297 001a 7047     		bx	lr
+ 298              	.L22:
+ 299              		.align	2
+ 300              	.L21:
+ 301 001c 8F450040 		.word	1073759631
+ 302              		.cfi_endproc
+ 303              	.LFE5:
+ 304              		.size	USBUART_Dp_ClearInterrupt, .-USBUART_Dp_ClearInterrupt
+ 305              		.text
+ 306              	.Letext0:
+ 307              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 308              		.section	.debug_info,"",%progbits
+ 309              	.Ldebug_info0:
+ 310 0000 6D010000 		.4byte	0x16d
+ 311 0004 0400     		.2byte	0x4
+ 312 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 313 000a 04       		.byte	0x4
+ 314 000b 01       		.uleb128 0x1
+ 315 000c 29000000 		.4byte	.LASF24
+ 316 0010 01       		.byte	0x1
+ 317 0011 2F020000 		.4byte	.LASF25
+ 318 0015 DC000000 		.4byte	.LASF26
+ 319 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 320 001d 00000000 		.4byte	0
+ 321 0021 00000000 		.4byte	.Ldebug_line0
+ 322 0025 02       		.uleb128 0x2
+ 323 0026 01       		.byte	0x1
+ 324 0027 06       		.byte	0x6
+ 325 0028 23020000 		.4byte	.LASF0
+ 326 002c 02       		.uleb128 0x2
+ 327 002d 01       		.byte	0x1
+ 328 002e 08       		.byte	0x8
+ 329 002f CE000000 		.4byte	.LASF1
+ 330 0033 02       		.uleb128 0x2
+ 331 0034 02       		.byte	0x2
+ 332 0035 05       		.byte	0x5
+ 333 0036 EE010000 		.4byte	.LASF2
+ 334 003a 02       		.uleb128 0x2
+ 335 003b 02       		.byte	0x2
+ 336 003c 07       		.byte	0x7
+ 337 003d 42010000 		.4byte	.LASF3
+ 338 0041 02       		.uleb128 0x2
+ 339 0042 04       		.byte	0x4
+ 340 0043 05       		.byte	0x5
+ 341 0044 FE010000 		.4byte	.LASF4
+ 342 0048 02       		.uleb128 0x2
+ 343 0049 04       		.byte	0x4
+ 344 004a 07       		.byte	0x7
+ 345 004b 30010000 		.4byte	.LASF5
+ 346 004f 02       		.uleb128 0x2
+ 347 0050 08       		.byte	0x8
+ 348 0051 05       		.byte	0x5
+ 349 0052 CB010000 		.4byte	.LASF6
+ 350 0056 02       		.uleb128 0x2
+ 351 0057 08       		.byte	0x8
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 11
+
+
+ 352 0058 07       		.byte	0x7
+ 353 0059 90010000 		.4byte	.LASF7
+ 354 005d 03       		.uleb128 0x3
+ 355 005e 04       		.byte	0x4
+ 356 005f 05       		.byte	0x5
+ 357 0060 696E7400 		.ascii	"int\000"
+ 358 0064 02       		.uleb128 0x2
+ 359 0065 04       		.byte	0x4
+ 360 0066 07       		.byte	0x7
+ 361 0067 83010000 		.4byte	.LASF8
+ 362 006b 04       		.uleb128 0x4
+ 363 006c F8010000 		.4byte	.LASF9
+ 364 0070 02       		.byte	0x2
+ 365 0071 9201     		.2byte	0x192
+ 366 0073 2C000000 		.4byte	0x2c
+ 367 0077 04       		.uleb128 0x4
+ 368 0078 73010000 		.4byte	.LASF10
+ 369 007c 02       		.byte	0x2
+ 370 007d 9301     		.2byte	0x193
+ 371 007f 3A000000 		.4byte	0x3a
+ 372 0083 02       		.uleb128 0x2
+ 373 0084 04       		.byte	0x4
+ 374 0085 04       		.byte	0x4
+ 375 0086 C8000000 		.4byte	.LASF11
+ 376 008a 02       		.uleb128 0x2
+ 377 008b 08       		.byte	0x8
+ 378 008c 04       		.byte	0x4
+ 379 008d 6C010000 		.4byte	.LASF12
+ 380 0091 02       		.uleb128 0x2
+ 381 0092 01       		.byte	0x1
+ 382 0093 08       		.byte	0x8
+ 383 0094 D9010000 		.4byte	.LASF13
+ 384 0098 04       		.uleb128 0x4
+ 385 0099 AC010000 		.4byte	.LASF14
+ 386 009d 02       		.byte	0x2
+ 387 009e 3C02     		.2byte	0x23c
+ 388 00a0 A4000000 		.4byte	0xa4
+ 389 00a4 05       		.uleb128 0x5
+ 390 00a5 6B000000 		.4byte	0x6b
+ 391 00a9 06       		.uleb128 0x6
+ 392 00aa B7000000 		.4byte	.LASF15
+ 393 00ae 01       		.byte	0x1
+ 394 00af 39       		.byte	0x39
+ 395 00b0 00000000 		.4byte	.LFB0
+ 396 00b4 3C000000 		.4byte	.LFE0-.LFB0
+ 397 00b8 01       		.uleb128 0x1
+ 398 00b9 9C       		.byte	0x9c
+ 399 00ba DB000000 		.4byte	0xdb
+ 400 00be 07       		.uleb128 0x7
+ 401 00bf 00000000 		.4byte	.LASF17
+ 402 00c3 01       		.byte	0x1
+ 403 00c4 39       		.byte	0x39
+ 404 00c5 6B000000 		.4byte	0x6b
+ 405 00c9 02       		.uleb128 0x2
+ 406 00ca 91       		.byte	0x91
+ 407 00cb 6F       		.sleb128 -17
+ 408 00cc 08       		.uleb128 0x8
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 12
+
+
+ 409 00cd 1E000000 		.4byte	.LASF27
+ 410 00d1 01       		.byte	0x1
+ 411 00d2 3B       		.byte	0x3b
+ 412 00d3 6B000000 		.4byte	0x6b
+ 413 00d7 02       		.uleb128 0x2
+ 414 00d8 91       		.byte	0x91
+ 415 00d9 77       		.sleb128 -9
+ 416 00da 00       		.byte	0
+ 417 00db 06       		.uleb128 0x6
+ 418 00dc 06000000 		.4byte	.LASF16
+ 419 00e0 01       		.byte	0x1
+ 420 00e1 5A       		.byte	0x5a
+ 421 00e2 00000000 		.4byte	.LFB1
+ 422 00e6 38000000 		.4byte	.LFE1-.LFB1
+ 423 00ea 01       		.uleb128 0x1
+ 424 00eb 9C       		.byte	0x9c
+ 425 00ec FF000000 		.4byte	0xff
+ 426 00f0 07       		.uleb128 0x7
+ 427 00f1 A7010000 		.4byte	.LASF18
+ 428 00f5 01       		.byte	0x1
+ 429 00f6 5A       		.byte	0x5a
+ 430 00f7 6B000000 		.4byte	0x6b
+ 431 00fb 02       		.uleb128 0x2
+ 432 00fc 91       		.byte	0x91
+ 433 00fd 77       		.sleb128 -9
+ 434 00fe 00       		.byte	0
+ 435 00ff 09       		.uleb128 0x9
+ 436 0100 DE010000 		.4byte	.LASF19
+ 437 0104 01       		.byte	0x1
+ 438 0105 71       		.byte	0x71
+ 439 0106 6B000000 		.4byte	0x6b
+ 440 010a 00000000 		.4byte	.LFB2
+ 441 010e 20000000 		.4byte	.LFE2-.LFB2
+ 442 0112 01       		.uleb128 0x1
+ 443 0113 9C       		.byte	0x9c
+ 444 0114 09       		.uleb128 0x9
+ 445 0115 55010000 		.4byte	.LASF20
+ 446 0119 01       		.byte	0x1
+ 447 011a 8D       		.byte	0x8d
+ 448 011b 6B000000 		.4byte	0x6b
+ 449 011f 00000000 		.4byte	.LFB3
+ 450 0123 20000000 		.4byte	.LFE3-.LFB3
+ 451 0127 01       		.uleb128 0x1
+ 452 0128 9C       		.byte	0x9c
+ 453 0129 06       		.uleb128 0x6
+ 454 012a 07020000 		.4byte	.LASF21
+ 455 012e 01       		.byte	0x1
+ 456 012f BB       		.byte	0xbb
+ 457 0130 00000000 		.4byte	.LFB4
+ 458 0134 30000000 		.4byte	.LFE4-.LFB4
+ 459 0138 01       		.uleb128 0x1
+ 460 0139 9C       		.byte	0x9c
+ 461 013a 5B010000 		.4byte	0x15b
+ 462 013e 07       		.uleb128 0x7
+ 463 013f 7A010000 		.4byte	.LASF22
+ 464 0143 01       		.byte	0x1
+ 465 0144 BB       		.byte	0xbb
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 13
+
+
+ 466 0145 77000000 		.4byte	0x77
+ 467 0149 02       		.uleb128 0x2
+ 468 014a 91       		.byte	0x91
+ 469 014b 76       		.sleb128 -10
+ 470 014c 07       		.uleb128 0x7
+ 471 014d A7010000 		.4byte	.LASF18
+ 472 0151 01       		.byte	0x1
+ 473 0152 BB       		.byte	0xbb
+ 474 0153 77000000 		.4byte	0x77
+ 475 0157 02       		.uleb128 0x2
+ 476 0158 91       		.byte	0x91
+ 477 0159 74       		.sleb128 -12
+ 478 015a 00       		.byte	0
+ 479 015b 09       		.uleb128 0x9
+ 480 015c B1010000 		.4byte	.LASF23
+ 481 0160 01       		.byte	0x1
+ 482 0161 D8       		.byte	0xd8
+ 483 0162 6B000000 		.4byte	0x6b
+ 484 0166 00000000 		.4byte	.LFB5
+ 485 016a 20000000 		.4byte	.LFE5-.LFB5
+ 486 016e 01       		.uleb128 0x1
+ 487 016f 9C       		.byte	0x9c
+ 488 0170 00       		.byte	0
+ 489              		.section	.debug_abbrev,"",%progbits
+ 490              	.Ldebug_abbrev0:
+ 491 0000 01       		.uleb128 0x1
+ 492 0001 11       		.uleb128 0x11
+ 493 0002 01       		.byte	0x1
+ 494 0003 25       		.uleb128 0x25
+ 495 0004 0E       		.uleb128 0xe
+ 496 0005 13       		.uleb128 0x13
+ 497 0006 0B       		.uleb128 0xb
+ 498 0007 03       		.uleb128 0x3
+ 499 0008 0E       		.uleb128 0xe
+ 500 0009 1B       		.uleb128 0x1b
+ 501 000a 0E       		.uleb128 0xe
+ 502 000b 55       		.uleb128 0x55
+ 503 000c 17       		.uleb128 0x17
+ 504 000d 11       		.uleb128 0x11
+ 505 000e 01       		.uleb128 0x1
+ 506 000f 10       		.uleb128 0x10
+ 507 0010 17       		.uleb128 0x17
+ 508 0011 00       		.byte	0
+ 509 0012 00       		.byte	0
+ 510 0013 02       		.uleb128 0x2
+ 511 0014 24       		.uleb128 0x24
+ 512 0015 00       		.byte	0
+ 513 0016 0B       		.uleb128 0xb
+ 514 0017 0B       		.uleb128 0xb
+ 515 0018 3E       		.uleb128 0x3e
+ 516 0019 0B       		.uleb128 0xb
+ 517 001a 03       		.uleb128 0x3
+ 518 001b 0E       		.uleb128 0xe
+ 519 001c 00       		.byte	0
+ 520 001d 00       		.byte	0
+ 521 001e 03       		.uleb128 0x3
+ 522 001f 24       		.uleb128 0x24
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 14
+
+
+ 523 0020 00       		.byte	0
+ 524 0021 0B       		.uleb128 0xb
+ 525 0022 0B       		.uleb128 0xb
+ 526 0023 3E       		.uleb128 0x3e
+ 527 0024 0B       		.uleb128 0xb
+ 528 0025 03       		.uleb128 0x3
+ 529 0026 08       		.uleb128 0x8
+ 530 0027 00       		.byte	0
+ 531 0028 00       		.byte	0
+ 532 0029 04       		.uleb128 0x4
+ 533 002a 16       		.uleb128 0x16
+ 534 002b 00       		.byte	0
+ 535 002c 03       		.uleb128 0x3
+ 536 002d 0E       		.uleb128 0xe
+ 537 002e 3A       		.uleb128 0x3a
+ 538 002f 0B       		.uleb128 0xb
+ 539 0030 3B       		.uleb128 0x3b
+ 540 0031 05       		.uleb128 0x5
+ 541 0032 49       		.uleb128 0x49
+ 542 0033 13       		.uleb128 0x13
+ 543 0034 00       		.byte	0
+ 544 0035 00       		.byte	0
+ 545 0036 05       		.uleb128 0x5
+ 546 0037 35       		.uleb128 0x35
+ 547 0038 00       		.byte	0
+ 548 0039 49       		.uleb128 0x49
+ 549 003a 13       		.uleb128 0x13
+ 550 003b 00       		.byte	0
+ 551 003c 00       		.byte	0
+ 552 003d 06       		.uleb128 0x6
+ 553 003e 2E       		.uleb128 0x2e
+ 554 003f 01       		.byte	0x1
+ 555 0040 3F       		.uleb128 0x3f
+ 556 0041 19       		.uleb128 0x19
+ 557 0042 03       		.uleb128 0x3
+ 558 0043 0E       		.uleb128 0xe
+ 559 0044 3A       		.uleb128 0x3a
+ 560 0045 0B       		.uleb128 0xb
+ 561 0046 3B       		.uleb128 0x3b
+ 562 0047 0B       		.uleb128 0xb
+ 563 0048 27       		.uleb128 0x27
+ 564 0049 19       		.uleb128 0x19
+ 565 004a 11       		.uleb128 0x11
+ 566 004b 01       		.uleb128 0x1
+ 567 004c 12       		.uleb128 0x12
+ 568 004d 06       		.uleb128 0x6
+ 569 004e 40       		.uleb128 0x40
+ 570 004f 18       		.uleb128 0x18
+ 571 0050 9742     		.uleb128 0x2117
+ 572 0052 19       		.uleb128 0x19
+ 573 0053 01       		.uleb128 0x1
+ 574 0054 13       		.uleb128 0x13
+ 575 0055 00       		.byte	0
+ 576 0056 00       		.byte	0
+ 577 0057 07       		.uleb128 0x7
+ 578 0058 05       		.uleb128 0x5
+ 579 0059 00       		.byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 15
+
+
+ 580 005a 03       		.uleb128 0x3
+ 581 005b 0E       		.uleb128 0xe
+ 582 005c 3A       		.uleb128 0x3a
+ 583 005d 0B       		.uleb128 0xb
+ 584 005e 3B       		.uleb128 0x3b
+ 585 005f 0B       		.uleb128 0xb
+ 586 0060 49       		.uleb128 0x49
+ 587 0061 13       		.uleb128 0x13
+ 588 0062 02       		.uleb128 0x2
+ 589 0063 18       		.uleb128 0x18
+ 590 0064 00       		.byte	0
+ 591 0065 00       		.byte	0
+ 592 0066 08       		.uleb128 0x8
+ 593 0067 34       		.uleb128 0x34
+ 594 0068 00       		.byte	0
+ 595 0069 03       		.uleb128 0x3
+ 596 006a 0E       		.uleb128 0xe
+ 597 006b 3A       		.uleb128 0x3a
+ 598 006c 0B       		.uleb128 0xb
+ 599 006d 3B       		.uleb128 0x3b
+ 600 006e 0B       		.uleb128 0xb
+ 601 006f 49       		.uleb128 0x49
+ 602 0070 13       		.uleb128 0x13
+ 603 0071 02       		.uleb128 0x2
+ 604 0072 18       		.uleb128 0x18
+ 605 0073 00       		.byte	0
+ 606 0074 00       		.byte	0
+ 607 0075 09       		.uleb128 0x9
+ 608 0076 2E       		.uleb128 0x2e
+ 609 0077 00       		.byte	0
+ 610 0078 3F       		.uleb128 0x3f
+ 611 0079 19       		.uleb128 0x19
+ 612 007a 03       		.uleb128 0x3
+ 613 007b 0E       		.uleb128 0xe
+ 614 007c 3A       		.uleb128 0x3a
+ 615 007d 0B       		.uleb128 0xb
+ 616 007e 3B       		.uleb128 0x3b
+ 617 007f 0B       		.uleb128 0xb
+ 618 0080 27       		.uleb128 0x27
+ 619 0081 19       		.uleb128 0x19
+ 620 0082 49       		.uleb128 0x49
+ 621 0083 13       		.uleb128 0x13
+ 622 0084 11       		.uleb128 0x11
+ 623 0085 01       		.uleb128 0x1
+ 624 0086 12       		.uleb128 0x12
+ 625 0087 06       		.uleb128 0x6
+ 626 0088 40       		.uleb128 0x40
+ 627 0089 18       		.uleb128 0x18
+ 628 008a 9742     		.uleb128 0x2117
+ 629 008c 19       		.uleb128 0x19
+ 630 008d 00       		.byte	0
+ 631 008e 00       		.byte	0
+ 632 008f 00       		.byte	0
+ 633              		.section	.debug_aranges,"",%progbits
+ 634 0000 44000000 		.4byte	0x44
+ 635 0004 0200     		.2byte	0x2
+ 636 0006 00000000 		.4byte	.Ldebug_info0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 16
+
+
+ 637 000a 04       		.byte	0x4
+ 638 000b 00       		.byte	0
+ 639 000c 0000     		.2byte	0
+ 640 000e 0000     		.2byte	0
+ 641 0010 00000000 		.4byte	.LFB0
+ 642 0014 3C000000 		.4byte	.LFE0-.LFB0
+ 643 0018 00000000 		.4byte	.LFB1
+ 644 001c 38000000 		.4byte	.LFE1-.LFB1
+ 645 0020 00000000 		.4byte	.LFB2
+ 646 0024 20000000 		.4byte	.LFE2-.LFB2
+ 647 0028 00000000 		.4byte	.LFB3
+ 648 002c 20000000 		.4byte	.LFE3-.LFB3
+ 649 0030 00000000 		.4byte	.LFB4
+ 650 0034 30000000 		.4byte	.LFE4-.LFB4
+ 651 0038 00000000 		.4byte	.LFB5
+ 652 003c 20000000 		.4byte	.LFE5-.LFB5
+ 653 0040 00000000 		.4byte	0
+ 654 0044 00000000 		.4byte	0
+ 655              		.section	.debug_ranges,"",%progbits
+ 656              	.Ldebug_ranges0:
+ 657 0000 00000000 		.4byte	.LFB0
+ 658 0004 3C000000 		.4byte	.LFE0
+ 659 0008 00000000 		.4byte	.LFB1
+ 660 000c 38000000 		.4byte	.LFE1
+ 661 0010 00000000 		.4byte	.LFB2
+ 662 0014 20000000 		.4byte	.LFE2
+ 663 0018 00000000 		.4byte	.LFB3
+ 664 001c 20000000 		.4byte	.LFE3
+ 665 0020 00000000 		.4byte	.LFB4
+ 666 0024 30000000 		.4byte	.LFE4
+ 667 0028 00000000 		.4byte	.LFB5
+ 668 002c 20000000 		.4byte	.LFE5
+ 669 0030 00000000 		.4byte	0
+ 670 0034 00000000 		.4byte	0
+ 671              		.section	.debug_line,"",%progbits
+ 672              	.Ldebug_line0:
+ 673 0000 BA000000 		.section	.debug_str,"MS",%progbits,1
+ 673      02004700 
+ 673      00000201 
+ 673      FB0E0D00 
+ 673      01010101 
+ 674              	.LASF17:
+ 675 0000 76616C75 		.ascii	"value\000"
+ 675      6500
+ 676              	.LASF16:
+ 677 0006 55534255 		.ascii	"USBUART_Dp_SetDriveMode\000"
+ 677      4152545F 
+ 677      44705F53 
+ 677      65744472 
+ 677      6976654D 
+ 678              	.LASF27:
+ 679 001e 73746174 		.ascii	"staticBits\000"
+ 679      69634269 
+ 679      747300
+ 680              	.LASF24:
+ 681 0029 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 681      4320342E 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 17
+
+
+ 681      392E3320 
+ 681      32303135 
+ 681      30333033 
+ 682 005c 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 682      20726576 
+ 682      6973696F 
+ 682      6E203232 
+ 682      31323230 
+ 683 008f 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 683      66756E63 
+ 683      74696F6E 
+ 683      2D736563 
+ 683      74696F6E 
+ 684              	.LASF15:
+ 685 00b7 55534255 		.ascii	"USBUART_Dp_Write\000"
+ 685      4152545F 
+ 685      44705F57 
+ 685      72697465 
+ 685      00
+ 686              	.LASF11:
+ 687 00c8 666C6F61 		.ascii	"float\000"
+ 687      7400
+ 688              	.LASF1:
+ 689 00ce 756E7369 		.ascii	"unsigned char\000"
+ 689      676E6564 
+ 689      20636861 
+ 689      7200
+ 690              	.LASF26:
+ 691 00dc 433A5C53 		.ascii	"C:\\SVN\\apps\\trunk\\Cypress Academy\\PSoC-121-Ana"
+ 691      564E5C61 
+ 691      7070735C 
+ 691      7472756E 
+ 691      6B5C4379 
+ 692 010a 6C6F675C 		.ascii	"log\\Scope\\KEES_Scope\\PSoC\\Scope.cydsn\000"
+ 692      53636F70 
+ 692      655C4B45 
+ 692      45535F53 
+ 692      636F7065 
+ 693              	.LASF5:
+ 694 0130 6C6F6E67 		.ascii	"long unsigned int\000"
+ 694      20756E73 
+ 694      69676E65 
+ 694      6420696E 
+ 694      7400
+ 695              	.LASF3:
+ 696 0142 73686F72 		.ascii	"short unsigned int\000"
+ 696      7420756E 
+ 696      7369676E 
+ 696      65642069 
+ 696      6E7400
+ 697              	.LASF20:
+ 698 0155 55534255 		.ascii	"USBUART_Dp_ReadDataReg\000"
+ 698      4152545F 
+ 698      44705F52 
+ 698      65616444 
+ 698      61746152 
+ 699              	.LASF12:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 18
+
+
+ 700 016c 646F7562 		.ascii	"double\000"
+ 700      6C6500
+ 701              	.LASF10:
+ 702 0173 75696E74 		.ascii	"uint16\000"
+ 702      313600
+ 703              	.LASF22:
+ 704 017a 706F7369 		.ascii	"position\000"
+ 704      74696F6E 
+ 704      00
+ 705              	.LASF8:
+ 706 0183 756E7369 		.ascii	"unsigned int\000"
+ 706      676E6564 
+ 706      20696E74 
+ 706      00
+ 707              	.LASF7:
+ 708 0190 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 708      206C6F6E 
+ 708      6720756E 
+ 708      7369676E 
+ 708      65642069 
+ 709              	.LASF18:
+ 710 01a7 6D6F6465 		.ascii	"mode\000"
+ 710      00
+ 711              	.LASF14:
+ 712 01ac 72656738 		.ascii	"reg8\000"
+ 712      00
+ 713              	.LASF23:
+ 714 01b1 55534255 		.ascii	"USBUART_Dp_ClearInterrupt\000"
+ 714      4152545F 
+ 714      44705F43 
+ 714      6C656172 
+ 714      496E7465 
+ 715              	.LASF6:
+ 716 01cb 6C6F6E67 		.ascii	"long long int\000"
+ 716      206C6F6E 
+ 716      6720696E 
+ 716      7400
+ 717              	.LASF13:
+ 718 01d9 63686172 		.ascii	"char\000"
+ 718      00
+ 719              	.LASF19:
+ 720 01de 55534255 		.ascii	"USBUART_Dp_Read\000"
+ 720      4152545F 
+ 720      44705F52 
+ 720      65616400 
+ 721              	.LASF2:
+ 722 01ee 73686F72 		.ascii	"short int\000"
+ 722      7420696E 
+ 722      7400
+ 723              	.LASF9:
+ 724 01f8 75696E74 		.ascii	"uint8\000"
+ 724      3800
+ 725              	.LASF4:
+ 726 01fe 6C6F6E67 		.ascii	"long int\000"
+ 726      20696E74 
+ 726      00
+ 727              	.LASF21:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccXyROlA.s 			page 19
+
+
+ 728 0207 55534255 		.ascii	"USBUART_Dp_SetInterruptMode\000"
+ 728      4152545F 
+ 728      44705F53 
+ 728      6574496E 
+ 728      74657272 
+ 729              	.LASF0:
+ 730 0223 7369676E 		.ascii	"signed char\000"
+ 730      65642063 
+ 730      68617200 
+ 731              	.LASF25:
+ 732 022f 47656E65 		.ascii	"Generated_Source\\PSoC5\\USBUART_Dp.c\000"
+ 732      72617465 
+ 732      645F536F 
+ 732      75726365 
+ 732      5C50536F 
+ 733              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

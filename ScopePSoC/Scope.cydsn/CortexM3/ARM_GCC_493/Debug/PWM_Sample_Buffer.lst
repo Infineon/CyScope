@@ -1,0 +1,2692 @@
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"PWM_Sample_Buffer.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	PWM_Sample_Buffer_initVar
+  19              		.bss
+  20              		.type	PWM_Sample_Buffer_initVar, %object
+  21              		.size	PWM_Sample_Buffer_initVar, 1
+  22              	PWM_Sample_Buffer_initVar:
+  23 0000 00       		.space	1
+  24              		.section	.text.PWM_Sample_Buffer_Start,"ax",%progbits
+  25              		.align	2
+  26              		.global	PWM_Sample_Buffer_Start
+  27              		.thumb
+  28              		.thumb_func
+  29              		.type	PWM_Sample_Buffer_Start, %function
+  30              	PWM_Sample_Buffer_Start:
+  31              	.LFB0:
+  32              		.file 1 "Generated_Source\\PSoC5\\PWM_Sample_Buffer.c"
+   1:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * File Name: PWM_Sample_Buffer.c
+   3:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Version 3.30
+   4:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+   5:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Description:
+   6:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  The PWM User Module consist of an 8 or 16-bit counter with two 8 or 16-bit
+   7:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  comparitors. Each instance of this user module is capable of generating
+   8:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  two PWM outputs with the same period. The pulse width is selectable between
+   9:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  1 and 255/65535. The period is selectable between 2 and 255/65536 clocks.
+  10:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  The compare value output may be configured to be active when the present
+  11:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  counter is less than or less than/equal to the compare value.
+  12:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  A terminal count output is also provided. It generates a pulse one clock
+  13:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  width wide when the counter is equal to zero.
+  14:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  15:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Note:
+  16:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  17:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************
+  18:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  19:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * You may use this file only in accordance with the license, terms, conditions,
+  20:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  21:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * the software package with which this file was provided.
+  22:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************/
+  23:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  24:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #include "PWM_Sample_Buffer.h"
+  25:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 2
+
+
+  26:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /* Error message for removed <resource> through optimization */
+  27:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #ifdef PWM_Sample_Buffer_PWMUDB_genblk1_ctrlreg__REMOVED
+  28:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #error PWM_v3_30 detected with a constant 0 for the enable or \
+  29:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****          constant 1 for reset. This will prevent the component from operating.
+  30:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* PWM_Sample_Buffer_PWMUDB_genblk1_ctrlreg__REMOVED */
+  31:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  32:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** uint8 PWM_Sample_Buffer_initVar = 0u;
+  33:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  34:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  35:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+  36:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Function Name: PWM_Sample_Buffer_Start
+  37:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************
+  38:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  39:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Summary:
+  40:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  The start function initializes the pwm with the default values, the
+  41:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  enables the counter to begin counting.  It does not enable interrupts,
+  42:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  the EnableInt command should be called if interrupt generation is required.
+  43:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  44:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Parameters:
+  45:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+  46:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  47:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
+  48:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+  49:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  50:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Global variables:
+  51:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  PWM_Sample_Buffer_initVar: Is modified when this function is called for the
+  52:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *   first time. Is used to ensure that initialization happens only once.
+  53:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  54:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
+  55:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** void PWM_Sample_Buffer_Start(void) 
+  56:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
+  33              		.loc 1 56 0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 1, uses_anonymous_args = 0
+  37 0000 80B5     		push	{r7, lr}
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 7, -8
+  40              		.cfi_offset 14, -4
+  41 0002 00AF     		add	r7, sp, #0
+  42              		.cfi_def_cfa_register 7
+  57:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /* If not Initialized then initialize all required hardware and software */
+  58:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     if(PWM_Sample_Buffer_initVar == 0u)
+  43              		.loc 1 58 0
+  44 0004 054B     		ldr	r3, .L3
+  45 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  46 0008 002B     		cmp	r3, #0
+  47 000a 04D1     		bne	.L2
+  59:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+  60:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_Init();
+  48              		.loc 1 60 0
+  49 000c FFF7FEFF 		bl	PWM_Sample_Buffer_Init
+  61:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_initVar = 1u;
+  50              		.loc 1 61 0
+  51 0010 024B     		ldr	r3, .L3
+  52 0012 0122     		movs	r2, #1
+  53 0014 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 3
+
+
+  54              	.L2:
+  62:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+  63:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     PWM_Sample_Buffer_Enable();
+  55              		.loc 1 63 0
+  56 0016 FFF7FEFF 		bl	PWM_Sample_Buffer_Enable
+  64:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  65:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
+  57              		.loc 1 65 0
+  58 001a 80BD     		pop	{r7, pc}
+  59              	.L4:
+  60              		.align	2
+  61              	.L3:
+  62 001c 00000000 		.word	PWM_Sample_Buffer_initVar
+  63              		.cfi_endproc
+  64              	.LFE0:
+  65              		.size	PWM_Sample_Buffer_Start, .-PWM_Sample_Buffer_Start
+  66              		.section	.text.PWM_Sample_Buffer_Init,"ax",%progbits
+  67              		.align	2
+  68              		.global	PWM_Sample_Buffer_Init
+  69              		.thumb
+  70              		.thumb_func
+  71              		.type	PWM_Sample_Buffer_Init, %function
+  72              	PWM_Sample_Buffer_Init:
+  73              	.LFB1:
+  66:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  67:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  68:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+  69:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Function Name: PWM_Sample_Buffer_Init
+  70:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************
+  71:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  72:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Summary:
+  73:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  Initialize component's parameters to the parameters set by user in the
+  74:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  customizer of the component placed onto schematic. Usually called in
+  75:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  PWM_Sample_Buffer_Start().
+  76:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  77:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Parameters:
+  78:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+  79:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  80:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
+  81:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+  82:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+  83:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
+  84:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** void PWM_Sample_Buffer_Init(void) 
+  85:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
+  74              		.loc 1 85 0
+  75              		.cfi_startproc
+  76              		@ args = 0, pretend = 0, frame = 8
+  77              		@ frame_needed = 1, uses_anonymous_args = 0
+  78 0000 80B5     		push	{r7, lr}
+  79              		.cfi_def_cfa_offset 8
+  80              		.cfi_offset 7, -8
+  81              		.cfi_offset 14, -4
+  82 0002 82B0     		sub	sp, sp, #8
+  83              		.cfi_def_cfa_offset 16
+  84 0004 00AF     		add	r7, sp, #0
+  85              		.cfi_def_cfa_register 7
+  86:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UsingFixedFunction || PWM_Sample_Buffer_UseControl)
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 4
+
+
+  87:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         uint8 ctrl;
+  88:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction || PWM_Sample_Buffer_UseControl) */
+  89:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  90:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if(!PWM_Sample_Buffer_UsingFixedFunction)
+  91:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(PWM_Sample_Buffer_UseStatus)
+  92:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Interrupt State Backup for Critical Region*/
+  93:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             uint8 PWM_Sample_Buffer_interruptState;
+  94:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UseStatus) */
+  95:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (!PWM_Sample_Buffer_UsingFixedFunction) */
+  96:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+  97:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UsingFixedFunction)
+  98:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* You are allowed to write the compare value (FF only) */
+  99:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_CONTROL |= PWM_Sample_Buffer_CFG0_MODE;
+ 100:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_DeadBand2_4)
+ 101:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_CONTROL |= PWM_Sample_Buffer_CFG0_DB;
+ 102:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_DeadBand2_4) */
+ 103:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 104:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         ctrl = PWM_Sample_Buffer_CONTROL3 & ((uint8 )(~PWM_Sample_Buffer_CTRL_CMPMODE1_MASK));
+ 105:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_CONTROL3 = ctrl | PWM_Sample_Buffer_DEFAULT_COMPARE1_MODE;
+ 106:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 107:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****          /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+ 108:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_RT1 &= ((uint8)(~PWM_Sample_Buffer_RT1_MASK));
+ 109:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_RT1 |= PWM_Sample_Buffer_SYNC;
+ 110:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 111:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /*Enable DSI Sync all all inputs of the PWM*/
+ 112:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_RT1 &= ((uint8)(~PWM_Sample_Buffer_SYNCDSI_MASK));
+ 113:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_RT1 |= PWM_Sample_Buffer_SYNCDSI_EN;
+ 114:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 115:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #elif (PWM_Sample_Buffer_UseControl)
+ 116:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Set the default compare mode defined in the parameter */
+ 117:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         ctrl = PWM_Sample_Buffer_CONTROL & ((uint8)(~PWM_Sample_Buffer_CTRL_CMPMODE2_MASK)) &
+  86              		.loc 1 117 0
+  87 0006 1F4B     		ldr	r3, .L6
+  88 0008 1B78     		ldrb	r3, [r3]
+  89 000a DBB2     		uxtb	r3, r3
+  90 000c 23F03F03 		bic	r3, r3, #63
+  91 0010 FB71     		strb	r3, [r7, #7]
+ 118:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 ((uint8)(~PWM_Sample_Buffer_CTRL_CMPMODE1_MASK));
+ 119:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_CONTROL = ctrl | PWM_Sample_Buffer_DEFAULT_COMPARE2_MODE |
+  92              		.loc 1 119 0
+  93 0012 1C4A     		ldr	r2, .L6
+  94 0014 FB79     		ldrb	r3, [r7, #7]
+  95 0016 43F00A03 		orr	r3, r3, #10
+  96 001a DBB2     		uxtb	r3, r3
+  97 001c 1370     		strb	r3, [r2]
+ 120:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                    PWM_Sample_Buffer_DEFAULT_COMPARE1_MODE;
+ 121:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 122:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 123:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (!PWM_Sample_Buffer_UsingFixedFunction)
+ 124:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_Resolution == 8)
+ 125:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Set FIFO 0 to 1 byte register for period*/
+ 126:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_AUX_CONTROLDP0 |= (PWM_Sample_Buffer_AUX_CTRL_FIFO0_CLR);
+ 127:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else /* (PWM_Sample_Buffer_Resolution == 16)*/
+ 128:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Set FIFO 0 to 1 byte register for period */
+ 129:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_AUX_CONTROLDP0 |= (PWM_Sample_Buffer_AUX_CTRL_FIFO0_CLR);
+  98              		.loc 1 129 0
+  99 001e 1A4A     		ldr	r2, .L6+4
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 5
+
+
+ 100 0020 194B     		ldr	r3, .L6+4
+ 101 0022 1B78     		ldrb	r3, [r3]
+ 102 0024 DBB2     		uxtb	r3, r3
+ 103 0026 43F00103 		orr	r3, r3, #1
+ 104 002a DBB2     		uxtb	r3, r3
+ 105 002c 1370     		strb	r3, [r2]
+ 130:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_AUX_CONTROLDP1 |= (PWM_Sample_Buffer_AUX_CTRL_FIFO0_CLR);
+ 106              		.loc 1 130 0
+ 107 002e 174A     		ldr	r2, .L6+8
+ 108 0030 164B     		ldr	r3, .L6+8
+ 109 0032 1B78     		ldrb	r3, [r3]
+ 110 0034 DBB2     		uxtb	r3, r3
+ 111 0036 43F00103 		orr	r3, r3, #1
+ 112 003a DBB2     		uxtb	r3, r3
+ 113 003c 1370     		strb	r3, [r2]
+ 131:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_Resolution == 8) */
+ 132:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 133:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_WriteCounter(PWM_Sample_Buffer_INIT_PERIOD_VALUE);
+ 114              		.loc 1 133 0
+ 115 003e 40F2FF30 		movw	r0, #1023
+ 116 0042 FFF7FEFF 		bl	PWM_Sample_Buffer_WriteCounter
+ 134:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (!PWM_Sample_Buffer_UsingFixedFunction) */
+ 135:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 136:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     PWM_Sample_Buffer_WritePeriod(PWM_Sample_Buffer_INIT_PERIOD_VALUE);
+ 117              		.loc 1 136 0
+ 118 0046 40F2FF30 		movw	r0, #1023
+ 119 004a FFF7FEFF 		bl	PWM_Sample_Buffer_WritePeriod
+ 137:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 138:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_UseOneCompareMode)
+ 139:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_WriteCompare(PWM_Sample_Buffer_INIT_COMPARE_VALUE1);
+ 120              		.loc 1 139 0
+ 121 004e 0120     		movs	r0, #1
+ 122 0050 FFF7FEFF 		bl	PWM_Sample_Buffer_WriteCompare
+ 140:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 141:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_WriteCompare1(PWM_Sample_Buffer_INIT_COMPARE_VALUE1);
+ 142:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_WriteCompare2(PWM_Sample_Buffer_INIT_COMPARE_VALUE2);
+ 143:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UseOneCompareMode) */
+ 144:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 145:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_KillModeMinTime)
+ 146:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_WriteKillTime(PWM_Sample_Buffer_MinimumKillTime);
+ 147:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_KillModeMinTime) */
+ 148:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 149:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_DeadBandUsed)
+ 150:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_WriteDeadTime(PWM_Sample_Buffer_INIT_DEAD_TIME);
+ 151:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_DeadBandUsed) */
+ 152:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 153:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UseStatus || PWM_Sample_Buffer_UsingFixedFunction)
+ 154:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_SetInterruptMode(PWM_Sample_Buffer_INIT_INTERRUPTS_MODE);
+ 123              		.loc 1 154 0
+ 124 0054 0020     		movs	r0, #0
+ 125 0056 FFF7FEFF 		bl	PWM_Sample_Buffer_SetInterruptMode
+ 155:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UseStatus || PWM_Sample_Buffer_UsingFixedFunction) */
+ 156:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 157:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UsingFixedFunction)
+ 158:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Globally Enable the Fixed Function Block chosen */
+ 159:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_GLOBAL_ENABLE |= PWM_Sample_Buffer_BLOCK_EN_MASK;
+ 160:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Set the Interrupt source to come from the status register */
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 6
+
+
+ 161:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_CONTROL2 |= PWM_Sample_Buffer_CTRL2_IRQ_SEL;
+ 162:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #else
+ 163:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(PWM_Sample_Buffer_UseStatus)
+ 164:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 165:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 166:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Enter Critical Region*/
+ 167:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_interruptState = CyEnterCriticalSection();
+ 126              		.loc 1 167 0
+ 127 005a FFF7FEFF 		bl	CyEnterCriticalSection
+ 128 005e 0346     		mov	r3, r0
+ 129 0060 BB71     		strb	r3, [r7, #6]
+ 168:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 169:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_STATUS_AUX_CTRL |= PWM_Sample_Buffer_STATUS_ACTL_INT_EN_MASK;
+ 130              		.loc 1 169 0
+ 131 0062 0B4A     		ldr	r2, .L6+12
+ 132 0064 0A4B     		ldr	r3, .L6+12
+ 133 0066 1B78     		ldrb	r3, [r3]
+ 134 0068 DBB2     		uxtb	r3, r3
+ 135 006a 43F01003 		orr	r3, r3, #16
+ 136 006e DBB2     		uxtb	r3, r3
+ 137 0070 1370     		strb	r3, [r2]
+ 170:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 171:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****              /* Exit Critical Region*/
+ 172:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CyExitCriticalSection(PWM_Sample_Buffer_interruptState);
+ 138              		.loc 1 172 0
+ 139 0072 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 140 0074 1846     		mov	r0, r3
+ 141 0076 FFF7FEFF 		bl	CyExitCriticalSection
+ 173:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 174:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Clear the FIFO to enable the PWM_Sample_Buffer_STATUS_FIFOFULL
+ 175:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                    bit to be set on FIFO full. */
+ 176:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_ClearFIFO();
+ 142              		.loc 1 176 0
+ 143 007a FFF7FEFF 		bl	PWM_Sample_Buffer_ClearFIFO
+ 177:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UseStatus) */
+ 178:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 179:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
+ 144              		.loc 1 179 0
+ 145 007e 0837     		adds	r7, r7, #8
+ 146              		.cfi_def_cfa_offset 8
+ 147 0080 BD46     		mov	sp, r7
+ 148              		.cfi_def_cfa_register 13
+ 149              		@ sp needed
+ 150 0082 80BD     		pop	{r7, pc}
+ 151              	.L7:
+ 152              		.align	2
+ 153              	.L6:
+ 154 0084 74640040 		.word	1073767540
+ 155 0088 96640040 		.word	1073767574
+ 156 008c 97640040 		.word	1073767575
+ 157 0090 94640040 		.word	1073767572
+ 158              		.cfi_endproc
+ 159              	.LFE1:
+ 160              		.size	PWM_Sample_Buffer_Init, .-PWM_Sample_Buffer_Init
+ 161              		.section	.text.PWM_Sample_Buffer_Enable,"ax",%progbits
+ 162              		.align	2
+ 163              		.global	PWM_Sample_Buffer_Enable
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 7
+
+
+ 164              		.thumb
+ 165              		.thumb_func
+ 166              		.type	PWM_Sample_Buffer_Enable, %function
+ 167              	PWM_Sample_Buffer_Enable:
+ 168              	.LFB2:
+ 180:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 181:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 182:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+ 183:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Function Name: PWM_Sample_Buffer_Enable
+ 184:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************
+ 185:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 186:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Summary:
+ 187:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  Enables the PWM block operation
+ 188:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 189:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Parameters:
+ 190:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+ 191:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 192:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
+ 193:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+ 194:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 195:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Side Effects:
+ 196:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  This works only if software enable mode is chosen
+ 197:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 198:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
+ 199:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** void PWM_Sample_Buffer_Enable(void) 
+ 200:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
+ 169              		.loc 1 200 0
+ 170              		.cfi_startproc
+ 171              		@ args = 0, pretend = 0, frame = 0
+ 172              		@ frame_needed = 1, uses_anonymous_args = 0
+ 173              		@ link register save eliminated.
+ 174 0000 80B4     		push	{r7}
+ 175              		.cfi_def_cfa_offset 4
+ 176              		.cfi_offset 7, -4
+ 177 0002 00AF     		add	r7, sp, #0
+ 178              		.cfi_def_cfa_register 7
+ 201:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 202:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UsingFixedFunction)
+ 203:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_GLOBAL_ENABLE |= PWM_Sample_Buffer_BLOCK_EN_MASK;
+ 204:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_GLOBAL_STBY_ENABLE |= PWM_Sample_Buffer_BLOCK_STBY_EN_MASK;
+ 205:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 206:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 207:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /* Enable the PWM from the control register  */
+ 208:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UseControl || PWM_Sample_Buffer_UsingFixedFunction)
+ 209:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_CONTROL |= PWM_Sample_Buffer_CTRL_ENABLE;
+ 179              		.loc 1 209 0
+ 180 0004 054A     		ldr	r2, .L9
+ 181 0006 054B     		ldr	r3, .L9
+ 182 0008 1B78     		ldrb	r3, [r3]
+ 183 000a DBB2     		uxtb	r3, r3
+ 184 000c 63F07F03 		orn	r3, r3, #127
+ 185 0010 DBB2     		uxtb	r3, r3
+ 186 0012 1370     		strb	r3, [r2]
+ 210:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UseControl || PWM_Sample_Buffer_UsingFixedFunction) */
+ 211:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
+ 187              		.loc 1 211 0
+ 188 0014 BD46     		mov	sp, r7
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 8
+
+
+ 189              		.cfi_def_cfa_register 13
+ 190              		@ sp needed
+ 191 0016 5DF8047B 		ldr	r7, [sp], #4
+ 192              		.cfi_restore 7
+ 193              		.cfi_def_cfa_offset 0
+ 194 001a 7047     		bx	lr
+ 195              	.L10:
+ 196              		.align	2
+ 197              	.L9:
+ 198 001c 74640040 		.word	1073767540
+ 199              		.cfi_endproc
+ 200              	.LFE2:
+ 201              		.size	PWM_Sample_Buffer_Enable, .-PWM_Sample_Buffer_Enable
+ 202              		.section	.text.PWM_Sample_Buffer_Stop,"ax",%progbits
+ 203              		.align	2
+ 204              		.global	PWM_Sample_Buffer_Stop
+ 205              		.thumb
+ 206              		.thumb_func
+ 207              		.type	PWM_Sample_Buffer_Stop, %function
+ 208              	PWM_Sample_Buffer_Stop:
+ 209              	.LFB3:
+ 212:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 213:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 214:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+ 215:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Function Name: PWM_Sample_Buffer_Stop
+ 216:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************
+ 217:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 218:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Summary:
+ 219:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  The stop function halts the PWM, but does not change any modes or disable
+ 220:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  interrupts.
+ 221:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 222:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Parameters:
+ 223:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+ 224:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 225:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
+ 226:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+ 227:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 228:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Side Effects:
+ 229:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  If the Enable mode is set to Hardware only then this function
+ 230:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  has no effect on the operation of the PWM
+ 231:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 232:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
+ 233:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** void PWM_Sample_Buffer_Stop(void) 
+ 234:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
+ 210              		.loc 1 234 0
+ 211              		.cfi_startproc
+ 212              		@ args = 0, pretend = 0, frame = 0
+ 213              		@ frame_needed = 1, uses_anonymous_args = 0
+ 214              		@ link register save eliminated.
+ 215 0000 80B4     		push	{r7}
+ 216              		.cfi_def_cfa_offset 4
+ 217              		.cfi_offset 7, -4
+ 218 0002 00AF     		add	r7, sp, #0
+ 219              		.cfi_def_cfa_register 7
+ 235:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UseControl || PWM_Sample_Buffer_UsingFixedFunction)
+ 236:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_CONTROL &= ((uint8)(~PWM_Sample_Buffer_CTRL_ENABLE));
+ 220              		.loc 1 236 0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 9
+
+
+ 221 0004 054A     		ldr	r2, .L12
+ 222 0006 054B     		ldr	r3, .L12
+ 223 0008 1B78     		ldrb	r3, [r3]
+ 224 000a DBB2     		uxtb	r3, r3
+ 225 000c 03F07F03 		and	r3, r3, #127
+ 226 0010 DBB2     		uxtb	r3, r3
+ 227 0012 1370     		strb	r3, [r2]
+ 237:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UseControl || PWM_Sample_Buffer_UsingFixedFunction) */
+ 238:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 239:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /* Globally disable the Fixed Function Block chosen */
+ 240:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UsingFixedFunction)
+ 241:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_GLOBAL_ENABLE &= ((uint8)(~PWM_Sample_Buffer_BLOCK_EN_MASK));
+ 242:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         PWM_Sample_Buffer_GLOBAL_STBY_ENABLE &= ((uint8)(~PWM_Sample_Buffer_BLOCK_STBY_EN_MASK));
+ 243:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 244:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
+ 228              		.loc 1 244 0
+ 229 0014 BD46     		mov	sp, r7
+ 230              		.cfi_def_cfa_register 13
+ 231              		@ sp needed
+ 232 0016 5DF8047B 		ldr	r7, [sp], #4
+ 233              		.cfi_restore 7
+ 234              		.cfi_def_cfa_offset 0
+ 235 001a 7047     		bx	lr
+ 236              	.L13:
+ 237              		.align	2
+ 238              	.L12:
+ 239 001c 74640040 		.word	1073767540
+ 240              		.cfi_endproc
+ 241              	.LFE3:
+ 242              		.size	PWM_Sample_Buffer_Stop, .-PWM_Sample_Buffer_Stop
+ 243              		.section	.text.PWM_Sample_Buffer_WriteCounter,"ax",%progbits
+ 244              		.align	2
+ 245              		.global	PWM_Sample_Buffer_WriteCounter
+ 246              		.thumb
+ 247              		.thumb_func
+ 248              		.type	PWM_Sample_Buffer_WriteCounter, %function
+ 249              	PWM_Sample_Buffer_WriteCounter:
+ 250              	.LFB4:
+ 245:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 246:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_UseOneCompareMode)
+ 247:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_CompareMode1SW)
+ 248:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 249:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 250:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /*******************************************************************************
+ 251:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Function Name: PWM_Sample_Buffer_SetCompareMode
+ 252:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         ********************************************************************************
+ 253:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 254:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Summary:
+ 255:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  This function writes the Compare Mode for the pwm output when in Dither mode,
+ 256:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  Center Align Mode or One Output Mode.
+ 257:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 258:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Parameters:
+ 259:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 260:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *                defined in the H file as input arguments.
+ 261:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 262:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Return:
+ 263:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  None
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 10
+
+
+ 264:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 265:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *******************************************************************************/
+ 266:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         void PWM_Sample_Buffer_SetCompareMode(uint8 comparemode) 
+ 267:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         {
+ 268:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 269:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 270:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #if(0 != PWM_Sample_Buffer_CTRL_CMPMODE1_SHIFT)
+ 271:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                     uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_Sample_Buffer_CTRL
+ 272:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #else
+ 273:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                     uint8 comparemodemasked = comparemode;
+ 274:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #endif /* (0 != PWM_Sample_Buffer_CTRL_CMPMODE1_SHIFT) */
+ 275:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 276:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_CONTROL3 &= ((uint8)(~PWM_Sample_Buffer_CTRL_CMPMODE1_MASK)); /*C
+ 277:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_CONTROL3 |= comparemodemasked;
+ 278:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 279:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #elif (PWM_Sample_Buffer_UseControl)
+ 280:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 281:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #if(0 != PWM_Sample_Buffer_CTRL_CMPMODE1_SHIFT)
+ 282:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                     uint8 comparemode1masked = ((uint8)((uint8)comparemode << PWM_Sample_Buffer_CTR
+ 283:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                                 PWM_Sample_Buffer_CTRL_CMPMODE1_MASK;
+ 284:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #else
+ 285:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                     uint8 comparemode1masked = comparemode & PWM_Sample_Buffer_CTRL_CMPMODE1_MASK;
+ 286:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #endif /* (0 != PWM_Sample_Buffer_CTRL_CMPMODE1_SHIFT) */
+ 287:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 288:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #if(0 != PWM_Sample_Buffer_CTRL_CMPMODE2_SHIFT)
+ 289:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                     uint8 comparemode2masked = ((uint8)((uint8)comparemode << PWM_Sample_Buffer_CTR
+ 290:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                                PWM_Sample_Buffer_CTRL_CMPMODE2_MASK;
+ 291:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #else
+ 292:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                     uint8 comparemode2masked = comparemode & PWM_Sample_Buffer_CTRL_CMPMODE2_MASK;
+ 293:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 #endif /* (0 != PWM_Sample_Buffer_CTRL_CMPMODE2_SHIFT) */
+ 294:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 295:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 /*Clear existing mode */
+ 296:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_CONTROL &= ((uint8)(~(PWM_Sample_Buffer_CTRL_CMPMODE1_MASK |
+ 297:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                             PWM_Sample_Buffer_CTRL_CMPMODE2_MASK)));
+ 298:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_CONTROL |= (comparemode1masked | comparemode2masked);
+ 299:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 300:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #else
+ 301:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 uint8 temp = comparemode;
+ 302:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 303:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         }
+ 304:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* PWM_Sample_Buffer_CompareMode1SW */
+ 305:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 306:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #else /* UseOneCompareMode */
+ 307:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 308:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_CompareMode1SW)
+ 309:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 310:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 311:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /*******************************************************************************
+ 312:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Function Name: PWM_Sample_Buffer_SetCompareMode1
+ 313:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         ********************************************************************************
+ 314:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 315:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Summary:
+ 316:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  This function writes the Compare Mode for the pwm or pwm1 output
+ 317:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 318:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Parameters:
+ 319:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 320:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *                defined in the H file as input arguments.
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 11
+
+
+ 321:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 322:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Return:
+ 323:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  None
+ 324:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 325:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *******************************************************************************/
+ 326:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         void PWM_Sample_Buffer_SetCompareMode1(uint8 comparemode) 
+ 327:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         {
+ 328:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #if(0 != PWM_Sample_Buffer_CTRL_CMPMODE1_SHIFT)
+ 329:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_Sample_Buffer_CTRL_CMP
+ 330:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                            PWM_Sample_Buffer_CTRL_CMPMODE1_MASK;
+ 331:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #else
+ 332:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 uint8 comparemodemasked = comparemode & PWM_Sample_Buffer_CTRL_CMPMODE1_MASK;
+ 333:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (0 != PWM_Sample_Buffer_CTRL_CMPMODE1_SHIFT) */
+ 334:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 335:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #if (PWM_Sample_Buffer_UseControl)
+ 336:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_CONTROL &= ((uint8)(~PWM_Sample_Buffer_CTRL_CMPMODE1_MASK)); /*Cl
+ 337:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_CONTROL |= comparemodemasked;
+ 338:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (PWM_Sample_Buffer_UseControl) */
+ 339:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         }
+ 340:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* PWM_Sample_Buffer_CompareMode1SW */
+ 341:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 342:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_CompareMode2SW)
+ 343:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 344:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 345:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 346:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_SetCompareMode2
+ 347:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 348:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 349:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 350:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function writes the Compare Mode for the pwm or pwm2 output
+ 351:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 352:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 353:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 354:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *                defined in the H file as input arguments.
+ 355:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 356:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 357:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 358:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 359:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 360:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_SetCompareMode2(uint8 comparemode) 
+ 361:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 362:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 363:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(0 != PWM_Sample_Buffer_CTRL_CMPMODE2_SHIFT)
+ 364:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_Sample_Buffer_CTRL_CMPMODE
+ 365:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                                  PWM_Sample_Buffer_CTRL_CMPMODE2_MASK;
+ 366:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 367:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             uint8 comparemodemasked = comparemode & PWM_Sample_Buffer_CTRL_CMPMODE2_MASK;
+ 368:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (0 != PWM_Sample_Buffer_CTRL_CMPMODE2_SHIFT) */
+ 369:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 370:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_UseControl)
+ 371:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_CONTROL &= ((uint8)(~PWM_Sample_Buffer_CTRL_CMPMODE2_MASK)); /*Clear 
+ 372:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_CONTROL |= comparemodemasked;
+ 373:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UseControl) */
+ 374:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 375:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /*PWM_Sample_Buffer_CompareMode2SW */
+ 376:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 377:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* UseOneCompareMode */
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 12
+
+
+ 378:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 379:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 380:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (!PWM_Sample_Buffer_UsingFixedFunction)
+ 381:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 382:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 383:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 384:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_WriteCounter
+ 385:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 386:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 387:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 388:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Writes a new counter value directly to the counter register. This will be
+ 389:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  implemented for that currently running period and only that period. This API
+ 390:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  is valid only for UDB implementation and not available for fixed function
+ 391:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  PWM implementation.
+ 392:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 393:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 394:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  counter:  The period new period counter value.
+ 395:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 396:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 397:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 398:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 399:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Side Effects:
+ 400:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  The PWM Period will be reloaded when a counter value will be a zero
+ 401:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 402:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 403:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_WriteCounter(uint16 counter) \
+ 404:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                        
+ 405:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 251              		.loc 1 405 0
+ 252              		.cfi_startproc
+ 253              		@ args = 0, pretend = 0, frame = 8
+ 254              		@ frame_needed = 1, uses_anonymous_args = 0
+ 255              		@ link register save eliminated.
+ 256 0000 80B4     		push	{r7}
+ 257              		.cfi_def_cfa_offset 4
+ 258              		.cfi_offset 7, -4
+ 259 0002 83B0     		sub	sp, sp, #12
+ 260              		.cfi_def_cfa_offset 16
+ 261 0004 00AF     		add	r7, sp, #0
+ 262              		.cfi_def_cfa_register 7
+ 263 0006 0346     		mov	r3, r0
+ 264 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 406:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         CY_SET_REG16(PWM_Sample_Buffer_COUNTER_LSB_PTR, counter);
+ 265              		.loc 1 406 0
+ 266 000a 044A     		ldr	r2, .L15
+ 267 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 268 000e 1380     		strh	r3, [r2]	@ movhi
+ 407:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 269              		.loc 1 407 0
+ 270 0010 0C37     		adds	r7, r7, #12
+ 271              		.cfi_def_cfa_offset 4
+ 272 0012 BD46     		mov	sp, r7
+ 273              		.cfi_def_cfa_register 13
+ 274              		@ sp needed
+ 275 0014 5DF8047B 		ldr	r7, [sp], #4
+ 276              		.cfi_restore 7
+ 277              		.cfi_def_cfa_offset 0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 13
+
+
+ 278 0018 7047     		bx	lr
+ 279              	.L16:
+ 280 001a 00BF     		.align	2
+ 281              	.L15:
+ 282 001c 0C680040 		.word	1073768460
+ 283              		.cfi_endproc
+ 284              	.LFE4:
+ 285              		.size	PWM_Sample_Buffer_WriteCounter, .-PWM_Sample_Buffer_WriteCounter
+ 286              		.section	.text.PWM_Sample_Buffer_ReadCounter,"ax",%progbits
+ 287              		.align	2
+ 288              		.global	PWM_Sample_Buffer_ReadCounter
+ 289              		.thumb
+ 290              		.thumb_func
+ 291              		.type	PWM_Sample_Buffer_ReadCounter, %function
+ 292              	PWM_Sample_Buffer_ReadCounter:
+ 293              	.LFB5:
+ 408:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 409:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 410:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 411:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadCounter
+ 412:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 413:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 414:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 415:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function returns the current value of the counter.  It doesn't matter
+ 416:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  if the counter is enabled or running.
+ 417:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 418:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 419:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 420:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 421:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 422:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  The current value of the counter.
+ 423:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 424:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 425:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint16 PWM_Sample_Buffer_ReadCounter(void) 
+ 426:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 294              		.loc 1 426 0
+ 295              		.cfi_startproc
+ 296              		@ args = 0, pretend = 0, frame = 0
+ 297              		@ frame_needed = 1, uses_anonymous_args = 0
+ 298              		@ link register save eliminated.
+ 299 0000 80B4     		push	{r7}
+ 300              		.cfi_def_cfa_offset 4
+ 301              		.cfi_offset 7, -4
+ 302 0002 00AF     		add	r7, sp, #0
+ 303              		.cfi_def_cfa_register 7
+ 427:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Force capture by reading Accumulator */
+ 428:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Must first do a software capture to be able to read the counter */
+ 429:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 430:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****           (void)CY_GET_REG8(PWM_Sample_Buffer_COUNTERCAP_LSB_PTR_8BIT);
+ 304              		.loc 1 430 0
+ 305 0004 044B     		ldr	r3, .L19
+ 306 0006 1B78     		ldrb	r3, [r3]
+ 431:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 432:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* Read the data from the FIFO */
+ 433:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (CY_GET_REG16(PWM_Sample_Buffer_CAPTURE_LSB_PTR));
+ 307              		.loc 1 433 0
+ 308 0008 044B     		ldr	r3, .L19+4
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 14
+
+
+ 309 000a 1B88     		ldrh	r3, [r3]	@ movhi
+ 310 000c 9BB2     		uxth	r3, r3
+ 434:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 311              		.loc 1 434 0
+ 312 000e 1846     		mov	r0, r3
+ 313 0010 BD46     		mov	sp, r7
+ 314              		.cfi_def_cfa_register 13
+ 315              		@ sp needed
+ 316 0012 5DF8047B 		ldr	r7, [sp], #4
+ 317              		.cfi_restore 7
+ 318              		.cfi_def_cfa_offset 0
+ 319 0016 7047     		bx	lr
+ 320              	.L20:
+ 321              		.align	2
+ 322              	.L19:
+ 323 0018 16640040 		.word	1073767446
+ 324 001c AC680040 		.word	1073768620
+ 325              		.cfi_endproc
+ 326              	.LFE5:
+ 327              		.size	PWM_Sample_Buffer_ReadCounter, .-PWM_Sample_Buffer_ReadCounter
+ 328              		.section	.text.PWM_Sample_Buffer_ClearFIFO,"ax",%progbits
+ 329              		.align	2
+ 330              		.global	PWM_Sample_Buffer_ClearFIFO
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.type	PWM_Sample_Buffer_ClearFIFO, %function
+ 334              	PWM_Sample_Buffer_ClearFIFO:
+ 335              	.LFB6:
+ 435:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 436:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if (PWM_Sample_Buffer_UseStatus)
+ 437:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 438:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 439:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /*******************************************************************************
+ 440:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Function Name: PWM_Sample_Buffer_ClearFIFO
+ 441:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         ********************************************************************************
+ 442:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 443:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Summary:
+ 444:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  This function clears all capture data from the capture FIFO
+ 445:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 446:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Parameters:
+ 447:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  None
+ 448:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 449:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         * Return:
+ 450:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *  None
+ 451:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *
+ 452:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         *******************************************************************************/
+ 453:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         void PWM_Sample_Buffer_ClearFIFO(void) 
+ 454:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         {
+ 336              		.loc 1 454 0
+ 337              		.cfi_startproc
+ 338              		@ args = 0, pretend = 0, frame = 0
+ 339              		@ frame_needed = 1, uses_anonymous_args = 0
+ 340 0000 80B5     		push	{r7, lr}
+ 341              		.cfi_def_cfa_offset 8
+ 342              		.cfi_offset 7, -8
+ 343              		.cfi_offset 14, -4
+ 344 0002 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 15
+
+
+ 345              		.cfi_def_cfa_register 7
+ 455:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             while(0u != (PWM_Sample_Buffer_ReadStatusRegister() & PWM_Sample_Buffer_STATUS_FIFONEMP
+ 346              		.loc 1 455 0
+ 347 0004 01E0     		b	.L22
+ 348              	.L23:
+ 456:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             {
+ 457:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 (void)PWM_Sample_Buffer_ReadCapture();
+ 349              		.loc 1 457 0
+ 350 0006 FFF7FEFF 		bl	PWM_Sample_Buffer_ReadCapture
+ 351              	.L22:
+ 455:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             while(0u != (PWM_Sample_Buffer_ReadStatusRegister() & PWM_Sample_Buffer_STATUS_FIFONEMP
+ 352              		.loc 1 455 0
+ 353 000a FFF7FEFF 		bl	PWM_Sample_Buffer_ReadStatusRegister
+ 354 000e 0346     		mov	r3, r0
+ 355 0010 03F01003 		and	r3, r3, #16
+ 356 0014 002B     		cmp	r3, #0
+ 357 0016 F6D1     		bne	.L23
+ 458:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             }
+ 459:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         }
+ 358              		.loc 1 459 0
+ 359 0018 80BD     		pop	{r7, pc}
+ 360              		.cfi_endproc
+ 361              	.LFE6:
+ 362              		.size	PWM_Sample_Buffer_ClearFIFO, .-PWM_Sample_Buffer_ClearFIFO
+ 363 001a 00BF     		.section	.text.PWM_Sample_Buffer_WritePeriod,"ax",%progbits
+ 364              		.align	2
+ 365              		.global	PWM_Sample_Buffer_WritePeriod
+ 366              		.thumb
+ 367              		.thumb_func
+ 368              		.type	PWM_Sample_Buffer_WritePeriod, %function
+ 369              	PWM_Sample_Buffer_WritePeriod:
+ 370              	.LFB7:
+ 460:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 461:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* PWM_Sample_Buffer_UseStatus */
+ 462:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 463:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* !PWM_Sample_Buffer_UsingFixedFunction */
+ 464:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 465:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 466:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+ 467:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Function Name: PWM_Sample_Buffer_WritePeriod
+ 468:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************
+ 469:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 470:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Summary:
+ 471:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  This function is used to change the period of the counter.  The new period
+ 472:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  will be loaded the next time terminal count is detected.
+ 473:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 474:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Parameters:
+ 475:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  period:  Period value. May be between 1 and (2^Resolution)-1.  A value of 0
+ 476:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *           will result in the counter remaining at zero.
+ 477:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 478:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
+ 479:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+ 480:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 481:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
+ 482:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** void PWM_Sample_Buffer_WritePeriod(uint16 period) 
+ 483:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
+ 371              		.loc 1 483 0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 16
+
+
+ 372              		.cfi_startproc
+ 373              		@ args = 0, pretend = 0, frame = 8
+ 374              		@ frame_needed = 1, uses_anonymous_args = 0
+ 375              		@ link register save eliminated.
+ 376 0000 80B4     		push	{r7}
+ 377              		.cfi_def_cfa_offset 4
+ 378              		.cfi_offset 7, -4
+ 379 0002 83B0     		sub	sp, sp, #12
+ 380              		.cfi_def_cfa_offset 16
+ 381 0004 00AF     		add	r7, sp, #0
+ 382              		.cfi_def_cfa_register 7
+ 383 0006 0346     		mov	r3, r0
+ 384 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 484:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 485:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         CY_SET_REG16(PWM_Sample_Buffer_PERIOD_LSB_PTR, (uint16)period);
+ 486:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #else
+ 487:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         CY_SET_REG16(PWM_Sample_Buffer_PERIOD_LSB_PTR, period);
+ 385              		.loc 1 487 0
+ 386 000a 044A     		ldr	r2, .L25
+ 387 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 388 000e 1380     		strh	r3, [r2]	@ movhi
+ 488:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 489:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
+ 389              		.loc 1 489 0
+ 390 0010 0C37     		adds	r7, r7, #12
+ 391              		.cfi_def_cfa_offset 4
+ 392 0012 BD46     		mov	sp, r7
+ 393              		.cfi_def_cfa_register 13
+ 394              		@ sp needed
+ 395 0014 5DF8047B 		ldr	r7, [sp], #4
+ 396              		.cfi_restore 7
+ 397              		.cfi_def_cfa_offset 0
+ 398 0018 7047     		bx	lr
+ 399              	.L26:
+ 400 001a 00BF     		.align	2
+ 401              	.L25:
+ 402 001c 8C680040 		.word	1073768588
+ 403              		.cfi_endproc
+ 404              	.LFE7:
+ 405              		.size	PWM_Sample_Buffer_WritePeriod, .-PWM_Sample_Buffer_WritePeriod
+ 406              		.section	.text.PWM_Sample_Buffer_WriteCompare,"ax",%progbits
+ 407              		.align	2
+ 408              		.global	PWM_Sample_Buffer_WriteCompare
+ 409              		.thumb
+ 410              		.thumb_func
+ 411              		.type	PWM_Sample_Buffer_WriteCompare, %function
+ 412              	PWM_Sample_Buffer_WriteCompare:
+ 413              	.LFB8:
+ 490:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 491:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_UseOneCompareMode)
+ 492:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 493:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 494:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 495:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_WriteCompare
+ 496:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 497:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 498:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 17
+
+
+ 499:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This funtion is used to change the compare1 value when the PWM is in Dither
+ 500:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  mode. The compare output will reflect the new value on the next UDB clock.
+ 501:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  The compare output will be driven high when the present counter value is
+ 502:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  compared to the compare value based on the compare mode defined in
+ 503:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Dither Mode.
+ 504:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 505:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 506:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  compare:  New compare value.
+ 507:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 508:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 509:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 510:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 511:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Side Effects:
+ 512:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function is only available if the PWM mode parameter is set to
+ 513:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Dither Mode, Center Aligned Mode or One Output Mode
+ 514:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 515:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 516:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_WriteCompare(uint16 compare) \
+ 517:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                        
+ 518:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 414              		.loc 1 518 0
+ 415              		.cfi_startproc
+ 416              		@ args = 0, pretend = 0, frame = 8
+ 417              		@ frame_needed = 1, uses_anonymous_args = 0
+ 418              		@ link register save eliminated.
+ 419 0000 80B4     		push	{r7}
+ 420              		.cfi_def_cfa_offset 4
+ 421              		.cfi_offset 7, -4
+ 422 0002 83B0     		sub	sp, sp, #12
+ 423              		.cfi_def_cfa_offset 16
+ 424 0004 00AF     		add	r7, sp, #0
+ 425              		.cfi_def_cfa_register 7
+ 426 0006 0346     		mov	r3, r0
+ 427 0008 FB80     		strh	r3, [r7, #6]	@ movhi
+ 519:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 520:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR, (uint16)compare);
+ 521:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 522:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR, compare);
+ 428              		.loc 1 522 0
+ 429 000a 044A     		ldr	r2, .L28
+ 430 000c FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 431 000e 1380     		strh	r3, [r2]	@ movhi
+ 523:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 524:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 525:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if (PWM_Sample_Buffer_PWMMode == PWM_Sample_Buffer__B_PWM__DITHER)
+ 526:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 527:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 CY_SET_REG16(PWM_Sample_Buffer_COMPARE2_LSB_PTR, (uint16)(compare + 1u));
+ 528:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #else
+ 529:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 CY_SET_REG16(PWM_Sample_Buffer_COMPARE2_LSB_PTR, (compare + 1u));
+ 530:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 531:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_PWMMode == PWM_Sample_Buffer__B_PWM__DITHER) */
+ 532:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 432              		.loc 1 532 0
+ 433 0010 0C37     		adds	r7, r7, #12
+ 434              		.cfi_def_cfa_offset 4
+ 435 0012 BD46     		mov	sp, r7
+ 436              		.cfi_def_cfa_register 13
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 18
+
+
+ 437              		@ sp needed
+ 438 0014 5DF8047B 		ldr	r7, [sp], #4
+ 439              		.cfi_restore 7
+ 440              		.cfi_def_cfa_offset 0
+ 441 0018 7047     		bx	lr
+ 442              	.L29:
+ 443 001a 00BF     		.align	2
+ 444              	.L28:
+ 445 001c 4C680040 		.word	1073768524
+ 446              		.cfi_endproc
+ 447              	.LFE8:
+ 448              		.size	PWM_Sample_Buffer_WriteCompare, .-PWM_Sample_Buffer_WriteCompare
+ 449              		.section	.text.PWM_Sample_Buffer_SetInterruptMode,"ax",%progbits
+ 450              		.align	2
+ 451              		.global	PWM_Sample_Buffer_SetInterruptMode
+ 452              		.thumb
+ 453              		.thumb_func
+ 454              		.type	PWM_Sample_Buffer_SetInterruptMode, %function
+ 455              	PWM_Sample_Buffer_SetInterruptMode:
+ 456              	.LFB9:
+ 533:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 534:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 535:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #else
+ 536:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 537:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 538:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 539:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_WriteCompare1
+ 540:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 541:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 542:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 543:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This funtion is used to change the compare1 value.  The compare output will
+ 544:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  reflect the new value on the next UDB clock.  The compare output will be
+ 545:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  driven high when the present counter value is less than or less than or
+ 546:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  equal to the compare register, depending on the mode.
+ 547:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 548:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 549:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  compare:  New compare value.
+ 550:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 551:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 552:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 553:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 554:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 555:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_WriteCompare1(uint16 compare) \
+ 556:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                         
+ 557:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 558:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 559:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR, (uint16)compare);
+ 560:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 561:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR, compare);
+ 562:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 563:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 564:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 565:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 566:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 567:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_WriteCompare2
+ 568:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 569:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 19
+
+
+ 570:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 571:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This funtion is used to change the compare value, for compare1 output.
+ 572:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  The compare output will reflect the new value on the next UDB clock.
+ 573:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  The compare output will be driven high when the present counter value is
+ 574:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  less than or less than or equal to the compare register, depending on the
+ 575:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  mode.
+ 576:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 577:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 578:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  compare:  New compare value.
+ 579:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 580:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 581:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 582:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 583:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 584:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_WriteCompare2(uint16 compare) \
+ 585:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                         
+ 586:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 587:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 588:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE2_LSB_PTR, compare);
+ 589:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 590:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG16(PWM_Sample_Buffer_COMPARE2_LSB_PTR, compare);
+ 591:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 592:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 593:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* UseOneCompareMode */
+ 594:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 595:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_DeadBandUsed)
+ 596:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 597:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 598:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 599:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_WriteDeadTime
+ 600:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 601:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 602:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 603:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function writes the dead-band counts to the corresponding register
+ 604:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 605:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 606:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  deadtime:  Number of counts for dead time
+ 607:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 608:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 609:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 610:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 611:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 612:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_WriteDeadTime(uint8 deadtime) 
+ 613:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 614:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* If using the Dead Band 1-255 mode then just write the register */
+ 615:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(!PWM_Sample_Buffer_DeadBand2_4)
+ 616:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             CY_SET_REG8(PWM_Sample_Buffer_DEADBAND_COUNT_PTR, deadtime);
+ 617:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 618:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Otherwise the data has to be masked and offset */
+ 619:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Clear existing data */
+ 620:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             PWM_Sample_Buffer_DEADBAND_COUNT &= ((uint8)(~PWM_Sample_Buffer_DEADBAND_COUNT_MASK));
+ 621:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 622:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Set new dead time */
+ 623:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #if(PWM_Sample_Buffer_DEADBAND_COUNT_SHIFT)
+ 624:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_DEADBAND_COUNT |= ((uint8)((uint8)deadtime << PWM_Sample_Buffer_D
+ 625:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                                     PWM_Sample_Buffer_DEADBAND_COUNT_MASK;
+ 626:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #else
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 20
+
+
+ 627:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 PWM_Sample_Buffer_DEADBAND_COUNT |= deadtime & PWM_Sample_Buffer_DEADBAND_COUNT_MAS
+ 628:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (PWM_Sample_Buffer_DEADBAND_COUNT_SHIFT) */
+ 629:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 630:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (!PWM_Sample_Buffer_DeadBand2_4) */
+ 631:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 632:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 633:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 634:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 635:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadDeadTime
+ 636:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 637:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 638:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 639:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function reads the dead-band counts from the corresponding register
+ 640:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 641:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 642:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 643:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 644:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 645:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Dead Band Counts
+ 646:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 647:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 648:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint8 PWM_Sample_Buffer_ReadDeadTime(void) 
+ 649:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 650:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         /* If using the Dead Band 1-255 mode then just read the register */
+ 651:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(!PWM_Sample_Buffer_DeadBand2_4)
+ 652:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             return (CY_GET_REG8(PWM_Sample_Buffer_DEADBAND_COUNT_PTR));
+ 653:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 654:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 655:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             /* Otherwise the data has to be masked and offset */
+ 656:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #if(PWM_Sample_Buffer_DEADBAND_COUNT_SHIFT)
+ 657:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 return ((uint8)(((uint8)(PWM_Sample_Buffer_DEADBAND_COUNT & PWM_Sample_Buffer_DEADB
+ 658:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                                                                            PWM_Sample_Buffer_DEADBA
+ 659:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #else
+ 660:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****                 return (PWM_Sample_Buffer_DEADBAND_COUNT & PWM_Sample_Buffer_DEADBAND_COUNT_MASK);
+ 661:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             #endif /* (PWM_Sample_Buffer_DEADBAND_COUNT_SHIFT) */
+ 662:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (!PWM_Sample_Buffer_DeadBand2_4) */
+ 663:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 664:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* DeadBandUsed */
+ 665:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 666:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_UseStatus || PWM_Sample_Buffer_UsingFixedFunction)
+ 667:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 668:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 669:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 670:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_SetInterruptMode
+ 671:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 672:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 673:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 674:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function configures the interrupts mask control of theinterrupt
+ 675:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  source status register.
+ 676:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 677:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 678:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8 interruptMode: Bit field containing the interrupt sources enabled
+ 679:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 680:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 681:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 682:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 683:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 21
+
+
+ 684:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_SetInterruptMode(uint8 interruptMode) 
+ 685:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 457              		.loc 1 685 0
+ 458              		.cfi_startproc
+ 459              		@ args = 0, pretend = 0, frame = 8
+ 460              		@ frame_needed = 1, uses_anonymous_args = 0
+ 461              		@ link register save eliminated.
+ 462 0000 80B4     		push	{r7}
+ 463              		.cfi_def_cfa_offset 4
+ 464              		.cfi_offset 7, -4
+ 465 0002 83B0     		sub	sp, sp, #12
+ 466              		.cfi_def_cfa_offset 16
+ 467 0004 00AF     		add	r7, sp, #0
+ 468              		.cfi_def_cfa_register 7
+ 469 0006 0346     		mov	r3, r0
+ 470 0008 FB71     		strb	r3, [r7, #7]
+ 686:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         CY_SET_REG8(PWM_Sample_Buffer_STATUS_MASK_PTR, interruptMode);
+ 471              		.loc 1 686 0
+ 472 000a 044A     		ldr	r2, .L31
+ 473 000c FB79     		ldrb	r3, [r7, #7]
+ 474 000e 1370     		strb	r3, [r2]
+ 687:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 475              		.loc 1 687 0
+ 476 0010 0C37     		adds	r7, r7, #12
+ 477              		.cfi_def_cfa_offset 4
+ 478 0012 BD46     		mov	sp, r7
+ 479              		.cfi_def_cfa_register 13
+ 480              		@ sp needed
+ 481 0014 5DF8047B 		ldr	r7, [sp], #4
+ 482              		.cfi_restore 7
+ 483              		.cfi_def_cfa_offset 0
+ 484 0018 7047     		bx	lr
+ 485              	.L32:
+ 486 001a 00BF     		.align	2
+ 487              	.L31:
+ 488 001c 84640040 		.word	1073767556
+ 489              		.cfi_endproc
+ 490              	.LFE9:
+ 491              		.size	PWM_Sample_Buffer_SetInterruptMode, .-PWM_Sample_Buffer_SetInterruptMode
+ 492              		.section	.text.PWM_Sample_Buffer_ReadStatusRegister,"ax",%progbits
+ 493              		.align	2
+ 494              		.global	PWM_Sample_Buffer_ReadStatusRegister
+ 495              		.thumb
+ 496              		.thumb_func
+ 497              		.type	PWM_Sample_Buffer_ReadStatusRegister, %function
+ 498              	PWM_Sample_Buffer_ReadStatusRegister:
+ 499              	.LFB10:
+ 688:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 689:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 690:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 691:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadStatusRegister
+ 692:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 693:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 694:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 695:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  This function returns the current state of the status register.
+ 696:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 697:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 22
+
+
+ 698:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 699:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 700:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 701:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8 : Current status register value. The status register bits are:
+ 702:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [7:6] : Unused(0)
+ 703:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [5]   : Kill event output
+ 704:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [4]   : FIFO not empty
+ 705:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [3]   : FIFO full
+ 706:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [2]   : Terminal count
+ 707:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [1]   : Compare output 2
+ 708:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [0]   : Compare output 1
+ 709:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 710:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 711:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint8 PWM_Sample_Buffer_ReadStatusRegister(void) 
+ 712:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 500              		.loc 1 712 0
+ 501              		.cfi_startproc
+ 502              		@ args = 0, pretend = 0, frame = 0
+ 503              		@ frame_needed = 1, uses_anonymous_args = 0
+ 504              		@ link register save eliminated.
+ 505 0000 80B4     		push	{r7}
+ 506              		.cfi_def_cfa_offset 4
+ 507              		.cfi_offset 7, -4
+ 508 0002 00AF     		add	r7, sp, #0
+ 509              		.cfi_def_cfa_register 7
+ 713:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (CY_GET_REG8(PWM_Sample_Buffer_STATUS_PTR));
+ 510              		.loc 1 713 0
+ 511 0004 034B     		ldr	r3, .L35
+ 512 0006 1B78     		ldrb	r3, [r3]
+ 513 0008 DBB2     		uxtb	r3, r3
+ 714:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 514              		.loc 1 714 0
+ 515 000a 1846     		mov	r0, r3
+ 516 000c BD46     		mov	sp, r7
+ 517              		.cfi_def_cfa_register 13
+ 518              		@ sp needed
+ 519 000e 5DF8047B 		ldr	r7, [sp], #4
+ 520              		.cfi_restore 7
+ 521              		.cfi_def_cfa_offset 0
+ 522 0012 7047     		bx	lr
+ 523              	.L36:
+ 524              		.align	2
+ 525              	.L35:
+ 526 0014 64640040 		.word	1073767524
+ 527              		.cfi_endproc
+ 528              	.LFE10:
+ 529              		.size	PWM_Sample_Buffer_ReadStatusRegister, .-PWM_Sample_Buffer_ReadStatusRegister
+ 530              		.section	.text.PWM_Sample_Buffer_ReadControlRegister,"ax",%progbits
+ 531              		.align	2
+ 532              		.global	PWM_Sample_Buffer_ReadControlRegister
+ 533              		.thumb
+ 534              		.thumb_func
+ 535              		.type	PWM_Sample_Buffer_ReadControlRegister, %function
+ 536              	PWM_Sample_Buffer_ReadControlRegister:
+ 537              	.LFB11:
+ 715:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 716:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* (PWM_Sample_Buffer_UseStatus || PWM_Sample_Buffer_UsingFixedFunction) */
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 23
+
+
+ 717:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 718:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 719:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_UseControl)
+ 720:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 721:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 722:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 723:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadControlRegister
+ 724:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 725:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 726:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 727:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Returns the current state of the control register. This API is available
+ 728:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  only if the control register is not removed.
+ 729:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 730:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 731:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 732:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 733:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 734:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8 : Current control register value
+ 735:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 736:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 737:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint8 PWM_Sample_Buffer_ReadControlRegister(void) 
+ 738:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 538              		.loc 1 738 0
+ 539              		.cfi_startproc
+ 540              		@ args = 0, pretend = 0, frame = 8
+ 541              		@ frame_needed = 1, uses_anonymous_args = 0
+ 542              		@ link register save eliminated.
+ 543 0000 80B4     		push	{r7}
+ 544              		.cfi_def_cfa_offset 4
+ 545              		.cfi_offset 7, -4
+ 546 0002 83B0     		sub	sp, sp, #12
+ 547              		.cfi_def_cfa_offset 16
+ 548 0004 00AF     		add	r7, sp, #0
+ 549              		.cfi_def_cfa_register 7
+ 739:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         uint8 result;
+ 740:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 741:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         result = CY_GET_REG8(PWM_Sample_Buffer_CONTROL_PTR);
+ 550              		.loc 1 741 0
+ 551 0006 054B     		ldr	r3, .L39
+ 552 0008 1B78     		ldrb	r3, [r3]
+ 553 000a FB71     		strb	r3, [r7, #7]
+ 742:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (result);
+ 554              		.loc 1 742 0
+ 555 000c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 743:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 556              		.loc 1 743 0
+ 557 000e 1846     		mov	r0, r3
+ 558 0010 0C37     		adds	r7, r7, #12
+ 559              		.cfi_def_cfa_offset 4
+ 560 0012 BD46     		mov	sp, r7
+ 561              		.cfi_def_cfa_register 13
+ 562              		@ sp needed
+ 563 0014 5DF8047B 		ldr	r7, [sp], #4
+ 564              		.cfi_restore 7
+ 565              		.cfi_def_cfa_offset 0
+ 566 0018 7047     		bx	lr
+ 567              	.L40:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 24
+
+
+ 568 001a 00BF     		.align	2
+ 569              	.L39:
+ 570 001c 74640040 		.word	1073767540
+ 571              		.cfi_endproc
+ 572              	.LFE11:
+ 573              		.size	PWM_Sample_Buffer_ReadControlRegister, .-PWM_Sample_Buffer_ReadControlRegister
+ 574              		.section	.text.PWM_Sample_Buffer_WriteControlRegister,"ax",%progbits
+ 575              		.align	2
+ 576              		.global	PWM_Sample_Buffer_WriteControlRegister
+ 577              		.thumb
+ 578              		.thumb_func
+ 579              		.type	PWM_Sample_Buffer_WriteControlRegister, %function
+ 580              	PWM_Sample_Buffer_WriteControlRegister:
+ 581              	.LFB12:
+ 744:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 745:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 746:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 747:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_WriteControlRegister
+ 748:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 749:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 750:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 751:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Sets the bit field of the control register. This API is available only if
+ 752:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  the control register is not removed.
+ 753:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 754:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 755:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8 control: Control register bit field, The status register bits are:
+ 756:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [7]   : PWM Enable
+ 757:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [6]   : Reset
+ 758:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [5:3] : Compare Mode2
+ 759:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  [2:0] : Compare Mode2
+ 760:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 761:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 762:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 763:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 764:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 765:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     void PWM_Sample_Buffer_WriteControlRegister(uint8 control) 
+ 766:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 582              		.loc 1 766 0
+ 583              		.cfi_startproc
+ 584              		@ args = 0, pretend = 0, frame = 8
+ 585              		@ frame_needed = 1, uses_anonymous_args = 0
+ 586              		@ link register save eliminated.
+ 587 0000 80B4     		push	{r7}
+ 588              		.cfi_def_cfa_offset 4
+ 589              		.cfi_offset 7, -4
+ 590 0002 83B0     		sub	sp, sp, #12
+ 591              		.cfi_def_cfa_offset 16
+ 592 0004 00AF     		add	r7, sp, #0
+ 593              		.cfi_def_cfa_register 7
+ 594 0006 0346     		mov	r3, r0
+ 595 0008 FB71     		strb	r3, [r7, #7]
+ 767:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         CY_SET_REG8(PWM_Sample_Buffer_CONTROL_PTR, control);
+ 596              		.loc 1 767 0
+ 597 000a 044A     		ldr	r2, .L42
+ 598 000c FB79     		ldrb	r3, [r7, #7]
+ 599 000e 1370     		strb	r3, [r2]
+ 768:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 25
+
+
+ 600              		.loc 1 768 0
+ 601 0010 0C37     		adds	r7, r7, #12
+ 602              		.cfi_def_cfa_offset 4
+ 603 0012 BD46     		mov	sp, r7
+ 604              		.cfi_def_cfa_register 13
+ 605              		@ sp needed
+ 606 0014 5DF8047B 		ldr	r7, [sp], #4
+ 607              		.cfi_restore 7
+ 608              		.cfi_def_cfa_offset 0
+ 609 0018 7047     		bx	lr
+ 610              	.L43:
+ 611 001a 00BF     		.align	2
+ 612              	.L42:
+ 613 001c 74640040 		.word	1073767540
+ 614              		.cfi_endproc
+ 615              	.LFE12:
+ 616              		.size	PWM_Sample_Buffer_WriteControlRegister, .-PWM_Sample_Buffer_WriteControlRegister
+ 617              		.section	.text.PWM_Sample_Buffer_ReadCapture,"ax",%progbits
+ 618              		.align	2
+ 619              		.global	PWM_Sample_Buffer_ReadCapture
+ 620              		.thumb
+ 621              		.thumb_func
+ 622              		.type	PWM_Sample_Buffer_ReadCapture, %function
+ 623              	PWM_Sample_Buffer_ReadCapture:
+ 624              	.LFB13:
+ 769:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 770:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* (PWM_Sample_Buffer_UseControl) */
+ 771:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 772:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 773:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (!PWM_Sample_Buffer_UsingFixedFunction)
+ 774:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 775:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 776:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 777:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadCapture
+ 778:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 779:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 780:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 781:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Reads the capture value from the capture FIFO.
+ 782:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 783:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 784:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 785:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 786:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 787:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8/uint16: The current capture value
+ 788:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 789:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 790:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint16 PWM_Sample_Buffer_ReadCapture(void) 
+ 791:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 625              		.loc 1 791 0
+ 626              		.cfi_startproc
+ 627              		@ args = 0, pretend = 0, frame = 0
+ 628              		@ frame_needed = 1, uses_anonymous_args = 0
+ 629              		@ link register save eliminated.
+ 630 0000 80B4     		push	{r7}
+ 631              		.cfi_def_cfa_offset 4
+ 632              		.cfi_offset 7, -4
+ 633 0002 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 26
+
+
+ 634              		.cfi_def_cfa_register 7
+ 792:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (CY_GET_REG16(PWM_Sample_Buffer_CAPTURE_LSB_PTR));
+ 635              		.loc 1 792 0
+ 636 0004 034B     		ldr	r3, .L46
+ 637 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 638 0008 9BB2     		uxth	r3, r3
+ 793:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 639              		.loc 1 793 0
+ 640 000a 1846     		mov	r0, r3
+ 641 000c BD46     		mov	sp, r7
+ 642              		.cfi_def_cfa_register 13
+ 643              		@ sp needed
+ 644 000e 5DF8047B 		ldr	r7, [sp], #4
+ 645              		.cfi_restore 7
+ 646              		.cfi_def_cfa_offset 0
+ 647 0012 7047     		bx	lr
+ 648              	.L47:
+ 649              		.align	2
+ 650              	.L46:
+ 651 0014 AC680040 		.word	1073768620
+ 652              		.cfi_endproc
+ 653              	.LFE13:
+ 654              		.size	PWM_Sample_Buffer_ReadCapture, .-PWM_Sample_Buffer_ReadCapture
+ 655              		.section	.text.PWM_Sample_Buffer_ReadCompare,"ax",%progbits
+ 656              		.align	2
+ 657              		.global	PWM_Sample_Buffer_ReadCompare
+ 658              		.thumb
+ 659              		.thumb_func
+ 660              		.type	PWM_Sample_Buffer_ReadCompare, %function
+ 661              	PWM_Sample_Buffer_ReadCompare:
+ 662              	.LFB14:
+ 794:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 795:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* (!PWM_Sample_Buffer_UsingFixedFunction) */
+ 796:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 797:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 798:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #if (PWM_Sample_Buffer_UseOneCompareMode)
+ 799:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 800:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 801:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 802:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadCompare
+ 803:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 804:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 805:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 806:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Reads the compare value for the compare output when the PWM Mode parameter is
+ 807:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  set to Dither mode, Center Aligned mode, or One Output mode.
+ 808:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 809:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 810:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 811:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 812:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 813:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8/uint16: Current compare value
+ 814:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 815:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 816:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint16 PWM_Sample_Buffer_ReadCompare(void) 
+ 817:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 663              		.loc 1 817 0
+ 664              		.cfi_startproc
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 27
+
+
+ 665              		@ args = 0, pretend = 0, frame = 0
+ 666              		@ frame_needed = 1, uses_anonymous_args = 0
+ 667              		@ link register save eliminated.
+ 668 0000 80B4     		push	{r7}
+ 669              		.cfi_def_cfa_offset 4
+ 670              		.cfi_offset 7, -4
+ 671 0002 00AF     		add	r7, sp, #0
+ 672              		.cfi_def_cfa_register 7
+ 818:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 819:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             return ((uint16)CY_GET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR));
+ 820:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #else
+ 821:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****             return (CY_GET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR));
+ 673              		.loc 1 821 0
+ 674 0004 034B     		ldr	r3, .L50
+ 675 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 676 0008 9BB2     		uxth	r3, r3
+ 822:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 823:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 677              		.loc 1 823 0
+ 678 000a 1846     		mov	r0, r3
+ 679 000c BD46     		mov	sp, r7
+ 680              		.cfi_def_cfa_register 13
+ 681              		@ sp needed
+ 682 000e 5DF8047B 		ldr	r7, [sp], #4
+ 683              		.cfi_restore 7
+ 684              		.cfi_def_cfa_offset 0
+ 685 0012 7047     		bx	lr
+ 686              	.L51:
+ 687              		.align	2
+ 688              	.L50:
+ 689 0014 4C680040 		.word	1073768524
+ 690              		.cfi_endproc
+ 691              	.LFE14:
+ 692              		.size	PWM_Sample_Buffer_ReadCompare, .-PWM_Sample_Buffer_ReadCompare
+ 693              		.section	.text.PWM_Sample_Buffer_ReadPeriod,"ax",%progbits
+ 694              		.align	2
+ 695              		.global	PWM_Sample_Buffer_ReadPeriod
+ 696              		.thumb
+ 697              		.thumb_func
+ 698              		.type	PWM_Sample_Buffer_ReadPeriod, %function
+ 699              	PWM_Sample_Buffer_ReadPeriod:
+ 700              	.LFB15:
+ 824:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 825:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #else
+ 826:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 827:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 828:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 829:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadCompare1
+ 830:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 831:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 832:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 833:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Reads the compare value for the compare1 output.
+ 834:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 835:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 836:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 837:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 838:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 28
+
+
+ 839:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8/uint16: Current compare value.
+ 840:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 841:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 842:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint16 PWM_Sample_Buffer_ReadCompare1(void) 
+ 843:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 844:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (CY_GET_REG16(PWM_Sample_Buffer_COMPARE1_LSB_PTR));
+ 845:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 846:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 847:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 848:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     /*******************************************************************************
+ 849:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Function Name: PWM_Sample_Buffer_ReadCompare2
+ 850:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     ********************************************************************************
+ 851:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 852:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Summary:
+ 853:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  Reads the compare value for the compare2 output.
+ 854:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 855:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Parameters:
+ 856:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  None
+ 857:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 858:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     * Return:
+ 859:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *  uint8/uint16: Current compare value.
+ 860:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *
+ 861:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     *******************************************************************************/
+ 862:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     uint16 PWM_Sample_Buffer_ReadCompare2(void) 
+ 863:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     {
+ 864:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (CY_GET_REG16(PWM_Sample_Buffer_COMPARE2_LSB_PTR));
+ 865:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     }
+ 866:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 867:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** #endif /* (PWM_Sample_Buffer_UseOneCompareMode) */
+ 868:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 869:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** 
+ 870:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** /*******************************************************************************
+ 871:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Function Name: PWM_Sample_Buffer_ReadPeriod
+ 872:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** ********************************************************************************
+ 873:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 874:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Summary:
+ 875:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  Reads the period value used by the PWM hardware.
+ 876:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 877:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Parameters:
+ 878:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  None
+ 879:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 880:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** * Return:
+ 881:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *  uint8/16: Period value
+ 882:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *
+ 883:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** *******************************************************************************/
+ 884:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** uint16 PWM_Sample_Buffer_ReadPeriod(void) 
+ 885:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** {
+ 701              		.loc 1 885 0
+ 702              		.cfi_startproc
+ 703              		@ args = 0, pretend = 0, frame = 0
+ 704              		@ frame_needed = 1, uses_anonymous_args = 0
+ 705              		@ link register save eliminated.
+ 706 0000 80B4     		push	{r7}
+ 707              		.cfi_def_cfa_offset 4
+ 708              		.cfi_offset 7, -4
+ 709 0002 00AF     		add	r7, sp, #0
+ 710              		.cfi_def_cfa_register 7
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 29
+
+
+ 886:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #if(PWM_Sample_Buffer_UsingFixedFunction)
+ 887:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return ((uint16)CY_GET_REG16(PWM_Sample_Buffer_PERIOD_LSB_PTR));
+ 888:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #else
+ 889:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****         return (CY_GET_REG16(PWM_Sample_Buffer_PERIOD_LSB_PTR));
+ 711              		.loc 1 889 0
+ 712 0004 034B     		ldr	r3, .L54
+ 713 0006 1B88     		ldrh	r3, [r3]	@ movhi
+ 714 0008 9BB2     		uxth	r3, r3
+ 890:Generated_Source\PSoC5/PWM_Sample_Buffer.c ****     #endif /* (PWM_Sample_Buffer_UsingFixedFunction) */
+ 891:Generated_Source\PSoC5/PWM_Sample_Buffer.c **** }
+ 715              		.loc 1 891 0
+ 716 000a 1846     		mov	r0, r3
+ 717 000c BD46     		mov	sp, r7
+ 718              		.cfi_def_cfa_register 13
+ 719              		@ sp needed
+ 720 000e 5DF8047B 		ldr	r7, [sp], #4
+ 721              		.cfi_restore 7
+ 722              		.cfi_def_cfa_offset 0
+ 723 0012 7047     		bx	lr
+ 724              	.L55:
+ 725              		.align	2
+ 726              	.L54:
+ 727 0014 8C680040 		.word	1073768588
+ 728              		.cfi_endproc
+ 729              	.LFE15:
+ 730              		.size	PWM_Sample_Buffer_ReadPeriod, .-PWM_Sample_Buffer_ReadPeriod
+ 731              		.text
+ 732              	.Letext0:
+ 733              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 734              		.section	.debug_info,"",%progbits
+ 735              	.Ldebug_info0:
+ 736 0000 9C020000 		.4byte	0x29c
+ 737 0004 0400     		.2byte	0x4
+ 738 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 739 000a 04       		.byte	0x4
+ 740 000b 01       		.uleb128 0x1
+ 741 000c 90010000 		.4byte	.LASF40
+ 742 0010 01       		.byte	0x1
+ 743 0011 80030000 		.4byte	.LASF41
+ 744 0015 BE020000 		.4byte	.LASF42
+ 745 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 746 001d 00000000 		.4byte	0
+ 747 0021 00000000 		.4byte	.Ldebug_line0
+ 748 0025 02       		.uleb128 0x2
+ 749 0026 01       		.byte	0x1
+ 750 0027 06       		.byte	0x6
+ 751 0028 07040000 		.4byte	.LASF0
+ 752 002c 02       		.uleb128 0x2
+ 753 002d 01       		.byte	0x1
+ 754 002e 08       		.byte	0x8
+ 755 002f 36010000 		.4byte	.LASF1
+ 756 0033 02       		.uleb128 0x2
+ 757 0034 02       		.byte	0x2
+ 758 0035 05       		.byte	0x5
+ 759 0036 AB030000 		.4byte	.LASF2
+ 760 003a 02       		.uleb128 0x2
+ 761 003b 02       		.byte	0x2
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 30
+
+
+ 762 003c 07       		.byte	0x7
+ 763 003d 90000000 		.4byte	.LASF3
+ 764 0041 02       		.uleb128 0x2
+ 765 0042 04       		.byte	0x4
+ 766 0043 05       		.byte	0x5
+ 767 0044 87000000 		.4byte	.LASF4
+ 768 0048 02       		.uleb128 0x2
+ 769 0049 04       		.byte	0x4
+ 770 004a 07       		.byte	0x7
+ 771 004b 49010000 		.4byte	.LASF5
+ 772 004f 02       		.uleb128 0x2
+ 773 0050 08       		.byte	0x8
+ 774 0051 05       		.byte	0x5
+ 775 0052 45030000 		.4byte	.LASF6
+ 776 0056 02       		.uleb128 0x2
+ 777 0057 08       		.byte	0x8
+ 778 0058 07       		.byte	0x7
+ 779 0059 A7020000 		.4byte	.LASF7
+ 780 005d 03       		.uleb128 0x3
+ 781 005e 04       		.byte	0x4
+ 782 005f 05       		.byte	0x5
+ 783 0060 696E7400 		.ascii	"int\000"
+ 784 0064 02       		.uleb128 0x2
+ 785 0065 04       		.byte	0x4
+ 786 0066 07       		.byte	0x7
+ 787 0067 9A020000 		.4byte	.LASF8
+ 788 006b 04       		.uleb128 0x4
+ 789 006c 5B010000 		.4byte	.LASF9
+ 790 0070 02       		.byte	0x2
+ 791 0071 9201     		.2byte	0x192
+ 792 0073 2C000000 		.4byte	0x2c
+ 793 0077 04       		.uleb128 0x4
+ 794 0078 5E020000 		.4byte	.LASF10
+ 795 007c 02       		.byte	0x2
+ 796 007d 9301     		.2byte	0x193
+ 797 007f 3A000000 		.4byte	0x3a
+ 798 0083 02       		.uleb128 0x2
+ 799 0084 04       		.byte	0x4
+ 800 0085 04       		.byte	0x4
+ 801 0086 28010000 		.4byte	.LASF11
+ 802 008a 02       		.uleb128 0x2
+ 803 008b 08       		.byte	0x8
+ 804 008c 04       		.byte	0x4
+ 805 008d 1E020000 		.4byte	.LASF12
+ 806 0091 02       		.uleb128 0x2
+ 807 0092 01       		.byte	0x1
+ 808 0093 08       		.byte	0x8
+ 809 0094 02040000 		.4byte	.LASF13
+ 810 0098 04       		.uleb128 0x4
+ 811 0099 44010000 		.4byte	.LASF14
+ 812 009d 02       		.byte	0x2
+ 813 009e 3C02     		.2byte	0x23c
+ 814 00a0 A4000000 		.4byte	0xa4
+ 815 00a4 05       		.uleb128 0x5
+ 816 00a5 6B000000 		.4byte	0x6b
+ 817 00a9 04       		.uleb128 0x4
+ 818 00aa 00000000 		.4byte	.LASF15
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 31
+
+
+ 819 00ae 02       		.byte	0x2
+ 820 00af 3D02     		.2byte	0x23d
+ 821 00b1 B5000000 		.4byte	0xb5
+ 822 00b5 05       		.uleb128 0x5
+ 823 00b6 77000000 		.4byte	0x77
+ 824 00ba 02       		.uleb128 0x2
+ 825 00bb 04       		.byte	0x4
+ 826 00bc 07       		.byte	0x7
+ 827 00bd 3C030000 		.4byte	.LASF16
+ 828 00c1 06       		.uleb128 0x6
+ 829 00c2 06000000 		.4byte	.LASF19
+ 830 00c6 01       		.byte	0x1
+ 831 00c7 37       		.byte	0x37
+ 832 00c8 00000000 		.4byte	.LFB0
+ 833 00cc 20000000 		.4byte	.LFE0-.LFB0
+ 834 00d0 01       		.uleb128 0x1
+ 835 00d1 9C       		.byte	0x9c
+ 836 00d2 07       		.uleb128 0x7
+ 837 00d3 65020000 		.4byte	.LASF22
+ 838 00d7 01       		.byte	0x1
+ 839 00d8 54       		.byte	0x54
+ 840 00d9 00000000 		.4byte	.LFB1
+ 841 00dd 94000000 		.4byte	.LFE1-.LFB1
+ 842 00e1 01       		.uleb128 0x1
+ 843 00e2 9C       		.byte	0x9c
+ 844 00e3 04010000 		.4byte	0x104
+ 845 00e7 08       		.uleb128 0x8
+ 846 00e8 37030000 		.4byte	.LASF17
+ 847 00ec 01       		.byte	0x1
+ 848 00ed 57       		.byte	0x57
+ 849 00ee 6B000000 		.4byte	0x6b
+ 850 00f2 02       		.uleb128 0x2
+ 851 00f3 91       		.byte	0x91
+ 852 00f4 77       		.sleb128 -9
+ 853 00f5 08       		.uleb128 0x8
+ 854 00f6 BF000000 		.4byte	.LASF18
+ 855 00fa 01       		.byte	0x1
+ 856 00fb 5D       		.byte	0x5d
+ 857 00fc 6B000000 		.4byte	0x6b
+ 858 0100 02       		.uleb128 0x2
+ 859 0101 91       		.byte	0x91
+ 860 0102 76       		.sleb128 -10
+ 861 0103 00       		.byte	0
+ 862 0104 09       		.uleb128 0x9
+ 863 0105 E9030000 		.4byte	.LASF20
+ 864 0109 01       		.byte	0x1
+ 865 010a C7       		.byte	0xc7
+ 866 010b 00000000 		.4byte	.LFB2
+ 867 010f 20000000 		.4byte	.LFE2-.LFB2
+ 868 0113 01       		.uleb128 0x1
+ 869 0114 9C       		.byte	0x9c
+ 870 0115 09       		.uleb128 0x9
+ 871 0116 D2030000 		.4byte	.LASF21
+ 872 011a 01       		.byte	0x1
+ 873 011b E9       		.byte	0xe9
+ 874 011c 00000000 		.4byte	.LFB3
+ 875 0120 20000000 		.4byte	.LFE3-.LFB3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 32
+
+
+ 876 0124 01       		.uleb128 0x1
+ 877 0125 9C       		.byte	0x9c
+ 878 0126 0A       		.uleb128 0xa
+ 879 0127 53030000 		.4byte	.LASF23
+ 880 012b 01       		.byte	0x1
+ 881 012c 9301     		.2byte	0x193
+ 882 012e 00000000 		.4byte	.LFB4
+ 883 0132 20000000 		.4byte	.LFE4-.LFB4
+ 884 0136 01       		.uleb128 0x1
+ 885 0137 9C       		.byte	0x9c
+ 886 0138 4C010000 		.4byte	0x14c
+ 887 013c 0B       		.uleb128 0xb
+ 888 013d 2E010000 		.4byte	.LASF26
+ 889 0141 01       		.byte	0x1
+ 890 0142 9301     		.2byte	0x193
+ 891 0144 77000000 		.4byte	0x77
+ 892 0148 02       		.uleb128 0x2
+ 893 0149 91       		.byte	0x91
+ 894 014a 76       		.sleb128 -10
+ 895 014b 00       		.byte	0
+ 896 014c 0C       		.uleb128 0xc
+ 897 014d 62000000 		.4byte	.LASF32
+ 898 0151 01       		.byte	0x1
+ 899 0152 A901     		.2byte	0x1a9
+ 900 0154 77000000 		.4byte	0x77
+ 901 0158 00000000 		.4byte	.LFB5
+ 902 015c 20000000 		.4byte	.LFE5-.LFB5
+ 903 0160 01       		.uleb128 0x1
+ 904 0161 9C       		.byte	0x9c
+ 905 0162 0D       		.uleb128 0xd
+ 906 0163 A3000000 		.4byte	.LASF24
+ 907 0167 01       		.byte	0x1
+ 908 0168 C501     		.2byte	0x1c5
+ 909 016a 00000000 		.4byte	.LFB6
+ 910 016e 1A000000 		.4byte	.LFE6-.LFB6
+ 911 0172 01       		.uleb128 0x1
+ 912 0173 9C       		.byte	0x9c
+ 913 0174 0A       		.uleb128 0xa
+ 914 0175 19030000 		.4byte	.LASF25
+ 915 0179 01       		.byte	0x1
+ 916 017a E201     		.2byte	0x1e2
+ 917 017c 00000000 		.4byte	.LFB7
+ 918 0180 20000000 		.4byte	.LFE7-.LFB7
+ 919 0184 01       		.uleb128 0x1
+ 920 0185 9C       		.byte	0x9c
+ 921 0186 9A010000 		.4byte	0x19a
+ 922 018a 0B       		.uleb128 0xb
+ 923 018b 80000000 		.4byte	.LASF27
+ 924 018f 01       		.byte	0x1
+ 925 0190 E201     		.2byte	0x1e2
+ 926 0192 77000000 		.4byte	0x77
+ 927 0196 02       		.uleb128 0x2
+ 928 0197 91       		.byte	0x91
+ 929 0198 76       		.sleb128 -10
+ 930 0199 00       		.byte	0
+ 931 019a 0A       		.uleb128 0xa
+ 932 019b 3F020000 		.4byte	.LASF28
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 33
+
+
+ 933 019f 01       		.byte	0x1
+ 934 01a0 0402     		.2byte	0x204
+ 935 01a2 00000000 		.4byte	.LFB8
+ 936 01a6 20000000 		.4byte	.LFE8-.LFB8
+ 937 01aa 01       		.uleb128 0x1
+ 938 01ab 9C       		.byte	0x9c
+ 939 01ac C0010000 		.4byte	0x1c0
+ 940 01b0 0B       		.uleb128 0xb
+ 941 01b1 13040000 		.4byte	.LASF29
+ 942 01b5 01       		.byte	0x1
+ 943 01b6 0402     		.2byte	0x204
+ 944 01b8 77000000 		.4byte	0x77
+ 945 01bc 02       		.uleb128 0x2
+ 946 01bd 91       		.byte	0x91
+ 947 01be 76       		.sleb128 -10
+ 948 01bf 00       		.byte	0
+ 949 01c0 0A       		.uleb128 0xa
+ 950 01c1 05010000 		.4byte	.LASF30
+ 951 01c5 01       		.byte	0x1
+ 952 01c6 AC02     		.2byte	0x2ac
+ 953 01c8 00000000 		.4byte	.LFB9
+ 954 01cc 20000000 		.4byte	.LFE9-.LFB9
+ 955 01d0 01       		.uleb128 0x1
+ 956 01d1 9C       		.byte	0x9c
+ 957 01d2 E6010000 		.4byte	0x1e6
+ 958 01d6 0B       		.uleb128 0xb
+ 959 01d7 72030000 		.4byte	.LASF31
+ 960 01db 01       		.byte	0x1
+ 961 01dc AC02     		.2byte	0x2ac
+ 962 01de 6B000000 		.4byte	0x6b
+ 963 01e2 02       		.uleb128 0x2
+ 964 01e3 91       		.byte	0x91
+ 965 01e4 77       		.sleb128 -9
+ 966 01e5 00       		.byte	0
+ 967 01e6 0C       		.uleb128 0xc
+ 968 01e7 E0000000 		.4byte	.LASF33
+ 969 01eb 01       		.byte	0x1
+ 970 01ec C702     		.2byte	0x2c7
+ 971 01ee 6B000000 		.4byte	0x6b
+ 972 01f2 00000000 		.4byte	.LFB10
+ 973 01f6 18000000 		.4byte	.LFE10-.LFB10
+ 974 01fa 01       		.uleb128 0x1
+ 975 01fb 9C       		.byte	0x9c
+ 976 01fc 0E       		.uleb128 0xe
+ 977 01fd 3C000000 		.4byte	.LASF43
+ 978 0201 01       		.byte	0x1
+ 979 0202 E102     		.2byte	0x2e1
+ 980 0204 6B000000 		.4byte	0x6b
+ 981 0208 00000000 		.4byte	.LFB11
+ 982 020c 20000000 		.4byte	.LFE11-.LFB11
+ 983 0210 01       		.uleb128 0x1
+ 984 0211 9C       		.byte	0x9c
+ 985 0212 26020000 		.4byte	0x226
+ 986 0216 0F       		.uleb128 0xf
+ 987 0217 12030000 		.4byte	.LASF34
+ 988 021b 01       		.byte	0x1
+ 989 021c E302     		.2byte	0x2e3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 34
+
+
+ 990 021e 6B000000 		.4byte	0x6b
+ 991 0222 02       		.uleb128 0x2
+ 992 0223 91       		.byte	0x91
+ 993 0224 77       		.sleb128 -9
+ 994 0225 00       		.byte	0
+ 995 0226 0A       		.uleb128 0xa
+ 996 0227 69010000 		.4byte	.LASF35
+ 997 022b 01       		.byte	0x1
+ 998 022c FD02     		.2byte	0x2fd
+ 999 022e 00000000 		.4byte	.LFB12
+ 1000 0232 20000000 		.4byte	.LFE12-.LFB12
+ 1001 0236 01       		.uleb128 0x1
+ 1002 0237 9C       		.byte	0x9c
+ 1003 0238 4C020000 		.4byte	0x24c
+ 1004 023c 0B       		.uleb128 0xb
+ 1005 023d 61010000 		.4byte	.LASF36
+ 1006 0241 01       		.byte	0x1
+ 1007 0242 FD02     		.2byte	0x2fd
+ 1008 0244 6B000000 		.4byte	0x6b
+ 1009 0248 02       		.uleb128 0x2
+ 1010 0249 91       		.byte	0x91
+ 1011 024a 77       		.sleb128 -9
+ 1012 024b 00       		.byte	0
+ 1013 024c 0C       		.uleb128 0xc
+ 1014 024d 7C020000 		.4byte	.LASF37
+ 1015 0251 01       		.byte	0x1
+ 1016 0252 1603     		.2byte	0x316
+ 1017 0254 77000000 		.4byte	0x77
+ 1018 0258 00000000 		.4byte	.LFB13
+ 1019 025c 18000000 		.4byte	.LFE13-.LFB13
+ 1020 0260 01       		.uleb128 0x1
+ 1021 0261 9C       		.byte	0x9c
+ 1022 0262 0C       		.uleb128 0xc
+ 1023 0263 1E000000 		.4byte	.LASF38
+ 1024 0267 01       		.byte	0x1
+ 1025 0268 3003     		.2byte	0x330
+ 1026 026a 77000000 		.4byte	0x77
+ 1027 026e 00000000 		.4byte	.LFB14
+ 1028 0272 18000000 		.4byte	.LFE14-.LFB14
+ 1029 0276 01       		.uleb128 0x1
+ 1030 0277 9C       		.byte	0x9c
+ 1031 0278 0C       		.uleb128 0xc
+ 1032 0279 B5030000 		.4byte	.LASF39
+ 1033 027d 01       		.byte	0x1
+ 1034 027e 7403     		.2byte	0x374
+ 1035 0280 77000000 		.4byte	0x77
+ 1036 0284 00000000 		.4byte	.LFB15
+ 1037 0288 18000000 		.4byte	.LFE15-.LFB15
+ 1038 028c 01       		.uleb128 0x1
+ 1039 028d 9C       		.byte	0x9c
+ 1040 028e 10       		.uleb128 0x10
+ 1041 028f 25020000 		.4byte	.LASF44
+ 1042 0293 01       		.byte	0x1
+ 1043 0294 20       		.byte	0x20
+ 1044 0295 6B000000 		.4byte	0x6b
+ 1045 0299 05       		.uleb128 0x5
+ 1046 029a 03       		.byte	0x3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 35
+
+
+ 1047 029b 00000000 		.4byte	PWM_Sample_Buffer_initVar
+ 1048 029f 00       		.byte	0
+ 1049              		.section	.debug_abbrev,"",%progbits
+ 1050              	.Ldebug_abbrev0:
+ 1051 0000 01       		.uleb128 0x1
+ 1052 0001 11       		.uleb128 0x11
+ 1053 0002 01       		.byte	0x1
+ 1054 0003 25       		.uleb128 0x25
+ 1055 0004 0E       		.uleb128 0xe
+ 1056 0005 13       		.uleb128 0x13
+ 1057 0006 0B       		.uleb128 0xb
+ 1058 0007 03       		.uleb128 0x3
+ 1059 0008 0E       		.uleb128 0xe
+ 1060 0009 1B       		.uleb128 0x1b
+ 1061 000a 0E       		.uleb128 0xe
+ 1062 000b 55       		.uleb128 0x55
+ 1063 000c 17       		.uleb128 0x17
+ 1064 000d 11       		.uleb128 0x11
+ 1065 000e 01       		.uleb128 0x1
+ 1066 000f 10       		.uleb128 0x10
+ 1067 0010 17       		.uleb128 0x17
+ 1068 0011 00       		.byte	0
+ 1069 0012 00       		.byte	0
+ 1070 0013 02       		.uleb128 0x2
+ 1071 0014 24       		.uleb128 0x24
+ 1072 0015 00       		.byte	0
+ 1073 0016 0B       		.uleb128 0xb
+ 1074 0017 0B       		.uleb128 0xb
+ 1075 0018 3E       		.uleb128 0x3e
+ 1076 0019 0B       		.uleb128 0xb
+ 1077 001a 03       		.uleb128 0x3
+ 1078 001b 0E       		.uleb128 0xe
+ 1079 001c 00       		.byte	0
+ 1080 001d 00       		.byte	0
+ 1081 001e 03       		.uleb128 0x3
+ 1082 001f 24       		.uleb128 0x24
+ 1083 0020 00       		.byte	0
+ 1084 0021 0B       		.uleb128 0xb
+ 1085 0022 0B       		.uleb128 0xb
+ 1086 0023 3E       		.uleb128 0x3e
+ 1087 0024 0B       		.uleb128 0xb
+ 1088 0025 03       		.uleb128 0x3
+ 1089 0026 08       		.uleb128 0x8
+ 1090 0027 00       		.byte	0
+ 1091 0028 00       		.byte	0
+ 1092 0029 04       		.uleb128 0x4
+ 1093 002a 16       		.uleb128 0x16
+ 1094 002b 00       		.byte	0
+ 1095 002c 03       		.uleb128 0x3
+ 1096 002d 0E       		.uleb128 0xe
+ 1097 002e 3A       		.uleb128 0x3a
+ 1098 002f 0B       		.uleb128 0xb
+ 1099 0030 3B       		.uleb128 0x3b
+ 1100 0031 05       		.uleb128 0x5
+ 1101 0032 49       		.uleb128 0x49
+ 1102 0033 13       		.uleb128 0x13
+ 1103 0034 00       		.byte	0
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 36
+
+
+ 1104 0035 00       		.byte	0
+ 1105 0036 05       		.uleb128 0x5
+ 1106 0037 35       		.uleb128 0x35
+ 1107 0038 00       		.byte	0
+ 1108 0039 49       		.uleb128 0x49
+ 1109 003a 13       		.uleb128 0x13
+ 1110 003b 00       		.byte	0
+ 1111 003c 00       		.byte	0
+ 1112 003d 06       		.uleb128 0x6
+ 1113 003e 2E       		.uleb128 0x2e
+ 1114 003f 00       		.byte	0
+ 1115 0040 3F       		.uleb128 0x3f
+ 1116 0041 19       		.uleb128 0x19
+ 1117 0042 03       		.uleb128 0x3
+ 1118 0043 0E       		.uleb128 0xe
+ 1119 0044 3A       		.uleb128 0x3a
+ 1120 0045 0B       		.uleb128 0xb
+ 1121 0046 3B       		.uleb128 0x3b
+ 1122 0047 0B       		.uleb128 0xb
+ 1123 0048 27       		.uleb128 0x27
+ 1124 0049 19       		.uleb128 0x19
+ 1125 004a 11       		.uleb128 0x11
+ 1126 004b 01       		.uleb128 0x1
+ 1127 004c 12       		.uleb128 0x12
+ 1128 004d 06       		.uleb128 0x6
+ 1129 004e 40       		.uleb128 0x40
+ 1130 004f 18       		.uleb128 0x18
+ 1131 0050 9642     		.uleb128 0x2116
+ 1132 0052 19       		.uleb128 0x19
+ 1133 0053 00       		.byte	0
+ 1134 0054 00       		.byte	0
+ 1135 0055 07       		.uleb128 0x7
+ 1136 0056 2E       		.uleb128 0x2e
+ 1137 0057 01       		.byte	0x1
+ 1138 0058 3F       		.uleb128 0x3f
+ 1139 0059 19       		.uleb128 0x19
+ 1140 005a 03       		.uleb128 0x3
+ 1141 005b 0E       		.uleb128 0xe
+ 1142 005c 3A       		.uleb128 0x3a
+ 1143 005d 0B       		.uleb128 0xb
+ 1144 005e 3B       		.uleb128 0x3b
+ 1145 005f 0B       		.uleb128 0xb
+ 1146 0060 27       		.uleb128 0x27
+ 1147 0061 19       		.uleb128 0x19
+ 1148 0062 11       		.uleb128 0x11
+ 1149 0063 01       		.uleb128 0x1
+ 1150 0064 12       		.uleb128 0x12
+ 1151 0065 06       		.uleb128 0x6
+ 1152 0066 40       		.uleb128 0x40
+ 1153 0067 18       		.uleb128 0x18
+ 1154 0068 9642     		.uleb128 0x2116
+ 1155 006a 19       		.uleb128 0x19
+ 1156 006b 01       		.uleb128 0x1
+ 1157 006c 13       		.uleb128 0x13
+ 1158 006d 00       		.byte	0
+ 1159 006e 00       		.byte	0
+ 1160 006f 08       		.uleb128 0x8
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 37
+
+
+ 1161 0070 34       		.uleb128 0x34
+ 1162 0071 00       		.byte	0
+ 1163 0072 03       		.uleb128 0x3
+ 1164 0073 0E       		.uleb128 0xe
+ 1165 0074 3A       		.uleb128 0x3a
+ 1166 0075 0B       		.uleb128 0xb
+ 1167 0076 3B       		.uleb128 0x3b
+ 1168 0077 0B       		.uleb128 0xb
+ 1169 0078 49       		.uleb128 0x49
+ 1170 0079 13       		.uleb128 0x13
+ 1171 007a 02       		.uleb128 0x2
+ 1172 007b 18       		.uleb128 0x18
+ 1173 007c 00       		.byte	0
+ 1174 007d 00       		.byte	0
+ 1175 007e 09       		.uleb128 0x9
+ 1176 007f 2E       		.uleb128 0x2e
+ 1177 0080 00       		.byte	0
+ 1178 0081 3F       		.uleb128 0x3f
+ 1179 0082 19       		.uleb128 0x19
+ 1180 0083 03       		.uleb128 0x3
+ 1181 0084 0E       		.uleb128 0xe
+ 1182 0085 3A       		.uleb128 0x3a
+ 1183 0086 0B       		.uleb128 0xb
+ 1184 0087 3B       		.uleb128 0x3b
+ 1185 0088 0B       		.uleb128 0xb
+ 1186 0089 27       		.uleb128 0x27
+ 1187 008a 19       		.uleb128 0x19
+ 1188 008b 11       		.uleb128 0x11
+ 1189 008c 01       		.uleb128 0x1
+ 1190 008d 12       		.uleb128 0x12
+ 1191 008e 06       		.uleb128 0x6
+ 1192 008f 40       		.uleb128 0x40
+ 1193 0090 18       		.uleb128 0x18
+ 1194 0091 9742     		.uleb128 0x2117
+ 1195 0093 19       		.uleb128 0x19
+ 1196 0094 00       		.byte	0
+ 1197 0095 00       		.byte	0
+ 1198 0096 0A       		.uleb128 0xa
+ 1199 0097 2E       		.uleb128 0x2e
+ 1200 0098 01       		.byte	0x1
+ 1201 0099 3F       		.uleb128 0x3f
+ 1202 009a 19       		.uleb128 0x19
+ 1203 009b 03       		.uleb128 0x3
+ 1204 009c 0E       		.uleb128 0xe
+ 1205 009d 3A       		.uleb128 0x3a
+ 1206 009e 0B       		.uleb128 0xb
+ 1207 009f 3B       		.uleb128 0x3b
+ 1208 00a0 05       		.uleb128 0x5
+ 1209 00a1 27       		.uleb128 0x27
+ 1210 00a2 19       		.uleb128 0x19
+ 1211 00a3 11       		.uleb128 0x11
+ 1212 00a4 01       		.uleb128 0x1
+ 1213 00a5 12       		.uleb128 0x12
+ 1214 00a6 06       		.uleb128 0x6
+ 1215 00a7 40       		.uleb128 0x40
+ 1216 00a8 18       		.uleb128 0x18
+ 1217 00a9 9742     		.uleb128 0x2117
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 38
+
+
+ 1218 00ab 19       		.uleb128 0x19
+ 1219 00ac 01       		.uleb128 0x1
+ 1220 00ad 13       		.uleb128 0x13
+ 1221 00ae 00       		.byte	0
+ 1222 00af 00       		.byte	0
+ 1223 00b0 0B       		.uleb128 0xb
+ 1224 00b1 05       		.uleb128 0x5
+ 1225 00b2 00       		.byte	0
+ 1226 00b3 03       		.uleb128 0x3
+ 1227 00b4 0E       		.uleb128 0xe
+ 1228 00b5 3A       		.uleb128 0x3a
+ 1229 00b6 0B       		.uleb128 0xb
+ 1230 00b7 3B       		.uleb128 0x3b
+ 1231 00b8 05       		.uleb128 0x5
+ 1232 00b9 49       		.uleb128 0x49
+ 1233 00ba 13       		.uleb128 0x13
+ 1234 00bb 02       		.uleb128 0x2
+ 1235 00bc 18       		.uleb128 0x18
+ 1236 00bd 00       		.byte	0
+ 1237 00be 00       		.byte	0
+ 1238 00bf 0C       		.uleb128 0xc
+ 1239 00c0 2E       		.uleb128 0x2e
+ 1240 00c1 00       		.byte	0
+ 1241 00c2 3F       		.uleb128 0x3f
+ 1242 00c3 19       		.uleb128 0x19
+ 1243 00c4 03       		.uleb128 0x3
+ 1244 00c5 0E       		.uleb128 0xe
+ 1245 00c6 3A       		.uleb128 0x3a
+ 1246 00c7 0B       		.uleb128 0xb
+ 1247 00c8 3B       		.uleb128 0x3b
+ 1248 00c9 05       		.uleb128 0x5
+ 1249 00ca 27       		.uleb128 0x27
+ 1250 00cb 19       		.uleb128 0x19
+ 1251 00cc 49       		.uleb128 0x49
+ 1252 00cd 13       		.uleb128 0x13
+ 1253 00ce 11       		.uleb128 0x11
+ 1254 00cf 01       		.uleb128 0x1
+ 1255 00d0 12       		.uleb128 0x12
+ 1256 00d1 06       		.uleb128 0x6
+ 1257 00d2 40       		.uleb128 0x40
+ 1258 00d3 18       		.uleb128 0x18
+ 1259 00d4 9742     		.uleb128 0x2117
+ 1260 00d6 19       		.uleb128 0x19
+ 1261 00d7 00       		.byte	0
+ 1262 00d8 00       		.byte	0
+ 1263 00d9 0D       		.uleb128 0xd
+ 1264 00da 2E       		.uleb128 0x2e
+ 1265 00db 00       		.byte	0
+ 1266 00dc 3F       		.uleb128 0x3f
+ 1267 00dd 19       		.uleb128 0x19
+ 1268 00de 03       		.uleb128 0x3
+ 1269 00df 0E       		.uleb128 0xe
+ 1270 00e0 3A       		.uleb128 0x3a
+ 1271 00e1 0B       		.uleb128 0xb
+ 1272 00e2 3B       		.uleb128 0x3b
+ 1273 00e3 05       		.uleb128 0x5
+ 1274 00e4 27       		.uleb128 0x27
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 39
+
+
+ 1275 00e5 19       		.uleb128 0x19
+ 1276 00e6 11       		.uleb128 0x11
+ 1277 00e7 01       		.uleb128 0x1
+ 1278 00e8 12       		.uleb128 0x12
+ 1279 00e9 06       		.uleb128 0x6
+ 1280 00ea 40       		.uleb128 0x40
+ 1281 00eb 18       		.uleb128 0x18
+ 1282 00ec 9642     		.uleb128 0x2116
+ 1283 00ee 19       		.uleb128 0x19
+ 1284 00ef 00       		.byte	0
+ 1285 00f0 00       		.byte	0
+ 1286 00f1 0E       		.uleb128 0xe
+ 1287 00f2 2E       		.uleb128 0x2e
+ 1288 00f3 01       		.byte	0x1
+ 1289 00f4 3F       		.uleb128 0x3f
+ 1290 00f5 19       		.uleb128 0x19
+ 1291 00f6 03       		.uleb128 0x3
+ 1292 00f7 0E       		.uleb128 0xe
+ 1293 00f8 3A       		.uleb128 0x3a
+ 1294 00f9 0B       		.uleb128 0xb
+ 1295 00fa 3B       		.uleb128 0x3b
+ 1296 00fb 05       		.uleb128 0x5
+ 1297 00fc 27       		.uleb128 0x27
+ 1298 00fd 19       		.uleb128 0x19
+ 1299 00fe 49       		.uleb128 0x49
+ 1300 00ff 13       		.uleb128 0x13
+ 1301 0100 11       		.uleb128 0x11
+ 1302 0101 01       		.uleb128 0x1
+ 1303 0102 12       		.uleb128 0x12
+ 1304 0103 06       		.uleb128 0x6
+ 1305 0104 40       		.uleb128 0x40
+ 1306 0105 18       		.uleb128 0x18
+ 1307 0106 9742     		.uleb128 0x2117
+ 1308 0108 19       		.uleb128 0x19
+ 1309 0109 01       		.uleb128 0x1
+ 1310 010a 13       		.uleb128 0x13
+ 1311 010b 00       		.byte	0
+ 1312 010c 00       		.byte	0
+ 1313 010d 0F       		.uleb128 0xf
+ 1314 010e 34       		.uleb128 0x34
+ 1315 010f 00       		.byte	0
+ 1316 0110 03       		.uleb128 0x3
+ 1317 0111 0E       		.uleb128 0xe
+ 1318 0112 3A       		.uleb128 0x3a
+ 1319 0113 0B       		.uleb128 0xb
+ 1320 0114 3B       		.uleb128 0x3b
+ 1321 0115 05       		.uleb128 0x5
+ 1322 0116 49       		.uleb128 0x49
+ 1323 0117 13       		.uleb128 0x13
+ 1324 0118 02       		.uleb128 0x2
+ 1325 0119 18       		.uleb128 0x18
+ 1326 011a 00       		.byte	0
+ 1327 011b 00       		.byte	0
+ 1328 011c 10       		.uleb128 0x10
+ 1329 011d 34       		.uleb128 0x34
+ 1330 011e 00       		.byte	0
+ 1331 011f 03       		.uleb128 0x3
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 40
+
+
+ 1332 0120 0E       		.uleb128 0xe
+ 1333 0121 3A       		.uleb128 0x3a
+ 1334 0122 0B       		.uleb128 0xb
+ 1335 0123 3B       		.uleb128 0x3b
+ 1336 0124 0B       		.uleb128 0xb
+ 1337 0125 49       		.uleb128 0x49
+ 1338 0126 13       		.uleb128 0x13
+ 1339 0127 3F       		.uleb128 0x3f
+ 1340 0128 19       		.uleb128 0x19
+ 1341 0129 02       		.uleb128 0x2
+ 1342 012a 18       		.uleb128 0x18
+ 1343 012b 00       		.byte	0
+ 1344 012c 00       		.byte	0
+ 1345 012d 00       		.byte	0
+ 1346              		.section	.debug_aranges,"",%progbits
+ 1347 0000 94000000 		.4byte	0x94
+ 1348 0004 0200     		.2byte	0x2
+ 1349 0006 00000000 		.4byte	.Ldebug_info0
+ 1350 000a 04       		.byte	0x4
+ 1351 000b 00       		.byte	0
+ 1352 000c 0000     		.2byte	0
+ 1353 000e 0000     		.2byte	0
+ 1354 0010 00000000 		.4byte	.LFB0
+ 1355 0014 20000000 		.4byte	.LFE0-.LFB0
+ 1356 0018 00000000 		.4byte	.LFB1
+ 1357 001c 94000000 		.4byte	.LFE1-.LFB1
+ 1358 0020 00000000 		.4byte	.LFB2
+ 1359 0024 20000000 		.4byte	.LFE2-.LFB2
+ 1360 0028 00000000 		.4byte	.LFB3
+ 1361 002c 20000000 		.4byte	.LFE3-.LFB3
+ 1362 0030 00000000 		.4byte	.LFB4
+ 1363 0034 20000000 		.4byte	.LFE4-.LFB4
+ 1364 0038 00000000 		.4byte	.LFB5
+ 1365 003c 20000000 		.4byte	.LFE5-.LFB5
+ 1366 0040 00000000 		.4byte	.LFB6
+ 1367 0044 1A000000 		.4byte	.LFE6-.LFB6
+ 1368 0048 00000000 		.4byte	.LFB7
+ 1369 004c 20000000 		.4byte	.LFE7-.LFB7
+ 1370 0050 00000000 		.4byte	.LFB8
+ 1371 0054 20000000 		.4byte	.LFE8-.LFB8
+ 1372 0058 00000000 		.4byte	.LFB9
+ 1373 005c 20000000 		.4byte	.LFE9-.LFB9
+ 1374 0060 00000000 		.4byte	.LFB10
+ 1375 0064 18000000 		.4byte	.LFE10-.LFB10
+ 1376 0068 00000000 		.4byte	.LFB11
+ 1377 006c 20000000 		.4byte	.LFE11-.LFB11
+ 1378 0070 00000000 		.4byte	.LFB12
+ 1379 0074 20000000 		.4byte	.LFE12-.LFB12
+ 1380 0078 00000000 		.4byte	.LFB13
+ 1381 007c 18000000 		.4byte	.LFE13-.LFB13
+ 1382 0080 00000000 		.4byte	.LFB14
+ 1383 0084 18000000 		.4byte	.LFE14-.LFB14
+ 1384 0088 00000000 		.4byte	.LFB15
+ 1385 008c 18000000 		.4byte	.LFE15-.LFB15
+ 1386 0090 00000000 		.4byte	0
+ 1387 0094 00000000 		.4byte	0
+ 1388              		.section	.debug_ranges,"",%progbits
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 41
+
+
+ 1389              	.Ldebug_ranges0:
+ 1390 0000 00000000 		.4byte	.LFB0
+ 1391 0004 20000000 		.4byte	.LFE0
+ 1392 0008 00000000 		.4byte	.LFB1
+ 1393 000c 94000000 		.4byte	.LFE1
+ 1394 0010 00000000 		.4byte	.LFB2
+ 1395 0014 20000000 		.4byte	.LFE2
+ 1396 0018 00000000 		.4byte	.LFB3
+ 1397 001c 20000000 		.4byte	.LFE3
+ 1398 0020 00000000 		.4byte	.LFB4
+ 1399 0024 20000000 		.4byte	.LFE4
+ 1400 0028 00000000 		.4byte	.LFB5
+ 1401 002c 20000000 		.4byte	.LFE5
+ 1402 0030 00000000 		.4byte	.LFB6
+ 1403 0034 1A000000 		.4byte	.LFE6
+ 1404 0038 00000000 		.4byte	.LFB7
+ 1405 003c 20000000 		.4byte	.LFE7
+ 1406 0040 00000000 		.4byte	.LFB8
+ 1407 0044 20000000 		.4byte	.LFE8
+ 1408 0048 00000000 		.4byte	.LFB9
+ 1409 004c 20000000 		.4byte	.LFE9
+ 1410 0050 00000000 		.4byte	.LFB10
+ 1411 0054 18000000 		.4byte	.LFE10
+ 1412 0058 00000000 		.4byte	.LFB11
+ 1413 005c 20000000 		.4byte	.LFE11
+ 1414 0060 00000000 		.4byte	.LFB12
+ 1415 0064 20000000 		.4byte	.LFE12
+ 1416 0068 00000000 		.4byte	.LFB13
+ 1417 006c 18000000 		.4byte	.LFE13
+ 1418 0070 00000000 		.4byte	.LFB14
+ 1419 0074 18000000 		.4byte	.LFE14
+ 1420 0078 00000000 		.4byte	.LFB15
+ 1421 007c 18000000 		.4byte	.LFE15
+ 1422 0080 00000000 		.4byte	0
+ 1423 0084 00000000 		.4byte	0
+ 1424              		.section	.debug_line,"",%progbits
+ 1425              	.Ldebug_line0:
+ 1426 0000 91010000 		.section	.debug_str,"MS",%progbits,1
+ 1426      02004E00 
+ 1426      00000201 
+ 1426      FB0E0D00 
+ 1426      01010101 
+ 1427              	.LASF15:
+ 1428 0000 72656731 		.ascii	"reg16\000"
+ 1428      3600
+ 1429              	.LASF19:
+ 1430 0006 50574D5F 		.ascii	"PWM_Sample_Buffer_Start\000"
+ 1430      53616D70 
+ 1430      6C655F42 
+ 1430      75666665 
+ 1430      725F5374 
+ 1431              	.LASF38:
+ 1432 001e 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCompare\000"
+ 1432      53616D70 
+ 1432      6C655F42 
+ 1432      75666665 
+ 1432      725F5265 
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 42
+
+
+ 1433              	.LASF43:
+ 1434 003c 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadControlRegister\000"
+ 1434      53616D70 
+ 1434      6C655F42 
+ 1434      75666665 
+ 1434      725F5265 
+ 1435              	.LASF32:
+ 1436 0062 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCounter\000"
+ 1436      53616D70 
+ 1436      6C655F42 
+ 1436      75666665 
+ 1436      725F5265 
+ 1437              	.LASF27:
+ 1438 0080 70657269 		.ascii	"period\000"
+ 1438      6F6400
+ 1439              	.LASF4:
+ 1440 0087 6C6F6E67 		.ascii	"long int\000"
+ 1440      20696E74 
+ 1440      00
+ 1441              	.LASF3:
+ 1442 0090 73686F72 		.ascii	"short unsigned int\000"
+ 1442      7420756E 
+ 1442      7369676E 
+ 1442      65642069 
+ 1442      6E7400
+ 1443              	.LASF24:
+ 1444 00a3 50574D5F 		.ascii	"PWM_Sample_Buffer_ClearFIFO\000"
+ 1444      53616D70 
+ 1444      6C655F42 
+ 1444      75666665 
+ 1444      725F436C 
+ 1445              	.LASF18:
+ 1446 00bf 50574D5F 		.ascii	"PWM_Sample_Buffer_interruptState\000"
+ 1446      53616D70 
+ 1446      6C655F42 
+ 1446      75666665 
+ 1446      725F696E 
+ 1447              	.LASF33:
+ 1448 00e0 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadStatusRegister\000"
+ 1448      53616D70 
+ 1448      6C655F42 
+ 1448      75666665 
+ 1448      725F5265 
+ 1449              	.LASF30:
+ 1450 0105 50574D5F 		.ascii	"PWM_Sample_Buffer_SetInterruptMode\000"
+ 1450      53616D70 
+ 1450      6C655F42 
+ 1450      75666665 
+ 1450      725F5365 
+ 1451              	.LASF11:
+ 1452 0128 666C6F61 		.ascii	"float\000"
+ 1452      7400
+ 1453              	.LASF26:
+ 1454 012e 636F756E 		.ascii	"counter\000"
+ 1454      74657200 
+ 1455              	.LASF1:
+ 1456 0136 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 43
+
+
+ 1456      676E6564 
+ 1456      20636861 
+ 1456      7200
+ 1457              	.LASF14:
+ 1458 0144 72656738 		.ascii	"reg8\000"
+ 1458      00
+ 1459              	.LASF5:
+ 1460 0149 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1460      20756E73 
+ 1460      69676E65 
+ 1460      6420696E 
+ 1460      7400
+ 1461              	.LASF9:
+ 1462 015b 75696E74 		.ascii	"uint8\000"
+ 1462      3800
+ 1463              	.LASF36:
+ 1464 0161 636F6E74 		.ascii	"control\000"
+ 1464      726F6C00 
+ 1465              	.LASF35:
+ 1466 0169 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteControlRegister\000"
+ 1466      53616D70 
+ 1466      6C655F42 
+ 1466      75666665 
+ 1466      725F5772 
+ 1467              	.LASF40:
+ 1468 0190 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1468      4320342E 
+ 1468      392E3320 
+ 1468      32303135 
+ 1468      30333033 
+ 1469 01c3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1469      20726576 
+ 1469      6973696F 
+ 1469      6E203232 
+ 1469      31323230 
+ 1470 01f6 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1470      66756E63 
+ 1470      74696F6E 
+ 1470      2D736563 
+ 1470      74696F6E 
+ 1471              	.LASF12:
+ 1472 021e 646F7562 		.ascii	"double\000"
+ 1472      6C6500
+ 1473              	.LASF44:
+ 1474 0225 50574D5F 		.ascii	"PWM_Sample_Buffer_initVar\000"
+ 1474      53616D70 
+ 1474      6C655F42 
+ 1474      75666665 
+ 1474      725F696E 
+ 1475              	.LASF28:
+ 1476 023f 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteCompare\000"
+ 1476      53616D70 
+ 1476      6C655F42 
+ 1476      75666665 
+ 1476      725F5772 
+ 1477              	.LASF10:
+ 1478 025e 75696E74 		.ascii	"uint16\000"
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 44
+
+
+ 1478      313600
+ 1479              	.LASF22:
+ 1480 0265 50574D5F 		.ascii	"PWM_Sample_Buffer_Init\000"
+ 1480      53616D70 
+ 1480      6C655F42 
+ 1480      75666665 
+ 1480      725F496E 
+ 1481              	.LASF37:
+ 1482 027c 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadCapture\000"
+ 1482      53616D70 
+ 1482      6C655F42 
+ 1482      75666665 
+ 1482      725F5265 
+ 1483              	.LASF8:
+ 1484 029a 756E7369 		.ascii	"unsigned int\000"
+ 1484      676E6564 
+ 1484      20696E74 
+ 1484      00
+ 1485              	.LASF7:
+ 1486 02a7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1486      206C6F6E 
+ 1486      6720756E 
+ 1486      7369676E 
+ 1486      65642069 
+ 1487              	.LASF42:
+ 1488 02be 433A5C53 		.ascii	"C:\\SVN\\apps\\trunk\\Cypress Academy\\PSoC-121-Ana"
+ 1488      564E5C61 
+ 1488      7070735C 
+ 1488      7472756E 
+ 1488      6B5C4379 
+ 1489 02ec 6C6F675C 		.ascii	"log\\Scope\\KEES_Scope\\PSoC\\Scope.cydsn\000"
+ 1489      53636F70 
+ 1489      655C4B45 
+ 1489      45535F53 
+ 1489      636F7065 
+ 1490              	.LASF34:
+ 1491 0312 72657375 		.ascii	"result\000"
+ 1491      6C7400
+ 1492              	.LASF25:
+ 1493 0319 50574D5F 		.ascii	"PWM_Sample_Buffer_WritePeriod\000"
+ 1493      53616D70 
+ 1493      6C655F42 
+ 1493      75666665 
+ 1493      725F5772 
+ 1494              	.LASF17:
+ 1495 0337 6374726C 		.ascii	"ctrl\000"
+ 1495      00
+ 1496              	.LASF16:
+ 1497 033c 73697A65 		.ascii	"sizetype\000"
+ 1497      74797065 
+ 1497      00
+ 1498              	.LASF6:
+ 1499 0345 6C6F6E67 		.ascii	"long long int\000"
+ 1499      206C6F6E 
+ 1499      6720696E 
+ 1499      7400
+ 1500              	.LASF23:
+ARM GAS  C:\Users\Greg\AppData\Local\Temp\ccMF0E8x.s 			page 45
+
+
+ 1501 0353 50574D5F 		.ascii	"PWM_Sample_Buffer_WriteCounter\000"
+ 1501      53616D70 
+ 1501      6C655F42 
+ 1501      75666665 
+ 1501      725F5772 
+ 1502              	.LASF31:
+ 1503 0372 696E7465 		.ascii	"interruptMode\000"
+ 1503      72727570 
+ 1503      744D6F64 
+ 1503      6500
+ 1504              	.LASF41:
+ 1505 0380 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_Sample_Buffer.c\000"
+ 1505      72617465 
+ 1505      645F536F 
+ 1505      75726365 
+ 1505      5C50536F 
+ 1506              	.LASF2:
+ 1507 03ab 73686F72 		.ascii	"short int\000"
+ 1507      7420696E 
+ 1507      7400
+ 1508              	.LASF39:
+ 1509 03b5 50574D5F 		.ascii	"PWM_Sample_Buffer_ReadPeriod\000"
+ 1509      53616D70 
+ 1509      6C655F42 
+ 1509      75666665 
+ 1509      725F5265 
+ 1510              	.LASF21:
+ 1511 03d2 50574D5F 		.ascii	"PWM_Sample_Buffer_Stop\000"
+ 1511      53616D70 
+ 1511      6C655F42 
+ 1511      75666665 
+ 1511      725F5374 
+ 1512              	.LASF20:
+ 1513 03e9 50574D5F 		.ascii	"PWM_Sample_Buffer_Enable\000"
+ 1513      53616D70 
+ 1513      6C655F42 
+ 1513      75666665 
+ 1513      725F456E 
+ 1514              	.LASF13:
+ 1515 0402 63686172 		.ascii	"char\000"
+ 1515      00
+ 1516              	.LASF0:
+ 1517 0407 7369676E 		.ascii	"signed char\000"
+ 1517      65642063 
+ 1517      68617200 
+ 1518              	.LASF29:
+ 1519 0413 636F6D70 		.ascii	"compare\000"
+ 1519      61726500 
+ 1520              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
