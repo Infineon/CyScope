@@ -1,0 +1,2543 @@
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cymetadata.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_meta_configecc
+  20              		.section	.cyconfigecc,"a",%progbits
+  21              		.align	2
+  22              		.type	cy_meta_configecc, %object
+  23              		.size	cy_meta_configecc, 1936
+  24              	cy_meta_configecc:
+  25 0000 01       		.byte	1
+  26 0001 45       		.byte	69
+  27 0002 00       		.byte	0
+  28 0003 40       		.byte	64
+  29 0004 06       		.byte	6
+  30 0005 52       		.byte	82
+  31 0006 00       		.byte	0
+  32 0007 40       		.byte	64
+  33 0008 01       		.byte	1
+  34 0009 5A       		.byte	90
+  35 000a 00       		.byte	0
+  36 000b 40       		.byte	64
+  37 000c 02       		.byte	2
+  38 000d 5B       		.byte	91
+  39 000e 00       		.byte	0
+  40 000f 40       		.byte	64
+  41 0010 02       		.byte	2
+  42 0011 64       		.byte	100
+  43 0012 00       		.byte	0
+  44 0013 40       		.byte	64
+  45 0014 35       		.byte	53
+  46 0015 00       		.byte	0
+  47 0016 01       		.byte	1
+  48 0017 40       		.byte	64
+  49 0018 23       		.byte	35
+  50 0019 01       		.byte	1
+  51 001a 01       		.byte	1
+  52 001b 40       		.byte	64
+  53 001c 22       		.byte	34
+  54 001d 02       		.byte	2
+  55 001e 01       		.byte	1
+  56 001f 40       		.byte	64
+  57 0020 32       		.byte	50
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 2
+
+
+  58 0021 03       		.byte	3
+  59 0022 01       		.byte	1
+  60 0023 40       		.byte	64
+  61 0024 3F       		.byte	63
+  62 0025 04       		.byte	4
+  63 0026 01       		.byte	1
+  64 0027 40       		.byte	64
+  65 0028 40       		.byte	64
+  66 0029 05       		.byte	5
+  67 002a 01       		.byte	1
+  68 002b 40       		.byte	64
+  69 002c 2B       		.byte	43
+  70 002d 06       		.byte	6
+  71 002e 01       		.byte	1
+  72 002f 40       		.byte	64
+  73 0030 3B       		.byte	59
+  74 0031 07       		.byte	7
+  75 0032 01       		.byte	1
+  76 0033 40       		.byte	64
+  77 0034 02       		.byte	2
+  78 0035 09       		.byte	9
+  79 0036 01       		.byte	1
+  80 0037 40       		.byte	64
+  81 0038 02       		.byte	2
+  82 0039 0B       		.byte	11
+  83 003a 01       		.byte	1
+  84 003b 40       		.byte	64
+  85 003c 04       		.byte	4
+  86 003d 0D       		.byte	13
+  87 003e 01       		.byte	1
+  88 003f 40       		.byte	64
+  89 0040 4D       		.byte	77
+  90 0041 14       		.byte	20
+  91 0042 01       		.byte	1
+  92 0043 40       		.byte	64
+  93 0044 2B       		.byte	43
+  94 0045 15       		.byte	21
+  95 0046 01       		.byte	1
+  96 0047 40       		.byte	64
+  97 0048 3F       		.byte	63
+  98 0049 16       		.byte	22
+  99 004a 01       		.byte	1
+ 100 004b 40       		.byte	64
+ 101 004c 45       		.byte	69
+ 102 004d 17       		.byte	23
+ 103 004e 01       		.byte	1
+ 104 004f 40       		.byte	64
+ 105 0050 04       		.byte	4
+ 106 0051 19       		.byte	25
+ 107 0052 01       		.byte	1
+ 108 0053 40       		.byte	64
+ 109 0054 02       		.byte	2
+ 110 0055 1B       		.byte	27
+ 111 0056 01       		.byte	1
+ 112 0057 40       		.byte	64
+ 113 0058 10       		.byte	16
+ 114 0059 40       		.byte	64
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 3
+
+
+ 115 005a 01       		.byte	1
+ 116 005b 40       		.byte	64
+ 117 005c 17       		.byte	23
+ 118 005d 41       		.byte	65
+ 119 005e 01       		.byte	1
+ 120 005f 40       		.byte	64
+ 121 0060 0E       		.byte	14
+ 122 0061 42       		.byte	66
+ 123 0062 01       		.byte	1
+ 124 0063 40       		.byte	64
+ 125 0064 0A       		.byte	10
+ 126 0065 43       		.byte	67
+ 127 0066 01       		.byte	1
+ 128 0067 40       		.byte	64
+ 129 0068 02       		.byte	2
+ 130 0069 44       		.byte	68
+ 131 006a 01       		.byte	1
+ 132 006b 40       		.byte	64
+ 133 006c 0C       		.byte	12
+ 134 006d 45       		.byte	69
+ 135 006e 01       		.byte	1
+ 136 006f 40       		.byte	64
+ 137 0070 0B       		.byte	11
+ 138 0071 46       		.byte	70
+ 139 0072 01       		.byte	1
+ 140 0073 40       		.byte	64
+ 141 0074 13       		.byte	19
+ 142 0075 47       		.byte	71
+ 143 0076 01       		.byte	1
+ 144 0077 40       		.byte	64
+ 145 0078 0E       		.byte	14
+ 146 0079 48       		.byte	72
+ 147 007a 01       		.byte	1
+ 148 007b 40       		.byte	64
+ 149 007c 0F       		.byte	15
+ 150 007d 49       		.byte	73
+ 151 007e 01       		.byte	1
+ 152 007f 40       		.byte	64
+ 153 0080 16       		.byte	22
+ 154 0081 4C       		.byte	76
+ 155 0082 01       		.byte	1
+ 156 0083 40       		.byte	64
+ 157 0084 11       		.byte	17
+ 158 0085 4D       		.byte	77
+ 159 0086 01       		.byte	1
+ 160 0087 40       		.byte	64
+ 161 0088 0A       		.byte	10
+ 162 0089 50       		.byte	80
+ 163 008a 01       		.byte	1
+ 164 008b 40       		.byte	64
+ 165 008c 03       		.byte	3
+ 166 008d 51       		.byte	81
+ 167 008e 01       		.byte	1
+ 168 008f 40       		.byte	64
+ 169 0090 7E       		.byte	126
+ 170 0091 02       		.byte	2
+ 171 0092 00       		.byte	0
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 4
+
+
+ 172 0093 40       		.byte	64
+ 173 0094 01       		.byte	1
+ 174 0095 40       		.byte	64
+ 175 0096 28       		.byte	40
+ 176 0097 16       		.byte	22
+ 177 0098 29       		.byte	41
+ 178 0099 15       		.byte	21
+ 179 009a 30       		.byte	48
+ 180 009b 80       		.byte	-128
+ 181 009c 7C       		.byte	124
+ 182 009d 40       		.byte	64
+ 183 009e 8F       		.byte	-113
+ 184 009f 01       		.byte	1
+ 185 00a0 27       		.byte	39
+ 186 00a1 84       		.byte	-124
+ 187 00a2 2F       		.byte	47
+ 188 00a3 84       		.byte	-124
+ 189 00a4 80       		.byte	-128
+ 190 00a5 0F       		.byte	15
+ 191 00a6 87       		.byte	-121
+ 192 00a7 0D       		.byte	13
+ 193 00a8 04       		.byte	4
+ 194 00a9 02       		.byte	2
+ 195 00aa 09       		.byte	9
+ 196 00ab 0C       		.byte	12
+ 197 00ac 0F       		.byte	15
+ 198 00ad 02       		.byte	2
+ 199 00ae 11       		.byte	17
+ 200 00af 08       		.byte	8
+ 201 00b0 14       		.byte	20
+ 202 00b1 08       		.byte	8
+ 203 00b2 17       		.byte	23
+ 204 00b3 01       		.byte	1
+ 205 00b4 1D       		.byte	29
+ 206 00b5 0C       		.byte	12
+ 207 00b6 1E       		.byte	30
+ 208 00b7 07       		.byte	7
+ 209 00b8 20       		.byte	32
+ 210 00b9 02       		.byte	2
+ 211 00ba 26       		.byte	38
+ 212 00bb 01       		.byte	1
+ 213 00bc 2A       		.byte	42
+ 214 00bd 0C       		.byte	12
+ 215 00be 30       		.byte	48
+ 216 00bf 02       		.byte	2
+ 217 00c0 31       		.byte	49
+ 218 00c1 04       		.byte	4
+ 219 00c2 32       		.byte	50
+ 220 00c3 01       		.byte	1
+ 221 00c4 33       		.byte	51
+ 222 00c5 01       		.byte	1
+ 223 00c6 34       		.byte	52
+ 224 00c7 04       		.byte	4
+ 225 00c8 35       		.byte	53
+ 226 00c9 08       		.byte	8
+ 227 00ca 36       		.byte	54
+ 228 00cb 08       		.byte	8
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 5
+
+
+ 229 00cc 37       		.byte	55
+ 230 00cd 02       		.byte	2
+ 231 00ce 3E       		.byte	62
+ 232 00cf 04       		.byte	4
+ 233 00d0 40       		.byte	64
+ 234 00d1 10       		.byte	16
+ 235 00d2 41       		.byte	65
+ 236 00d3 06       		.byte	6
+ 237 00d4 45       		.byte	69
+ 238 00d5 D2       		.byte	-46
+ 239 00d6 46       		.byte	70
+ 240 00d7 54       		.byte	84
+ 241 00d8 47       		.byte	71
+ 242 00d9 01       		.byte	1
+ 243 00da 48       		.byte	72
+ 244 00db 1F       		.byte	31
+ 245 00dc 49       		.byte	73
+ 246 00dd FF       		.byte	-1
+ 247 00de 4A       		.byte	74
+ 248 00df FF       		.byte	-1
+ 249 00e0 4B       		.byte	75
+ 250 00e1 FF       		.byte	-1
+ 251 00e2 4D       		.byte	77
+ 252 00e3 A0       		.byte	-96
+ 253 00e4 4F       		.byte	79
+ 254 00e5 04       		.byte	4
+ 255 00e6 50       		.byte	80
+ 256 00e7 18       		.byte	24
+ 257 00e8 52       		.byte	82
+ 258 00e9 80       		.byte	-128
+ 259 00ea 54       		.byte	84
+ 260 00eb 07       		.byte	7
+ 261 00ec 58       		.byte	88
+ 262 00ed 04       		.byte	4
+ 263 00ee 59       		.byte	89
+ 264 00ef 04       		.byte	4
+ 265 00f0 5A       		.byte	90
+ 266 00f1 04       		.byte	4
+ 267 00f2 5B       		.byte	91
+ 268 00f3 04       		.byte	4
+ 269 00f4 5C       		.byte	92
+ 270 00f5 22       		.byte	34
+ 271 00f6 5D       		.byte	93
+ 272 00f7 22       		.byte	34
+ 273 00f8 5F       		.byte	95
+ 274 00f9 01       		.byte	1
+ 275 00fa 60       		.byte	96
+ 276 00fb 40       		.byte	64
+ 277 00fc 62       		.byte	98
+ 278 00fd C0       		.byte	-64
+ 279 00fe 64       		.byte	100
+ 280 00ff 40       		.byte	64
+ 281 0100 65       		.byte	101
+ 282 0101 40       		.byte	64
+ 283 0102 66       		.byte	102
+ 284 0103 C0       		.byte	-64
+ 285 0104 68       		.byte	104
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 6
+
+
+ 286 0105 C0       		.byte	-64
+ 287 0106 6A       		.byte	106
+ 288 0107 C0       		.byte	-64
+ 289 0108 6C       		.byte	108
+ 290 0109 C0       		.byte	-64
+ 291 010a 6E       		.byte	110
+ 292 010b C0       		.byte	-64
+ 293 010c D6       		.byte	-42
+ 294 010d 08       		.byte	8
+ 295 010e DB       		.byte	-37
+ 296 010f 04       		.byte	4
+ 297 0110 DD       		.byte	-35
+ 298 0111 90       		.byte	-112
+ 299 0112 03       		.byte	3
+ 300 0113 20       		.byte	32
+ 301 0114 09       		.byte	9
+ 302 0115 88       		.byte	-120
+ 303 0116 10       		.byte	16
+ 304 0117 A8       		.byte	-88
+ 305 0118 18       		.byte	24
+ 306 0119 04       		.byte	4
+ 307 011a 19       		.byte	25
+ 308 011b 44       		.byte	68
+ 309 011c 1B       		.byte	27
+ 310 011d 02       		.byte	2
+ 311 011e 21       		.byte	33
+ 312 011f 8A       		.byte	-118
+ 313 0120 22       		.byte	34
+ 314 0121 10       		.byte	16
+ 315 0122 30       		.byte	48
+ 316 0123 A8       		.byte	-88
+ 317 0124 31       		.byte	49
+ 318 0125 12       		.byte	18
+ 319 0126 38       		.byte	56
+ 320 0127 20       		.byte	32
+ 321 0128 3A       		.byte	58
+ 322 0129 80       		.byte	-128
+ 323 012a 41       		.byte	65
+ 324 012b 80       		.byte	-128
+ 325 012c 48       		.byte	72
+ 326 012d 20       		.byte	32
+ 327 012e 49       		.byte	73
+ 328 012f 11       		.byte	17
+ 329 0130 50       		.byte	80
+ 330 0131 98       		.byte	-104
+ 331 0132 53       		.byte	83
+ 332 0133 20       		.byte	32
+ 333 0134 59       		.byte	89
+ 334 0135 45       		.byte	69
+ 335 0136 5A       		.byte	90
+ 336 0137 20       		.byte	32
+ 337 0138 5C       		.byte	92
+ 338 0139 A0       		.byte	-96
+ 339 013a 65       		.byte	101
+ 340 013b 80       		.byte	-128
+ 341 013c 67       		.byte	103
+ 342 013d 04       		.byte	4
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 7
+
+
+ 343 013e 72       		.byte	114
+ 344 013f 80       		.byte	-128
+ 345 0140 87       		.byte	-121
+ 346 0141 02       		.byte	2
+ 347 0142 8C       		.byte	-116
+ 348 0143 80       		.byte	-128
+ 349 0144 C0       		.byte	-64
+ 350 0145 04       		.byte	4
+ 351 0146 C2       		.byte	-62
+ 352 0147 05       		.byte	5
+ 353 0148 C4       		.byte	-60
+ 354 0149 0E       		.byte	14
+ 355 014a CC       		.byte	-52
+ 356 014b 0B       		.byte	11
+ 357 014c CE       		.byte	-50
+ 358 014d 0C       		.byte	12
+ 359 014e D0       		.byte	-48
+ 360 014f 08       		.byte	8
+ 361 0150 D2       		.byte	-46
+ 362 0151 04       		.byte	4
+ 363 0152 D6       		.byte	-42
+ 364 0153 3F       		.byte	63
+ 365 0154 D8       		.byte	-40
+ 366 0155 30       		.byte	48
+ 367 0156 E0       		.byte	-32
+ 368 0157 10       		.byte	16
+ 369 0158 5B       		.byte	91
+ 370 0159 04       		.byte	4
+ 371 015a 5F       		.byte	95
+ 372 015b 01       		.byte	1
+ 373 015c 87       		.byte	-121
+ 374 015d 03       		.byte	3
+ 375 015e 9B       		.byte	-101
+ 376 015f 02       		.byte	2
+ 377 0160 9C       		.byte	-100
+ 378 0161 01       		.byte	1
+ 379 0162 9F       		.byte	-97
+ 380 0163 01       		.byte	1
+ 381 0164 B4       		.byte	-76
+ 382 0165 01       		.byte	1
+ 383 0166 B5       		.byte	-75
+ 384 0167 03       		.byte	3
+ 385 0168 BE       		.byte	-66
+ 386 0169 10       		.byte	16
+ 387 016a C0       		.byte	-64
+ 388 016b 35       		.byte	53
+ 389 016c C1       		.byte	-63
+ 390 016d 02       		.byte	2
+ 391 016e C9       		.byte	-55
+ 392 016f FF       		.byte	-1
+ 393 0170 CA       		.byte	-54
+ 394 0171 FF       		.byte	-1
+ 395 0172 CB       		.byte	-53
+ 396 0173 FF       		.byte	-1
+ 397 0174 CD       		.byte	-51
+ 398 0175 A0       		.byte	-96
+ 399 0176 CF       		.byte	-49
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 8
+
+
+ 400 0177 04       		.byte	4
+ 401 0178 D0       		.byte	-48
+ 402 0179 18       		.byte	24
+ 403 017a D6       		.byte	-42
+ 404 017b 08       		.byte	8
+ 405 017c D8       		.byte	-40
+ 406 017d 04       		.byte	4
+ 407 017e D9       		.byte	-39
+ 408 017f 0B       		.byte	11
+ 409 0180 DA       		.byte	-38
+ 410 0181 0B       		.byte	11
+ 411 0182 DB       		.byte	-37
+ 412 0183 04       		.byte	4
+ 413 0184 DC       		.byte	-36
+ 414 0185 90       		.byte	-112
+ 415 0186 DD       		.byte	-35
+ 416 0187 99       		.byte	-103
+ 417 0188 DF       		.byte	-33
+ 418 0189 01       		.byte	1
+ 419 018a E0       		.byte	-32
+ 420 018b 40       		.byte	64
+ 421 018c E2       		.byte	-30
+ 422 018d C0       		.byte	-64
+ 423 018e E4       		.byte	-28
+ 424 018f 40       		.byte	64
+ 425 0190 E5       		.byte	-27
+ 426 0191 40       		.byte	64
+ 427 0192 E6       		.byte	-26
+ 428 0193 C0       		.byte	-64
+ 429 0194 E8       		.byte	-24
+ 430 0195 C0       		.byte	-64
+ 431 0196 EA       		.byte	-22
+ 432 0197 C0       		.byte	-64
+ 433 0198 EC       		.byte	-20
+ 434 0199 C0       		.byte	-64
+ 435 019a EE       		.byte	-18
+ 436 019b C0       		.byte	-64
+ 437 019c 09       		.byte	9
+ 438 019d 80       		.byte	-128
+ 439 019e 19       		.byte	25
+ 440 019f 20       		.byte	32
+ 441 01a0 21       		.byte	33
+ 442 01a1 20       		.byte	32
+ 443 01a2 30       		.byte	48
+ 444 01a3 20       		.byte	32
+ 445 01a4 32       		.byte	50
+ 446 01a5 80       		.byte	-128
+ 447 01a6 35       		.byte	53
+ 448 01a7 10       		.byte	16
+ 449 01a8 36       		.byte	54
+ 450 01a9 10       		.byte	16
+ 451 01aa 39       		.byte	57
+ 452 01ab 08       		.byte	8
+ 453 01ac 3E       		.byte	62
+ 454 01ad 80       		.byte	-128
+ 455 01ae 3F       		.byte	63
+ 456 01af 80       		.byte	-128
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 9
+
+
+ 457 01b0 41       		.byte	65
+ 458 01b1 14       		.byte	20
+ 459 01b2 4B       		.byte	75
+ 460 01b3 40       		.byte	64
+ 461 01b4 58       		.byte	88
+ 462 01b5 64       		.byte	100
+ 463 01b6 59       		.byte	89
+ 464 01b7 02       		.byte	2
+ 465 01b8 5D       		.byte	93
+ 466 01b9 80       		.byte	-128
+ 467 01ba 5E       		.byte	94
+ 468 01bb 20       		.byte	32
+ 469 01bc 5F       		.byte	95
+ 470 01bd 05       		.byte	5
+ 471 01be 61       		.byte	97
+ 472 01bf 90       		.byte	-112
+ 473 01c0 62       		.byte	98
+ 474 01c1 04       		.byte	4
+ 475 01c2 63       		.byte	99
+ 476 01c3 80       		.byte	-128
+ 477 01c4 65       		.byte	101
+ 478 01c5 20       		.byte	32
+ 479 01c6 66       		.byte	102
+ 480 01c7 80       		.byte	-128
+ 481 01c8 68       		.byte	104
+ 482 01c9 10       		.byte	16
+ 483 01ca 6A       		.byte	106
+ 484 01cb 20       		.byte	32
+ 485 01cc 6B       		.byte	107
+ 486 01cd 82       		.byte	-126
+ 487 01ce 71       		.byte	113
+ 488 01cf 04       		.byte	4
+ 489 01d0 72       		.byte	114
+ 490 01d1 01       		.byte	1
+ 491 01d2 78       		.byte	120
+ 492 01d3 01       		.byte	1
+ 493 01d4 82       		.byte	-126
+ 494 01d5 14       		.byte	20
+ 495 01d6 83       		.byte	-125
+ 496 01d7 01       		.byte	1
+ 497 01d8 8B       		.byte	-117
+ 498 01d9 A0       		.byte	-96
+ 499 01da 8D       		.byte	-115
+ 500 01db 04       		.byte	4
+ 501 01dc 90       		.byte	-112
+ 502 01dd 04       		.byte	4
+ 503 01de 93       		.byte	-109
+ 504 01df 04       		.byte	4
+ 505 01e0 99       		.byte	-103
+ 506 01e1 80       		.byte	-128
+ 507 01e2 A5       		.byte	-91
+ 508 01e3 40       		.byte	64
+ 509 01e4 AC       		.byte	-84
+ 510 01e5 20       		.byte	32
+ 511 01e6 B1       		.byte	-79
+ 512 01e7 40       		.byte	64
+ 513 01e8 C2       		.byte	-62
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 10
+
+
+ 514 01e9 01       		.byte	1
+ 515 01ea CC       		.byte	-52
+ 516 01eb 0C       		.byte	12
+ 517 01ec CE       		.byte	-50
+ 518 01ed 02       		.byte	2
+ 519 01ee D0       		.byte	-48
+ 520 01ef 06       		.byte	6
+ 521 01f0 D2       		.byte	-46
+ 522 01f1 08       		.byte	8
+ 523 01f2 D6       		.byte	-42
+ 524 01f3 FF       		.byte	-1
+ 525 01f4 D8       		.byte	-40
+ 526 01f5 3F       		.byte	63
+ 527 01f6 DE       		.byte	-34
+ 528 01f7 01       		.byte	1
+ 529 01f8 E2       		.byte	-30
+ 530 01f9 8A       		.byte	-118
+ 531 01fa E4       		.byte	-28
+ 532 01fb 04       		.byte	4
+ 533 01fc E6       		.byte	-26
+ 534 01fd 02       		.byte	2
+ 535 01fe EE       		.byte	-18
+ 536 01ff 20       		.byte	32
+ 537 0200 07       		.byte	7
+ 538 0201 01       		.byte	1
+ 539 0202 0B       		.byte	11
+ 540 0203 01       		.byte	1
+ 541 0204 1B       		.byte	27
+ 542 0205 04       		.byte	4
+ 543 0206 1F       		.byte	31
+ 544 0207 02       		.byte	2
+ 545 0208 20       		.byte	32
+ 546 0209 01       		.byte	1
+ 547 020a 24       		.byte	36
+ 548 020b 01       		.byte	1
+ 549 020c 25       		.byte	37
+ 550 020d 06       		.byte	6
+ 551 020e 32       		.byte	50
+ 552 020f 01       		.byte	1
+ 553 0210 33       		.byte	51
+ 554 0211 01       		.byte	1
+ 555 0212 37       		.byte	55
+ 556 0213 06       		.byte	6
+ 557 0214 38       		.byte	56
+ 558 0215 08       		.byte	8
+ 559 0216 3D       		.byte	61
+ 560 0217 80       		.byte	-128
+ 561 0218 3F       		.byte	63
+ 562 0219 04       		.byte	4
+ 563 021a 40       		.byte	64
+ 564 021b 35       		.byte	53
+ 565 021c 41       		.byte	65
+ 566 021d 02       		.byte	2
+ 567 021e 45       		.byte	69
+ 568 021f D1       		.byte	-47
+ 569 0220 46       		.byte	70
+ 570 0221 20       		.byte	32
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 11
+
+
+ 571 0222 48       		.byte	72
+ 572 0223 0F       		.byte	15
+ 573 0224 49       		.byte	73
+ 574 0225 FF       		.byte	-1
+ 575 0226 4A       		.byte	74
+ 576 0227 FF       		.byte	-1
+ 577 0228 4B       		.byte	75
+ 578 0229 FF       		.byte	-1
+ 579 022a 4D       		.byte	77
+ 580 022b AF       		.byte	-81
+ 581 022c 4E       		.byte	78
+ 582 022d 0F       		.byte	15
+ 583 022e 4F       		.byte	79
+ 584 022f 04       		.byte	4
+ 585 0230 50       		.byte	80
+ 586 0231 18       		.byte	24
+ 587 0232 56       		.byte	86
+ 588 0233 08       		.byte	8
+ 589 0234 58       		.byte	88
+ 590 0235 0B       		.byte	11
+ 591 0236 59       		.byte	89
+ 592 0237 0B       		.byte	11
+ 593 0238 5A       		.byte	90
+ 594 0239 0B       		.byte	11
+ 595 023a 5B       		.byte	91
+ 596 023b 04       		.byte	4
+ 597 023c 5C       		.byte	92
+ 598 023d 99       		.byte	-103
+ 599 023e 5D       		.byte	93
+ 600 023f 99       		.byte	-103
+ 601 0240 5F       		.byte	95
+ 602 0241 01       		.byte	1
+ 603 0242 60       		.byte	96
+ 604 0243 40       		.byte	64
+ 605 0244 62       		.byte	98
+ 606 0245 C0       		.byte	-64
+ 607 0246 64       		.byte	100
+ 608 0247 40       		.byte	64
+ 609 0248 65       		.byte	101
+ 610 0249 40       		.byte	64
+ 611 024a 66       		.byte	102
+ 612 024b C0       		.byte	-64
+ 613 024c 68       		.byte	104
+ 614 024d C0       		.byte	-64
+ 615 024e 6A       		.byte	106
+ 616 024f C0       		.byte	-64
+ 617 0250 6C       		.byte	108
+ 618 0251 C0       		.byte	-64
+ 619 0252 6E       		.byte	110
+ 620 0253 C0       		.byte	-64
+ 621 0254 8A       		.byte	-118
+ 622 0255 03       		.byte	3
+ 623 0256 8B       		.byte	-117
+ 624 0257 02       		.byte	2
+ 625 0258 8D       		.byte	-115
+ 626 0259 02       		.byte	2
+ 627 025a 8E       		.byte	-114
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 12
+
+
+ 628 025b 04       		.byte	4
+ 629 025c 90       		.byte	-112
+ 630 025d 01       		.byte	1
+ 631 025e 93       		.byte	-109
+ 632 025f 01       		.byte	1
+ 633 0260 96       		.byte	-106
+ 634 0261 04       		.byte	4
+ 635 0262 A2       		.byte	-94
+ 636 0263 03       		.byte	3
+ 637 0264 B0       		.byte	-80
+ 638 0265 02       		.byte	2
+ 639 0266 B1       		.byte	-79
+ 640 0267 01       		.byte	1
+ 641 0268 B2       		.byte	-78
+ 642 0269 01       		.byte	1
+ 643 026a B4       		.byte	-76
+ 644 026b 04       		.byte	4
+ 645 026c B7       		.byte	-73
+ 646 026d 02       		.byte	2
+ 647 026e BE       		.byte	-66
+ 648 026f 14       		.byte	20
+ 649 0270 BF       		.byte	-65
+ 650 0271 40       		.byte	64
+ 651 0272 D4       		.byte	-44
+ 652 0273 06       		.byte	6
+ 653 0274 D8       		.byte	-40
+ 654 0275 04       		.byte	4
+ 655 0276 D9       		.byte	-39
+ 656 0277 04       		.byte	4
+ 657 0278 DB       		.byte	-37
+ 658 0279 04       		.byte	4
+ 659 027a DC       		.byte	-36
+ 660 027b 50       		.byte	80
+ 661 027c DF       		.byte	-33
+ 662 027d 01       		.byte	1
+ 663 027e 04       		.byte	4
+ 664 027f 60       		.byte	96
+ 665 0280 0E       		.byte	14
+ 666 0281 50       		.byte	80
+ 667 0282 10       		.byte	16
+ 668 0283 20       		.byte	32
+ 669 0284 12       		.byte	18
+ 670 0285 80       		.byte	-128
+ 671 0286 15       		.byte	21
+ 672 0287 02       		.byte	2
+ 673 0288 19       		.byte	25
+ 674 0289 04       		.byte	4
+ 675 028a 1E       		.byte	30
+ 676 028b 60       		.byte	96
+ 677 028c 1F       		.byte	31
+ 678 028d 20       		.byte	32
+ 679 028e 22       		.byte	34
+ 680 028f 44       		.byte	68
+ 681 0290 24       		.byte	36
+ 682 0291 40       		.byte	64
+ 683 0292 25       		.byte	37
+ 684 0293 40       		.byte	64
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 13
+
+
+ 685 0294 29       		.byte	41
+ 686 0295 04       		.byte	4
+ 687 0296 30       		.byte	48
+ 688 0297 20       		.byte	32
+ 689 0298 32       		.byte	50
+ 690 0299 80       		.byte	-128
+ 691 029a 37       		.byte	55
+ 692 029b 01       		.byte	1
+ 693 029c 39       		.byte	57
+ 694 029d 28       		.byte	40
+ 695 029e 3C       		.byte	60
+ 696 029f 40       		.byte	64
+ 697 02a0 3D       		.byte	61
+ 698 02a1 20       		.byte	32
+ 699 02a2 3E       		.byte	62
+ 700 02a3 10       		.byte	16
+ 701 02a4 41       		.byte	65
+ 702 02a5 14       		.byte	20
+ 703 02a6 48       		.byte	72
+ 704 02a7 20       		.byte	32
+ 705 02a8 49       		.byte	73
+ 706 02a9 01       		.byte	1
+ 707 02aa 4B       		.byte	75
+ 708 02ab 40       		.byte	64
+ 709 02ac 51       		.byte	81
+ 710 02ad 10       		.byte	16
+ 711 02ae 52       		.byte	82
+ 712 02af 90       		.byte	-112
+ 713 02b0 5B       		.byte	91
+ 714 02b1 40       		.byte	64
+ 715 02b2 5D       		.byte	93
+ 716 02b3 80       		.byte	-128
+ 717 02b4 5E       		.byte	94
+ 718 02b5 20       		.byte	32
+ 719 02b6 5F       		.byte	95
+ 720 02b7 08       		.byte	8
+ 721 02b8 60       		.byte	96
+ 722 02b9 02       		.byte	2
+ 723 02ba 6F       		.byte	111
+ 724 02bb 01       		.byte	1
+ 725 02bc 78       		.byte	120
+ 726 02bd 01       		.byte	1
+ 727 02be 7A       		.byte	122
+ 728 02bf 01       		.byte	1
+ 729 02c0 88       		.byte	-120
+ 730 02c1 10       		.byte	16
+ 731 02c2 92       		.byte	-110
+ 732 02c3 01       		.byte	1
+ 733 02c4 95       		.byte	-107
+ 734 02c5 28       		.byte	40
+ 735 02c6 96       		.byte	-106
+ 736 02c7 10       		.byte	16
+ 737 02c8 97       		.byte	-105
+ 738 02c9 40       		.byte	64
+ 739 02ca 9B       		.byte	-101
+ 740 02cb 42       		.byte	66
+ 741 02cc 9C       		.byte	-100
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 14
+
+
+ 742 02cd 41       		.byte	65
+ 743 02ce 9D       		.byte	-99
+ 744 02cf 02       		.byte	2
+ 745 02d0 A0       		.byte	-96
+ 746 02d1 10       		.byte	16
+ 747 02d2 A1       		.byte	-95
+ 748 02d3 20       		.byte	32
+ 749 02d4 A4       		.byte	-92
+ 750 02d5 20       		.byte	32
+ 751 02d6 A5       		.byte	-91
+ 752 02d7 40       		.byte	64
+ 753 02d8 A6       		.byte	-90
+ 754 02d9 80       		.byte	-128
+ 755 02da A7       		.byte	-89
+ 756 02db 20       		.byte	32
+ 757 02dc A8       		.byte	-88
+ 758 02dd 04       		.byte	4
+ 759 02de AA       		.byte	-86
+ 760 02df 10       		.byte	16
+ 761 02e0 AB       		.byte	-85
+ 762 02e1 40       		.byte	64
+ 763 02e2 AC       		.byte	-84
+ 764 02e3 04       		.byte	4
+ 765 02e4 B0       		.byte	-80
+ 766 02e5 20       		.byte	32
+ 767 02e6 C0       		.byte	-64
+ 768 02e7 C0       		.byte	-64
+ 769 02e8 C2       		.byte	-62
+ 770 02e9 30       		.byte	48
+ 771 02ea C4       		.byte	-60
+ 772 02eb 1C       		.byte	28
+ 773 02ec CA       		.byte	-54
+ 774 02ed 02       		.byte	2
+ 775 02ee CC       		.byte	-52
+ 776 02ef 8C       		.byte	-116
+ 777 02f0 CE       		.byte	-50
+ 778 02f1 36       		.byte	54
+ 779 02f2 D0       		.byte	-48
+ 780 02f3 06       		.byte	6
+ 781 02f4 D2       		.byte	-46
+ 782 02f5 08       		.byte	8
+ 783 02f6 D6       		.byte	-42
+ 784 02f7 78       		.byte	120
+ 785 02f8 D8       		.byte	-40
+ 786 02f9 08       		.byte	8
+ 787 02fa DE       		.byte	-34
+ 788 02fb 09       		.byte	9
+ 789 02fc E8       		.byte	-24
+ 790 02fd 81       		.byte	-127
+ 791 02fe 0E       		.byte	14
+ 792 02ff 01       		.byte	1
+ 793 0300 12       		.byte	18
+ 794 0301 0B       		.byte	11
+ 795 0302 16       		.byte	22
+ 796 0303 04       		.byte	4
+ 797 0304 18       		.byte	24
+ 798 0305 0C       		.byte	12
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 15
+
+
+ 799 0306 1B       		.byte	27
+ 800 0307 03       		.byte	3
+ 801 0308 1D       		.byte	29
+ 802 0309 01       		.byte	1
+ 803 030a 1E       		.byte	30
+ 804 030b 02       		.byte	2
+ 805 030c 30       		.byte	48
+ 806 030d 0C       		.byte	12
+ 807 030e 31       		.byte	49
+ 808 030f 02       		.byte	2
+ 809 0310 32       		.byte	50
+ 810 0311 02       		.byte	2
+ 811 0312 34       		.byte	52
+ 812 0313 01       		.byte	1
+ 813 0314 35       		.byte	53
+ 814 0315 01       		.byte	1
+ 815 0316 3E       		.byte	62
+ 816 0317 14       		.byte	20
+ 817 0318 3F       		.byte	63
+ 818 0319 10       		.byte	16
+ 819 031a 56       		.byte	86
+ 820 031b 08       		.byte	8
+ 821 031c 58       		.byte	88
+ 822 031d 04       		.byte	4
+ 823 031e 59       		.byte	89
+ 824 031f 04       		.byte	4
+ 825 0320 5B       		.byte	91
+ 826 0321 04       		.byte	4
+ 827 0322 5D       		.byte	93
+ 828 0323 90       		.byte	-112
+ 829 0324 5F       		.byte	95
+ 830 0325 01       		.byte	1
+ 831 0326 87       		.byte	-121
+ 832 0327 0A       		.byte	10
+ 833 0328 89       		.byte	-119
+ 834 0329 02       		.byte	2
+ 835 032a 8A       		.byte	-118
+ 836 032b 02       		.byte	2
+ 837 032c 8B       		.byte	-117
+ 838 032d 08       		.byte	8
+ 839 032e 93       		.byte	-109
+ 840 032f 05       		.byte	5
+ 841 0330 94       		.byte	-108
+ 842 0331 01       		.byte	1
+ 843 0332 98       		.byte	-104
+ 844 0333 03       		.byte	3
+ 845 0334 9D       		.byte	-99
+ 846 0335 01       		.byte	1
+ 847 0336 AB       		.byte	-85
+ 848 0337 05       		.byte	5
+ 849 0338 AF       		.byte	-81
+ 850 0339 03       		.byte	3
+ 851 033a B2       		.byte	-78
+ 852 033b 03       		.byte	3
+ 853 033c B3       		.byte	-77
+ 854 033d 03       		.byte	3
+ 855 033e B5       		.byte	-75
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 16
+
+
+ 856 033f 08       		.byte	8
+ 857 0340 B7       		.byte	-73
+ 858 0341 04       		.byte	4
+ 859 0342 BD       		.byte	-67
+ 860 0343 08       		.byte	8
+ 861 0344 D2       		.byte	-46
+ 862 0345 80       		.byte	-128
+ 863 0346 D4       		.byte	-44
+ 864 0347 05       		.byte	5
+ 865 0348 D8       		.byte	-40
+ 866 0349 04       		.byte	4
+ 867 034a D9       		.byte	-39
+ 868 034b 0B       		.byte	11
+ 869 034c DB       		.byte	-37
+ 870 034d 0B       		.byte	11
+ 871 034e DC       		.byte	-36
+ 872 034f 99       		.byte	-103
+ 873 0350 DD       		.byte	-35
+ 874 0351 90       		.byte	-112
+ 875 0352 DF       		.byte	-33
+ 876 0353 05       		.byte	5
+ 877 0354 00       		.byte	0
+ 878 0355 10       		.byte	16
+ 879 0356 04       		.byte	4
+ 880 0357 40       		.byte	64
+ 881 0358 09       		.byte	9
+ 882 0359 20       		.byte	32
+ 883 035a 0A       		.byte	10
+ 884 035b 10       		.byte	16
+ 885 035c 0C       		.byte	12
+ 886 035d 80       		.byte	-128
+ 887 035e 0E       		.byte	14
+ 888 035f 40       		.byte	64
+ 889 0360 0F       		.byte	15
+ 890 0361 14       		.byte	20
+ 891 0362 18       		.byte	24
+ 892 0363 30       		.byte	48
+ 893 0364 1B       		.byte	27
+ 894 0365 04       		.byte	4
+ 895 0366 1E       		.byte	30
+ 896 0367 40       		.byte	64
+ 897 0368 1F       		.byte	31
+ 898 0369 28       		.byte	40
+ 899 036a 21       		.byte	33
+ 900 036b 84       		.byte	-124
+ 901 036c 22       		.byte	34
+ 902 036d 20       		.byte	32
+ 903 036e 23       		.byte	35
+ 904 036f 04       		.byte	4
+ 905 0370 27       		.byte	39
+ 906 0371 88       		.byte	-120
+ 907 0372 2A       		.byte	42
+ 908 0373 80       		.byte	-128
+ 909 0374 2B       		.byte	43
+ 910 0375 04       		.byte	4
+ 911 0376 31       		.byte	49
+ 912 0377 82       		.byte	-126
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 17
+
+
+ 913 0378 36       		.byte	54
+ 914 0379 20       		.byte	32
+ 915 037a 37       		.byte	55
+ 916 037b 80       		.byte	-128
+ 917 037c 39       		.byte	57
+ 918 037d 08       		.byte	8
+ 919 037e 3A       		.byte	58
+ 920 037f 10       		.byte	16
+ 921 0380 4A       		.byte	74
+ 922 0381 01       		.byte	1
+ 923 0382 4B       		.byte	75
+ 924 0383 40       		.byte	64
+ 925 0384 59       		.byte	89
+ 926 0385 01       		.byte	1
+ 927 0386 5A       		.byte	90
+ 928 0387 88       		.byte	-120
+ 929 0388 5C       		.byte	92
+ 930 0389 60       		.byte	96
+ 931 038a 64       		.byte	100
+ 932 038b 01       		.byte	1
+ 933 038c 66       		.byte	102
+ 934 038d 20       		.byte	32
+ 935 038e 72       		.byte	114
+ 936 038f 80       		.byte	-128
+ 937 0390 78       		.byte	120
+ 938 0391 01       		.byte	1
+ 939 0392 7A       		.byte	122
+ 940 0393 01       		.byte	1
+ 941 0394 8D       		.byte	-115
+ 942 0395 02       		.byte	2
+ 943 0396 92       		.byte	-110
+ 944 0397 88       		.byte	-120
+ 945 0398 94       		.byte	-108
+ 946 0399 20       		.byte	32
+ 947 039a 95       		.byte	-107
+ 948 039b 0A       		.byte	10
+ 949 039c 97       		.byte	-105
+ 950 039d 40       		.byte	64
+ 951 039e 98       		.byte	-104
+ 952 039f 02       		.byte	2
+ 953 03a0 99       		.byte	-103
+ 954 03a1 01       		.byte	1
+ 955 03a2 9A       		.byte	-102
+ 956 03a3 10       		.byte	16
+ 957 03a4 9C       		.byte	-100
+ 958 03a5 41       		.byte	65
+ 959 03a6 9D       		.byte	-99
+ 960 03a7 82       		.byte	-126
+ 961 03a8 9F       		.byte	-97
+ 962 03a9 08       		.byte	8
+ 963 03aa A1       		.byte	-95
+ 964 03ab 20       		.byte	32
+ 965 03ac A5       		.byte	-91
+ 966 03ad 10       		.byte	16
+ 967 03ae A6       		.byte	-90
+ 968 03af 01       		.byte	1
+ 969 03b0 AE       		.byte	-82
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 18
+
+
+ 970 03b1 01       		.byte	1
+ 971 03b2 AF       		.byte	-81
+ 972 03b3 02       		.byte	2
+ 973 03b4 C0       		.byte	-64
+ 974 03b5 82       		.byte	-126
+ 975 03b6 C2       		.byte	-62
+ 976 03b7 F6       		.byte	-10
+ 977 03b8 CA       		.byte	-54
+ 978 03b9 0C       		.byte	12
+ 979 03ba CC       		.byte	-52
+ 980 03bb 39       		.byte	57
+ 981 03bc CE       		.byte	-50
+ 982 03bd 06       		.byte	6
+ 983 03be D6       		.byte	-42
+ 984 03bf 3B       		.byte	59
+ 985 03c0 D8       		.byte	-40
+ 986 03c1 30       		.byte	48
+ 987 03c2 DE       		.byte	-34
+ 988 03c3 09       		.byte	9
+ 989 03c4 E0       		.byte	-32
+ 990 03c5 40       		.byte	64
+ 991 03c6 E8       		.byte	-24
+ 992 03c7 08       		.byte	8
+ 993 03c8 EC       		.byte	-20
+ 994 03c9 02       		.byte	2
+ 995 03ca E8       		.byte	-24
+ 996 03cb 08       		.byte	8
+ 997 03cc EC       		.byte	-20
+ 998 03cd 02       		.byte	2
+ 999 03ce E4       		.byte	-28
+ 1000 03cf 80       		.byte	-128
+ 1001 03d0 E8       		.byte	-24
+ 1002 03d1 01       		.byte	1
+ 1003 03d2 E0       		.byte	-32
+ 1004 03d3 10       		.byte	16
+ 1005 03d4 E2       		.byte	-30
+ 1006 03d5 0A       		.byte	10
+ 1007 03d6 E4       		.byte	-28
+ 1008 03d7 24       		.byte	36
+ 1009 03d8 E6       		.byte	-26
+ 1010 03d9 02       		.byte	2
+ 1011 03da 39       		.byte	57
+ 1012 03db 08       		.byte	8
+ 1013 03dc 40       		.byte	64
+ 1014 03dd 05       		.byte	5
+ 1015 03de 49       		.byte	73
+ 1016 03df FF       		.byte	-1
+ 1017 03e0 4A       		.byte	74
+ 1018 03e1 FF       		.byte	-1
+ 1019 03e2 4B       		.byte	75
+ 1020 03e3 FF       		.byte	-1
+ 1021 03e4 4C       		.byte	76
+ 1022 03e5 02       		.byte	2
+ 1023 03e6 4D       		.byte	77
+ 1024 03e7 0C       		.byte	12
+ 1025 03e8 4E       		.byte	78
+ 1026 03e9 F8       		.byte	-8
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 19
+
+
+ 1027 03ea 52       		.byte	82
+ 1028 03eb 01       		.byte	1
+ 1029 03ec 59       		.byte	89
+ 1030 03ed 04       		.byte	4
+ 1031 03ee 5A       		.byte	90
+ 1032 03ef 0C       		.byte	12
+ 1033 03f0 5B       		.byte	91
+ 1034 03f1 04       		.byte	4
+ 1035 03f2 5C       		.byte	92
+ 1036 03f3 30       		.byte	48
+ 1037 03f4 5D       		.byte	93
+ 1038 03f5 44       		.byte	68
+ 1039 03f6 5F       		.byte	95
+ 1040 03f7 01       		.byte	1
+ 1041 03f8 62       		.byte	98
+ 1042 03f9 48       		.byte	72
+ 1043 03fa 63       		.byte	99
+ 1044 03fb A1       		.byte	-95
+ 1045 03fc 68       		.byte	104
+ 1046 03fd F0       		.byte	-16
+ 1047 03fe 6A       		.byte	106
+ 1048 03ff F0       		.byte	-16
+ 1049 0400 6C       		.byte	108
+ 1050 0401 F0       		.byte	-16
+ 1051 0402 6E       		.byte	110
+ 1052 0403 F0       		.byte	-16
+ 1053 0404 80       		.byte	-128
+ 1054 0405 04       		.byte	4
+ 1055 0406 82       		.byte	-126
+ 1056 0407 2A       		.byte	42
+ 1057 0408 83       		.byte	-125
+ 1058 0409 10       		.byte	16
+ 1059 040a 85       		.byte	-123
+ 1060 040b 10       		.byte	16
+ 1061 040c 88       		.byte	-120
+ 1062 040d 01       		.byte	1
+ 1063 040e 8A       		.byte	-118
+ 1064 040f FC       		.byte	-4
+ 1065 0410 8B       		.byte	-117
+ 1066 0411 6F       		.byte	111
+ 1067 0412 8E       		.byte	-114
+ 1068 0413 FE       		.byte	-2
+ 1069 0414 8F       		.byte	-113
+ 1070 0415 08       		.byte	8
+ 1071 0416 90       		.byte	-112
+ 1072 0417 03       		.byte	3
+ 1073 0418 92       		.byte	-110
+ 1074 0419 04       		.byte	4
+ 1075 041a 93       		.byte	-109
+ 1076 041b 4F       		.byte	79
+ 1077 041c 94       		.byte	-108
+ 1078 041d 2A       		.byte	42
+ 1079 041e 96       		.byte	-106
+ 1080 041f 14       		.byte	20
+ 1081 0420 97       		.byte	-105
+ 1082 0421 0F       		.byte	15
+ 1083 0422 98       		.byte	-104
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 20
+
+
+ 1084 0423 04       		.byte	4
+ 1085 0424 9A       		.byte	-102
+ 1086 0425 BA       		.byte	-70
+ 1087 0426 9C       		.byte	-100
+ 1088 0427 0A       		.byte	10
+ 1089 0428 9E       		.byte	-98
+ 1090 0429 D4       		.byte	-44
+ 1091 042a A4       		.byte	-92
+ 1092 042b 04       		.byte	4
+ 1093 042c A5       		.byte	-91
+ 1094 042d 04       		.byte	4
+ 1095 042e A6       		.byte	-90
+ 1096 042f FA       		.byte	-6
+ 1097 0430 AB       		.byte	-85
+ 1098 0431 02       		.byte	2
+ 1099 0432 AD       		.byte	-83
+ 1100 0433 01       		.byte	1
+ 1101 0434 B0       		.byte	-80
+ 1102 0435 07       		.byte	7
+ 1103 0436 B1       		.byte	-79
+ 1104 0437 0F       		.byte	15
+ 1105 0438 B2       		.byte	-78
+ 1106 0439 80       		.byte	-128
+ 1107 043a B3       		.byte	-77
+ 1108 043b 10       		.byte	16
+ 1109 043c B4       		.byte	-76
+ 1110 043d 60       		.byte	96
+ 1111 043e B5       		.byte	-75
+ 1112 043f 40       		.byte	64
+ 1113 0440 B6       		.byte	-74
+ 1114 0441 18       		.byte	24
+ 1115 0442 B7       		.byte	-73
+ 1116 0443 20       		.byte	32
+ 1117 0444 BA       		.byte	-70
+ 1118 0445 AA       		.byte	-86
+ 1119 0446 BB       		.byte	-69
+ 1120 0447 A2       		.byte	-94
+ 1121 0448 BF       		.byte	-65
+ 1122 0449 04       		.byte	4
+ 1123 044a C0       		.byte	-64
+ 1124 044b 05       		.byte	5
+ 1125 044c C9       		.byte	-55
+ 1126 044d FF       		.byte	-1
+ 1127 044e CA       		.byte	-54
+ 1128 044f FF       		.byte	-1
+ 1129 0450 CB       		.byte	-53
+ 1130 0451 FF       		.byte	-1
+ 1131 0452 CC       		.byte	-52
+ 1132 0453 03       		.byte	3
+ 1133 0454 CD       		.byte	-51
+ 1134 0455 0C       		.byte	12
+ 1135 0456 CE       		.byte	-50
+ 1136 0457 F4       		.byte	-12
+ 1137 0458 D6       		.byte	-42
+ 1138 0459 08       		.byte	8
+ 1139 045a D8       		.byte	-40
+ 1140 045b 04       		.byte	4
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 21
+
+
+ 1141 045c D9       		.byte	-39
+ 1142 045d 04       		.byte	4
+ 1143 045e DA       		.byte	-38
+ 1144 045f 0C       		.byte	12
+ 1145 0460 DB       		.byte	-37
+ 1146 0461 04       		.byte	4
+ 1147 0462 DC       		.byte	-36
+ 1148 0463 33       		.byte	51
+ 1149 0464 DD       		.byte	-35
+ 1150 0465 14       		.byte	20
+ 1151 0466 DF       		.byte	-33
+ 1152 0467 01       		.byte	1
+ 1153 0468 E2       		.byte	-30
+ 1154 0469 48       		.byte	72
+ 1155 046a E3       		.byte	-29
+ 1156 046b A1       		.byte	-95
+ 1157 046c E8       		.byte	-24
+ 1158 046d F0       		.byte	-16
+ 1159 046e EA       		.byte	-22
+ 1160 046f F0       		.byte	-16
+ 1161 0470 EC       		.byte	-20
+ 1162 0471 F0       		.byte	-16
+ 1163 0472 EE       		.byte	-18
+ 1164 0473 F0       		.byte	-16
+ 1165 0474 04       		.byte	4
+ 1166 0475 11       		.byte	17
+ 1167 0476 06       		.byte	6
+ 1168 0477 80       		.byte	-128
+ 1169 0478 07       		.byte	7
+ 1170 0479 01       		.byte	1
+ 1171 047a 0E       		.byte	14
+ 1172 047b 56       		.byte	86
+ 1173 047c 17       		.byte	23
+ 1174 047d 08       		.byte	8
+ 1175 047e 1C       		.byte	28
+ 1176 047f 01       		.byte	1
+ 1177 0480 1E       		.byte	30
+ 1178 0481 54       		.byte	84
+ 1179 0482 20       		.byte	32
+ 1180 0483 10       		.byte	16
+ 1181 0484 23       		.byte	35
+ 1182 0485 10       		.byte	16
+ 1183 0486 24       		.byte	36
+ 1184 0487 60       		.byte	96
+ 1185 0488 26       		.byte	38
+ 1186 0489 01       		.byte	1
+ 1187 048a 27       		.byte	39
+ 1188 048b 09       		.byte	9
+ 1189 048c 2E       		.byte	46
+ 1190 048d 94       		.byte	-108
+ 1191 048e 37       		.byte	55
+ 1192 048f 09       		.byte	9
+ 1193 0490 3C       		.byte	60
+ 1194 0491 40       		.byte	64
+ 1195 0492 3F       		.byte	63
+ 1196 0493 15       		.byte	21
+ 1197 0494 48       		.byte	72
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 22
+
+
+ 1198 0495 01       		.byte	1
+ 1199 0496 4D       		.byte	77
+ 1200 0497 40       		.byte	64
+ 1201 0498 5C       		.byte	92
+ 1202 0499 20       		.byte	32
+ 1203 049a 5E       		.byte	94
+ 1204 049b 40       		.byte	64
+ 1205 049c 65       		.byte	101
+ 1206 049d 40       		.byte	64
+ 1207 049e 67       		.byte	103
+ 1208 049f 05       		.byte	5
+ 1209 04a0 68       		.byte	104
+ 1210 04a1 01       		.byte	1
+ 1211 04a2 69       		.byte	105
+ 1212 04a3 40       		.byte	64
+ 1213 04a4 79       		.byte	121
+ 1214 04a5 40       		.byte	64
+ 1215 04a6 7D       		.byte	125
+ 1216 04a7 40       		.byte	64
+ 1217 04a8 84       		.byte	-124
+ 1218 04a9 20       		.byte	32
+ 1219 04aa 85       		.byte	-123
+ 1220 04ab 40       		.byte	64
+ 1221 04ac 94       		.byte	-108
+ 1222 04ad 20       		.byte	32
+ 1223 04ae A8       		.byte	-88
+ 1224 04af 80       		.byte	-128
+ 1225 04b0 A9       		.byte	-87
+ 1226 04b1 20       		.byte	32
+ 1227 04b2 B0       		.byte	-80
+ 1228 04b3 40       		.byte	64
+ 1229 04b4 C0       		.byte	-64
+ 1230 04b5 D0       		.byte	-48
+ 1231 04b6 C2       		.byte	-62
+ 1232 04b7 F0       		.byte	-16
+ 1233 04b8 C4       		.byte	-60
+ 1234 04b9 20       		.byte	32
+ 1235 04ba CA       		.byte	-54
+ 1236 04bb 70       		.byte	112
+ 1237 04bc CC       		.byte	-52
+ 1238 04bd C0       		.byte	-64
+ 1239 04be CE       		.byte	-50
+ 1240 04bf F0       		.byte	-16
+ 1241 04c0 D2       		.byte	-46
+ 1242 04c1 18       		.byte	24
+ 1243 04c2 D6       		.byte	-42
+ 1244 04c3 30       		.byte	48
+ 1245 04c4 D8       		.byte	-40
+ 1246 04c5 30       		.byte	48
+ 1247 04c6 DE       		.byte	-34
+ 1248 04c7 18       		.byte	24
+ 1249 04c8 EC       		.byte	-20
+ 1250 04c9 20       		.byte	32
+ 1251 04ca 00       		.byte	0
+ 1252 04cb 0C       		.byte	12
+ 1253 04cc 0B       		.byte	11
+ 1254 04cd 01       		.byte	1
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 23
+
+
+ 1255 04ce 16       		.byte	22
+ 1256 04cf 01       		.byte	1
+ 1257 04d0 18       		.byte	24
+ 1258 04d1 09       		.byte	9
+ 1259 04d2 1A       		.byte	26
+ 1260 04d3 16       		.byte	22
+ 1261 04d4 1C       		.byte	28
+ 1262 04d5 05       		.byte	5
+ 1263 04d6 1E       		.byte	30
+ 1264 04d7 1A       		.byte	26
+ 1265 04d8 20       		.byte	32
+ 1266 04d9 10       		.byte	16
+ 1267 04da 22       		.byte	34
+ 1268 04db 02       		.byte	2
+ 1269 04dc 26       		.byte	38
+ 1270 04dd 0C       		.byte	12
+ 1271 04de 31       		.byte	49
+ 1272 04df 01       		.byte	1
+ 1273 04e0 32       		.byte	50
+ 1274 04e1 18       		.byte	24
+ 1275 04e2 34       		.byte	52
+ 1276 04e3 0F       		.byte	15
+ 1277 04e4 36       		.byte	54
+ 1278 04e5 06       		.byte	6
+ 1279 04e6 38       		.byte	56
+ 1280 04e7 08       		.byte	8
+ 1281 04e8 3A       		.byte	58
+ 1282 04e9 A0       		.byte	-96
+ 1283 04ea 56       		.byte	86
+ 1284 04eb 08       		.byte	8
+ 1285 04ec 58       		.byte	88
+ 1286 04ed 04       		.byte	4
+ 1287 04ee 59       		.byte	89
+ 1288 04ef 04       		.byte	4
+ 1289 04f0 5B       		.byte	91
+ 1290 04f1 04       		.byte	4
+ 1291 04f2 5C       		.byte	92
+ 1292 04f3 99       		.byte	-103
+ 1293 04f4 5D       		.byte	93
+ 1294 04f5 80       		.byte	-128
+ 1295 04f6 5F       		.byte	95
+ 1296 04f7 01       		.byte	1
+ 1297 04f8 81       		.byte	-127
+ 1298 04f9 1C       		.byte	28
+ 1299 04fa 83       		.byte	-125
+ 1300 04fb 60       		.byte	96
+ 1301 04fc 85       		.byte	-123
+ 1302 04fd 50       		.byte	80
+ 1303 04fe 87       		.byte	-121
+ 1304 04ff 2C       		.byte	44
+ 1305 0500 88       		.byte	-120
+ 1306 0501 01       		.byte	1
+ 1307 0502 8A       		.byte	-118
+ 1308 0503 7E       		.byte	126
+ 1309 0504 8C       		.byte	-116
+ 1310 0505 36       		.byte	54
+ 1311 0506 8D       		.byte	-115
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 24
+
+
+ 1312 0507 01       		.byte	1
+ 1313 0508 8E       		.byte	-114
+ 1314 0509 49       		.byte	73
+ 1315 050a 91       		.byte	-111
+ 1316 050b 24       		.byte	36
+ 1317 050c 93       		.byte	-109
+ 1318 050d 58       		.byte	88
+ 1319 050e 95       		.byte	-107
+ 1320 050f 68       		.byte	104
+ 1321 0510 96       		.byte	-106
+ 1322 0511 80       		.byte	-128
+ 1323 0512 97       		.byte	-105
+ 1324 0513 14       		.byte	20
+ 1325 0514 9B       		.byte	-101
+ 1326 0515 02       		.byte	2
+ 1327 0516 9C       		.byte	-100
+ 1328 0517 0E       		.byte	14
+ 1329 0518 9D       		.byte	-99
+ 1330 0519 7C       		.byte	124
+ 1331 051a 9E       		.byte	-98
+ 1332 051b 71       		.byte	113
+ 1333 051c A0       		.byte	-96
+ 1334 051d 7F       		.byte	127
+ 1335 051e A2       		.byte	-94
+ 1336 051f 80       		.byte	-128
+ 1337 0520 A3       		.byte	-93
+ 1338 0521 80       		.byte	-128
+ 1339 0522 A4       		.byte	-92
+ 1340 0523 94       		.byte	-108
+ 1341 0524 A5       		.byte	-91
+ 1342 0525 7C       		.byte	124
+ 1343 0526 A6       		.byte	-90
+ 1344 0527 6B       		.byte	107
+ 1345 0528 A8       		.byte	-88
+ 1346 0529 52       		.byte	82
+ 1347 052a A9       		.byte	-87
+ 1348 052b 01       		.byte	1
+ 1349 052c AA       		.byte	-86
+ 1350 052d 2D       		.byte	45
+ 1351 052e AD       		.byte	-83
+ 1352 052f 01       		.byte	1
+ 1353 0530 B0       		.byte	-80
+ 1354 0531 FF       		.byte	-1
+ 1355 0532 B1       		.byte	-79
+ 1356 0533 FC       		.byte	-4
+ 1357 0534 B3       		.byte	-77
+ 1358 0535 03       		.byte	3
+ 1359 0536 B9       		.byte	-71
+ 1360 0537 08       		.byte	8
+ 1361 0538 BE       		.byte	-66
+ 1362 0539 01       		.byte	1
+ 1363 053a BF       		.byte	-65
+ 1364 053b 01       		.byte	1
+ 1365 053c D2       		.byte	-46
+ 1366 053d DF       		.byte	-33
+ 1367 053e D6       		.byte	-42
+ 1368 053f 10       		.byte	16
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 25
+
+
+ 1369 0540 D8       		.byte	-40
+ 1370 0541 04       		.byte	4
+ 1371 0542 D9       		.byte	-39
+ 1372 0543 04       		.byte	4
+ 1373 0544 DB       		.byte	-37
+ 1374 0545 04       		.byte	4
+ 1375 0546 DF       		.byte	-33
+ 1376 0547 01       		.byte	1
+ 1377 0548 01       		.byte	1
+ 1378 0549 60       		.byte	96
+ 1379 054a 02       		.byte	2
+ 1380 054b 04       		.byte	4
+ 1381 054c 07       		.byte	7
+ 1382 054d 40       		.byte	64
+ 1383 054e 08       		.byte	8
+ 1384 054f 08       		.byte	8
+ 1385 0550 09       		.byte	9
+ 1386 0551 08       		.byte	8
+ 1387 0552 0B       		.byte	11
+ 1388 0553 01       		.byte	1
+ 1389 0554 0E       		.byte	14
+ 1390 0555 0A       		.byte	10
+ 1391 0556 0F       		.byte	15
+ 1392 0557 10       		.byte	16
+ 1393 0558 10       		.byte	16
+ 1394 0559 A8       		.byte	-88
+ 1395 055a 15       		.byte	21
+ 1396 055b 02       		.byte	2
+ 1397 055c 16       		.byte	22
+ 1398 055d 20       		.byte	32
+ 1399 055e 19       		.byte	25
+ 1400 055f 01       		.byte	1
+ 1401 0560 1E       		.byte	30
+ 1402 0561 1A       		.byte	26
+ 1403 0562 21       		.byte	33
+ 1404 0563 0B       		.byte	11
+ 1405 0564 27       		.byte	39
+ 1406 0565 40       		.byte	64
+ 1407 0566 28       		.byte	40
+ 1408 0567 0A       		.byte	10
+ 1409 0568 29       		.byte	41
+ 1410 0569 01       		.byte	1
+ 1411 056a 2A       		.byte	42
+ 1412 056b 04       		.byte	4
+ 1413 056c 30       		.byte	48
+ 1414 056d 88       		.byte	-120
+ 1415 056e 32       		.byte	50
+ 1416 056f 20       		.byte	32
+ 1417 0570 33       		.byte	51
+ 1418 0571 01       		.byte	1
+ 1419 0572 35       		.byte	53
+ 1420 0573 80       		.byte	-128
+ 1421 0574 36       		.byte	54
+ 1422 0575 80       		.byte	-128
+ 1423 0576 38       		.byte	56
+ 1424 0577 80       		.byte	-128
+ 1425 0578 39       		.byte	57
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 26
+
+
+ 1426 0579 04       		.byte	4
+ 1427 057a 3B       		.byte	59
+ 1428 057b 01       		.byte	1
+ 1429 057c 3E       		.byte	62
+ 1430 057d 20       		.byte	32
+ 1431 057e 5C       		.byte	92
+ 1432 057f 80       		.byte	-128
+ 1433 0580 5D       		.byte	93
+ 1434 0581 10       		.byte	16
+ 1435 0582 65       		.byte	101
+ 1436 0583 20       		.byte	32
+ 1437 0584 67       		.byte	103
+ 1438 0585 01       		.byte	1
+ 1439 0586 68       		.byte	104
+ 1440 0587 A8       		.byte	-88
+ 1441 0588 69       		.byte	105
+ 1442 0589 44       		.byte	68
+ 1443 058a 6B       		.byte	107
+ 1444 058b 01       		.byte	1
+ 1445 058c 70       		.byte	112
+ 1446 058d 40       		.byte	64
+ 1447 058e 73       		.byte	115
+ 1448 058f 50       		.byte	80
+ 1449 0590 7C       		.byte	124
+ 1450 0591 40       		.byte	64
+ 1451 0592 85       		.byte	-123
+ 1452 0593 10       		.byte	16
+ 1453 0594 86       		.byte	-122
+ 1454 0595 80       		.byte	-128
+ 1455 0596 8C       		.byte	-116
+ 1456 0597 10       		.byte	16
+ 1457 0598 90       		.byte	-112
+ 1458 0599 40       		.byte	64
+ 1459 059a 95       		.byte	-107
+ 1460 059b 02       		.byte	2
+ 1461 059c 96       		.byte	-106
+ 1462 059d 10       		.byte	16
+ 1463 059e 97       		.byte	-105
+ 1464 059f 50       		.byte	80
+ 1465 05a0 98       		.byte	-104
+ 1466 05a1 02       		.byte	2
+ 1467 05a2 9A       		.byte	-102
+ 1468 05a3 20       		.byte	32
+ 1469 05a4 9C       		.byte	-100
+ 1470 05a5 40       		.byte	64
+ 1471 05a6 9D       		.byte	-99
+ 1472 05a7 80       		.byte	-128
+ 1473 05a8 A2       		.byte	-94
+ 1474 05a9 20       		.byte	32
+ 1475 05aa A5       		.byte	-91
+ 1476 05ab 02       		.byte	2
+ 1477 05ac A8       		.byte	-88
+ 1478 05ad C0       		.byte	-64
+ 1479 05ae AB       		.byte	-85
+ 1480 05af 08       		.byte	8
+ 1481 05b0 AF       		.byte	-81
+ 1482 05b1 20       		.byte	32
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 27
+
+
+ 1483 05b2 B0       		.byte	-80
+ 1484 05b3 20       		.byte	32
+ 1485 05b4 B5       		.byte	-75
+ 1486 05b5 10       		.byte	16
+ 1487 05b6 C0       		.byte	-64
+ 1488 05b7 13       		.byte	19
+ 1489 05b8 C2       		.byte	-62
+ 1490 05b9 E5       		.byte	-27
+ 1491 05ba C4       		.byte	-60
+ 1492 05bb 3E       		.byte	62
+ 1493 05bc CA       		.byte	-54
+ 1494 05bd 0F       		.byte	15
+ 1495 05be CC       		.byte	-52
+ 1496 05bf 0F       		.byte	15
+ 1497 05c0 CE       		.byte	-50
+ 1498 05c1 2B       		.byte	43
+ 1499 05c2 D6       		.byte	-42
+ 1500 05c3 30       		.byte	48
+ 1501 05c4 D8       		.byte	-40
+ 1502 05c5 30       		.byte	48
+ 1503 05c6 DE       		.byte	-34
+ 1504 05c7 10       		.byte	16
+ 1505 05c8 E6       		.byte	-26
+ 1506 05c9 08       		.byte	8
+ 1507 05ca E8       		.byte	-24
+ 1508 05cb 80       		.byte	-128
+ 1509 05cc EA       		.byte	-22
+ 1510 05cd 04       		.byte	4
+ 1511 05ce EC       		.byte	-20
+ 1512 05cf 10       		.byte	16
+ 1513 05d0 EE       		.byte	-18
+ 1514 05d1 04       		.byte	4
+ 1515 05d2 E4       		.byte	-28
+ 1516 05d3 40       		.byte	64
+ 1517 05d4 E6       		.byte	-26
+ 1518 05d5 08       		.byte	8
+ 1519 05d6 EA       		.byte	-22
+ 1520 05d7 04       		.byte	4
+ 1521 05d8 EE       		.byte	-18
+ 1522 05d9 04       		.byte	4
+ 1523 05da EA       		.byte	-22
+ 1524 05db 80       		.byte	-128
+ 1525 05dc EC       		.byte	-20
+ 1526 05dd 20       		.byte	32
+ 1527 05de 12       		.byte	18
+ 1528 05df 80       		.byte	-128
+ 1529 05e0 30       		.byte	48
+ 1530 05e1 10       		.byte	16
+ 1531 05e2 32       		.byte	50
+ 1532 05e3 02       		.byte	2
+ 1533 05e4 34       		.byte	52
+ 1534 05e5 20       		.byte	32
+ 1535 05e6 36       		.byte	54
+ 1536 05e7 08       		.byte	8
+ 1537 05e8 3B       		.byte	59
+ 1538 05e9 48       		.byte	72
+ 1539 05ea 3E       		.byte	62
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 28
+
+
+ 1540 05eb 04       		.byte	4
+ 1541 05ec 3F       		.byte	63
+ 1542 05ed 20       		.byte	32
+ 1543 05ee 42       		.byte	66
+ 1544 05ef 02       		.byte	2
+ 1545 05f0 86       		.byte	-122
+ 1546 05f1 01       		.byte	1
+ 1547 05f2 8F       		.byte	-113
+ 1548 05f3 40       		.byte	64
+ 1549 05f4 C4       		.byte	-60
+ 1550 05f5 10       		.byte	16
+ 1551 05f6 CC       		.byte	-52
+ 1552 05f7 F0       		.byte	-16
+ 1553 05f8 CE       		.byte	-50
+ 1554 05f9 F0       		.byte	-16
+ 1555 05fa D0       		.byte	-48
+ 1556 05fb 10       		.byte	16
+ 1557 05fc E2       		.byte	-30
+ 1558 05fd 10       		.byte	16
+ 1559 05fe 05       		.byte	5
+ 1560 05ff 20       		.byte	32
+ 1561 0600 5A       		.byte	90
+ 1562 0601 01       		.byte	1
+ 1563 0602 66       		.byte	102
+ 1564 0603 01       		.byte	1
+ 1565 0604 86       		.byte	-122
+ 1566 0605 0A       		.byte	10
+ 1567 0606 87       		.byte	-121
+ 1568 0607 40       		.byte	64
+ 1569 0608 8A       		.byte	-118
+ 1570 0609 02       		.byte	2
+ 1571 060a 92       		.byte	-110
+ 1572 060b 01       		.byte	1
+ 1573 060c 95       		.byte	-107
+ 1574 060d 10       		.byte	16
+ 1575 060e 97       		.byte	-105
+ 1576 060f 48       		.byte	72
+ 1577 0610 9C       		.byte	-100
+ 1578 0611 30       		.byte	48
+ 1579 0612 9E       		.byte	-98
+ 1580 0613 02       		.byte	2
+ 1581 0614 9F       		.byte	-97
+ 1582 0615 40       		.byte	64
+ 1583 0616 A2       		.byte	-94
+ 1584 0617 80       		.byte	-128
+ 1585 0618 A6       		.byte	-90
+ 1586 0619 0A       		.byte	10
+ 1587 061a A7       		.byte	-89
+ 1588 061b 10       		.byte	16
+ 1589 061c AD       		.byte	-83
+ 1590 061d 10       		.byte	16
+ 1591 061e B2       		.byte	-78
+ 1592 061f 04       		.byte	4
+ 1593 0620 C0       		.byte	-64
+ 1594 0621 80       		.byte	-128
+ 1595 0622 D6       		.byte	-42
+ 1596 0623 40       		.byte	64
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 29
+
+
+ 1597 0624 D8       		.byte	-40
+ 1598 0625 80       		.byte	-128
+ 1599 0626 E2       		.byte	-30
+ 1600 0627 50       		.byte	80
+ 1601 0628 E6       		.byte	-26
+ 1602 0629 40       		.byte	64
+ 1603 062a EC       		.byte	-20
+ 1604 062b 10       		.byte	16
+ 1605 062c 95       		.byte	-107
+ 1606 062d 10       		.byte	16
+ 1607 062e 97       		.byte	-105
+ 1608 062f 08       		.byte	8
+ 1609 0630 9C       		.byte	-100
+ 1610 0631 30       		.byte	48
+ 1611 0632 9D       		.byte	-99
+ 1612 0633 02       		.byte	2
+ 1613 0634 9F       		.byte	-97
+ 1614 0635 48       		.byte	72
+ 1615 0636 A2       		.byte	-94
+ 1616 0637 80       		.byte	-128
+ 1617 0638 A7       		.byte	-89
+ 1618 0639 10       		.byte	16
+ 1619 063a A9       		.byte	-87
+ 1620 063b 20       		.byte	32
+ 1621 063c AA       		.byte	-86
+ 1622 063d 01       		.byte	1
+ 1623 063e AF       		.byte	-81
+ 1624 063f 08       		.byte	8
+ 1625 0640 B1       		.byte	-79
+ 1626 0641 02       		.byte	2
+ 1627 0642 E8       		.byte	-24
+ 1628 0643 10       		.byte	16
+ 1629 0644 EA       		.byte	-22
+ 1630 0645 20       		.byte	32
+ 1631 0646 EC       		.byte	-20
+ 1632 0647 80       		.byte	-128
+ 1633 0648 78       		.byte	120
+ 1634 0649 10       		.byte	16
+ 1635 064a 7B       		.byte	123
+ 1636 064b 40       		.byte	64
+ 1637 064c 8E       		.byte	-114
+ 1638 064d 10       		.byte	16
+ 1639 064e 95       		.byte	-107
+ 1640 064f 10       		.byte	16
+ 1641 0650 97       		.byte	-105
+ 1642 0651 08       		.byte	8
+ 1643 0652 9C       		.byte	-100
+ 1644 0653 30       		.byte	48
+ 1645 0654 9D       		.byte	-99
+ 1646 0655 02       		.byte	2
+ 1647 0656 9F       		.byte	-97
+ 1648 0657 48       		.byte	72
+ 1649 0658 A2       		.byte	-94
+ 1650 0659 80       		.byte	-128
+ 1651 065a A7       		.byte	-89
+ 1652 065b 10       		.byte	16
+ 1653 065c 5C       		.byte	92
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 30
+
+
+ 1654 065d 02       		.byte	2
+ 1655 065e D6       		.byte	-42
+ 1656 065f 01       		.byte	1
+ 1657 0660 10       		.byte	16
+ 1658 0661 40       		.byte	64
+ 1659 0662 30       		.byte	48
+ 1660 0663 20       		.byte	32
+ 1661 0664 83       		.byte	-125
+ 1662 0665 80       		.byte	-128
+ 1663 0666 84       		.byte	-124
+ 1664 0667 80       		.byte	-128
+ 1665 0668 85       		.byte	-123
+ 1666 0669 06       		.byte	6
+ 1667 066a 8A       		.byte	-118
+ 1668 066b 10       		.byte	16
+ 1669 066c 8C       		.byte	-116
+ 1670 066d 02       		.byte	2
+ 1671 066e 9C       		.byte	-100
+ 1672 066f 02       		.byte	2
+ 1673 0670 C4       		.byte	-60
+ 1674 0671 08       		.byte	8
+ 1675 0672 CC       		.byte	-52
+ 1676 0673 08       		.byte	8
+ 1677 0674 E0       		.byte	-32
+ 1678 0675 08       		.byte	8
+ 1679 0676 E4       		.byte	-28
+ 1680 0677 04       		.byte	4
+ 1681 0678 1A       		.byte	26
+ 1682 0679 40       		.byte	64
+ 1683 067a 88       		.byte	-120
+ 1684 067b 02       		.byte	2
+ 1685 067c 95       		.byte	-107
+ 1686 067d 08       		.byte	8
+ 1687 067e 98       		.byte	-104
+ 1688 067f 40       		.byte	64
+ 1689 0680 9A       		.byte	-102
+ 1690 0681 10       		.byte	16
+ 1691 0682 9C       		.byte	-100
+ 1692 0683 80       		.byte	-128
+ 1693 0684 A3       		.byte	-93
+ 1694 0685 80       		.byte	-128
+ 1695 0686 A5       		.byte	-91
+ 1696 0687 02       		.byte	2
+ 1697 0688 A8       		.byte	-88
+ 1698 0689 20       		.byte	32
+ 1699 068a C6       		.byte	-58
+ 1700 068b 08       		.byte	8
+ 1701 068c E4       		.byte	-28
+ 1702 068d 01       		.byte	1
+ 1703 068e 08       		.byte	8
+ 1704 068f 80       		.byte	-128
+ 1705 0690 09       		.byte	9
+ 1706 0691 02       		.byte	2
+ 1707 0692 0D       		.byte	13
+ 1708 0693 04       		.byte	4
+ 1709 0694 42       		.byte	66
+ 1710 0695 20       		.byte	32
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 31
+
+
+ 1711 0696 44       		.byte	68
+ 1712 0697 01       		.byte	1
+ 1713 0698 91       		.byte	-111
+ 1714 0699 02       		.byte	2
+ 1715 069a 92       		.byte	-110
+ 1716 069b 40       		.byte	64
+ 1717 069c 93       		.byte	-109
+ 1718 069d 80       		.byte	-128
+ 1719 069e 95       		.byte	-107
+ 1720 069f 08       		.byte	8
+ 1721 06a0 98       		.byte	-104
+ 1722 06a1 40       		.byte	64
+ 1723 06a2 9A       		.byte	-102
+ 1724 06a3 10       		.byte	16
+ 1725 06a4 9C       		.byte	-100
+ 1726 06a5 80       		.byte	-128
+ 1727 06a6 A0       		.byte	-96
+ 1728 06a7 02       		.byte	2
+ 1729 06a8 A3       		.byte	-93
+ 1730 06a9 80       		.byte	-128
+ 1731 06aa A5       		.byte	-91
+ 1732 06ab 02       		.byte	2
+ 1733 06ac AD       		.byte	-83
+ 1734 06ad 01       		.byte	1
+ 1735 06ae AF       		.byte	-81
+ 1736 06af 40       		.byte	64
+ 1737 06b0 C2       		.byte	-62
+ 1738 06b1 0E       		.byte	14
+ 1739 06b2 D0       		.byte	-48
+ 1740 06b3 06       		.byte	6
+ 1741 06b4 20       		.byte	32
+ 1742 06b5 80       		.byte	-128
+ 1743 06b6 94       		.byte	-108
+ 1744 06b7 01       		.byte	1
+ 1745 06b8 95       		.byte	-107
+ 1746 06b9 10       		.byte	16
+ 1747 06ba 96       		.byte	-106
+ 1748 06bb 20       		.byte	32
+ 1749 06bc 9D       		.byte	-99
+ 1750 06bd 02       		.byte	2
+ 1751 06be 9F       		.byte	-97
+ 1752 06bf 48       		.byte	72
+ 1753 06c0 A8       		.byte	-88
+ 1754 06c1 20       		.byte	32
+ 1755 06c2 AB       		.byte	-85
+ 1756 06c3 50       		.byte	80
+ 1757 06c4 AF       		.byte	-81
+ 1758 06c5 04       		.byte	4
+ 1759 06c6 B2       		.byte	-78
+ 1760 06c7 80       		.byte	-128
+ 1761 06c8 B4       		.byte	-76
+ 1762 06c9 01       		.byte	1
+ 1763 06ca C8       		.byte	-56
+ 1764 06cb 40       		.byte	64
+ 1765 06cc EA       		.byte	-22
+ 1766 06cd 20       		.byte	32
+ 1767 06ce EE       		.byte	-18
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 32
+
+
+ 1768 06cf B0       		.byte	-80
+ 1769 06d0 01       		.byte	1
+ 1770 06d1 10       		.byte	16
+ 1771 06d2 03       		.byte	3
+ 1772 06d3 40       		.byte	64
+ 1773 06d4 05       		.byte	5
+ 1774 06d5 02       		.byte	2
+ 1775 06d6 07       		.byte	7
+ 1776 06d7 08       		.byte	8
+ 1777 06d8 0A       		.byte	10
+ 1778 06d9 20       		.byte	32
+ 1779 06da 20       		.byte	32
+ 1780 06db 01       		.byte	1
+ 1781 06dc 94       		.byte	-108
+ 1782 06dd 01       		.byte	1
+ 1783 06de 95       		.byte	-107
+ 1784 06df 10       		.byte	16
+ 1785 06e0 96       		.byte	-106
+ 1786 06e1 20       		.byte	32
+ 1787 06e2 9D       		.byte	-99
+ 1788 06e3 02       		.byte	2
+ 1789 06e4 9F       		.byte	-97
+ 1790 06e5 48       		.byte	72
+ 1791 06e6 B0       		.byte	-80
+ 1792 06e7 40       		.byte	64
+ 1793 06e8 C0       		.byte	-64
+ 1794 06e9 F0       		.byte	-16
+ 1795 06ea C2       		.byte	-62
+ 1796 06eb 10       		.byte	16
+ 1797 06ec C8       		.byte	-56
+ 1798 06ed 10       		.byte	16
+ 1799 06ee 01       		.byte	1
+ 1800 06ef 10       		.byte	16
+ 1801 06f0 1E       		.byte	30
+ 1802 06f1 08       		.byte	8
+ 1803 06f2 34       		.byte	52
+ 1804 06f3 01       		.byte	1
+ 1805 06f4 38       		.byte	56
+ 1806 06f5 20       		.byte	32
+ 1807 06f6 84       		.byte	-124
+ 1808 06f7 40       		.byte	64
+ 1809 06f8 8C       		.byte	-116
+ 1810 06f9 10       		.byte	16
+ 1811 06fa 8E       		.byte	-114
+ 1812 06fb 20       		.byte	32
+ 1813 06fc 91       		.byte	-111
+ 1814 06fd 02       		.byte	2
+ 1815 06fe 93       		.byte	-109
+ 1816 06ff 80       		.byte	-128
+ 1817 0700 98       		.byte	-104
+ 1818 0701 40       		.byte	64
+ 1819 0702 9A       		.byte	-102
+ 1820 0703 10       		.byte	16
+ 1821 0704 9C       		.byte	-100
+ 1822 0705 01       		.byte	1
+ 1823 0706 9E       		.byte	-98
+ 1824 0707 20       		.byte	32
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 33
+
+
+ 1825 0708 A0       		.byte	-96
+ 1826 0709 02       		.byte	2
+ 1827 070a A3       		.byte	-93
+ 1828 070b 80       		.byte	-128
+ 1829 070c A6       		.byte	-90
+ 1830 070d 04       		.byte	4
+ 1831 070e AA       		.byte	-86
+ 1832 070f 44       		.byte	68
+ 1833 0710 C0       		.byte	-64
+ 1834 0711 02       		.byte	2
+ 1835 0712 C6       		.byte	-58
+ 1836 0713 01       		.byte	1
+ 1837 0714 CC       		.byte	-52
+ 1838 0715 01       		.byte	1
+ 1839 0716 CE       		.byte	-50
+ 1840 0717 08       		.byte	8
+ 1841 0718 E4       		.byte	-28
+ 1842 0719 02       		.byte	2
+ 1843 071a 51       		.byte	81
+ 1844 071b 01       		.byte	1
+ 1845 071c 52       		.byte	82
+ 1846 071d 10       		.byte	16
+ 1847 071e 54       		.byte	84
+ 1848 071f 02       		.byte	2
+ 1849 0720 57       		.byte	87
+ 1850 0721 80       		.byte	-128
+ 1851 0722 67       		.byte	103
+ 1852 0723 80       		.byte	-128
+ 1853 0724 91       		.byte	-111
+ 1854 0725 02       		.byte	2
+ 1855 0726 93       		.byte	-109
+ 1856 0727 80       		.byte	-128
+ 1857 0728 9A       		.byte	-102
+ 1858 0729 10       		.byte	16
+ 1859 072a A0       		.byte	-96
+ 1860 072b 02       		.byte	2
+ 1861 072c A3       		.byte	-93
+ 1862 072d 80       		.byte	-128
+ 1863 072e B0       		.byte	-80
+ 1864 072f 01       		.byte	1
+ 1865 0730 B1       		.byte	-79
+ 1866 0731 10       		.byte	16
+ 1867 0732 D4       		.byte	-44
+ 1868 0733 07       		.byte	7
+ 1869 0734 D6       		.byte	-42
+ 1870 0735 04       		.byte	4
+ 1871 0736 D8       		.byte	-40
+ 1872 0737 01       		.byte	1
+ 1873 0738 EA       		.byte	-22
+ 1874 0739 01       		.byte	1
+ 1875 073a EC       		.byte	-20
+ 1876 073b 04       		.byte	4
+ 1877 073c 00       		.byte	0
+ 1878 073d 25       		.byte	37
+ 1879 073e 01       		.byte	1
+ 1880 073f 01       		.byte	1
+ 1881 0740 08       		.byte	8
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 34
+
+
+ 1882 0741 04       		.byte	4
+ 1883 0742 09       		.byte	9
+ 1884 0743 01       		.byte	1
+ 1885 0744 0A       		.byte	10
+ 1886 0745 21       		.byte	33
+ 1887 0746 0B       		.byte	11
+ 1888 0747 01       		.byte	1
+ 1889 0748 10       		.byte	16
+ 1890 0749 1B       		.byte	27
+ 1891 074a 11       		.byte	17
+ 1892 074b 01       		.byte	1
+ 1893 074c 1A       		.byte	26
+ 1894 074d 1B       		.byte	27
+ 1895 074e 1B       		.byte	27
+ 1896 074f 01       		.byte	1
+ 1897 0750 00       		.byte	0
+ 1898 0751 AF       		.byte	-81
+ 1899 0752 01       		.byte	1
+ 1900 0753 02       		.byte	2
+ 1901 0754 10       		.byte	16
+ 1902 0755 AA       		.byte	-86
+ 1903 0756 00       		.byte	0
+ 1904 0757 00       		.byte	0
+ 1905 0758 08       		.byte	8
+ 1906 0759 C8       		.byte	-56
+ 1907 075a C8       		.byte	-56
+ 1908 075b 00       		.byte	0
+ 1909 075c C0       		.byte	-64
+ 1910 075d 00       		.byte	0
+ 1911 075e 14       		.byte	20
+ 1912 075f 00       		.byte	0
+ 1913 0760 40       		.byte	64
+ 1914 0761 00       		.byte	0
+ 1915 0762 00       		.byte	0
+ 1916 0763 00       		.byte	0
+ 1917 0764 00       		.byte	0
+ 1918 0765 00       		.byte	0
+ 1919 0766 00       		.byte	0
+ 1920 0767 00       		.byte	0
+ 1921 0768 C0       		.byte	-64
+ 1922 0769 00       		.byte	0
+ 1923 076a 00       		.byte	0
+ 1924 076b 00       		.byte	0
+ 1925 076c 04       		.byte	4
+ 1926 076d 00       		.byte	0
+ 1927 076e 00       		.byte	0
+ 1928 076f 0F       		.byte	15
+ 1929 0770 0B       		.byte	11
+ 1930 0771 00       		.byte	0
+ 1931 0772 00       		.byte	0
+ 1932 0773 00       		.byte	0
+ 1933 0774 00       		.byte	0
+ 1934 0775 00       		.byte	0
+ 1935 0776 00       		.byte	0
+ 1936 0777 00       		.byte	0
+ 1937 0778 1F       		.byte	31
+ 1938 0779 1F       		.byte	31
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 35
+
+
+ 1939 077a 00       		.byte	0
+ 1940 077b 00       		.byte	0
+ 1941 077c 00       		.byte	0
+ 1942 077d 00       		.byte	0
+ 1943 077e C0       		.byte	-64
+ 1944 077f 00       		.byte	0
+ 1945 0780 00       		.byte	0
+ 1946 0781 3F       		.byte	63
+ 1947 0782 3F       		.byte	63
+ 1948 0783 00       		.byte	0
+ 1949 0784 1F       		.byte	31
+ 1950 0785 00       		.byte	0
+ 1951 0786 C0       		.byte	-64
+ 1952 0787 00       		.byte	0
+ 1953 0788 00       		.byte	0
+ 1954 0789 80       		.byte	-128
+ 1955 078a 80       		.byte	-128
+ 1956 078b 00       		.byte	0
+ 1957 078c 80       		.byte	-128
+ 1958 078d 00       		.byte	0
+ 1959 078e 00       		.byte	0
+ 1960 078f 00       		.byte	0
+ 1961              		.global	cy_meta_custnvl
+ 1962              		.section	.cycustnvl,"a",%progbits
+ 1963              		.align	2
+ 1964              		.type	cy_meta_custnvl, %object
+ 1965              		.size	cy_meta_custnvl, 4
+ 1966              	cy_meta_custnvl:
+ 1967 0000 00       		.byte	0
+ 1968 0001 00       		.byte	0
+ 1969 0002 40       		.byte	64
+ 1970 0003 05       		.byte	5
+ 1971              		.global	cy_meta_wonvl
+ 1972              		.section	.cywolatch,"a",%progbits
+ 1973              		.align	2
+ 1974              		.type	cy_meta_wonvl, %object
+ 1975              		.size	cy_meta_wonvl, 4
+ 1976              	cy_meta_wonvl:
+ 1977 0000 BC       		.byte	-68
+ 1978 0001 90       		.byte	-112
+ 1979 0002 AC       		.byte	-84
+ 1980 0003 AF       		.byte	-81
+ 1981              		.global	cy_meta_flashprotect
+ 1982              		.section	.cyflashprotect,"a",%progbits
+ 1983              		.align	2
+ 1984              		.type	cy_meta_flashprotect, %object
+ 1985              		.size	cy_meta_flashprotect, 256
+ 1986              	cy_meta_flashprotect:
+ 1987 0000 00000000 		.space	256
+ 1987      00000000 
+ 1987      00000000 
+ 1987      00000000 
+ 1987      00000000 
+ 1988              		.global	cy_metadata
+ 1989              		.section	.cymeta,"a",%progbits
+ 1990              		.align	2
+ 1991              		.type	cy_metadata, %object
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 36
+
+
+ 1992              		.size	cy_metadata, 12
+ 1993              	cy_metadata:
+ 1994 0000 00       		.byte	0
+ 1995 0001 01       		.byte	1
+ 1996 0002 2E       		.byte	46
+ 1997 0003 16       		.byte	22
+ 1998 0004 00       		.byte	0
+ 1999 0005 69       		.byte	105
+ 2000 0006 00       		.byte	0
+ 2001 0007 01       		.byte	1
+ 2002 0008 00       		.byte	0
+ 2003 0009 00       		.byte	0
+ 2004 000a 00       		.byte	0
+ 2005 000b 00       		.byte	0
+ 2006              		.text
+ 2007              	.Letext0:
+ 2008              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2009              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2010              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 2011              		.section	.debug_info,"",%progbits
+ 2012              	.Ldebug_info0:
+ 2013 0000 35010000 		.4byte	0x135
+ 2014 0004 0400     		.2byte	0x4
+ 2015 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2016 000a 04       		.byte	0x4
+ 2017 000b 01       		.uleb128 0x1
+ 2018 000c 0A000000 		.4byte	.LASF17
+ 2019 0010 0C       		.byte	0xc
+ 2020 0011 BA010000 		.4byte	.LASF18
+ 2021 0015 D7000000 		.4byte	.LASF19
+ 2022 0019 00000000 		.4byte	.Ldebug_line0
+ 2023 001d 02       		.uleb128 0x2
+ 2024 001e 01       		.byte	0x1
+ 2025 001f 06       		.byte	0x6
+ 2026 0020 AE010000 		.4byte	.LASF0
+ 2027 0024 03       		.uleb128 0x3
+ 2028 0025 00000000 		.4byte	.LASF9
+ 2029 0029 01       		.byte	0x1
+ 2030 002a 1D       		.byte	0x1d
+ 2031 002b 2F000000 		.4byte	0x2f
+ 2032 002f 02       		.uleb128 0x2
+ 2033 0030 01       		.byte	0x1
+ 2034 0031 08       		.byte	0x8
+ 2035 0032 A4000000 		.4byte	.LASF1
+ 2036 0036 02       		.uleb128 0x2
+ 2037 0037 02       		.byte	0x2
+ 2038 0038 05       		.byte	0x5
+ 2039 0039 9B010000 		.4byte	.LASF2
+ 2040 003d 02       		.uleb128 0x2
+ 2041 003e 02       		.byte	0x2
+ 2042 003f 07       		.byte	0x7
+ 2043 0040 C4000000 		.4byte	.LASF3
+ 2044 0044 02       		.uleb128 0x2
+ 2045 0045 04       		.byte	0x4
+ 2046 0046 05       		.byte	0x5
+ 2047 0047 A5010000 		.4byte	.LASF4
+ 2048 004b 02       		.uleb128 0x2
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 37
+
+
+ 2049 004c 04       		.byte	0x4
+ 2050 004d 07       		.byte	0x7
+ 2051 004e B2000000 		.4byte	.LASF5
+ 2052 0052 02       		.uleb128 0x2
+ 2053 0053 08       		.byte	0x8
+ 2054 0054 05       		.byte	0x5
+ 2055 0055 8D010000 		.4byte	.LASF6
+ 2056 0059 02       		.uleb128 0x2
+ 2057 005a 08       		.byte	0x8
+ 2058 005b 07       		.byte	0x7
+ 2059 005c 42010000 		.4byte	.LASF7
+ 2060 0060 04       		.uleb128 0x4
+ 2061 0061 04       		.byte	0x4
+ 2062 0062 05       		.byte	0x5
+ 2063 0063 696E7400 		.ascii	"int\000"
+ 2064 0067 02       		.uleb128 0x2
+ 2065 0068 04       		.byte	0x4
+ 2066 0069 07       		.byte	0x7
+ 2067 006a 35010000 		.4byte	.LASF8
+ 2068 006e 03       		.uleb128 0x3
+ 2069 006f 59010000 		.4byte	.LASF10
+ 2070 0073 02       		.byte	0x2
+ 2071 0074 18       		.byte	0x18
+ 2072 0075 24000000 		.4byte	0x24
+ 2073 0079 05       		.uleb128 0x5
+ 2074 007a 91000000 		.4byte	0x91
+ 2075 007e 8A000000 		.4byte	0x8a
+ 2076 0082 06       		.uleb128 0x6
+ 2077 0083 8A000000 		.4byte	0x8a
+ 2078 0087 8F07     		.2byte	0x78f
+ 2079 0089 00       		.byte	0
+ 2080 008a 02       		.uleb128 0x2
+ 2081 008b 04       		.byte	0x4
+ 2082 008c 07       		.byte	0x7
+ 2083 008d 84010000 		.4byte	.LASF11
+ 2084 0091 07       		.uleb128 0x7
+ 2085 0092 6E000000 		.4byte	0x6e
+ 2086 0096 08       		.uleb128 0x8
+ 2087 0097 23010000 		.4byte	.LASF12
+ 2088 009b 03       		.byte	0x3
+ 2089 009c 1F       		.byte	0x1f
+ 2090 009d A7000000 		.4byte	0xa7
+ 2091 00a1 05       		.uleb128 0x5
+ 2092 00a2 03       		.byte	0x3
+ 2093 00a3 00000000 		.4byte	cy_meta_configecc
+ 2094 00a7 07       		.uleb128 0x7
+ 2095 00a8 79000000 		.4byte	0x79
+ 2096 00ac 05       		.uleb128 0x5
+ 2097 00ad 91000000 		.4byte	0x91
+ 2098 00b1 BC000000 		.4byte	0xbc
+ 2099 00b5 09       		.uleb128 0x9
+ 2100 00b6 8A000000 		.4byte	0x8a
+ 2101 00ba 03       		.byte	0x3
+ 2102 00bb 00       		.byte	0
+ 2103 00bc 0A       		.uleb128 0xa
+ 2104 00bd 13010000 		.4byte	.LASF13
+ 2105 00c1 03       		.byte	0x3
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 38
+
+
+ 2106 00c2 1E01     		.2byte	0x11e
+ 2107 00c4 CE000000 		.4byte	0xce
+ 2108 00c8 05       		.uleb128 0x5
+ 2109 00c9 03       		.byte	0x3
+ 2110 00ca 00000000 		.4byte	cy_meta_custnvl
+ 2111 00ce 07       		.uleb128 0x7
+ 2112 00cf AC000000 		.4byte	0xac
+ 2113 00d3 0A       		.uleb128 0xa
+ 2114 00d4 76010000 		.4byte	.LASF14
+ 2115 00d8 03       		.byte	0x3
+ 2116 00d9 2C01     		.2byte	0x12c
+ 2117 00db E5000000 		.4byte	0xe5
+ 2118 00df 05       		.uleb128 0x5
+ 2119 00e0 03       		.byte	0x3
+ 2120 00e1 00000000 		.4byte	cy_meta_wonvl
+ 2121 00e5 07       		.uleb128 0x7
+ 2122 00e6 AC000000 		.4byte	0xac
+ 2123 00ea 05       		.uleb128 0x5
+ 2124 00eb 91000000 		.4byte	0x91
+ 2125 00ef FA000000 		.4byte	0xfa
+ 2126 00f3 09       		.uleb128 0x9
+ 2127 00f4 8A000000 		.4byte	0x8a
+ 2128 00f8 FF       		.byte	0xff
+ 2129 00f9 00       		.byte	0
+ 2130 00fa 0A       		.uleb128 0xa
+ 2131 00fb 61010000 		.4byte	.LASF15
+ 2132 00ff 03       		.byte	0x3
+ 2133 0100 3A01     		.2byte	0x13a
+ 2134 0102 0C010000 		.4byte	0x10c
+ 2135 0106 05       		.uleb128 0x5
+ 2136 0107 03       		.byte	0x3
+ 2137 0108 00000000 		.4byte	cy_meta_flashprotect
+ 2138 010c 07       		.uleb128 0x7
+ 2139 010d EA000000 		.4byte	0xea
+ 2140 0111 05       		.uleb128 0x5
+ 2141 0112 91000000 		.4byte	0x91
+ 2142 0116 21010000 		.4byte	0x121
+ 2143 011a 09       		.uleb128 0x9
+ 2144 011b 8A000000 		.4byte	0x8a
+ 2145 011f 0B       		.byte	0xb
+ 2146 0120 00       		.byte	0
+ 2147 0121 0A       		.uleb128 0xa
+ 2148 0122 98000000 		.4byte	.LASF16
+ 2149 0126 03       		.byte	0x3
+ 2150 0127 6701     		.2byte	0x167
+ 2151 0129 33010000 		.4byte	0x133
+ 2152 012d 05       		.uleb128 0x5
+ 2153 012e 03       		.byte	0x3
+ 2154 012f 00000000 		.4byte	cy_metadata
+ 2155 0133 07       		.uleb128 0x7
+ 2156 0134 11010000 		.4byte	0x111
+ 2157 0138 00       		.byte	0
+ 2158              		.section	.debug_abbrev,"",%progbits
+ 2159              	.Ldebug_abbrev0:
+ 2160 0000 01       		.uleb128 0x1
+ 2161 0001 11       		.uleb128 0x11
+ 2162 0002 01       		.byte	0x1
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 39
+
+
+ 2163 0003 25       		.uleb128 0x25
+ 2164 0004 0E       		.uleb128 0xe
+ 2165 0005 13       		.uleb128 0x13
+ 2166 0006 0B       		.uleb128 0xb
+ 2167 0007 03       		.uleb128 0x3
+ 2168 0008 0E       		.uleb128 0xe
+ 2169 0009 1B       		.uleb128 0x1b
+ 2170 000a 0E       		.uleb128 0xe
+ 2171 000b 10       		.uleb128 0x10
+ 2172 000c 17       		.uleb128 0x17
+ 2173 000d 00       		.byte	0
+ 2174 000e 00       		.byte	0
+ 2175 000f 02       		.uleb128 0x2
+ 2176 0010 24       		.uleb128 0x24
+ 2177 0011 00       		.byte	0
+ 2178 0012 0B       		.uleb128 0xb
+ 2179 0013 0B       		.uleb128 0xb
+ 2180 0014 3E       		.uleb128 0x3e
+ 2181 0015 0B       		.uleb128 0xb
+ 2182 0016 03       		.uleb128 0x3
+ 2183 0017 0E       		.uleb128 0xe
+ 2184 0018 00       		.byte	0
+ 2185 0019 00       		.byte	0
+ 2186 001a 03       		.uleb128 0x3
+ 2187 001b 16       		.uleb128 0x16
+ 2188 001c 00       		.byte	0
+ 2189 001d 03       		.uleb128 0x3
+ 2190 001e 0E       		.uleb128 0xe
+ 2191 001f 3A       		.uleb128 0x3a
+ 2192 0020 0B       		.uleb128 0xb
+ 2193 0021 3B       		.uleb128 0x3b
+ 2194 0022 0B       		.uleb128 0xb
+ 2195 0023 49       		.uleb128 0x49
+ 2196 0024 13       		.uleb128 0x13
+ 2197 0025 00       		.byte	0
+ 2198 0026 00       		.byte	0
+ 2199 0027 04       		.uleb128 0x4
+ 2200 0028 24       		.uleb128 0x24
+ 2201 0029 00       		.byte	0
+ 2202 002a 0B       		.uleb128 0xb
+ 2203 002b 0B       		.uleb128 0xb
+ 2204 002c 3E       		.uleb128 0x3e
+ 2205 002d 0B       		.uleb128 0xb
+ 2206 002e 03       		.uleb128 0x3
+ 2207 002f 08       		.uleb128 0x8
+ 2208 0030 00       		.byte	0
+ 2209 0031 00       		.byte	0
+ 2210 0032 05       		.uleb128 0x5
+ 2211 0033 01       		.uleb128 0x1
+ 2212 0034 01       		.byte	0x1
+ 2213 0035 49       		.uleb128 0x49
+ 2214 0036 13       		.uleb128 0x13
+ 2215 0037 01       		.uleb128 0x1
+ 2216 0038 13       		.uleb128 0x13
+ 2217 0039 00       		.byte	0
+ 2218 003a 00       		.byte	0
+ 2219 003b 06       		.uleb128 0x6
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 40
+
+
+ 2220 003c 21       		.uleb128 0x21
+ 2221 003d 00       		.byte	0
+ 2222 003e 49       		.uleb128 0x49
+ 2223 003f 13       		.uleb128 0x13
+ 2224 0040 2F       		.uleb128 0x2f
+ 2225 0041 05       		.uleb128 0x5
+ 2226 0042 00       		.byte	0
+ 2227 0043 00       		.byte	0
+ 2228 0044 07       		.uleb128 0x7
+ 2229 0045 26       		.uleb128 0x26
+ 2230 0046 00       		.byte	0
+ 2231 0047 49       		.uleb128 0x49
+ 2232 0048 13       		.uleb128 0x13
+ 2233 0049 00       		.byte	0
+ 2234 004a 00       		.byte	0
+ 2235 004b 08       		.uleb128 0x8
+ 2236 004c 34       		.uleb128 0x34
+ 2237 004d 00       		.byte	0
+ 2238 004e 03       		.uleb128 0x3
+ 2239 004f 0E       		.uleb128 0xe
+ 2240 0050 3A       		.uleb128 0x3a
+ 2241 0051 0B       		.uleb128 0xb
+ 2242 0052 3B       		.uleb128 0x3b
+ 2243 0053 0B       		.uleb128 0xb
+ 2244 0054 49       		.uleb128 0x49
+ 2245 0055 13       		.uleb128 0x13
+ 2246 0056 3F       		.uleb128 0x3f
+ 2247 0057 19       		.uleb128 0x19
+ 2248 0058 02       		.uleb128 0x2
+ 2249 0059 18       		.uleb128 0x18
+ 2250 005a 00       		.byte	0
+ 2251 005b 00       		.byte	0
+ 2252 005c 09       		.uleb128 0x9
+ 2253 005d 21       		.uleb128 0x21
+ 2254 005e 00       		.byte	0
+ 2255 005f 49       		.uleb128 0x49
+ 2256 0060 13       		.uleb128 0x13
+ 2257 0061 2F       		.uleb128 0x2f
+ 2258 0062 0B       		.uleb128 0xb
+ 2259 0063 00       		.byte	0
+ 2260 0064 00       		.byte	0
+ 2261 0065 0A       		.uleb128 0xa
+ 2262 0066 34       		.uleb128 0x34
+ 2263 0067 00       		.byte	0
+ 2264 0068 03       		.uleb128 0x3
+ 2265 0069 0E       		.uleb128 0xe
+ 2266 006a 3A       		.uleb128 0x3a
+ 2267 006b 0B       		.uleb128 0xb
+ 2268 006c 3B       		.uleb128 0x3b
+ 2269 006d 05       		.uleb128 0x5
+ 2270 006e 49       		.uleb128 0x49
+ 2271 006f 13       		.uleb128 0x13
+ 2272 0070 3F       		.uleb128 0x3f
+ 2273 0071 19       		.uleb128 0x19
+ 2274 0072 02       		.uleb128 0x2
+ 2275 0073 18       		.uleb128 0x18
+ 2276 0074 00       		.byte	0
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 41
+
+
+ 2277 0075 00       		.byte	0
+ 2278 0076 00       		.byte	0
+ 2279              		.section	.debug_aranges,"",%progbits
+ 2280 0000 14000000 		.4byte	0x14
+ 2281 0004 0200     		.2byte	0x2
+ 2282 0006 00000000 		.4byte	.Ldebug_info0
+ 2283 000a 04       		.byte	0x4
+ 2284 000b 00       		.byte	0
+ 2285 000c 0000     		.2byte	0
+ 2286 000e 0000     		.2byte	0
+ 2287 0010 00000000 		.4byte	0
+ 2288 0014 00000000 		.4byte	0
+ 2289              		.section	.debug_line,"",%progbits
+ 2290              	.Ldebug_line0:
+ 2291 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 2291      02003701 
+ 2291      00000201 
+ 2291      FB0E0D00 
+ 2291      01010101 
+ 2292              	.LASF9:
+ 2293 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 2293      6E74385F 
+ 2293      7400
+ 2294              	.LASF17:
+ 2295 000a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2295      43313120 
+ 2295      352E342E 
+ 2295      31203230 
+ 2295      31363036 
+ 2296 003d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2296      20726576 
+ 2296      6973696F 
+ 2296      6E203233 
+ 2296      37373135 
+ 2297 0070 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2297      66756E63 
+ 2297      74696F6E 
+ 2297      2D736563 
+ 2297      74696F6E 
+ 2298              	.LASF16:
+ 2299 0098 63795F6D 		.ascii	"cy_metadata\000"
+ 2299      65746164 
+ 2299      61746100 
+ 2300              	.LASF1:
+ 2301 00a4 756E7369 		.ascii	"unsigned char\000"
+ 2301      676E6564 
+ 2301      20636861 
+ 2301      7200
+ 2302              	.LASF5:
+ 2303 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2303      20756E73 
+ 2303      69676E65 
+ 2303      6420696E 
+ 2303      7400
+ 2304              	.LASF3:
+ 2305 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 2305      7420756E 
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 42
+
+
+ 2305      7369676E 
+ 2305      65642069 
+ 2305      6E7400
+ 2306              	.LASF19:
+ 2307 00d7 433A5C43 		.ascii	"C:\\Cypress\\CyScope-master\\ScopeFreeSoC2\\ScopeFr"
+ 2307      79707265 
+ 2307      73735C43 
+ 2307      7953636F 
+ 2307      70652D6D 
+ 2308 0106 6565536F 		.ascii	"eeSoC2.cydsn\000"
+ 2308      43322E63 
+ 2308      7964736E 
+ 2308      00
+ 2309              	.LASF13:
+ 2310 0113 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2310      6574615F 
+ 2310      63757374 
+ 2310      6E766C00 
+ 2311              	.LASF12:
+ 2312 0123 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2312      6574615F 
+ 2312      636F6E66 
+ 2312      69676563 
+ 2312      6300
+ 2313              	.LASF8:
+ 2314 0135 756E7369 		.ascii	"unsigned int\000"
+ 2314      676E6564 
+ 2314      20696E74 
+ 2314      00
+ 2315              	.LASF7:
+ 2316 0142 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2316      206C6F6E 
+ 2316      6720756E 
+ 2316      7369676E 
+ 2316      65642069 
+ 2317              	.LASF10:
+ 2318 0159 75696E74 		.ascii	"uint8_t\000"
+ 2318      385F7400 
+ 2319              	.LASF15:
+ 2320 0161 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2320      6574615F 
+ 2320      666C6173 
+ 2320      6870726F 
+ 2320      74656374 
+ 2321              	.LASF14:
+ 2322 0176 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2322      6574615F 
+ 2322      776F6E76 
+ 2322      6C00
+ 2323              	.LASF11:
+ 2324 0184 73697A65 		.ascii	"sizetype\000"
+ 2324      74797065 
+ 2324      00
+ 2325              	.LASF6:
+ 2326 018d 6C6F6E67 		.ascii	"long long int\000"
+ 2326      206C6F6E 
+ 2326      6720696E 
+ARM GAS  C:\Users\howe\AppData\Local\Temp\ccshg1LQ.s 			page 43
+
+
+ 2326      7400
+ 2327              	.LASF2:
+ 2328 019b 73686F72 		.ascii	"short int\000"
+ 2328      7420696E 
+ 2328      7400
+ 2329              	.LASF4:
+ 2330 01a5 6C6F6E67 		.ascii	"long int\000"
+ 2330      20696E74 
+ 2330      00
+ 2331              	.LASF0:
+ 2332 01ae 7369676E 		.ascii	"signed char\000"
+ 2332      65642063 
+ 2332      68617200 
+ 2333              	.LASF18:
+ 2334 01ba 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2334      72617465 
+ 2334      645F536F 
+ 2334      75726365 
+ 2334      5C50536F 
+ 2335              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

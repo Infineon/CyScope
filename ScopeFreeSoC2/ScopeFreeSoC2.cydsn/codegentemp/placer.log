@@ -1,0 +1,180 @@
+#***************************************************************************
+
+#sjplacer
+
+#Version:            1.1
+
+#Build Date:         Dec  5 2017 15:35:27
+
+#File Generated:     Apr 17 2018 09:26:09
+
+#Purpose:            
+
+#Copyright (C) 2010-2011 by Softjin Technologies Pvt Ltd. All rights reserved.
+
+#***************************************************************************
+
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name ScopeFreeSoC2 --netlist-vh2 ScopeFreeSoC2_p.vh2 --arch p35_udb4x6 --arch-file C:\Users\howe\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_4x6_24.cydata --ip-file C:\Users\howe\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/ip_blocks.cydata --rrg-file C:\Users\howe\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Users\howe\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/irqconn.cydata --drq-file C:\Users\howe\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Users\howe\Documents\PSoC Creator\4.2\Devices\psoc5/psoc5lp/dsiconn.cydata --pins-file pins_100-TQFP.xml --lib-file ScopeFreeSoC2_p.lib --sdc-file ScopeFreeSoC2.sdc --io-pcf ScopeFreeSoC2.pci --outdir .
+
+		Softjin Techologies Placer, Version 1.1
+
+Build Date : Dec  5 2017	15:33:41
+
+D2004: Option and Settings Summary
+=============================================================
+Netlist vh2 file          - ScopeFreeSoC2_p.vh2
+Architecture file         - C:\Users\howe\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_4x6_24.cydata
+Package                   - 
+Defparam file             - 
+SDC file                  - ScopeFreeSoC2.sdc
+Output directory          - .
+Timing library            - ScopeFreeSoC2_p.lib
+IO Placement file         - ScopeFreeSoC2.pci
+
+D2050: Starting reading inputs for placer
+=============================================================
+D2065: Reading netlist file : "ScopeFreeSoC2_p.vh2"
+D2065: Reading arch file : "C:\Users\howe\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_4x6_24.cydata"
+D2051: Reading of inputs for placer completed successfully
+
+D2053: Starting placement of the design
+=============================================================
+
+Phase 2
+Phase 3
+
+Design Statistics after Packing
+    Number of Combinational MCs 	:	12
+    Number of Sequential MCs    	:	31
+    Number of DPs               	:	5
+    Number of Controls          	:	6
+    Number of Status            	:	4
+    Number of SyncCells         	:	13
+    Number of count7cells       	:	0
+
+Device Utilization Summary after Packing
+    Macrocells                  :	43/192
+    UDBS                        :	11/24
+    IOs                         :	26/72
+
+
+D2088: Phase 3, elapsed time : 0.0 (sec)
+
+Phase 4
+D2088: Phase 4, elapsed time : 0.0 (sec)
+
+Phase 5
+D2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+
+######################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+======================================================================
+
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 13
+Clock: ADCClock             | Frequency: N/A       | Target:  18.0 MHz
+Clock: ADCClock(routed)     | Frequency: N/A       | Target:  18.0 MHz
+Clock: CyBUS_CLK            | Frequency:  49.6 MHz | Target:  36.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
+Clock: CyTriggerClock       | Frequency:  41.5 MHz | Target:  18.0 MHz
+Clock: Noise_Clock          | Frequency:  89.5 MHz | Target:   0.3 MHz
+Clock: PWM_Clock            | Frequency: 101.2 MHz | Target:  18.0 MHz
+Clock: SampleClock          | Frequency: 149.8 MHz | Target:   1.0 MHz
+Clock: Wave_Clock           | Frequency:  86.7 MHz | Target:   0.3 MHz
+Clock: Wave_Clock(routed)   | Frequency: N/A       | Target:   0.3 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+
+D2088: Phase 6, elapsed time : 0.0 (sec)
+
+Phase 7
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 13
+Clock: ADCClock             | Frequency: N/A       | Target:  18.0 MHz
+Clock: ADCClock(routed)     | Frequency: N/A       | Target:  18.0 MHz
+Clock: CyBUS_CLK            | Frequency:   1.9 MHz | Target:  36.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
+Clock: CyTriggerClock       | Frequency:   1.9 MHz | Target:  18.0 MHz
+Clock: Noise_Clock          | Frequency:  89.5 MHz | Target:   0.3 MHz
+Clock: PWM_Clock            | Frequency: 101.2 MHz | Target:  18.0 MHz
+Clock: SampleClock          | Frequency: 149.8 MHz | Target:   1.0 MHz
+Clock: Wave_Clock           | Frequency:   3.1 MHz | Target:   0.3 MHz
+Clock: Wave_Clock(routed)   | Frequency: N/A       | Target:   0.3 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+D2088: Phase 7, elapsed time : 0.6 (sec)
+
+Final Design Statistics
+    Number of Combinational MCs 	:	12
+    Number of Sequential MCs    	:	31
+    Number of DPs               	:	5
+    Number of Controls          	:	6
+    Number of Status            	:	4
+    Number of SyncCells         	:	13
+    Number of count7cells       	:	0
+    Number of IOs       	:	26
+
+Device Utilization Summary
+    Macrocells                  :	43/192
+    IOs                         :	26/72
+
+
+
+######################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+======================================================================
+
+
+######################################################################
+                     Clock Summary 
+======================================================================
+Number of clocks: 13
+Clock: ADCClock             | Frequency: N/A       | Target:  18.0 MHz
+Clock: ADCClock(routed)     | Frequency: N/A       | Target:  18.0 MHz
+Clock: CyBUS_CLK            | Frequency:   2.0 MHz | Target:  36.0 MHz
+Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
+Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
+Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  36.0 MHz
+Clock: CyPLL_OUT            | Frequency: N/A       | Target:  36.0 MHz
+Clock: CyTriggerClock       | Frequency:   2.0 MHz | Target:  18.0 MHz
+Clock: Noise_Clock          | Frequency:  89.5 MHz | Target:   0.3 MHz
+Clock: PWM_Clock            | Frequency: 101.2 MHz | Target:  18.0 MHz
+Clock: SampleClock          | Frequency: 149.8 MHz | Target:   1.0 MHz
+Clock: Wave_Clock           | Frequency:   3.1 MHz | Target:   0.3 MHz
+Clock: Wave_Clock(routed)   | Frequency: N/A       | Target:   0.3 MHz
+
+======================================================================
+                     End of Clock Summary
+######################################################################
+
+Phase 8
+D2088: Phase 8, elapsed time : 0.0 (sec)
+
+D2054: Placement of the design completed successfully
+
+I2076: Total run-time: 1.4 sec.
+
