@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
   <block name="Digital_Out_Control" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="Digital_Out_Control_CONTROL_REG" address="0x40006472" bitWidth="8" desc="" hidden="false" />
+    <register name="Digital_Out_Control_CONTROL_REG" address="0x40006575" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="LED" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_DFSA_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="not_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_srff_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DigOut_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DigIn_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Button" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Digital_Input_Status" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="Digital_Input_Status_STATUS_REG" address="0x40006466" bitWidth="8" desc="" hidden="false" />
-    <register name="Digital_Input_Status_MASK_REG" address="0x40006486" bitWidth="8" desc="" hidden="false" />
-    <register name="Digital_Input_Status_STATUS_AUX_CTL_REG" address="0x40006496" bitWidth="8" desc="" hidden="false">
+    <register name="Digital_Input_Status_STATUS_REG" address="0x40006464" bitWidth="8" desc="" hidden="false" />
+    <register name="Digital_Input_Status_MASK_REG" address="0x40006484" bitWidth="8" desc="" hidden="false" />
+    <register name="Digital_Input_Status_STATUS_AUX_CTL_REG" address="0x40006494" bitWidth="8" desc="" hidden="false">
       <field name="FIFO0" from="5" to="5" access="RW" resetVal="" desc="FIFO0 clear" hidden="false">
         <value name="ENABLED" value="1" desc="Enable counter" />
         <value name="DISABLED" value="0" desc="Disable counter" />
@@ -37,11 +40,8 @@
       </field>
     </register>
   </block>
-  <block name="DigIn_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DigIn_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DigOut_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DigOut_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DigIn_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Noise_Clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_LUT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Wave_Control" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
@@ -53,23 +53,23 @@
     <register name="SINGLE_CYCLE_POLYNOMIAL" address="0x40006424" bitWidth="16" desc="Current polynomial value" hidden="false" />
     <register name="SINGLE_CYCLE_COPY" address="0x40006444" bitWidth="16" desc="Copy seed value" hidden="false" />
   </block>
-  <block name="Sync_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Trigger_DFSA_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Trigger_DFSA_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_DFSA" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Trigger_DFSA_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Sync_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="EdgeDetect_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Button" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Trigger_DFSA_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DigOut_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DigOut_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADCClock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DigIn_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DigOut_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_constant_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Wave_Gnd" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="FreqDiv_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DigIn_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_constant_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWMOut_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWMOutB_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Digital_PWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
@@ -80,21 +80,21 @@
     <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="PWMUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="Digital_PWM__COMPARE1" address="0x40006423" bitWidth="8" desc="UDB.D0 - Assigned Compare1 Value" hidden="false" />
-    <register name="Digital_PWM__COMPARE2" address="0x40006433" bitWidth="8" desc="UDB.D1 - Assigned Compare2 Value" hidden="false" />
-    <register name="Digital_PWM_Control_Reg" address="0x40006473" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="Digital_PWM__COMPARE1" address="0x40006422" bitWidth="8" desc="UDB.D0 - Assigned Compare1 Value" hidden="false" />
+    <register name="Digital_PWM__COMPARE2" address="0x40006432" bitWidth="8" desc="UDB.D1 - Assigned Compare2 Value" hidden="false" />
+    <register name="Digital_PWM_Control_Reg" address="0x40006472" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the PWM" hidden="false" />
       <field name="CTRL_CMPMODE2" from="5" to="3" access="RW" resetVal="" desc="Compare mode 2" hidden="false" />
       <field name="CTRL_CMPMODE1" from="2" to="0" access="RW" resetVal="" desc="Compare mode 1" hidden="false" />
     </register>
-    <register name="Digital_PWM_STATUS_MASK" address="0x40006483" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
+    <register name="Digital_PWM_STATUS_MASK" address="0x40006482" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
       <field name="PWM_STS_CMP1" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on Compare 1" hidden="false" />
       <field name="PWM_STS_CMP2" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Compare 2" hidden="false" />
       <field name="PWM_STS_TC" from="2" to="2" access="R" resetVal="" desc="Enables the Interrupt on Terminal Count" hidden="false" />
       <field name="PWM_STS_FIFO_FULL" from="3" to="3" access="R" resetVal="" desc="FIFO Full Status Mask " hidden="false" />
       <field name="PWM_STS_KILL" from="5" to="5" access="R" resetVal="" desc="Enables the Interrupt on Kill" hidden="false" />
     </register>
-    <register name="Digital_PWM_STATUS_AUX_CTRL" address="0x40006493" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
+    <register name="Digital_PWM_STATUS_AUX_CTRL" address="0x40006492" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
       <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear" hidden="false">
         <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
         <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
@@ -123,8 +123,11 @@
   </block>
   <block name="cy_constant_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_DFSA_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DigIn_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_Clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_constant_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DigIn_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DigIn_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Trig_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trig_Buf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="ABuf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="abuf_negInput_mux" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -190,12 +193,9 @@
       <field name="swinp" from="2" to="2" access="RW" resetVal="" desc="Switch Enable Positive Input" hidden="false" />
     </register>
   </block>
-  <block name="PWM_Clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Trig_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Wave_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Sync_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_Control" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="Trigger_Control_CONTROL_REG" address="0x40006576" bitWidth="8" desc="" hidden="false" />
+    <register name="Trigger_Control_CONTROL_REG" address="0x40006577" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="Amux_Trigger" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_Comp" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
@@ -514,12 +514,12 @@
       <field name="data" from="7" to="0" access="RW" resetVal="" desc="8 DAC Data bits" hidden="false" />
     </register>
   </block>
-  <block name="xor_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="xor_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DMA_Channel_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="xor_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="xor_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="xor_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DMA_Channel_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Scope_A" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Scope_B" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="USBUART" BASE="0x0" SIZE="0x0" desc="USBFS" visible="true" hidden="false">
@@ -1457,12 +1457,12 @@
     <register name="SAR_CLK" address="0x40005B27" bitWidth="8" desc="SAR Clock Selection Register" hidden="false" />
     <register name="SAR_WRK" address="0x40005BA0" bitWidth="16" desc="SAR working register" hidden="false" />
   </block>
-  <block name="Sync_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="not_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADCClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SampleClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="not_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Sync_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Sync_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="xor_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADCClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="External_Trigger" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Wave_DAC" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="cy_analog_virtualmux_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -1594,7 +1594,7 @@
   <block name="or_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="EdgeDetect_CaptureComplete" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADCClock_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Wave_Buf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="ABuf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="abuf_negInput_mux" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -1660,10 +1660,10 @@
       <field name="swinp" from="2" to="2" access="RW" resetVal="" desc="Switch Enable Positive Input" hidden="false" />
     </register>
   </block>
-  <block name="ADCClock_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Wave_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_srff_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADCClock_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADCClock_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWM_Sample_Buffer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
@@ -1675,12 +1675,12 @@
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="PWMUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <register name="PWM_Sample_Buffer_COMPARE_Reg" address="0x40006426" bitWidth="16" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
-    <register name="PWM_Sample_Buffer_Control_Reg" address="0x40006474" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="PWM_Sample_Buffer_Control_Reg" address="0x40006473" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the PWM" hidden="false" />
       <field name="CTRL_CMPMODE2" from="5" to="3" access="RW" resetVal="" desc="Compare mode 2" hidden="false" />
       <field name="CTRL_CMPMODE1" from="2" to="0" access="RW" resetVal="" desc="Compare mode 1" hidden="false" />
     </register>
-    <register name="PWM_Sample_Buffer_STATUS_MASK" address="0x40006484" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
+    <register name="PWM_Sample_Buffer_STATUS_MASK" address="0x40006483" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
       <field name="PWM_STS_CMP1" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on Compare 1" hidden="false" />
       <field name="PWM_STS_CMP2" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Compare 2" hidden="false" />
       <field name="PWM_STS_TC" from="2" to="2" access="R" resetVal="" desc="Enables the Interrupt on Terminal Count" hidden="false" />
@@ -1742,13 +1742,10 @@
   </block>
   <block name="Trigger_EdgeMux" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Sync_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADCClock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="EdgeDetect_Trigger" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_srff_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Trigger_Status" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="Trigger_Status_STATUS_REG" address="0x40006566" bitWidth="8" desc="" hidden="false" />
-    <register name="Trigger_Status_MASK_REG" address="0x40006586" bitWidth="8" desc="" hidden="false" />
-    <register name="Trigger_Status_STATUS_AUX_CTL_REG" address="0x40006596" bitWidth="8" desc="" hidden="false">
+    <register name="Trigger_Status_STATUS_REG" address="0x40006567" bitWidth="8" desc="" hidden="false" />
+    <register name="Trigger_Status_MASK_REG" address="0x40006587" bitWidth="8" desc="" hidden="false" />
+    <register name="Trigger_Status_STATUS_AUX_CTL_REG" address="0x40006597" bitWidth="8" desc="" hidden="false">
       <field name="FIFO0" from="5" to="5" access="RW" resetVal="" desc="FIFO0 clear" hidden="false">
         <value name="ENABLED" value="1" desc="Enable counter" />
         <value name="DISABLED" value="0" desc="Disable counter" />
@@ -1775,5 +1772,9 @@
       </field>
     </register>
   </block>
+  <block name="EdgeDetect_Trigger" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADCClock_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADCClock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADCClock_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_srff_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

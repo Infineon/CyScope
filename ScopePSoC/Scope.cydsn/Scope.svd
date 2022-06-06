@@ -9,7 +9,7 @@
     <peripheral>
       <name>Digital_Out_Control</name>
       <description>No description available</description>
-      <baseAddress>0x40006472</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -19,7 +19,7 @@
         <register>
           <name>Digital_Out_Control_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006575</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -30,7 +30,7 @@
     <peripheral>
       <name>Digital_Input_Status</name>
       <description>No description available</description>
-      <baseAddress>0x40006466</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -40,7 +40,7 @@
         <register>
           <name>Digital_Input_Status_STATUS_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006464</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -49,7 +49,7 @@
         <register>
           <name>Digital_Input_Status_MASK_REG</name>
           <description>No description available</description>
-          <addressOffset>0x20</addressOffset>
+          <addressOffset>0x40006484</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -58,7 +58,7 @@
         <register>
           <name>Digital_Input_Status_STATUS_AUX_CTL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x30</addressOffset>
+          <addressOffset>0x40006494</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -185,7 +185,7 @@
     <peripheral>
       <name>Wave_Control</name>
       <description>No description available</description>
-      <baseAddress>0x40006475</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -195,7 +195,7 @@
         <register>
           <name>Wave_Control_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006475</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -206,7 +206,7 @@
     <peripheral>
       <name>PRS</name>
       <description>No description available</description>
-      <baseAddress>0x40006404</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -216,7 +216,7 @@
         <register>
           <name>SINGLE_CYCLE_SEED</name>
           <description>Current seed value</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006404</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -225,7 +225,7 @@
         <register>
           <name>SINGLE_CYCLE_POLYNOMIAL</name>
           <description>Current polynomial value</description>
-          <addressOffset>0x20</addressOffset>
+          <addressOffset>0x40006424</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -234,7 +234,7 @@
         <register>
           <name>SINGLE_CYCLE_COPY</name>
           <description>Copy seed value</description>
-          <addressOffset>0x40</addressOffset>
+          <addressOffset>0x40006444</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -255,7 +255,7 @@
         <register>
           <name>Digital_PWM__COMPARE1</name>
           <description>UDB.D0 - Assigned Compare1 Value</description>
-          <addressOffset>0x40006423</addressOffset>
+          <addressOffset>0x40006422</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -264,7 +264,7 @@
         <register>
           <name>Digital_PWM__COMPARE2</name>
           <description>UDB.D1 - Assigned Compare2 Value</description>
-          <addressOffset>0x40006433</addressOffset>
+          <addressOffset>0x40006432</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -273,7 +273,7 @@
         <register>
           <name>Digital_PWM_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006473</addressOffset>
+          <addressOffset>0x40006472</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -305,7 +305,7 @@
         <register>
           <name>Digital_PWM_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006483</addressOffset>
+          <addressOffset>0x40006482</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -351,7 +351,7 @@
         <register>
           <name>Digital_PWM_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006493</addressOffset>
+          <addressOffset>0x40006492</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -807,7 +807,7 @@
     <peripheral>
       <name>Trigger_Control</name>
       <description>No description available</description>
-      <baseAddress>0x40006576</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -817,7 +817,7 @@
         <register>
           <name>Trigger_Control_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006577</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5408,7 +5408,7 @@
         <register>
           <name>PWM_Sample_Buffer_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006474</addressOffset>
+          <addressOffset>0x40006473</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5440,7 +5440,7 @@
         <register>
           <name>PWM_Sample_Buffer_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006484</addressOffset>
+          <addressOffset>0x40006483</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5738,7 +5738,7 @@
     <peripheral>
       <name>Trigger_Status</name>
       <description>No description available</description>
-      <baseAddress>0x40006566</baseAddress>
+      <baseAddress>0x0</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -5748,7 +5748,7 @@
         <register>
           <name>Trigger_Status_STATUS_REG</name>
           <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x40006567</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5757,7 +5757,7 @@
         <register>
           <name>Trigger_Status_MASK_REG</name>
           <description>No description available</description>
-          <addressOffset>0x20</addressOffset>
+          <addressOffset>0x40006587</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -5766,7 +5766,7 @@
         <register>
           <name>Trigger_Status_STATUS_AUX_CTL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x30</addressOffset>
+          <addressOffset>0x40006597</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

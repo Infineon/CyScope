@@ -6,26 +6,26 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -O0 -ffat-lto-objects" />
-      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -O0 -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T &quot;C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn\Generated_Source\PSoC5\cm3gcc.ld&quot; -specs=nano.specs -Wl,--gc-sections" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -ffat-lto-objects -O0" />
+      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -O0 -ffat-lto-objects" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM MDK Generic" Selected="False">
       <Tool Name="prebuild" Command="" Options="" />
-      <Tool Name="assembler" Command="armasm.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --thumb -i. -iGenerated_Source\PSoC5 -g --list=${OutputDir}/${CompileFile}.lst" />
-      <Tool Name="compiler" Command="armcc.exe" Options="--cpu=Cortex-M3 --diag_style=gnu -I. -IGenerated_Source\PSoC5 --list --signed_chars -g -D DEBUG -O0 --split_sections" />
-      <Tool Name="linker" Command="armlink.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --no_startup --library_type=microlib --map --list ${OutputDir}/${ProjectShortName}.map --scatter &quot;C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn\Generated_Source\PSoC5\Cm3RealView.scat&quot;" />
+      <Tool Name="assembler" Command="armasm.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --thumb -i. -iGenerated_Source\PSoC5 -g --list=${OutputDir}/${CompileFile}.lst &quot;--predefine=__MICROLIB SETA 1&quot;" />
+      <Tool Name="compiler" Command="armcc.exe" Options="--cpu=Cortex-M3 --C99 --diag_style=gnu -I. -IGenerated_Source\PSoC5 --list --signed_chars -g -D DEBUG -O0 --split_sections -D__MICROLIB" />
+      <Tool Name="linker" Command="armlink.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --no_startup --library_type=microlib --map --list ${OutputDir}/${ProjectShortName}.map --scatter Generated_Source\PSoC5\Cm3RealView.scat" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM IAR Generic" Selected="False">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="iasmarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -s+ -M&lt;&gt; -w+ -r -DDEBUG --fpu None" />
-      <Tool Name="compiler" Command="iccarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -D DEBUG --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little -e --fpu=None -On --no_wrap_diagnostics" />
+      <Tool Name="compiler" Command="iccarm.exe" Options="--cpu Cortex-M3 -I. -IGenerated_Source\PSoC5 -D DEBUG -D CY_CORE_ID=0 -I. -IGenerated_Source\PSoC5 -D DEBUG --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little -e --fpu=None -On --no_wrap_diagnostics" />
       <Tool Name="linker" Command="ilinkarm.exe" Options="--semihosting --entry __iar_program_start --config Generated_Source\PSoC5\Cm3Iar.icf" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="Scope" Path="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" Version="5.50" Type="Normal">
+  <Project Name="Scope" Path="C:\Git\CyScope\ScopePSoC\Scope.cydsn" Version="5.50" Type="Normal">
     <CMSIS_SVD_File>Scope.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,14 +34,14 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopePSoC\Scope.cydsn">
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">device.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopePSoC\Scope.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevice.h</File>
@@ -256,58 +256,54 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cy_em_eeprom.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cy_em_eeprom.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopePSoC\Scope.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopePSoC\Scope.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopePSoC\Scope.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
-      </Folder>
-      <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC3">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
-      </Folder>
-      <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC4">
-        <Files Root="C:\SVN\apps\trunk\Cypress Academy\PSoC-121-Analog\Scope\ScopePSoC\Scope.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopePSoC\Scope.cydsn" />
       </Folder>
     </Folders>
   </Project>
