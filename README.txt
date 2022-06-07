@@ -9,7 +9,7 @@ The implementation has been done for three evaluation kits:
   See the file PSoC_5LP_Scope.docx for details on how to program and use
   the oscilloscope and waveform generator.
 
-  CY8CKIT-043 kit -> Scope_KitProg
+  CY8CKIT-043 kit -> ScopeKitProg
 
   The file KitProg_Scope.docx describes how to use the PSoC 5LP programmer
   on the kit as the oscilloscope and waveform generator. Other
