@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="ScopeFreeSoC2" Path="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" Version="5.50" Type="Normal">
+  <Project Name="ScopeFreeSoC2" Path="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" Version="5.50" Type="Normal">
     <CMSIS_SVD_File>ScopeFreeSoC2.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,14 +34,14 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">device.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevice.h</File>
@@ -260,50 +260,50 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cy_em_eeprom.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
+        <Files Root="C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn" />
       </Folder>
     </Folders>
   </Project>

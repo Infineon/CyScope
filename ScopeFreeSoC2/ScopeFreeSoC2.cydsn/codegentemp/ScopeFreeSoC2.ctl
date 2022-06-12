@@ -1,6 +1,6 @@
 -- ======================================================================
 -- ScopeFreeSoC2.ctl generated from ScopeFreeSoC2
--- 04/17/2018 at 09:26
+-- 06/12/2022 at 14:02
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

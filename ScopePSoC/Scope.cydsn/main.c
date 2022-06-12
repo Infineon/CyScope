@@ -103,6 +103,10 @@ uint8 Waveform_Temp_Buffer[WAVEFORM_BUFFER_SIZE];
 uint8 wave_gain = 0;
 uint8 wave_offset = 0;
 
+//GJL
+// Buffer for noise output after applying amplitude and offset
+uint8 Noise_Adjusted;
+
 // digital input last state variable
 uint8 Digital_Input_Status_Last;
 uint8 Digital_AutoUpdate;
@@ -132,6 +136,15 @@ int main()
 	
 		CommandCheck();
 		
+ 		//GJL Adjust amplitude and offset for noise output
+		wave_temp = (uint8) *PRS_SEED_PTR;
+		wave_temp = (((float) wave_temp) * ((float)wave_gain)/255.0) + ((float)wave_offset);
+		if(wave_temp > 255.0)
+		{
+			wave_temp = 255.0;
+		}
+		Noise_Adjusted = (uint8) wave_temp;
+
 		if(bCommandReady != 0)
 		{
 			psz = strtok(szCommand, " ");
@@ -845,7 +858,10 @@ void Hardware_Config(void)
 	wave_gain = 0;
 	
 	PRS_Start();
-	Wave_DAC_Wave2Setup((uint8 *) PRS_SEED_PTR, 1);
+    // GJL
+    // Change noise output to use value adjusted for amplitude/offset
+    //Wave_DAC_Wave2Setup((uint8 *) PRS_SEED_PTR, 1);
+    Wave_DAC_Wave2Setup(&Noise_Adjusted, 1);
 	
 	// digital IO initializations
 	Digital_Input_Status_Last = 0;

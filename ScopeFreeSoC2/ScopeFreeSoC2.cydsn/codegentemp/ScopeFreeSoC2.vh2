@@ -2,7 +2,7 @@
 --	Conversion of ScopeFreeSoC2.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Apr 17 09:26:06 2018
+--	Sun Jun 12 14:02:44 2022
 --
 
 USE cypress.cypress.all;

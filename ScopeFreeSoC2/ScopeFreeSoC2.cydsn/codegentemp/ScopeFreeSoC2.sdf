@@ -1,10 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2018-04-17T07:26:14Z")
+ (DATE "2022-06-12T18:02:56Z")
  (DESIGN "ScopeFreeSoC2")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
- (VERSION " 4.2")
+ (VERSION " 4.3")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL

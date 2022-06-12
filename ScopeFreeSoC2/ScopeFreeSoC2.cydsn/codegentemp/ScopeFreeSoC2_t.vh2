@@ -1,6 +1,6 @@
--- Project:   C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\ScopeFreeSoC2.cyprj
--- Generated: 04/17/2018 09:26:14
--- PSoC Creator  4.2
+-- Project:   C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\ScopeFreeSoC2.cyprj
+-- Generated: 06/12/2022 14:02:56
+-- PSoC Creator  4.3
 
 ENTITY ScopeFreeSoC2 IS
     PORT(

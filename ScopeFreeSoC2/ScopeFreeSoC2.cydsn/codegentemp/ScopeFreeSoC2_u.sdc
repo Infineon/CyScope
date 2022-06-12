@@ -1,3 +1,3 @@
-# Component constraints for C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\TopDesign\TopDesign.cysch
-# Project: C:\Cypress\CyScope-master\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\ScopeFreeSoC2.cyprj
-# Date: Tue, 17 Apr 2018 07:26:04 GMT
+# Component constraints for C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\Git\CyScope\ScopeFreeSoC2\ScopeFreeSoC2.cydsn\ScopeFreeSoC2.cyprj
+# Date: Sun, 12 Jun 2022 18:02:39 GMT

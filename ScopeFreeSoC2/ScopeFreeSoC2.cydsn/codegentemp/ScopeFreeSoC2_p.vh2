@@ -1,6 +1,6 @@
 -- Project:   ScopeFreeSoC2
--- Generated: 04/17/2018 09:26:09
--- PSoC Creator  4.2
+-- Generated: 06/12/2022 14:02:48
+-- PSoC Creator  4.3
 
 ENTITY ScopeFreeSoC2 IS
     PORT(

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
   28:Generated_Source\PSoC5/cy_em_eeprom.c **** 
   29:Generated_Source\PSoC5/cy_em_eeprom.c **** 
   30:Generated_Source\PSoC5/cy_em_eeprom.c **** #if defined(__cplusplus)
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 2
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 2
 
 
   31:Generated_Source\PSoC5/cy_em_eeprom.c **** extern "C" {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
   85:Generated_Source\PSoC5/cy_em_eeprom.c **** * datasheet.
   86:Generated_Source\PSoC5/cy_em_eeprom.c **** *
   87:Generated_Source\PSoC5/cy_em_eeprom.c **** * \sideeffect 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 3
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 3
 
 
   88:Generated_Source\PSoC5/cy_em_eeprom.c **** * If the "Redundant Copy" option is used, the function performs a number of 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
   68 0030 50D0     		beq	.L2
  101:Generated_Source\PSoC5/cy_em_eeprom.c ****     {
  102:Generated_Source\PSoC5/cy_em_eeprom.c ****         ret = CheckRanges(config);
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 4
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 4
 
 
   69              		.loc 1 102 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  112              		.loc 1 113 0 is_stmt 0 discriminator 1
  113 007c 0123     		movs	r3, #1
  114 007e 00E0     		b	.L4
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 5
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 5
 
 
  115              	.L3:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  157 00c4 0346     		mov	r3, r0
  158 00c6 FB73     		strb	r3, [r7, #15]
  125:Generated_Source\PSoC5/cy_em_eeprom.c ****                 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 6
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 6
 
 
  126:Generated_Source\PSoC5/cy_em_eeprom.c ****                 /* Update the last written EEPROM row for Cy_Em_EEPROM_NumWrites() */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  152:Generated_Source\PSoC5/cy_em_eeprom.c **** * \param context
  153:Generated_Source\PSoC5/cy_em_eeprom.c **** * The pointer to the EEPROM context structure \ref cy_stc_eeprom_context_t.
  154:Generated_Source\PSoC5/cy_em_eeprom.c **** *
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 7
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 7
 
 
  155:Generated_Source\PSoC5/cy_em_eeprom.c **** * \return
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  212              		.loc 1 183 0
  213 001c BB68     		ldr	r3, [r7, #8]
  214 001e 7B64     		str	r3, [r7, #68]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 8
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 8
 
 
  184:Generated_Source\PSoC5/cy_em_eeprom.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  254 0060 DB09     		lsrs	r3, r3, #7
  197:Generated_Source\PSoC5/cy_em_eeprom.c ****                               (rdAddr / CY_EM_EEPROM_EEPROM_DATA_LEN)) + 1u;
  255              		.loc 1 197 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 9
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 9
 
 
  256 0062 D31A     		subs	r3, r2, r3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  293 009c 08D8     		bhi	.L9
  294              		.loc 1 212 0 is_stmt 0 discriminator 1
  295 009e BB6D     		ldr	r3, [r7, #88]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 10
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 10
 
 
  296 00a0 0133     		adds	r3, r3, #1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  339 00da BB62     		str	r3, [r7, #40]
  222:Generated_Source\PSoC5/cy_em_eeprom.c **** 
  223:Generated_Source\PSoC5/cy_em_eeprom.c ****         /* Check if wear leveling is used */
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 11
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 11
 
 
  224:Generated_Source\PSoC5/cy_em_eeprom.c ****         if(context->wearLevelingFactor > 1u)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  236:Generated_Source\PSoC5/cy_em_eeprom.c ****             startRowAddr = curEepromBaseAddr + (curRdEepromRowNum * CY_EM_EEPROM_FLASH_SIZEOF_ROW);
  382              		.loc 1 236 0
  383 0110 FB6C     		ldr	r3, [r7, #76]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 12
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 12
 
 
  384 0112 1A02     		lsls	r2, r3, #8
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  256:Generated_Source\PSoC5/cy_em_eeprom.c ****                 startRowAddr -= context->numberOfRows * CY_EM_EEPROM_FLASH_SIZEOF_ROW;
  419              		.loc 1 256 0 is_stmt 1
  420 014e 3B68     		ldr	r3, [r7]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 13
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 13
 
 
  421 0150 5B68     		ldr	r3, [r3, #4]
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  271:Generated_Source\PSoC5/cy_em_eeprom.c **** 
  272:Generated_Source\PSoC5/cy_em_eeprom.c ****                 if(CY_EM_EEPROM_SUCCESS != ret)
  460              		.loc 1 272 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 14
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 14
 
 
  461 0194 97F85F30 		ldrb	r3, [r7, #95]	@ zero_extendqisi2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  495 01ca 7B64     		str	r3, [r7, #68]
  292:Generated_Source\PSoC5/cy_em_eeprom.c ****             curRdEepromRowNum++;
  496              		.loc 1 292 0 discriminator 2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 15
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 15
 
 
  497 01cc FB6C     		ldr	r3, [r7, #76]
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  533 0208 3B6B     		ldr	r3, [r7, #48]
  534 020a D31A     		subs	r3, r2, r3
  535 020c BB65     		str	r3, [r7, #88]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 16
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 16
 
 
  536 020e 72E0     		b	.L27
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  579 0252 BB69     		ldr	r3, [r7, #24]
  580 0254 9A42     		cmp	r2, r3
  581 0256 34BF     		ite	cc
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 17
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 17
 
 
  582 0258 0123     		movcc	r3, #1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  630 0296 7B69     		ldr	r3, [r7, #20]
  631 0298 0C33     		adds	r3, r3, #12
  632 029a 7B61     		str	r3, [r7, #20]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 18
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 18
 
 
  326:Generated_Source\PSoC5/cy_em_eeprom.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  668              		.loc 1 344 0
  669 02de 0EE0     		b	.L7
  670              	.L35:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 19
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 19
 
 
  345:Generated_Source\PSoC5/cy_em_eeprom.c ****                             }
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  709              		.global	Cy_Em_EEPROM_Write
  710              		.thumb
  711              		.thumb_func
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 20
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 20
 
 
  712              		.type	Cy_Em_EEPROM_Write, %function
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  410:Generated_Source\PSoC5/cy_em_eeprom.c **** *******************************************************************************/
  411:Generated_Source\PSoC5/cy_em_eeprom.c **** cy_en_em_eeprom_status_t Cy_Em_EEPROM_Write(uint32 addr,
  412:Generated_Source\PSoC5/cy_em_eeprom.c ****                                             void * eepromData,
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 21
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 21
 
 
  413:Generated_Source\PSoC5/cy_em_eeprom.c ****                                             uint32 size,
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  754 003c 07F10803 		add	r3, r7, #8
  755 0040 1B68     		ldr	r3, [r3]
  756 0042 C7F83C31 		str	r3, [r7, #316]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 22
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 22
 
 
  428:Generated_Source\PSoC5/cy_em_eeprom.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  438:Generated_Source\PSoC5/cy_em_eeprom.c ****             /* Get the sequence number of the last written row */
  439:Generated_Source\PSoC5/cy_em_eeprom.c ****             uint32 seqNum = CY_EM_EEPROM_GET_SEQ_NUM(emEepromRowAddr);
  801              		.loc 1 439 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 23
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 23
 
 
  802 009e 07F11803 		add	r3, r7, #24
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  837 00fa 5A1E     		subs	r2, r3, #1
  838 00fc D7F84431 		ldr	r3, [r7, #324]
  839 0100 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 24
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 24
 
 
  840 0102 05D1     		bne	.L41
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  873 0140 07F12403 		add	r3, r7, #36
  874 0144 0C33     		adds	r3, r3, #12
  875 0146 D7F82C11 		ldr	r1, [r7, #300]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 25
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 25
 
 
  876 014a 1846     		mov	r0, r3
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  915 0192 C7F84831 		str	r3, [r7, #328]
  493:Generated_Source\PSoC5/cy_em_eeprom.c **** 
  494:Generated_Source\PSoC5/cy_em_eeprom.c ****             for(; i <= seqNum; i++)
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 26
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 26
 
 
  916              		.loc 1 494 0 is_stmt 1 discriminator 4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  514:Generated_Source\PSoC5/cy_em_eeprom.c ****                                                                            context->userFlashStartA
  515:Generated_Source\PSoC5/cy_em_eeprom.c ****                 if(0UL != tmpRowAddr)
  951              		.loc 1 515 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 27
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 27
 
 
  952 01e2 D7F84031 		ldr	r3, [r7, #320]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  534:Generated_Source\PSoC5/cy_em_eeprom.c ****                 {
  535:Generated_Source\PSoC5/cy_em_eeprom.c ****                     uint32 dataAddr = ((uint32)((uint8 *)&writeRamBuffer)) + startAddr;
  986              		.loc 1 535 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 28
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 28
 
 
  987 022c 07F12402 		add	r2, r7, #36
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1027 028a DA67     		str	r2, [r3, #124]
  1028              	.L52:
  494:Generated_Source\PSoC5/cy_em_eeprom.c ****             {
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 29
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 29
 
 
  1029              		.loc 1 494 0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1069 02e6 3B46     		mov	r3, r7
  1070 02e8 1B68     		ldr	r3, [r3]
  1071 02ea 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 30
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 30
 
 
  1072 02ec 1344     		add	r3, r3, r2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1109              	.L39:
  1110              	.LBE9:
  1111              	.LBE6:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 31
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 31
 
 
  577:Generated_Source\PSoC5/cy_em_eeprom.c ****             }
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  606:Generated_Source\PSoC5/cy_em_eeprom.c **** * So it is recommended to use this function in utmost case to prolongate
  607:Generated_Source\PSoC5/cy_em_eeprom.c **** * flash life.
  608:Generated_Source\PSoC5/cy_em_eeprom.c **** *
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 32
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 32
 
 
  609:Generated_Source\PSoC5/cy_em_eeprom.c **** * \note
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1163 0024 1A46     		mov	r2, r3
  1164 0026 0021     		movs	r1, #0
  1165 0028 FFF7FEFF 		bl	memset
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 33
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 33
 
 
  637:Generated_Source\PSoC5/cy_em_eeprom.c **** #if (CY_PSOC6)
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  658:Generated_Source\PSoC5/cy_em_eeprom.c ****                         CalcChecksum((uint8 *) &writeRamBuffer[CY_EM_EEPROM_EEPROM_DATA_OFFSET_U32]
  1197              		.loc 1 658 0
  1198 006c 1A46     		mov	r2, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 34
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 34
 
 
  1199 006e 07F10803 		add	r3, r7, #8
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  691:Generated_Source\PSoC5/cy_em_eeprom.c ****             writeRamBuffer[0u] = seqNum;
  1222              		.loc 1 691 0 discriminator 3
  1223 00a4 07F10803 		add	r3, r7, #8
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 35
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 35
 
 
  1224 00a8 D7F81421 		ldr	r2, [r7, #276]
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1251              		.cfi_def_cfa_offset 8
  1252 00e4 BD46     		mov	sp, r7
  1253              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 36
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 36
 
 
  1254              		@ sp needed
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1289              		.cfi_def_cfa_register 13
  1290              		@ sp needed
  1291 0014 80BC     		pop	{r7}
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 37
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 37
 
 
  1292              		.cfi_restore 7
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1321 000c BB60     		str	r3, [r7, #8]
  761:Generated_Source\PSoC5/cy_em_eeprom.c ****     uint32 prevSeqNum = 0u;
  1322              		.loc 1 761 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 38
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 38
 
 
  1323 000e 0023     		movs	r3, #0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  780:Generated_Source\PSoC5/cy_em_eeprom.c ****         emEepromAddr = emEepromAddr + CY_EM_EEPROM_FLASH_SIZEOF_ROW;
  1359              		.loc 1 780 0 discriminator 2
  1360 0042 FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 39
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 39
 
 
  1361 0044 03F58073 		add	r3, r3, #256
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  796:Generated_Source\PSoC5/cy_em_eeprom.c **** *
  797:Generated_Source\PSoC5/cy_em_eeprom.c **** * \return
  798:Generated_Source\PSoC5/cy_em_eeprom.c **** * The address of the row or zero if the row with the sequence number was not
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 40
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 40
 
 
  799:Generated_Source\PSoC5/cy_em_eeprom.c **** * found.
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1433              		.loc 1 816 0
  1434 0028 04E0     		b	.L77
  1435              	.L76:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 41
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 41
 
 
  806:Generated_Source\PSoC5/cy_em_eeprom.c ****     {
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  840:Generated_Source\PSoC5/cy_em_eeprom.c **** * The address of the row from which the data should be read into the RAM buffer
  841:Generated_Source\PSoC5/cy_em_eeprom.c **** * in a later write operation. Out parameter.
  842:Generated_Source\PSoC5/cy_em_eeprom.c **** *
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 42
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 42
 
 
  843:Generated_Source\PSoC5/cy_em_eeprom.c **** * \param context
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  863:Generated_Source\PSoC5/cy_em_eeprom.c ****             CY_EM_EEPROM_IS_ADDR_EXCEED_RANGE(*rowToWrPtr, context->wlEndAddr))
  1498              		.loc 1 863 0
  1499 0028 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 43
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 43
 
 
  1500 002a 03D3     		bcc	.L82
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1533 005c 9A42     		cmp	r2, r3
  1534 005e 16D2     		bcs	.L85
  885:Generated_Source\PSoC5/cy_em_eeprom.c ****             {
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 44
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 44
 
 
  886:Generated_Source\PSoC5/cy_em_eeprom.c ****                 *rowToRdPtr = context->userFlashStartAddr +
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1568 0098 D21A     		subs	r2, r2, r3
  1569 009a 7B68     		ldr	r3, [r7, #4]
  1570 009c 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 45
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 45
 
 
  1571              		.loc 1 903 0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1603              		@ args = 0, pretend = 0, frame = 16
  1604              		@ frame_needed = 1, uses_anonymous_args = 0
  1605              		@ link register save eliminated.
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 46
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 46
 
 
  1606 0000 80B4     		push	{r7}
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1650 003e FB7B     		ldrb	r3, [r7, #15]
  1651 0040 5B00     		lsls	r3, r3, #1
  1652 0042 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 47
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 47
 
 
  1653              	.L92:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  941:Generated_Source\PSoC5/cy_em_eeprom.c **** 
  942:Generated_Source\PSoC5/cy_em_eeprom.c **** 
  943:Generated_Source\PSoC5/cy_em_eeprom.c **** /*******************************************************************************
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 48
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 48
 
 
  944:Generated_Source\PSoC5/cy_em_eeprom.c **** * Function Name: CheckRanges
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1735 002a 1344     		add	r3, r3, r2
  1736 002c 7A68     		ldr	r2, [r7, #4]
  1737 002e 5268     		ldr	r2, [r2, #4]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 49
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 49
 
 
  1738 0030 02FB03F3 		mul	r3, r2, r3
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  971:Generated_Source\PSoC5/cy_em_eeprom.c **** 
  972:Generated_Source\PSoC5/cy_em_eeprom.c **** /*******************************************************************************
  973:Generated_Source\PSoC5/cy_em_eeprom.c **** * Function Name: WriteRow
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 50
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 50
 
 
  974:Generated_Source\PSoC5/cy_em_eeprom.c **** ****************************************************************************//**
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1010:Generated_Source\PSoC5/cy_em_eeprom.c ****     /* For non-PSoC 6 devices, the Array ID and Row ID needed to write the row */
 1011:Generated_Source\PSoC5/cy_em_eeprom.c ****     rowId = (rowAddr / CY_EM_EEPROM_FLASH_SIZEOF_ROW) % CY_EM_EEPROM_ROWS_IN_ARRAY;
  1800              		.loc 1 1011 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 51
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 51
 
 
  1801 0010 FB68     		ldr	r3, [r7, #12]
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1037:Generated_Source\PSoC5/cy_em_eeprom.c ****         /* Do blocking write */
 1038:Generated_Source\PSoC5/cy_em_eeprom.c ****         if(CY_FLASH_DRV_SUCCESS == Cy_Flash_WriteRow(rowAddr, (const uint32 *)rowData))
 1039:Generated_Source\PSoC5/cy_em_eeprom.c ****         {
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 52
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 52
 
 
 1040:Generated_Source\PSoC5/cy_em_eeprom.c ****             ret = CY_EM_EEPROM_SUCCESS;
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1074:Generated_Source\PSoC5/cy_em_eeprom.c **** *
 1075:Generated_Source\PSoC5/cy_em_eeprom.c **** * Erases one flash row starting from the specified row address. If the redundant
 1076:Generated_Source\PSoC5/cy_em_eeprom.c **** * copy option is enabled the corresponding row in the redundant copy will also
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 53
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 53
 
 
 1077:Generated_Source\PSoC5/cy_em_eeprom.c **** * be erased.
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1110:Generated_Source\PSoC5/cy_em_eeprom.c ****     {
 1111:Generated_Source\PSoC5/cy_em_eeprom.c ****         if(0u != context->blockingWrite)
 1112:Generated_Source\PSoC5/cy_em_eeprom.c ****         {
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 54
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 54
 
 
 1113:Generated_Source\PSoC5/cy_em_eeprom.c ****             /* Erase the flash row */
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1880 0024 FB7D     		ldrb	r3, [r7, #23]	@ zero_extendqisi2
  1881 0026 002B     		cmp	r3, #0
  1882 0028 13D1     		bne	.L105
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 55
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 55
 
 
  1883              		.loc 1 1157 0 is_stmt 0 discriminator 1
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1923              		@ sp needed
  1924 0066 80BD     		pop	{r7, pc}
  1925              		.cfi_endproc
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 56
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 56
 
 
  1926              	.LFE11:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  1937              		@ args = 4, pretend = 0, frame = 280
  1938              		@ frame_needed = 1, uses_anonymous_args = 0
  1939 0000 90B5     		push	{r4, r7, lr}
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 57
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 57
 
 
  1940              		.cfi_def_cfa_offset 12
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1226:Generated_Source\PSoC5/cy_em_eeprom.c ****         (void)memcpy((void *)(dstAddr), (void *)(startAddr + rowOffset), numBytes);
  1982              		.loc 1 1226 0
  1983 0054 07F10803 		add	r3, r7, #8
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 58
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 58
 
 
  1984 0058 1868     		ldr	r0, [r3]
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2021 00aa 07F10C03 		add	r3, r7, #12
  2022 00ae D7F82821 		ldr	r2, [r7, #296]
  2023 00b2 1868     		ldr	r0, [r3]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 59
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 59
 
 
  2024 00b4 FFF7FEFF 		bl	WriteRow
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2065              		.type	GetAddresses, %function
  2066              	GetAddresses:
  2067              	.LFB13:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 60
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 60
 
 
 1256:Generated_Source\PSoC5/cy_em_eeprom.c **** 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2078 0004 00AF     		add	r7, sp, #0
  2079              		.cfi_def_cfa_register 7
  2080 0006 F860     		str	r0, [r7, #12]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 61
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 61
 
 
  2081 0008 B960     		str	r1, [r7, #8]
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2126 0050 DB01     		lsls	r3, r3, #7
  2127 0052 9A42     		cmp	r2, r3
  2128 0054 0AD3     		bcc	.L118
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 62
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 62
 
 
  2129              		.loc 1 1308 0 is_stmt 0 discriminator 1
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2171 0096 0AD3     		bcc	.L123
  2172              		.loc 1 1320 0 is_stmt 0 discriminator 1
  2173 0098 3A6A     		ldr	r2, [r7, #32]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 63
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 63
 
 
  2174 009a 7B6A     		ldr	r3, [r7, #36]
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1328:Generated_Source\PSoC5/cy_em_eeprom.c ****             skip++;
  2221              		.loc 1 1328 0
  2222 00e8 7B69     		ldr	r3, [r7, #20]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 64
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 64
 
 
  2223 00ea 0133     		adds	r3, r3, #1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
 1357:Generated_Source\PSoC5/cy_em_eeprom.c **** *
 1358:Generated_Source\PSoC5/cy_em_eeprom.c **** * \note
 1359:Generated_Source\PSoC5/cy_em_eeprom.c **** * This function uses a buffer of the flash row size to perform read
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 65
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 65
 
 
 1360:Generated_Source\PSoC5/cy_em_eeprom.c **** * operation. For the size of the row refer to the specific PSoC device
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2284 0034 1B68     		ldr	r3, [r3]
  2285 0036 1946     		mov	r1, r3
  2286 0038 07F10C03 		add	r3, r7, #12
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 66
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 66
 
 
  2287 003c 4FF48072 		mov	r2, #256
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2323 0094 9B69     		ldr	r3, [r3, #24]
  2324 0096 D21A     		subs	r2, r2, r3
  2325 0098 3B1D     		adds	r3, r7, #4
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 67
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 67
 
 
  2326 009a 1B68     		ldr	r3, [r3]
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2365 00f6 07F59077 		add	r7, r7, #288
  2366              		.cfi_def_cfa_offset 8
  2367 00fa BD46     		mov	sp, r7
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 68
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 68
 
 
  2368              		.cfi_def_cfa_register 13
@@ -4040,8 +4040,8 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2384 000b 01       		.uleb128 0x1
  2385 000c 5C000000 		.4byte	.LASF102
  2386 0010 0C       		.byte	0xc
- 2387 0011 00040000 		.4byte	.LASF103
- 2388 0015 26040000 		.4byte	.LASF104
+ 2387 0011 31040000 		.4byte	.LASF103
+ 2388 0015 9C010000 		.4byte	.LASF104
  2389 0019 18000000 		.4byte	.Ldebug_ranges0+0x18
  2390 001d 00000000 		.4byte	0
  2391 0021 00000000 		.4byte	.Ldebug_line0
@@ -4052,15 +4052,15 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2396 002c 02       		.uleb128 0x2
  2397 002d 01       		.byte	0x1
  2398 002e 08       		.byte	0x8
- 2399 002f 62040000 		.4byte	.LASF1
+ 2399 002f 57040000 		.4byte	.LASF1
  2400 0033 02       		.uleb128 0x2
  2401 0034 02       		.byte	0x2
  2402 0035 05       		.byte	0x5
- 2403 0036 78040000 		.4byte	.LASF2
+ 2403 0036 6D040000 		.4byte	.LASF2
  2404 003a 02       		.uleb128 0x2
  2405 003b 02       		.byte	0x2
  2406 003c 07       		.byte	0x7
- 2407 003d 94020000 		.4byte	.LASF3
+ 2407 003d C5020000 		.4byte	.LASF3
  2408 0041 02       		.uleb128 0x2
  2409 0042 04       		.byte	0x4
  2410 0043 05       		.byte	0x5
@@ -4068,7 +4068,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2412 0048 02       		.uleb128 0x2
  2413 0049 04       		.byte	0x4
  2414 004a 07       		.byte	0x7
- 2415 004b 44020000 		.4byte	.LASF5
+ 2415 004b 75020000 		.4byte	.LASF5
  2416 004f 02       		.uleb128 0x2
  2417 0050 08       		.byte	0x8
  2418 0051 05       		.byte	0x5
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2422 0058 07       		.byte	0x7
  2423 0059 F4000000 		.4byte	.LASF7
  2424 005d 03       		.uleb128 0x3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 69
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 69
 
 
  2425 005e 04       		.byte	0x4
@@ -4087,9 +4087,9 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2428 0064 02       		.uleb128 0x2
  2429 0065 04       		.byte	0x4
  2430 0066 07       		.byte	0x7
- 2431 0067 2E020000 		.4byte	.LASF8
+ 2431 0067 5F020000 		.4byte	.LASF8
  2432 006b 04       		.uleb128 0x4
- 2433 006c 9C010000 		.4byte	.LASF9
+ 2433 006c CD010000 		.4byte	.LASF9
  2434 0070 02       		.byte	0x2
  2435 0071 9201     		.2byte	0x192
  2436 0073 2C000000 		.4byte	0x2c
@@ -4099,35 +4099,35 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2440 007d 9301     		.2byte	0x193
  2441 007f 3A000000 		.4byte	0x3a
  2442 0083 04       		.uleb128 0x4
- 2443 0084 B6010000 		.4byte	.LASF11
+ 2443 0084 E7010000 		.4byte	.LASF11
  2444 0088 02       		.byte	0x2
  2445 0089 9401     		.2byte	0x194
  2446 008b 48000000 		.4byte	0x48
  2447 008f 02       		.uleb128 0x2
  2448 0090 04       		.byte	0x4
  2449 0091 04       		.byte	0x4
- 2450 0092 D2030000 		.4byte	.LASF12
+ 2450 0092 03040000 		.4byte	.LASF12
  2451 0096 02       		.uleb128 0x2
  2452 0097 08       		.byte	0x8
  2453 0098 04       		.byte	0x4
- 2454 0099 A2010000 		.4byte	.LASF13
+ 2454 0099 D3010000 		.4byte	.LASF13
  2455 009d 02       		.uleb128 0x2
  2456 009e 01       		.byte	0x1
  2457 009f 08       		.byte	0x8
- 2458 00a0 EB040000 		.4byte	.LASF14
+ 2458 00a0 E0040000 		.4byte	.LASF14
  2459 00a4 04       		.uleb128 0x4
- 2460 00a5 D4050000 		.4byte	.LASF15
+ 2460 00a5 C9050000 		.4byte	.LASF15
  2461 00a9 02       		.byte	0x2
  2462 00aa 3402     		.2byte	0x234
  2463 00ac 48000000 		.4byte	0x48
  2464 00b0 02       		.uleb128 0x2
  2465 00b1 08       		.byte	0x8
  2466 00b2 04       		.byte	0x4
- 2467 00b3 49030000 		.4byte	.LASF16
+ 2467 00b3 7A030000 		.4byte	.LASF16
  2468 00b7 02       		.uleb128 0x2
  2469 00b8 04       		.byte	0x4
  2470 00b9 07       		.byte	0x7
- 2471 00ba 40030000 		.4byte	.LASF17
+ 2471 00ba 71030000 		.4byte	.LASF17
  2472 00be 05       		.uleb128 0x5
  2473 00bf 04       		.byte	0x4
  2474 00c0 06       		.uleb128 0x6
@@ -4138,26 +4138,26 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2479 00c8 07       		.uleb128 0x7
  2480 00c9 10010000 		.4byte	.LASF18
  2481 00cd 03       		.byte	0x3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 70
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 70
 
 
  2482 00ce FE       		.byte	0xfe
  2483 00cf 83000000 		.4byte	0x83
  2484 00d3 00       		.byte	0
  2485 00d4 08       		.uleb128 0x8
- 2486 00d5 68050000 		.4byte	.LASF19
+ 2486 00d5 5D050000 		.4byte	.LASF19
  2487 00d9 03       		.byte	0x3
  2488 00da 0301     		.2byte	0x103
  2489 00dc 83000000 		.4byte	0x83
  2490 00e0 04       		.byte	0x4
  2491 00e1 08       		.uleb128 0x8
- 2492 00e2 17020000 		.4byte	.LASF20
+ 2492 00e2 48020000 		.4byte	.LASF20
  2493 00e6 03       		.byte	0x3
  2494 00e7 0601     		.2byte	0x106
  2495 00e9 6B000000 		.4byte	0x6b
  2496 00ed 08       		.byte	0x8
  2497 00ee 08       		.uleb128 0x8
- 2498 00ef B4050000 		.4byte	.LASF21
+ 2498 00ef A9050000 		.4byte	.LASF21
  2499 00f3 03       		.byte	0x3
  2500 00f4 0B01     		.2byte	0x10b
  2501 00f6 6B000000 		.4byte	0x6b
@@ -4170,7 +4170,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2508 0107 0C       		.byte	0xc
  2509 0108 00       		.byte	0
  2510 0109 04       		.uleb128 0x4
- 2511 010a 4A050000 		.4byte	.LASF23
+ 2511 010a 3F050000 		.4byte	.LASF23
  2512 010e 03       		.byte	0x3
  2513 010f 0F01     		.2byte	0x10f
  2514 0111 C0000000 		.4byte	0xc0
@@ -4180,7 +4180,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2518 0118 1601     		.2byte	0x116
  2519 011a 87010000 		.4byte	0x187
  2520 011e 08       		.uleb128 0x8
- 2521 011f F6030000 		.4byte	.LASF24
+ 2521 011f 27040000 		.4byte	.LASF24
  2522 0123 03       		.byte	0x3
  2523 0124 1B01     		.2byte	0x11b
  2524 0126 83000000 		.4byte	0x83
@@ -4192,13 +4192,13 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2530 0133 83000000 		.4byte	0x83
  2531 0137 04       		.byte	0x4
  2532 0138 08       		.uleb128 0x8
- 2533 0139 24050000 		.4byte	.LASF26
+ 2533 0139 19050000 		.4byte	.LASF26
  2534 013d 03       		.byte	0x3
  2535 013e 2301     		.2byte	0x123
  2536 0140 83000000 		.4byte	0x83
  2537 0144 08       		.byte	0x8
  2538 0145 08       		.uleb128 0x8
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 71
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 71
 
 
  2539 0146 10010000 		.4byte	.LASF18
@@ -4207,19 +4207,19 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2542 014d 83000000 		.4byte	0x83
  2543 0151 0C       		.byte	0xc
  2544 0152 08       		.uleb128 0x8
- 2545 0153 68050000 		.4byte	.LASF19
+ 2545 0153 5D050000 		.4byte	.LASF19
  2546 0157 03       		.byte	0x3
  2547 0158 2B01     		.2byte	0x12b
  2548 015a 83000000 		.4byte	0x83
  2549 015e 10       		.byte	0x10
  2550 015f 08       		.uleb128 0x8
- 2551 0160 17020000 		.4byte	.LASF20
+ 2551 0160 48020000 		.4byte	.LASF20
  2552 0164 03       		.byte	0x3
  2553 0165 2E01     		.2byte	0x12e
  2554 0167 6B000000 		.4byte	0x6b
  2555 016b 14       		.byte	0x14
  2556 016c 08       		.uleb128 0x8
- 2557 016d B4050000 		.4byte	.LASF21
+ 2557 016d A9050000 		.4byte	.LASF21
  2558 0171 03       		.byte	0x3
  2559 0172 3301     		.2byte	0x133
  2560 0174 6B000000 		.4byte	0x6b
@@ -4232,7 +4232,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2567 0185 18       		.byte	0x18
  2568 0186 00       		.byte	0
  2569 0187 04       		.uleb128 0x4
- 2570 0188 82030000 		.4byte	.LASF27
+ 2570 0188 B3030000 		.4byte	.LASF27
  2571 018c 03       		.byte	0x3
  2572 018d 3701     		.2byte	0x137
  2573 018f 15010000 		.4byte	0x115
@@ -4243,22 +4243,22 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2578 019a 5401     		.2byte	0x154
  2579 019c BF010000 		.4byte	0x1bf
  2580 01a0 0B       		.uleb128 0xb
- 2581 01a1 9F050000 		.4byte	.LASF28
+ 2581 01a1 94050000 		.4byte	.LASF28
  2582 01a5 00       		.byte	0
  2583 01a6 0B       		.uleb128 0xb
- 2584 01a7 0F030000 		.4byte	.LASF29
+ 2584 01a7 40030000 		.4byte	.LASF29
  2585 01ab 01       		.byte	0x1
  2586 01ac 0B       		.uleb128 0xb
- 2587 01ad 26030000 		.4byte	.LASF30
+ 2587 01ad 57030000 		.4byte	.LASF30
  2588 01b1 02       		.byte	0x2
  2589 01b2 0B       		.uleb128 0xb
- 2590 01b3 E0030000 		.4byte	.LASF31
+ 2590 01b3 11040000 		.4byte	.LASF31
  2591 01b7 03       		.byte	0x3
  2592 01b8 0B       		.uleb128 0xb
  2593 01b9 51010000 		.4byte	.LASF32
  2594 01bd 04       		.byte	0x4
  2595 01be 00       		.byte	0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 72
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 72
 
 
  2596 01bf 04       		.uleb128 0x4
@@ -4267,7 +4267,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2599 01c5 5A01     		.2byte	0x15a
  2600 01c7 93010000 		.4byte	0x193
  2601 01cb 0C       		.uleb128 0xc
- 2602 01cc B1040000 		.4byte	.LASF36
+ 2602 01cc A6040000 		.4byte	.LASF36
  2603 01d0 01       		.byte	0x1
  2604 01d1 5F       		.byte	0x5f
  2605 01d2 BF010000 		.4byte	0x1bf
@@ -4277,7 +4277,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2609 01df 9C       		.byte	0x9c
  2610 01e0 0F020000 		.4byte	0x20f
  2611 01e4 0D       		.uleb128 0xd
- 2612 01e5 F0040000 		.4byte	.LASF34
+ 2612 01e5 E5040000 		.4byte	.LASF34
  2613 01e9 01       		.byte	0x1
  2614 01ea 5F       		.byte	0x5f
  2615 01eb 0F020000 		.4byte	0x20f
@@ -4285,7 +4285,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2617 01f0 91       		.byte	0x91
  2618 01f1 6C       		.sleb128 -20
  2619 01f2 0D       		.uleb128 0xd
- 2620 01f3 1C050000 		.4byte	.LASF35
+ 2620 01f3 11050000 		.4byte	.LASF35
  2621 01f7 01       		.byte	0x1
  2622 01f8 5F       		.byte	0x5f
  2623 01f9 15020000 		.4byte	0x215
@@ -4308,7 +4308,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2640 0216 04       		.byte	0x4
  2641 0217 87010000 		.4byte	0x187
  2642 021b 0C       		.uleb128 0xc
- 2643 021c 63020000 		.4byte	.LASF37
+ 2643 021c 94020000 		.4byte	.LASF37
  2644 0220 01       		.byte	0x1
  2645 0221 A9       		.byte	0xa9
  2646 0222 BF010000 		.4byte	0x1bf
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2650 022f 9C       		.byte	0x9c
  2651 0230 BD030000 		.4byte	0x3bd
  2652 0234 0D       		.uleb128 0xd
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 73
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 73
 
 
  2653 0235 0B010000 		.4byte	.LASF38
@@ -4329,7 +4329,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2658 0240 91       		.byte	0x91
  2659 0241 A47F     		.sleb128 -92
  2660 0243 0D       		.uleb128 0xd
- 2661 0244 D6020000 		.4byte	.LASF39
+ 2661 0244 07030000 		.4byte	.LASF39
  2662 0248 01       		.byte	0x1
  2663 0249 AA       		.byte	0xaa
  2664 024a BE000000 		.4byte	0xbe
@@ -4337,7 +4337,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2666 024f 91       		.byte	0x91
  2667 0250 A07F     		.sleb128 -96
  2668 0252 0D       		.uleb128 0xd
- 2669 0253 8F020000 		.4byte	.LASF40
+ 2669 0253 C0020000 		.4byte	.LASF40
  2670 0257 01       		.byte	0x1
  2671 0258 AB       		.byte	0xab
  2672 0259 83000000 		.4byte	0x83
@@ -4345,7 +4345,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2674 025e 91       		.byte	0x91
  2675 025f 9C7F     		.sleb128 -100
  2676 0261 0D       		.uleb128 0xd
- 2677 0262 1C050000 		.4byte	.LASF35
+ 2677 0262 11050000 		.4byte	.LASF35
  2678 0266 01       		.byte	0x1
  2679 0267 AC       		.byte	0xac
  2680 0268 15020000 		.4byte	0x215
@@ -4369,7 +4369,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2698 0288 91       		.byte	0x91
  2699 0289 70       		.sleb128 -16
  2700 028a 10       		.uleb128 0x10
- 2701 028b F7040000 		.4byte	.LASF41
+ 2701 028b EC040000 		.4byte	.LASF41
  2702 028f 01       		.byte	0x1
  2703 0290 B0       		.byte	0xb0
  2704 0291 83000000 		.4byte	0x83
@@ -4377,8 +4377,8 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2706 0296 91       		.byte	0x91
  2707 0297 6C       		.sleb128 -20
  2708 0298 10       		.uleb128 0x10
- 2709 0299 EE020000 		.4byte	.LASF42
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 74
+ 2709 0299 1F030000 		.4byte	.LASF42
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 74
 
 
  2710 029d 01       		.byte	0x1
@@ -4388,7 +4388,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2714 02a4 91       		.byte	0x91
  2715 02a5 44       		.sleb128 -60
  2716 02a6 10       		.uleb128 0x10
- 2717 02a7 3D050000 		.4byte	.LASF43
+ 2717 02a7 32050000 		.4byte	.LASF43
  2718 02ab 01       		.byte	0x1
  2719 02ac B2       		.byte	0xb2
  2720 02ad 83000000 		.4byte	0x83
@@ -4396,7 +4396,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2722 02b2 91       		.byte	0x91
  2723 02b3 B87F     		.sleb128 -72
  2724 02b5 10       		.uleb128 0x10
- 2725 02b6 E1020000 		.4byte	.LASF44
+ 2725 02b6 12030000 		.4byte	.LASF44
  2726 02ba 01       		.byte	0x1
  2727 02bb B3       		.byte	0xb3
  2728 02bc 83000000 		.4byte	0x83
@@ -4404,7 +4404,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2730 02c1 91       		.byte	0x91
  2731 02c2 68       		.sleb128 -24
  2732 02c3 10       		.uleb128 0x10
- 2733 02c4 BD010000 		.4byte	.LASF45
+ 2733 02c4 EE010000 		.4byte	.LASF45
  2734 02c8 01       		.byte	0x1
  2735 02c9 B4       		.byte	0xb4
  2736 02ca 83000000 		.4byte	0x83
@@ -4412,7 +4412,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2738 02cf 91       		.byte	0x91
  2739 02d0 40       		.sleb128 -64
  2740 02d1 10       		.uleb128 0x10
- 2741 02d2 C2050000 		.4byte	.LASF46
+ 2741 02d2 B7050000 		.4byte	.LASF46
  2742 02d6 01       		.byte	0x1
  2743 02d7 B5       		.byte	0xb5
  2744 02d8 83000000 		.4byte	0x83
@@ -4420,7 +4420,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2746 02dd 91       		.byte	0x91
  2747 02de 64       		.sleb128 -28
  2748 02df 10       		.uleb128 0x10
- 2749 02e0 9B040000 		.4byte	.LASF47
+ 2749 02e0 90040000 		.4byte	.LASF47
  2750 02e4 01       		.byte	0x1
  2751 02e5 B6       		.byte	0xb6
  2752 02e6 83000000 		.4byte	0x83
@@ -4428,7 +4428,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2754 02eb 91       		.byte	0x91
  2755 02ec 60       		.sleb128 -32
  2756 02ed 10       		.uleb128 0x10
- 2757 02ee 16060000 		.4byte	.LASF48
+ 2757 02ee 0B060000 		.4byte	.LASF48
  2758 02f2 01       		.byte	0x1
  2759 02f3 B7       		.byte	0xb7
  2760 02f4 83000000 		.4byte	0x83
@@ -4438,11 +4438,11 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2764 02fb 11       		.uleb128 0x11
  2765 02fc 40000000 		.4byte	.LBB2
  2766 0300 BE020000 		.4byte	.LBE2-.LBB2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 75
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 75
 
 
  2767 0304 10       		.uleb128 0x10
- 2768 0305 7B050000 		.4byte	.LASF49
+ 2768 0305 70050000 		.4byte	.LASF49
  2769 0309 01       		.byte	0x1
  2770 030a BC       		.byte	0xbc
  2771 030b 83000000 		.4byte	0x83
@@ -4450,7 +4450,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2773 0310 91       		.byte	0x91
  2774 0311 58       		.sleb128 -40
  2775 0312 10       		.uleb128 0x10
- 2776 0313 61050000 		.4byte	.LASF50
+ 2776 0313 56050000 		.4byte	.LASF50
  2777 0317 01       		.byte	0x1
  2778 0318 BD       		.byte	0xbd
  2779 0319 83000000 		.4byte	0x83
@@ -4458,7 +4458,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2781 031e 91       		.byte	0x91
  2782 031f 54       		.sleb128 -44
  2783 0320 10       		.uleb128 0x10
- 2784 0321 7B030000 		.4byte	.LASF51
+ 2784 0321 AC030000 		.4byte	.LASF51
  2785 0325 01       		.byte	0x1
  2786 0326 BF       		.byte	0xbf
  2787 0327 83000000 		.4byte	0x83
@@ -4466,7 +4466,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2789 032c 91       		.byte	0x91
  2790 032d 4C       		.sleb128 -52
  2791 032e 10       		.uleb128 0x10
- 2792 032f E0010000 		.4byte	.LASF52
+ 2792 032f 11020000 		.4byte	.LASF52
  2793 0333 01       		.byte	0x1
  2794 0334 C0       		.byte	0xc0
  2795 0335 83000000 		.4byte	0x83
@@ -4474,7 +4474,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2797 033a 91       		.byte	0x91
  2798 033b 50       		.sleb128 -48
  2799 033c 10       		.uleb128 0x10
- 2800 033d FA050000 		.4byte	.LASF53
+ 2800 033d EF050000 		.4byte	.LASF53
  2801 0341 01       		.byte	0x1
  2802 0342 C5       		.byte	0xc5
  2803 0343 83000000 		.4byte	0x83
@@ -4486,7 +4486,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2809 034f 26000000 		.4byte	.LBE3-.LBB3
  2810 0353 67030000 		.4byte	0x367
  2811 0357 10       		.uleb128 0x10
- 2812 0358 F7010000 		.4byte	.LASF54
+ 2812 0358 28020000 		.4byte	.LASF54
  2813 035c 01       		.byte	0x1
  2814 035d E2       		.byte	0xe2
  2815 035e 83000000 		.4byte	0x83
@@ -4498,10 +4498,10 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2821 0368 20020000 		.4byte	.LBB4
  2822 036c D0000000 		.4byte	.LBE4-.LBB4
  2823 0370 13       		.uleb128 0x13
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 76
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 76
 
 
- 2824 0371 06050000 		.4byte	.LASF55
+ 2824 0371 FB040000 		.4byte	.LASF55
  2825 0375 01       		.byte	0x1
  2826 0376 3B01     		.2byte	0x13b
  2827 0378 83000000 		.4byte	0x83
@@ -4509,7 +4509,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2829 037d 91       		.byte	0x91
  2830 037e B47F     		.sleb128 -76
  2831 0380 13       		.uleb128 0x13
- 2832 0381 D8030000 		.4byte	.LASF56
+ 2832 0381 09040000 		.4byte	.LASF56
  2833 0385 01       		.byte	0x1
  2834 0386 3C01     		.2byte	0x13c
  2835 0388 83000000 		.4byte	0x83
@@ -4520,7 +4520,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2840 0391 62020000 		.4byte	.LBB5
  2841 0395 8E000000 		.4byte	.LBE5-.LBB5
  2842 0399 13       		.uleb128 0x13
- 2843 039a 85020000 		.4byte	.LASF57
+ 2843 039a B6020000 		.4byte	.LASF57
  2844 039e 01       		.byte	0x1
  2845 039f 4101     		.2byte	0x141
  2846 03a1 83000000 		.4byte	0x83
@@ -4528,7 +4528,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2848 03a6 91       		.byte	0x91
  2849 03a7 AC7F     		.sleb128 -84
  2850 03a9 13       		.uleb128 0x13
- 2851 03aa 82050000 		.4byte	.LASF58
+ 2851 03aa 77050000 		.4byte	.LASF58
  2852 03ae 01       		.byte	0x1
  2853 03af 4201     		.2byte	0x142
  2854 03b1 83000000 		.4byte	0x83
@@ -4540,7 +4540,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2860 03bb 00       		.byte	0
  2861 03bc 00       		.byte	0
  2862 03bd 14       		.uleb128 0x14
- 2863 03be 68030000 		.4byte	.LASF59
+ 2863 03be 99030000 		.4byte	.LASF59
  2864 03c2 01       		.byte	0x1
  2865 03c3 9B01     		.2byte	0x19b
  2866 03c5 BF010000 		.4byte	0x1bf
@@ -4558,10 +4558,10 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2878 03e4 91       		.byte	0x91
  2879 03e5 AC7D     		.sleb128 -340
  2880 03e7 15       		.uleb128 0x15
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 77
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 77
 
 
- 2881 03e8 D6020000 		.4byte	.LASF39
+ 2881 03e8 07030000 		.4byte	.LASF39
  2882 03ec 01       		.byte	0x1
  2883 03ed 9C01     		.2byte	0x19c
  2884 03ef BE000000 		.4byte	0xbe
@@ -4569,7 +4569,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2886 03f4 91       		.byte	0x91
  2887 03f5 A87D     		.sleb128 -344
  2888 03f7 15       		.uleb128 0x15
- 2889 03f8 8F020000 		.4byte	.LASF40
+ 2889 03f8 C0020000 		.4byte	.LASF40
  2890 03fc 01       		.byte	0x1
  2891 03fd 9D01     		.2byte	0x19d
  2892 03ff 83000000 		.4byte	0x83
@@ -4577,7 +4577,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2894 0404 91       		.byte	0x91
  2895 0405 A47D     		.sleb128 -348
  2896 0407 15       		.uleb128 0x15
- 2897 0408 1C050000 		.4byte	.LASF35
+ 2897 0408 11050000 		.4byte	.LASF35
  2898 040c 01       		.byte	0x1
  2899 040d 9E01     		.2byte	0x19e
  2900 040f 15020000 		.4byte	0x215
@@ -4601,7 +4601,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2918 0431 91       		.byte	0x91
  2919 0432 68       		.sleb128 -24
  2920 0433 13       		.uleb128 0x13
- 2921 0434 CC030000 		.4byte	.LASF60
+ 2921 0434 FD030000 		.4byte	.LASF60
  2922 0438 01       		.byte	0x1
  2923 0439 A201     		.2byte	0x1a2
  2924 043b 83000000 		.4byte	0x83
@@ -4609,7 +4609,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2926 0440 91       		.byte	0x91
  2927 0441 64       		.sleb128 -28
  2928 0442 13       		.uleb128 0x13
- 2929 0443 A7020000 		.4byte	.LASF61
+ 2929 0443 D8020000 		.4byte	.LASF61
  2930 0447 01       		.byte	0x1
  2931 0448 A301     		.2byte	0x1a3
  2932 044a 83000000 		.4byte	0x83
@@ -4617,8 +4617,8 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2934 044f 91       		.byte	0x91
  2935 0450 48       		.sleb128 -56
  2936 0451 13       		.uleb128 0x13
- 2937 0452 C3040000 		.4byte	.LASF62
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 78
+ 2937 0452 B8040000 		.4byte	.LASF62
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 78
 
 
  2938 0456 01       		.byte	0x1
@@ -4628,7 +4628,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2942 045e 91       		.byte	0x91
  2943 045f C47D     		.sleb128 -316
  2944 0461 13       		.uleb128 0x13
- 2945 0462 06050000 		.4byte	.LASF55
+ 2945 0462 FB040000 		.4byte	.LASF55
  2946 0466 01       		.byte	0x1
  2947 0467 A501     		.2byte	0x1a5
  2948 0469 83000000 		.4byte	0x83
@@ -4636,7 +4636,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2950 046e 91       		.byte	0x91
  2951 046f C07D     		.sleb128 -320
  2952 0471 13       		.uleb128 0x13
- 2953 0472 D8030000 		.4byte	.LASF56
+ 2953 0472 09040000 		.4byte	.LASF56
  2954 0476 01       		.byte	0x1
  2955 0477 A601     		.2byte	0x1a6
  2956 0479 83000000 		.4byte	0x83
@@ -4644,7 +4644,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2958 047e 91       		.byte	0x91
  2959 047f BC7D     		.sleb128 -324
  2960 0481 13       		.uleb128 0x13
- 2961 0482 32050000 		.4byte	.LASF63
+ 2961 0482 27050000 		.4byte	.LASF63
  2962 0486 01       		.byte	0x1
  2963 0487 A701     		.2byte	0x1a7
  2964 0489 83000000 		.4byte	0x83
@@ -4652,7 +4652,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2966 048e 91       		.byte	0x91
  2967 048f 60       		.sleb128 -32
  2968 0490 13       		.uleb128 0x13
- 2969 0491 06060000 		.4byte	.LASF64
+ 2969 0491 FB050000 		.4byte	.LASF64
  2970 0495 01       		.byte	0x1
  2971 0496 A801     		.2byte	0x1a8
  2972 0498 83000000 		.4byte	0x83
@@ -4660,7 +4660,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2974 049d 91       		.byte	0x91
  2975 049e B87D     		.sleb128 -328
  2976 04a0 13       		.uleb128 0x13
- 2977 04a1 C4020000 		.4byte	.LASF65
+ 2977 04a1 F5020000 		.4byte	.LASF65
  2978 04a5 01       		.byte	0x1
  2979 04a6 A901     		.2byte	0x1a9
  2980 04a8 83000000 		.4byte	0x83
@@ -4676,9 +4676,9 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  2990 04bd 91       		.byte	0x91
  2991 04be 4C       		.sleb128 -52
  2992 04bf 13       		.uleb128 0x13
- 2993 04c0 16060000 		.4byte	.LASF48
+ 2993 04c0 0B060000 		.4byte	.LASF48
  2994 04c4 01       		.byte	0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 79
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 79
 
 
  2995 04c5 AB01     		.2byte	0x1ab
@@ -4698,7 +4698,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3009 04e4 91       		.byte	0x91
  3010 04e5 54       		.sleb128 -44
  3011 04e6 13       		.uleb128 0x13
- 3012 04e7 CD010000 		.4byte	.LASF68
+ 3012 04e7 FE010000 		.4byte	.LASF68
  3013 04eb 01       		.byte	0x1
  3014 04ec B101     		.2byte	0x1b1
  3015 04ee 83000000 		.4byte	0x83
@@ -4708,7 +4708,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3019 04f6 17       		.uleb128 0x17
  3020 04f7 00000000 		.4byte	.Ldebug_ranges0+0
  3021 04fb 13       		.uleb128 0x13
- 3022 04fc 8D040000 		.4byte	.LASF69
+ 3022 04fc 82040000 		.4byte	.LASF69
  3023 0500 01       		.byte	0x1
  3024 0501 B501     		.2byte	0x1b5
  3025 0503 83000000 		.4byte	0x83
@@ -4716,7 +4716,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3027 0508 91       		.byte	0x91
  3028 0509 58       		.sleb128 -40
  3029 050a 13       		.uleb128 0x13
- 3030 050b 7B030000 		.4byte	.LASF51
+ 3030 050b AC030000 		.4byte	.LASF51
  3031 050f 01       		.byte	0x1
  3032 0510 B701     		.2byte	0x1b7
  3033 0512 83000000 		.4byte	0x83
@@ -4727,7 +4727,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3038 051a 2C020000 		.4byte	.LBB8
  3039 051e 3E000000 		.4byte	.LBE8-.LBB8
  3040 0522 13       		.uleb128 0x13
- 3041 0523 25020000 		.4byte	.LASF70
+ 3041 0523 56020000 		.4byte	.LASF70
  3042 0527 01       		.byte	0x1
  3043 0528 1702     		.2byte	0x217
  3044 052a 83000000 		.4byte	0x83
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3049 0532 00       		.byte	0
  3050 0533 00       		.byte	0
  3051 0534 00       		.byte	0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 80
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 80
 
 
  3052 0535 18       		.uleb128 0x18
@@ -4749,7 +4749,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3057 0543 3F       		.byte	0x3f
  3058 0544 00       		.byte	0
  3059 0545 14       		.uleb128 0x14
- 3060 0546 55030000 		.4byte	.LASF71
+ 3060 0546 86030000 		.4byte	.LASF71
  3061 054a 01       		.byte	0x1
  3062 054b 7502     		.2byte	0x275
  3063 054d BF010000 		.4byte	0x1bf
@@ -4759,7 +4759,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3067 055a 9C       		.byte	0x9c
  3068 055b E2050000 		.4byte	0x5e2
  3069 055f 15       		.uleb128 0x15
- 3070 0560 1C050000 		.4byte	.LASF35
+ 3070 0560 11050000 		.4byte	.LASF35
  3071 0564 01       		.byte	0x1
  3072 0565 7502     		.2byte	0x275
  3073 0567 15020000 		.4byte	0x215
@@ -4775,7 +4775,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3083 057a 91       		.byte	0x91
  3084 057b 74       		.sleb128 -12
  3085 057c 13       		.uleb128 0x13
- 3086 057d 7B030000 		.4byte	.LASF51
+ 3086 057d AC030000 		.4byte	.LASF51
  3087 0581 01       		.byte	0x1
  3088 0582 7802     		.2byte	0x278
  3089 0584 83000000 		.4byte	0x83
@@ -4783,7 +4783,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3091 0589 91       		.byte	0x91
  3092 058a 6C       		.sleb128 -20
  3093 058b 13       		.uleb128 0x13
- 3094 058c 06060000 		.4byte	.LASF64
+ 3094 058c FB050000 		.4byte	.LASF64
  3095 0590 01       		.byte	0x1
  3096 0591 7902     		.2byte	0x279
  3097 0593 83000000 		.4byte	0x83
@@ -4791,14 +4791,14 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3099 0598 91       		.byte	0x91
  3100 0599 64       		.sleb128 -28
  3101 059a 13       		.uleb128 0x13
- 3102 059b C4020000 		.4byte	.LASF65
+ 3102 059b F5020000 		.4byte	.LASF65
  3103 059f 01       		.byte	0x1
  3104 05a0 7A02     		.2byte	0x27a
  3105 05a2 83000000 		.4byte	0x83
  3106 05a6 02       		.uleb128 0x2
  3107 05a7 91       		.byte	0x91
  3108 05a8 60       		.sleb128 -32
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 81
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 81
 
 
  3109 05a9 16       		.uleb128 0x16
@@ -4810,7 +4810,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3115 05b6 91       		.byte	0x91
  3116 05b7 73       		.sleb128 -13
  3117 05b8 13       		.uleb128 0x13
- 3118 05b9 C3040000 		.4byte	.LASF62
+ 3118 05b9 B8040000 		.4byte	.LASF62
  3119 05bd 01       		.byte	0x1
  3120 05be 7C02     		.2byte	0x27c
  3121 05c0 35050000 		.4byte	0x535
@@ -4841,7 +4841,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3146 05f7 9C       		.byte	0x9c
  3147 05f8 0C060000 		.4byte	0x60c
  3148 05fc 15       		.uleb128 0x15
- 3149 05fd 1C050000 		.4byte	.LASF35
+ 3149 05fd 11050000 		.4byte	.LASF35
  3150 0601 01       		.byte	0x1
  3151 0602 DC02     		.2byte	0x2dc
  3152 0604 15020000 		.4byte	0x215
@@ -4858,11 +4858,11 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3163 061c 01       		.uleb128 0x1
  3164 061d 9C       		.byte	0x9c
  3165 061e 7D060000 		.4byte	0x67d
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 82
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 82
 
 
  3166 0622 15       		.uleb128 0x15
- 3167 0623 A9010000 		.4byte	.LASF73
+ 3167 0623 DA010000 		.4byte	.LASF73
  3168 0627 01       		.byte	0x1
  3169 0628 F602     		.2byte	0x2f6
  3170 062a 7D060000 		.4byte	0x67d
@@ -4870,7 +4870,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3172 062f 91       		.byte	0x91
  3173 0630 64       		.sleb128 -28
  3174 0631 15       		.uleb128 0x15
- 3175 0632 1C050000 		.4byte	.LASF35
+ 3175 0632 11050000 		.4byte	.LASF35
  3176 0636 01       		.byte	0x1
  3177 0637 F602     		.2byte	0x2f6
  3178 0639 15020000 		.4byte	0x215
@@ -4878,7 +4878,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3180 063e 91       		.byte	0x91
  3181 063f 60       		.sleb128 -32
  3182 0640 13       		.uleb128 0x13
- 3183 0641 7B030000 		.4byte	.LASF51
+ 3183 0641 AC030000 		.4byte	.LASF51
  3184 0645 01       		.byte	0x1
  3185 0646 F802     		.2byte	0x2f8
  3186 0648 83000000 		.4byte	0x83
@@ -4886,7 +4886,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3188 064d 91       		.byte	0x91
  3189 064e 68       		.sleb128 -24
  3190 064f 13       		.uleb128 0x13
- 3191 0650 82040000 		.4byte	.LASF74
+ 3191 0650 77040000 		.4byte	.LASF74
  3192 0654 01       		.byte	0x1
  3193 0655 F902     		.2byte	0x2f9
  3194 0657 83000000 		.4byte	0x83
@@ -4894,7 +4894,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3196 065c 91       		.byte	0x91
  3197 065d 74       		.sleb128 -12
  3198 065e 13       		.uleb128 0x13
- 3199 065f EF010000 		.4byte	.LASF75
+ 3199 065f 20020000 		.4byte	.LASF75
  3200 0663 01       		.byte	0x1
  3201 0664 FA02     		.2byte	0x2fa
  3202 0666 83000000 		.4byte	0x83
@@ -4914,11 +4914,11 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3216 067e 04       		.byte	0x4
  3217 067f 83000000 		.4byte	0x83
  3218 0683 1C       		.uleb128 0x1c
- 3219 0684 8C050000 		.4byte	.LASF81
+ 3219 0684 81050000 		.4byte	.LASF81
  3220 0688 01       		.byte	0x1
  3221 0689 2203     		.2byte	0x322
  3222 068b 83000000 		.4byte	0x83
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 83
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 83
 
 
  3223 068f 00000000 		.4byte	.LFB6
@@ -4927,7 +4927,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3226 0698 9C       		.byte	0x9c
  3227 0699 CB060000 		.4byte	0x6cb
  3228 069d 15       		.uleb128 0x15
- 3229 069e 7B030000 		.4byte	.LASF51
+ 3229 069e AC030000 		.4byte	.LASF51
  3230 06a2 01       		.byte	0x1
  3231 06a3 2203     		.2byte	0x322
  3232 06a5 83000000 		.4byte	0x83
@@ -4935,7 +4935,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3234 06aa 91       		.byte	0x91
  3235 06ab 6C       		.sleb128 -20
  3236 06ac 15       		.uleb128 0x15
- 3237 06ad 1C050000 		.4byte	.LASF35
+ 3237 06ad 11050000 		.4byte	.LASF35
  3238 06b1 01       		.byte	0x1
  3239 06b2 2203     		.2byte	0x322
  3240 06b4 15020000 		.4byte	0x215
@@ -4952,7 +4952,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3251 06c9 74       		.sleb128 -12
  3252 06ca 00       		.byte	0
  3253 06cb 1B       		.uleb128 0x1b
- 3254 06cc 9A030000 		.4byte	.LASF78
+ 3254 06cc CB030000 		.4byte	.LASF78
  3255 06d0 01       		.byte	0x1
  3256 06d1 4F03     		.2byte	0x34f
  3257 06d3 00000000 		.4byte	.LFB7
@@ -4961,7 +4961,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3260 06dc 9C       		.byte	0x9c
  3261 06dd 1E070000 		.4byte	0x71e
  3262 06e1 15       		.uleb128 0x15
- 3263 06e2 7B030000 		.4byte	.LASF51
+ 3263 06e2 AC030000 		.4byte	.LASF51
  3264 06e6 01       		.byte	0x1
  3265 06e7 4F03     		.2byte	0x34f
  3266 06e9 83000000 		.4byte	0x83
@@ -4977,8 +4977,8 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3276 06fd 91       		.byte	0x91
  3277 06fe 70       		.sleb128 -16
  3278 06ff 15       		.uleb128 0x15
- 3279 0700 B9020000 		.4byte	.LASF80
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 84
+ 3279 0700 EA020000 		.4byte	.LASF80
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 84
 
 
  3280 0704 01       		.byte	0x1
@@ -4988,7 +4988,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3284 070c 91       		.byte	0x91
  3285 070d 6C       		.sleb128 -20
  3286 070e 15       		.uleb128 0x15
- 3287 070f 1C050000 		.4byte	.LASF35
+ 3287 070f 11050000 		.4byte	.LASF35
  3288 0713 01       		.byte	0x1
  3289 0714 5203     		.2byte	0x352
  3290 0716 15020000 		.4byte	0x215
@@ -4997,7 +4997,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3293 071c 68       		.sleb128 -24
  3294 071d 00       		.byte	0
  3295 071e 1C       		.uleb128 0x1c
- 3296 071f DD050000 		.4byte	.LASF82
+ 3296 071f D2050000 		.4byte	.LASF82
  3297 0723 01       		.byte	0x1
  3298 0724 9B03     		.2byte	0x39b
  3299 0726 6B000000 		.4byte	0x6b
@@ -5007,7 +5007,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3303 0733 9C       		.byte	0x9c
  3304 0734 82070000 		.4byte	0x782
  3305 0738 15       		.uleb128 0x15
- 3306 0739 F2050000 		.4byte	.LASF83
+ 3306 0739 E7050000 		.4byte	.LASF83
  3307 073d 01       		.byte	0x1
  3308 073e 9B03     		.2byte	0x39b
  3309 0740 82070000 		.4byte	0x782
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3334 076f 02       		.uleb128 0x2
  3335 0770 91       		.byte	0x91
  3336 0771 76       		.sleb128 -10
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 85
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 85
 
 
  3337 0772 16       		.uleb128 0x16
@@ -5054,7 +5054,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3347 0783 04       		.byte	0x4
  3348 0784 6B000000 		.4byte	0x6b
  3349 0788 1C       		.uleb128 0x1c
- 3350 0789 B9030000 		.4byte	.LASF84
+ 3350 0789 EA030000 		.4byte	.LASF84
  3351 078d 01       		.byte	0x1
  3352 078e BC03     		.2byte	0x3bc
  3353 0790 BF010000 		.4byte	0x1bf
@@ -5064,7 +5064,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3357 079d 9C       		.byte	0x9c
  3358 079e DF070000 		.4byte	0x7df
  3359 07a2 15       		.uleb128 0x15
- 3360 07a3 F0040000 		.4byte	.LASF34
+ 3360 07a3 E5040000 		.4byte	.LASF34
  3361 07a7 01       		.byte	0x1
  3362 07a8 BC03     		.2byte	0x3bc
  3363 07aa 0F020000 		.4byte	0x20f
@@ -5080,7 +5080,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3373 07be 91       		.byte	0x91
  3374 07bf 77       		.sleb128 -9
  3375 07c0 13       		.uleb128 0x13
- 3376 07c1 06050000 		.4byte	.LASF55
+ 3376 07c1 FB040000 		.4byte	.LASF55
  3377 07c5 01       		.byte	0x1
  3378 07c6 BF03     		.2byte	0x3bf
  3379 07c8 83000000 		.4byte	0x83
@@ -5088,7 +5088,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3381 07cd 91       		.byte	0x91
  3382 07ce 70       		.sleb128 -16
  3383 07cf 13       		.uleb128 0x13
- 3384 07d0 D8030000 		.4byte	.LASF56
+ 3384 07d0 09040000 		.4byte	.LASF56
  3385 07d4 01       		.byte	0x1
  3386 07d5 C003     		.2byte	0x3c0
  3387 07d7 83000000 		.4byte	0x83
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3391 07de 00       		.byte	0
  3392 07df 1E       		.uleb128 0x1e
  3393 07e0 35010000 		.4byte	.LASF85
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 86
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 86
 
 
  3394 07e4 01       		.byte	0x1
@@ -5110,7 +5110,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3400 07f4 9C       		.byte	0x9c
  3401 07f5 62080000 		.4byte	0x862
  3402 07f9 15       		.uleb128 0x15
- 3403 07fa 70040000 		.4byte	.LASF86
+ 3403 07fa 65040000 		.4byte	.LASF86
  3404 07fe 01       		.byte	0x1
  3405 07ff DF03     		.2byte	0x3df
  3406 0801 83000000 		.4byte	0x83
@@ -5118,7 +5118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3408 0806 91       		.byte	0x91
  3409 0807 64       		.sleb128 -28
  3410 0808 15       		.uleb128 0x15
- 3411 0809 F2050000 		.4byte	.LASF83
+ 3411 0809 E7050000 		.4byte	.LASF83
  3412 080d 01       		.byte	0x1
  3413 080e E003     		.2byte	0x3e0
  3414 0810 7D060000 		.4byte	0x67d
@@ -5126,7 +5126,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3416 0815 91       		.byte	0x91
  3417 0816 60       		.sleb128 -32
  3418 0817 15       		.uleb128 0x15
- 3419 0818 1C050000 		.4byte	.LASF35
+ 3419 0818 11050000 		.4byte	.LASF35
  3420 081c 01       		.byte	0x1
  3421 081d E103     		.2byte	0x3e1
  3422 081f 15020000 		.4byte	0x215
@@ -5150,7 +5150,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3440 0841 91       		.byte	0x91
  3441 0842 68       		.sleb128 -24
  3442 0843 13       		.uleb128 0x13
- 3443 0844 00030000 		.4byte	.LASF87
+ 3443 0844 31030000 		.4byte	.LASF87
  3444 0848 01       		.byte	0x1
  3445 0849 E603     		.2byte	0x3e6
  3446 084b 83000000 		.4byte	0x83
@@ -5158,10 +5158,10 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3448 0850 91       		.byte	0x91
  3449 0851 70       		.sleb128 -16
  3450 0852 13       		.uleb128 0x13
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 87
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 87
 
 
- 3451 0853 EA050000 		.4byte	.LASF88
+ 3451 0853 DF050000 		.4byte	.LASF88
  3452 0857 01       		.byte	0x1
  3453 0858 E803     		.2byte	0x3e8
  3454 085a 83000000 		.4byte	0x83
@@ -5170,7 +5170,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3457 0860 6C       		.sleb128 -20
  3458 0861 00       		.byte	0
  3459 0862 1E       		.uleb128 0x1e
- 3460 0863 06030000 		.4byte	.LASF89
+ 3460 0863 37030000 		.4byte	.LASF89
  3461 0867 01       		.byte	0x1
  3462 0868 4504     		.2byte	0x445
  3463 086a BF010000 		.4byte	0x1bf
@@ -5180,7 +5180,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3467 0877 9C       		.byte	0x9c
  3468 0878 C8080000 		.4byte	0x8c8
  3469 087c 15       		.uleb128 0x15
- 3470 087d 70040000 		.4byte	.LASF86
+ 3470 087d 65040000 		.4byte	.LASF86
  3471 0881 01       		.byte	0x1
  3472 0882 4504     		.2byte	0x445
  3473 0884 83000000 		.4byte	0x83
@@ -5188,7 +5188,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3475 0889 91       		.byte	0x91
  3476 088a 6C       		.sleb128 -20
  3477 088b 15       		.uleb128 0x15
- 3478 088c 0B020000 		.4byte	.LASF90
+ 3478 088c 3C020000 		.4byte	.LASF90
  3479 0890 01       		.byte	0x1
  3480 0891 4604     		.2byte	0x446
  3481 0893 83000000 		.4byte	0x83
@@ -5196,7 +5196,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3483 0898 91       		.byte	0x91
  3484 0899 68       		.sleb128 -24
  3485 089a 15       		.uleb128 0x15
- 3486 089b 1C050000 		.4byte	.LASF35
+ 3486 089b 11050000 		.4byte	.LASF35
  3487 089f 01       		.byte	0x1
  3488 08a0 4704     		.2byte	0x447
  3489 08a2 15020000 		.4byte	0x215
@@ -5204,7 +5204,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3491 08a7 91       		.byte	0x91
  3492 08a8 64       		.sleb128 -28
  3493 08a9 13       		.uleb128 0x13
- 3494 08aa 06060000 		.4byte	.LASF64
+ 3494 08aa FB050000 		.4byte	.LASF64
  3495 08ae 01       		.byte	0x1
  3496 08af 4904     		.2byte	0x449
  3497 08b1 83000000 		.4byte	0x83
@@ -5218,13 +5218,13 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3505 08c0 BF010000 		.4byte	0x1bf
  3506 08c4 02       		.uleb128 0x2
  3507 08c5 91       		.byte	0x91
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 88
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 88
 
 
  3508 08c6 77       		.sleb128 -9
  3509 08c7 00       		.byte	0
  3510 08c8 1E       		.uleb128 0x1e
- 3511 08c9 75020000 		.4byte	.LASF91
+ 3511 08c9 A6020000 		.4byte	.LASF91
  3512 08cd 01       		.byte	0x1
  3513 08ce B904     		.2byte	0x4b9
  3514 08d0 BF010000 		.4byte	0x1bf
@@ -5234,7 +5234,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3518 08dd 9C       		.byte	0x9c
  3519 08de 60090000 		.4byte	0x960
  3520 08e2 15       		.uleb128 0x15
- 3521 08e3 06050000 		.4byte	.LASF55
+ 3521 08e3 FB040000 		.4byte	.LASF55
  3522 08e7 01       		.byte	0x1
  3523 08e8 B904     		.2byte	0x4b9
  3524 08ea 83000000 		.4byte	0x83
@@ -5250,7 +5250,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3534 08ff 91       		.byte	0x91
  3535 0900 E07D     		.sleb128 -288
  3536 0902 15       		.uleb128 0x15
- 3537 0903 D2040000 		.4byte	.LASF93
+ 3537 0903 C7040000 		.4byte	.LASF93
  3538 0907 01       		.byte	0x1
  3539 0908 BB04     		.2byte	0x4bb
  3540 090a 83000000 		.4byte	0x83
@@ -5258,7 +5258,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3542 090f 91       		.byte	0x91
  3543 0910 DC7D     		.sleb128 -292
  3544 0912 15       		.uleb128 0x15
- 3545 0913 3B020000 		.4byte	.LASF94
+ 3545 0913 6C020000 		.4byte	.LASF94
  3546 0917 01       		.byte	0x1
  3547 0918 BC04     		.2byte	0x4bc
  3548 091a 83000000 		.4byte	0x83
@@ -5266,7 +5266,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3550 091f 91       		.byte	0x91
  3551 0920 D87D     		.sleb128 -296
  3552 0922 15       		.uleb128 0x15
- 3553 0923 1C050000 		.4byte	.LASF35
+ 3553 0923 11050000 		.4byte	.LASF35
  3554 0927 01       		.byte	0x1
  3555 0928 BD04     		.2byte	0x4bd
  3556 092a 15020000 		.4byte	0x215
@@ -5278,14 +5278,14 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3562 0936 01       		.byte	0x1
  3563 0937 BF04     		.2byte	0x4bf
  3564 0939 BF010000 		.4byte	0x1bf
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 89
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 89
 
 
  3565 093d 02       		.uleb128 0x2
  3566 093e 91       		.byte	0x91
  3567 093f 6F       		.sleb128 -17
  3568 0940 13       		.uleb128 0x13
- 3569 0941 C3040000 		.4byte	.LASF62
+ 3569 0941 B8040000 		.4byte	.LASF62
  3570 0945 01       		.byte	0x1
  3571 0946 C004     		.2byte	0x4c0
  3572 0948 35050000 		.4byte	0x535
@@ -5293,7 +5293,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3574 094d 91       		.byte	0x91
  3575 094e E87D     		.sleb128 -280
  3576 0950 13       		.uleb128 0x13
- 3577 0951 DC040000 		.4byte	.LASF95
+ 3577 0951 D1040000 		.4byte	.LASF95
  3578 0955 01       		.byte	0x1
  3579 0956 C304     		.2byte	0x4c3
  3580 0958 83000000 		.4byte	0x83
@@ -5302,7 +5302,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3583 095e 68       		.sleb128 -24
  3584 095f 00       		.byte	0
  3585 0960 1C       		.uleb128 0x1c
- 3586 0961 56020000 		.4byte	.LASF96
+ 3586 0961 87020000 		.4byte	.LASF96
  3587 0965 01       		.byte	0x1
  3588 0966 0D05     		.2byte	0x50d
  3589 0968 83000000 		.4byte	0x83
@@ -5312,7 +5312,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3593 0975 9C       		.byte	0x9c
  3594 0976 E4090000 		.4byte	0x9e4
  3595 097a 15       		.uleb128 0x15
- 3596 097b 06050000 		.4byte	.LASF55
+ 3596 097b FB040000 		.4byte	.LASF55
  3597 097f 01       		.byte	0x1
  3598 0980 0D05     		.2byte	0x50d
  3599 0982 7D060000 		.4byte	0x67d
@@ -5320,7 +5320,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3601 0987 91       		.byte	0x91
  3602 0988 6C       		.sleb128 -20
  3603 0989 15       		.uleb128 0x15
- 3604 098a D8030000 		.4byte	.LASF56
+ 3604 098a 09040000 		.4byte	.LASF56
  3605 098e 01       		.byte	0x1
  3606 098f 0E05     		.2byte	0x50e
  3607 0991 7D060000 		.4byte	0x67d
@@ -5328,7 +5328,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3609 0996 91       		.byte	0x91
  3610 0997 68       		.sleb128 -24
  3611 0998 15       		.uleb128 0x15
- 3612 0999 15050000 		.4byte	.LASF97
+ 3612 0999 0A050000 		.4byte	.LASF97
  3613 099d 01       		.byte	0x1
  3614 099e 0F05     		.2byte	0x50f
  3615 09a0 7D060000 		.4byte	0x67d
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3619 09a7 15       		.uleb128 0x15
  3620 09a8 48000000 		.4byte	.LASF98
  3621 09ac 01       		.byte	0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 90
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 90
 
 
  3622 09ad 1005     		.2byte	0x510
@@ -5363,7 +5363,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3641 09d2 91       		.byte	0x91
  3642 09d3 04       		.sleb128 4
  3643 09d4 13       		.uleb128 0x13
- 3644 09d5 10050000 		.4byte	.LASF99
+ 3644 09d5 05050000 		.4byte	.LASF99
  3645 09d9 01       		.byte	0x1
  3646 09da 1405     		.2byte	0x514
  3647 09dc 83000000 		.4byte	0x83
@@ -5372,7 +5372,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3650 09e2 74       		.sleb128 -12
  3651 09e3 00       		.byte	0
  3652 09e4 1F       		.uleb128 0x1f
- 3653 09e5 AC030000 		.4byte	.LASF100
+ 3653 09e5 DD030000 		.4byte	.LASF100
  3654 09e9 01       		.byte	0x1
  3655 09ea 5405     		.2byte	0x554
  3656 09ec BF010000 		.4byte	0x1bf
@@ -5381,7 +5381,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3659 09f8 01       		.uleb128 0x1
  3660 09f9 9C       		.byte	0x9c
  3661 09fa 15       		.uleb128 0x15
- 3662 09fb 1C050000 		.4byte	.LASF35
+ 3662 09fb 11050000 		.4byte	.LASF35
  3663 09ff 01       		.byte	0x1
  3664 0a00 5405     		.2byte	0x554
  3665 0a02 15020000 		.4byte	0x215
@@ -5397,8 +5397,8 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3675 0a15 91       		.byte	0x91
  3676 0a16 74       		.sleb128 -12
  3677 0a17 13       		.uleb128 0x13
- 3678 0a18 7B050000 		.4byte	.LASF49
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 91
+ 3678 0a18 70050000 		.4byte	.LASF49
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 91
 
 
  3679 0a1c 01       		.byte	0x1
@@ -5408,7 +5408,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3683 0a24 91       		.byte	0x91
  3684 0a25 64       		.sleb128 -28
  3685 0a26 13       		.uleb128 0x13
- 3686 0a27 C3040000 		.4byte	.LASF62
+ 3686 0a27 B8040000 		.4byte	.LASF62
  3687 0a2b 01       		.byte	0x1
  3688 0a2c 5805     		.2byte	0x558
  3689 0a2e 35050000 		.4byte	0x535
@@ -5416,7 +5416,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3691 0a33 91       		.byte	0x91
  3692 0a34 E47D     		.sleb128 -284
  3693 0a36 13       		.uleb128 0x13
- 3694 0a37 C5030000 		.4byte	.LASF101
+ 3694 0a37 F6030000 		.4byte	.LASF101
  3695 0a3b 01       		.byte	0x1
  3696 0a3c 5905     		.2byte	0x559
  3697 0a3e 83000000 		.4byte	0x83
@@ -5424,7 +5424,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3699 0a43 91       		.byte	0x91
  3700 0a44 E07D     		.sleb128 -288
  3701 0a46 13       		.uleb128 0x13
- 3702 0a47 32050000 		.4byte	.LASF63
+ 3702 0a47 27050000 		.4byte	.LASF63
  3703 0a4b 01       		.byte	0x1
  3704 0a4c 5A05     		.2byte	0x55a
  3705 0a4e 83000000 		.4byte	0x83
@@ -5432,7 +5432,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3707 0a53 91       		.byte	0x91
  3708 0a54 68       		.sleb128 -24
  3709 0a55 13       		.uleb128 0x13
- 3710 0a56 7B030000 		.4byte	.LASF51
+ 3710 0a56 AC030000 		.4byte	.LASF51
  3711 0a5a 01       		.byte	0x1
  3712 0a5b 5C05     		.2byte	0x55c
  3713 0a5d 83000000 		.4byte	0x83
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3733 0004 0E       		.uleb128 0xe
  3734 0005 13       		.uleb128 0x13
  3735 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 92
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 92
 
 
  3736 0007 03       		.uleb128 0x3
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3790 003d 06       		.uleb128 0x6
  3791 003e 13       		.uleb128 0x13
  3792 003f 01       		.byte	0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 93
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 93
 
 
  3793 0040 0B       		.uleb128 0xb
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3847 0076 04       		.uleb128 0x4
  3848 0077 01       		.byte	0x1
  3849 0078 0B       		.uleb128 0xb
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 94
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 94
 
 
  3850 0079 0B       		.uleb128 0xb
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3904 00b0 3B       		.uleb128 0x3b
  3905 00b1 0B       		.uleb128 0xb
  3906 00b2 49       		.uleb128 0x49
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 95
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 95
 
 
  3907 00b3 13       		.uleb128 0x13
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  3961 00e9 0B       		.uleb128 0xb
  3962 00ea 01       		.byte	0x1
  3963 00eb 11       		.uleb128 0x11
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 96
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 96
 
 
  3964 00ec 01       		.uleb128 0x1
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4018 0123 3A       		.uleb128 0x3a
  4019 0124 0B       		.uleb128 0xb
  4020 0125 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 97
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 97
 
 
  4021 0126 05       		.uleb128 0x5
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4075 015c 3A       		.uleb128 0x3a
  4076 015d 0B       		.uleb128 0xb
  4077 015e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 98
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 98
 
 
  4078 015f 05       		.uleb128 0x5
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4132 0197 01       		.uleb128 0x1
  4133 0198 12       		.uleb128 0x12
  4134 0199 06       		.uleb128 0x6
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 99
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 99
 
 
  4135 019a 40       		.uleb128 0x40
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4189 01d2 0B       		.uleb128 0xb
  4190 01d3 3B       		.uleb128 0x3b
  4191 01d4 05       		.uleb128 0x5
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 100
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 100
 
 
  4192 01d5 27       		.uleb128 0x27
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4246 008c 00000000 		.4byte	0
  4247              		.section	.debug_ranges,"",%progbits
  4248              	.Ldebug_ranges0:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 101
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 101
 
 
  4249 0000 98000000 		.4byte	.LBB7
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4295      61746100 
  4296              	.LASF33:
  4297 001a 63795F65 		.ascii	"cy_en_em_eeprom_status_t\000"
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 102
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 102
 
 
  4297      6E5F656D 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4319 011b 6C6F6E67 		.ascii	"long long int\000"
  4319      206C6F6E 
  4319      6720696E 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 103
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 103
 
 
  4319      7400
@@ -6158,410 +6158,407 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 1
  4333      68537461 
  4333      72744164 
  4333      647200
- 4334              	.LASF9:
- 4335 019c 75696E74 		.ascii	"uint8\000"
- 4335      3800
- 4336              	.LASF13:
- 4337 01a2 646F7562 		.ascii	"double\000"
- 4337      6C6500
- 4338              	.LASF73:
- 4339 01a9 6C617374 		.ascii	"lastWrRowPtr\000"
- 4339      5772526F 
- 4339      77507472 
- 4339      00
- 4340              	.LASF11:
- 4341 01b6 75696E74 		.ascii	"uint32\000"
- 4341      333200
- 4342              	.LASF45:
- 4343 01bd 61637445 		.ascii	"actEepromRowNum\000"
- 4343      6570726F 
- 4343      6D526F77 
- 4343      4E756D00 
- 4344              	.LASF68:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 104
+ 4334              	.LASF104:
+ 4335 019c 433A5C47 		.ascii	"C:\\Git\\CyScope\\ScopeFreeSoC2\\ScopeFreeSoC2.cyds"
+ 4335      69745C43 
+ 4335      7953636F 
+ 4335      70655C53 
+ 4335      636F7065 
+ 4336 01cb 6E00     		.ascii	"n\000"
+ 4337              	.LASF9:
+ 4338 01cd 75696E74 		.ascii	"uint8\000"
+ 4338      3800
+ 4339              	.LASF13:
+ 4340 01d3 646F7562 		.ascii	"double\000"
+ 4340      6C6500
+ 4341              	.LASF73:
+ 4342 01da 6C617374 		.ascii	"lastWrRowPtr\000"
+ 4342      5772526F 
+ 4342      77507472 
+ 4342      00
+ 4343              	.LASF11:
+ 4344 01e7 75696E74 		.ascii	"uint32\000"
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 104
 
 
- 4345 01cd 65654865 		.ascii	"eeHeaderDataOffset\000"
- 4345      61646572 
- 4345      44617461 
- 4345      4F666673 
- 4345      657400
- 4346              	.LASF52:
- 4347 01e0 75706461 		.ascii	"updateAddrFlag\000"
- 4347      74654164 
- 4347      6472466C 
- 4347      616700
- 4348              	.LASF75:
- 4349 01ef 6E756D52 		.ascii	"numRows\000"
- 4349      6F777300 
- 4350              	.LASF54:
- 4351 01f7 64617461 		.ascii	"dataEndEepromRowNum\000"
- 4351      456E6445 
- 4351      6570726F 
- 4351      6D526F77 
- 4351      4E756D00 
- 4352              	.LASF90:
- 4353 020b 72616D42 		.ascii	"ramBuffAddr\000"
- 4353      75666641 
- 4353      64647200 
- 4354              	.LASF20:
- 4355 0217 72656475 		.ascii	"redundantCopy\000"
- 4355      6E64616E 
- 4355      74436F70 
- 4355      7900
- 4356              	.LASF70:
- 4357 0225 64617461 		.ascii	"dataAddr\000"
- 4357      41646472 
- 4357      00
- 4358              	.LASF8:
- 4359 022e 756E7369 		.ascii	"unsigned int\000"
- 4359      676E6564 
- 4359      20696E74 
- 4359      00
- 4360              	.LASF94:
- 4361 023b 6E756D42 		.ascii	"numBytes\000"
- 4361      79746573 
- 4361      00
- 4362              	.LASF5:
- 4363 0244 6C6F6E67 		.ascii	"long unsigned int\000"
- 4363      20756E73 
- 4363      69676E65 
- 4363      6420696E 
- 4363      7400
- 4364              	.LASF96:
- 4365 0256 47657441 		.ascii	"GetAddresses\000"
- 4365      64647265 
- 4365      73736573 
- 4365      00
- 4366              	.LASF37:
- 4367 0263 43795F45 		.ascii	"Cy_Em_EEPROM_Read\000"
- 4367      6D5F4545 
- 4367      50524F4D 
- 4367      5F526561 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 105
+ 4344      333200
+ 4345              	.LASF45:
+ 4346 01ee 61637445 		.ascii	"actEepromRowNum\000"
+ 4346      6570726F 
+ 4346      6D526F77 
+ 4346      4E756D00 
+ 4347              	.LASF68:
+ 4348 01fe 65654865 		.ascii	"eeHeaderDataOffset\000"
+ 4348      61646572 
+ 4348      44617461 
+ 4348      4F666673 
+ 4348      657400
+ 4349              	.LASF52:
+ 4350 0211 75706461 		.ascii	"updateAddrFlag\000"
+ 4350      74654164 
+ 4350      6472466C 
+ 4350      616700
+ 4351              	.LASF75:
+ 4352 0220 6E756D52 		.ascii	"numRows\000"
+ 4352      6F777300 
+ 4353              	.LASF54:
+ 4354 0228 64617461 		.ascii	"dataEndEepromRowNum\000"
+ 4354      456E6445 
+ 4354      6570726F 
+ 4354      6D526F77 
+ 4354      4E756D00 
+ 4355              	.LASF90:
+ 4356 023c 72616D42 		.ascii	"ramBuffAddr\000"
+ 4356      75666641 
+ 4356      64647200 
+ 4357              	.LASF20:
+ 4358 0248 72656475 		.ascii	"redundantCopy\000"
+ 4358      6E64616E 
+ 4358      74436F70 
+ 4358      7900
+ 4359              	.LASF70:
+ 4360 0256 64617461 		.ascii	"dataAddr\000"
+ 4360      41646472 
+ 4360      00
+ 4361              	.LASF8:
+ 4362 025f 756E7369 		.ascii	"unsigned int\000"
+ 4362      676E6564 
+ 4362      20696E74 
+ 4362      00
+ 4363              	.LASF94:
+ 4364 026c 6E756D42 		.ascii	"numBytes\000"
+ 4364      79746573 
+ 4364      00
+ 4365              	.LASF5:
+ 4366 0275 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4366      20756E73 
+ 4366      69676E65 
+ 4366      6420696E 
+ 4366      7400
+ 4367              	.LASF96:
+ 4368 0287 47657441 		.ascii	"GetAddresses\000"
+ 4368      64647265 
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 105
 
 
- 4367      6400
- 4368              	.LASF91:
- 4369 0275 43686563 		.ascii	"CheckCrcAndCopy\000"
- 4369      6B437263 
- 4369      416E6443 
- 4369      6F707900 
- 4370              	.LASF57:
- 4371 0285 7372634F 		.ascii	"srcOffset\000"
- 4371      66667365 
- 4371      7400
- 4372              	.LASF40:
- 4373 028f 73697A65 		.ascii	"size\000"
- 4373      00
- 4374              	.LASF3:
- 4375 0294 73686F72 		.ascii	"short unsigned int\000"
- 4375      7420756E 
- 4375      7369676E 
- 4375      65642069 
- 4375      6E7400
- 4376              	.LASF61:
- 4377 02a7 61637445 		.ascii	"actEmEepromRowNum\000"
- 4377      6D456570 
- 4377      726F6D52 
- 4377      6F774E75 
- 4377      6D00
- 4378              	.LASF80:
- 4379 02b9 726F7754 		.ascii	"rowToRdPtr\000"
- 4379      6F526450 
- 4379      747200
- 4380              	.LASF65:
- 4381 02c4 656D4565 		.ascii	"emEepromRowRdAddr\000"
- 4381      70726F6D 
- 4381      526F7752 
- 4381      64416464 
- 4381      7200
- 4382              	.LASF39:
- 4383 02d6 65657072 		.ascii	"eepromData\000"
- 4383      6F6D4461 
- 4383      746100
- 4384              	.LASF44:
- 4385 02e1 73746172 		.ascii	"startRowAddr\000"
- 4385      74526F77 
- 4385      41646472 
- 4385      00
- 4386              	.LASF42:
- 4387 02ee 63757245 		.ascii	"curEepromBaseAddr\000"
- 4387      6570726F 
- 4387      6D426173 
- 4387      65416464 
- 4387      7200
- 4388              	.LASF87:
- 4389 0300 726F7749 		.ascii	"rowId\000"
- 4389      6400
- 4390              	.LASF89:
- 4391 0306 45726173 		.ascii	"EraseRow\000"
- 4391      65526F77 
- 4391      00
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 106
+ 4368      73736573 
+ 4368      00
+ 4369              	.LASF37:
+ 4370 0294 43795F45 		.ascii	"Cy_Em_EEPROM_Read\000"
+ 4370      6D5F4545 
+ 4370      50524F4D 
+ 4370      5F526561 
+ 4370      6400
+ 4371              	.LASF91:
+ 4372 02a6 43686563 		.ascii	"CheckCrcAndCopy\000"
+ 4372      6B437263 
+ 4372      416E6443 
+ 4372      6F707900 
+ 4373              	.LASF57:
+ 4374 02b6 7372634F 		.ascii	"srcOffset\000"
+ 4374      66667365 
+ 4374      7400
+ 4375              	.LASF40:
+ 4376 02c0 73697A65 		.ascii	"size\000"
+ 4376      00
+ 4377              	.LASF3:
+ 4378 02c5 73686F72 		.ascii	"short unsigned int\000"
+ 4378      7420756E 
+ 4378      7369676E 
+ 4378      65642069 
+ 4378      6E7400
+ 4379              	.LASF61:
+ 4380 02d8 61637445 		.ascii	"actEmEepromRowNum\000"
+ 4380      6D456570 
+ 4380      726F6D52 
+ 4380      6F774E75 
+ 4380      6D00
+ 4381              	.LASF80:
+ 4382 02ea 726F7754 		.ascii	"rowToRdPtr\000"
+ 4382      6F526450 
+ 4382      747200
+ 4383              	.LASF65:
+ 4384 02f5 656D4565 		.ascii	"emEepromRowRdAddr\000"
+ 4384      70726F6D 
+ 4384      526F7752 
+ 4384      64416464 
+ 4384      7200
+ 4385              	.LASF39:
+ 4386 0307 65657072 		.ascii	"eepromData\000"
+ 4386      6F6D4461 
+ 4386      746100
+ 4387              	.LASF44:
+ 4388 0312 73746172 		.ascii	"startRowAddr\000"
+ 4388      74526F77 
+ 4388      41646472 
+ 4388      00
+ 4389              	.LASF42:
+ 4390 031f 63757245 		.ascii	"curEepromBaseAddr\000"
+ 4390      6570726F 
+ 4390      6D426173 
+ 4390      65416464 
+ 4390      7200
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 106
 
 
- 4392              	.LASF29:
- 4393 030f 43595F45 		.ascii	"CY_EM_EEPROM_BAD_PARAM\000"
- 4393      4D5F4545 
- 4393      50524F4D 
- 4393      5F424144 
- 4393      5F504152 
- 4394              	.LASF30:
- 4395 0326 43595F45 		.ascii	"CY_EM_EEPROM_BAD_CHECKSUM\000"
- 4395      4D5F4545 
- 4395      50524F4D 
- 4395      5F424144 
- 4395      5F434845 
- 4396              	.LASF17:
- 4397 0340 73697A65 		.ascii	"sizetype\000"
- 4397      74797065 
- 4397      00
- 4398              	.LASF16:
- 4399 0349 6C6F6E67 		.ascii	"long double\000"
- 4399      20646F75 
- 4399      626C6500 
- 4400              	.LASF71:
- 4401 0355 43795F45 		.ascii	"Cy_Em_EEPROM_Erase\000"
- 4401      6D5F4545 
- 4401      50524F4D 
- 4401      5F457261 
- 4401      736500
- 4402              	.LASF59:
- 4403 0368 43795F45 		.ascii	"Cy_Em_EEPROM_Write\000"
- 4403      6D5F4545 
- 4403      50524F4D 
- 4403      5F577269 
- 4403      746500
- 4404              	.LASF51:
- 4405 037b 7365714E 		.ascii	"seqNum\000"
- 4405      756D00
- 4406              	.LASF27:
- 4407 0382 63795F73 		.ascii	"cy_stc_eeprom_context_t\000"
- 4407      74635F65 
- 4407      6570726F 
- 4407      6D5F636F 
- 4407      6E746578 
- 4408              	.LASF78:
- 4409 039a 4765744E 		.ascii	"GetNextRowToWrite\000"
- 4409      65787452 
- 4409      6F77546F 
- 4409      57726974 
- 4409      6500
- 4410              	.LASF100:
- 4411 03ac 46696C6C 		.ascii	"FillChecksum\000"
- 4411      43686563 
- 4411      6B73756D 
- 4411      00
- 4412              	.LASF84:
- 4413 03b9 43686563 		.ascii	"CheckRanges\000"
- 4413      6B52616E 
- 4413      67657300 
- 4414              	.LASF101:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 107
+ 4391              	.LASF87:
+ 4392 0331 726F7749 		.ascii	"rowId\000"
+ 4392      6400
+ 4393              	.LASF89:
+ 4394 0337 45726173 		.ascii	"EraseRow\000"
+ 4394      65526F77 
+ 4394      00
+ 4395              	.LASF29:
+ 4396 0340 43595F45 		.ascii	"CY_EM_EEPROM_BAD_PARAM\000"
+ 4396      4D5F4545 
+ 4396      50524F4D 
+ 4396      5F424144 
+ 4396      5F504152 
+ 4397              	.LASF30:
+ 4398 0357 43595F45 		.ascii	"CY_EM_EEPROM_BAD_CHECKSUM\000"
+ 4398      4D5F4545 
+ 4398      50524F4D 
+ 4398      5F424144 
+ 4398      5F434845 
+ 4399              	.LASF17:
+ 4400 0371 73697A65 		.ascii	"sizetype\000"
+ 4400      74797065 
+ 4400      00
+ 4401              	.LASF16:
+ 4402 037a 6C6F6E67 		.ascii	"long double\000"
+ 4402      20646F75 
+ 4402      626C6500 
+ 4403              	.LASF71:
+ 4404 0386 43795F45 		.ascii	"Cy_Em_EEPROM_Erase\000"
+ 4404      6D5F4545 
+ 4404      50524F4D 
+ 4404      5F457261 
+ 4404      736500
+ 4405              	.LASF59:
+ 4406 0399 43795F45 		.ascii	"Cy_Em_EEPROM_Write\000"
+ 4406      6D5F4545 
+ 4406      50524F4D 
+ 4406      5F577269 
+ 4406      746500
+ 4407              	.LASF51:
+ 4408 03ac 7365714E 		.ascii	"seqNum\000"
+ 4408      756D00
+ 4409              	.LASF27:
+ 4410 03b3 63795F73 		.ascii	"cy_stc_eeprom_context_t\000"
+ 4410      74635F65 
+ 4410      6570726F 
+ 4410      6D5F636F 
+ 4410      6E746578 
+ 4411              	.LASF78:
+ 4412 03cb 4765744E 		.ascii	"GetNextRowToWrite\000"
+ 4412      65787452 
+ 4412      6F77546F 
+ 4412      57726974 
+ 4412      6500
+ 4413              	.LASF100:
+ 4414 03dd 46696C6C 		.ascii	"FillChecksum\000"
+ 4414      43686563 
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 107
 
 
- 4415 03c5 77724164 		.ascii	"wrAddr\000"
- 4415      647200
- 4416              	.LASF60:
- 4417 03cc 7772436E 		.ascii	"wrCnt\000"
- 4417      7400
- 4418              	.LASF12:
- 4419 03d2 666C6F61 		.ascii	"float\000"
- 4419      7400
- 4420              	.LASF56:
- 4421 03d8 656E6441 		.ascii	"endAddr\000"
- 4421      64647200 
- 4422              	.LASF31:
- 4423 03e0 43595F45 		.ascii	"CY_EM_EEPROM_BAD_DATA\000"
- 4423      4D5F4545 
- 4423      50524F4D 
- 4423      5F424144 
- 4423      5F444154 
- 4424              	.LASF24:
- 4425 03f6 776C456E 		.ascii	"wlEndAddr\000"
- 4425      64416464 
- 4425      7200
- 4426              	.LASF103:
- 4427 0400 47656E65 		.ascii	"Generated_Source\\PSoC5\\cy_em_eeprom.c\000"
- 4427      72617465 
- 4427      645F536F 
- 4427      75726365 
- 4427      5C50536F 
- 4428              	.LASF104:
- 4429 0426 433A5C43 		.ascii	"C:\\Cypress\\CyScope-master\\ScopeFreeSoC2\\ScopeFr"
- 4429      79707265 
- 4429      73735C43 
- 4429      7953636F 
- 4429      70652D6D 
- 4430 0455 6565536F 		.ascii	"eeSoC2.cydsn\000"
- 4430      43322E63 
- 4430      7964736E 
- 4430      00
+ 4414      6B73756D 
+ 4414      00
+ 4415              	.LASF84:
+ 4416 03ea 43686563 		.ascii	"CheckRanges\000"
+ 4416      6B52616E 
+ 4416      67657300 
+ 4417              	.LASF101:
+ 4418 03f6 77724164 		.ascii	"wrAddr\000"
+ 4418      647200
+ 4419              	.LASF60:
+ 4420 03fd 7772436E 		.ascii	"wrCnt\000"
+ 4420      7400
+ 4421              	.LASF12:
+ 4422 0403 666C6F61 		.ascii	"float\000"
+ 4422      7400
+ 4423              	.LASF56:
+ 4424 0409 656E6441 		.ascii	"endAddr\000"
+ 4424      64647200 
+ 4425              	.LASF31:
+ 4426 0411 43595F45 		.ascii	"CY_EM_EEPROM_BAD_DATA\000"
+ 4426      4D5F4545 
+ 4426      50524F4D 
+ 4426      5F424144 
+ 4426      5F444154 
+ 4427              	.LASF24:
+ 4428 0427 776C456E 		.ascii	"wlEndAddr\000"
+ 4428      64416464 
+ 4428      7200
+ 4429              	.LASF103:
+ 4430 0431 47656E65 		.ascii	"Generated_Source\\PSoC5\\cy_em_eeprom.c\000"
+ 4430      72617465 
+ 4430      645F536F 
+ 4430      75726365 
+ 4430      5C50536F 
  4431              	.LASF1:
- 4432 0462 756E7369 		.ascii	"unsigned char\000"
+ 4432 0457 756E7369 		.ascii	"unsigned char\000"
  4432      676E6564 
  4432      20636861 
  4432      7200
  4433              	.LASF86:
- 4434 0470 726F7741 		.ascii	"rowAddr\000"
+ 4434 0465 726F7741 		.ascii	"rowAddr\000"
  4434      64647200 
  4435              	.LASF2:
- 4436 0478 73686F72 		.ascii	"short int\000"
+ 4436 046d 73686F72 		.ascii	"short int\000"
  4436      7420696E 
  4436      7400
  4437              	.LASF74:
- 4438 0482 70726576 		.ascii	"prevSeqNum\000"
+ 4438 0477 70726576 		.ascii	"prevSeqNum\000"
  4438      5365714E 
  4438      756D00
  4439              	.LASF69:
- 4440 048d 736B6970 		.ascii	"skipOperation\000"
+ 4440 0482 736B6970 		.ascii	"skipOperation\000"
  4440      4F706572 
  4440      6174696F 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 108
-
-
  4440      6E00
  4441              	.LASF47:
- 4442 049b 64617461 		.ascii	"dataStartEepromRowNum\000"
+ 4442 0490 64617461 		.ascii	"dataStartEepromRowNum\000"
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 108
+
+
  4442      53746172 
  4442      74456570 
  4442      726F6D52 
  4442      6F774E75 
  4443              	.LASF36:
- 4444 04b1 43795F45 		.ascii	"Cy_Em_EEPROM_Init\000"
+ 4444 04a6 43795F45 		.ascii	"Cy_Em_EEPROM_Init\000"
  4444      6D5F4545 
  4444      50524F4D 
  4444      5F496E69 
  4444      7400
  4445              	.LASF62:
- 4446 04c3 77726974 		.ascii	"writeRamBuffer\000"
+ 4446 04b8 77726974 		.ascii	"writeRamBuffer\000"
  4446      6552616D 
  4446      42756666 
  4446      657200
  4447              	.LASF93:
- 4448 04d2 726F774F 		.ascii	"rowOffset\000"
+ 4448 04c7 726F774F 		.ascii	"rowOffset\000"
  4448      66667365 
  4448      7400
  4449              	.LASF95:
- 4450 04dc 72635374 		.ascii	"rcStartRowAddr\000"
+ 4450 04d1 72635374 		.ascii	"rcStartRowAddr\000"
  4450      61727452 
  4450      6F774164 
  4450      647200
  4451              	.LASF14:
- 4452 04eb 63686172 		.ascii	"char\000"
+ 4452 04e0 63686172 		.ascii	"char\000"
  4452      00
  4453              	.LASF34:
- 4454 04f0 636F6E66 		.ascii	"config\000"
+ 4454 04e5 636F6E66 		.ascii	"config\000"
  4454      696700
  4455              	.LASF41:
- 4456 04f7 6E756D42 		.ascii	"numBytesToRead\000"
+ 4456 04ec 6E756D42 		.ascii	"numBytesToRead\000"
  4456      79746573 
  4456      546F5265 
  4456      616400
  4457              	.LASF55:
- 4458 0506 73746172 		.ascii	"startAddr\000"
+ 4458 04fb 73746172 		.ascii	"startAddr\000"
  4458      74416464 
  4458      7200
  4459              	.LASF99:
- 4460 0510 736B6970 		.ascii	"skip\000"
+ 4460 0505 736B6970 		.ascii	"skip\000"
  4460      00
  4461              	.LASF97:
- 4462 0515 6F666673 		.ascii	"offset\000"
+ 4462 050a 6F666673 		.ascii	"offset\000"
  4462      657400
  4463              	.LASF35:
- 4464 051c 636F6E74 		.ascii	"context\000"
+ 4464 0511 636F6E74 		.ascii	"context\000"
  4464      65787400 
  4465              	.LASF26:
- 4466 0524 6C617374 		.ascii	"lastWrRowAddr\000"
+ 4466 0519 6C617374 		.ascii	"lastWrRowAddr\000"
  4466      5772526F 
  4466      77416464 
  4466      7200
  4467              	.LASF63:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 109
-
-
- 4468 0532 746D7052 		.ascii	"tmpRowAddr\000"
+ 4468 0527 746D7052 		.ascii	"tmpRowAddr\000"
  4468      6F774164 
  4468      647200
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 109
+
+
  4469              	.LASF43:
- 4470 053d 63757252 		.ascii	"curRowOffset\000"
+ 4470 0532 63757252 		.ascii	"curRowOffset\000"
  4470      6F774F66 
  4470      66736574 
  4470      00
  4471              	.LASF23:
- 4472 054a 63795F73 		.ascii	"cy_stc_eeprom_config_t\000"
+ 4472 053f 63795F73 		.ascii	"cy_stc_eeprom_config_t\000"
  4472      74635F65 
  4472      6570726F 
  4472      6D5F636F 
  4472      6E666967 
  4473              	.LASF50:
- 4474 0561 72645369 		.ascii	"rdSize\000"
+ 4474 0556 72645369 		.ascii	"rdSize\000"
  4474      7A6500
  4475              	.LASF19:
- 4476 0568 77656172 		.ascii	"wearLevelingFactor\000"
+ 4476 055d 77656172 		.ascii	"wearLevelingFactor\000"
  4476      4C657665 
  4476      6C696E67 
  4476      46616374 
  4476      6F7200
  4477              	.LASF49:
- 4478 057b 72644164 		.ascii	"rdAddr\000"
+ 4478 0570 72644164 		.ascii	"rdAddr\000"
  4478      647200
  4479              	.LASF58:
- 4480 0582 6473744F 		.ascii	"dstOffset\000"
+ 4480 0577 6473744F 		.ascii	"dstOffset\000"
  4480      66667365 
  4480      7400
  4481              	.LASF81:
- 4482 058c 47657452 		.ascii	"GetRowAddrBySeqNum\000"
+ 4482 0581 47657452 		.ascii	"GetRowAddrBySeqNum\000"
  4482      6F774164 
  4482      64724279 
  4482      5365714E 
  4482      756D00
  4483              	.LASF28:
- 4484 059f 43595F45 		.ascii	"CY_EM_EEPROM_SUCCESS\000"
+ 4484 0594 43595F45 		.ascii	"CY_EM_EEPROM_SUCCESS\000"
  4484      4D5F4545 
  4484      50524F4D 
  4484      5F535543 
  4484      43455353 
  4485              	.LASF21:
- 4486 05b4 626C6F63 		.ascii	"blockingWrite\000"
+ 4486 05a9 626C6F63 		.ascii	"blockingWrite\000"
  4486      6B696E67 
  4486      57726974 
  4486      6500
  4487              	.LASF46:
- 4488 05c2 63757252 		.ascii	"curRdEepromRowNum\000"
+ 4488 05b7 63757252 		.ascii	"curRdEepromRowNum\000"
  4488      64456570 
  4488      726F6D52 
  4488      6F774E75 
  4488      6D00
  4489              	.LASF15:
- 4490 05d4 63797374 		.ascii	"cystatus\000"
+ 4490 05c9 63797374 		.ascii	"cystatus\000"
  4490      61747573 
  4490      00
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccNeDbQ7.s 			page 110
-
-
  4491              	.LASF82:
- 4492 05dd 43616C63 		.ascii	"CalcChecksum\000"
+ 4492 05d2 43616C63 		.ascii	"CalcChecksum\000"
  4492      43686563 
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccfMtsF3.s 			page 110
+
+
  4492      6B73756D 
  4492      00
  4493              	.LASF88:
- 4494 05ea 61727261 		.ascii	"arrayId\000"
+ 4494 05df 61727261 		.ascii	"arrayId\000"
  4494      79496400 
  4495              	.LASF83:
- 4496 05f2 726F7744 		.ascii	"rowData\000"
+ 4496 05e7 726F7744 		.ascii	"rowData\000"
  4496      61746100 
  4497              	.LASF53:
- 4498 05fa 6E756D52 		.ascii	"numRowReads\000"
+ 4498 05ef 6E756D52 		.ascii	"numRowReads\000"
  4498      6F775265 
  4498      61647300 
  4499              	.LASF64:
- 4500 0606 656D4565 		.ascii	"emEepromRowAddr\000"
+ 4500 05fb 656D4565 		.ascii	"emEepromRowAddr\000"
  4500      70726F6D 
  4500      526F7741 
  4500      64647200 
  4501              	.LASF48:
- 4502 0616 65654461 		.ascii	"eeData\000"
+ 4502 060b 65654461 		.ascii	"eeData\000"
  4502      746100
  4503              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

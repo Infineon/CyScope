@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
    1:Generated_Source\PSoC5/cyPm.c **** /***************************************************************************//**
    2:Generated_Source\PSoC5/cyPm.c **** * \file cyPm.c
    3:Generated_Source\PSoC5/cyPm.c **** * \version 5.50
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 2
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 2
 
 
    4:Generated_Source\PSoC5/cyPm.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
   58:Generated_Source\PSoC5/cyPm.c **** *  Switches the master clock over to the IMO and shuts down the PLL and MHz
   59:Generated_Source\PSoC5/cyPm.c **** *  Crystal. The IMO frequency is set to either 12 MHz or 48 MHz to match the
   60:Generated_Source\PSoC5/cyPm.c **** *  Design-Wide Resources System Editor "Enable Fast IMO During Startup" setting.
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 3
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 3
 
 
   61:Generated_Source\PSoC5/cyPm.c **** *  The ILO and 32 KHz oscillators are not impacted. The current Flash wait state
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
   82 0032 894B     		ldr	r3, .L28+8
   83 0034 0022     		movs	r2, #0
   84 0036 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 4
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 4
 
 
   80:Generated_Source\PSoC5/cyPm.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
   94:Generated_Source\PSoC5/cyPm.c ****     }
   95:Generated_Source\PSoC5/cyPm.c ****     else
   96:Generated_Source\PSoC5/cyPm.c ****     {
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 5
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 5
 
 
   97:Generated_Source\PSoC5/cyPm.c ****         /* IMO doubler disabled */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  114:Generated_Source\PSoC5/cyPm.c ****             CyMasterClk_SetSource(CY_MASTER_SOURCE_XTAL);
  162              		.loc 1 114 0
  163 00c4 0220     		movs	r0, #2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 6
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 6
 
 
  164 00c6 FFF7FEFF 		bl	CyMasterClk_SetSource
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  195              		.loc 1 137 0
  196 00f6 574B     		ldr	r3, .L28+4
  197 00f8 0022     		movs	r2, #0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 7
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 7
 
 
  198 00fa 9A73     		strb	r2, [r3, #14]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  162:Generated_Source\PSoC5/cyPm.c ****     if(0u != (CY_PM_FASTCLK_IMO_CR_REG & CY_PM_FASTCLK_IMO_CR_XCLKEN))
  228              		.loc 1 162 0
  229 012c 4C4B     		ldr	r3, .L28+16
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 8
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 8
 
 
  230 012e 1B78     		ldrb	r3, [r3]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  264 0162 4FF04023 		mov	r3, #1073758208
  265 0166 1B78     		ldrb	r3, [r3]
  266 0168 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 9
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 9
 
 
  267 016a 03F03003 		and	r3, r3, #48
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  303 01ae 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2
  304 01b0 002B     		cmp	r3, #0
  305 01b2 02D0     		beq	.L19
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 10
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 10
 
 
  197:Generated_Source\PSoC5/cyPm.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  344              		.loc 1 212 0
  345 01f4 0020     		movs	r0, #0
  346 01f6 FFF7FEFF 		bl	CyBusClk_SetDivider
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 11
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 11
 
 
  347              	.L21:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  237:Generated_Source\PSoC5/cyPm.c ****     if(0u != (CY_PM_CLKDIST_DELAY_REG & CY_PM_CLKDIST_DELAY_EN))
  377              		.loc 1 237 0
  378 022e 154B     		ldr	r3, .L28+52
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 12
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 12
 
 
  379 0230 1B78     		ldrb	r3, [r3]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  424 000a 03       		.byte	3
  425 000b 00       		.byte	0
  426 000c 04       		.byte	4
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 13
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 13
 
 
  427 000d 05       		.byte	5
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  275:Generated_Source\PSoC5/cyPm.c ****     /* Convertion table between CyIMO_SetFreq() parameters and register's value */
  276:Generated_Source\PSoC5/cyPm.c ****     const uint8 CYCODE cyPmImoFreqMhz2Reg[7u] = {
  452              		.loc 1 276 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 14
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 14
 
 
  453 000a AB4A     		ldr	r2, .L56
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  491              		.loc 1 291 0
  492 0052 9A4B     		ldr	r3, .L56+4
  493 0054 DB7B     		ldrb	r3, [r3, #15]	@ zero_extendqisi2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 15
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 15
 
 
  494 0056 012B     		cmp	r3, #1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  314:Generated_Source\PSoC5/cyPm.c ****             {
  315:Generated_Source\PSoC5/cyPm.c ****                 status = CYRET_SUCCESS;
  526              		.loc 1 315 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 16
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 16
 
 
  527 0092 0023     		movs	r3, #0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  552 00b4 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
  341:Generated_Source\PSoC5/cyPm.c ****        (CY_PM_MASTER_CLK_SRC_DSI  == cyPmClockBackup.masterClkSrc))
  553              		.loc 1 341 0 discriminator 1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 17
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 17
 
 
  554 00b6 032B     		cmp	r3, #3
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  358:Generated_Source\PSoC5/cyPm.c ****     {
  359:Generated_Source\PSoC5/cyPm.c ****         /* Restore IMO frequency (24 MHz) and trim it for USB */
  360:Generated_Source\PSoC5/cyPm.c ****         CyIMO_SetFreq(CY_IMO_FREQ_USB);
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 18
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 18
 
 
  592              		.loc 1 360 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  377:Generated_Source\PSoC5/cyPm.c ****     /* IMO - restore enable state if needed */
  378:Generated_Source\PSoC5/cyPm.c ****     if((CY_PM_ENABLED == cyPmClockBackup.imoEnable) &&
  630              		.loc 1 378 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 19
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 19
 
 
  631 0144 5D4B     		ldr	r3, .L56+4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  667 0184 DBB2     		uxtb	r3, r3
  668 0186 03F03003 		and	r3, r3, #48
  669 018a 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 20
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 20
 
 
  670 018c 10D0     		beq	.L45
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  701 01c2 5020     		movs	r0, #80
  702 01c4 FFF7FEFF 		bl	CyDelayUs
  418:Generated_Source\PSoC5/cyPm.c ****         (void) CY_PM_FASTCLK_PLL_SR_REG;
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 21
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 21
 
 
  703              		.loc 1 418 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  742 0202 002B     		cmp	r3, #0
  743 0204 E5D1     		bne	.L50
  744              	.L46:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 22
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 22
 
 
  431:Generated_Source\PSoC5/cyPm.c ****             }
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  458:Generated_Source\PSoC5/cyPm.c ****         }
  459:Generated_Source\PSoC5/cyPm.c **** 
  460:Generated_Source\PSoC5/cyPm.c ****         /* Restore Master clock source */
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 23
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 23
 
 
  461:Generated_Source\PSoC5/cyPm.c ****         CyMasterClk_SetSource(cyPmClockBackup.masterClkSrc);
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  810 026e 134B     		ldr	r3, .L56+4
  811 0270 9B89     		ldrh	r3, [r3, #12]
  812 0272 FA89     		ldrh	r2, [r7, #14]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 24
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 24
 
 
  813 0274 9A42     		cmp	r2, r3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  854              		@ sp needed
  855 02b6 80BD     		pop	{r7, pc}
  856              	.L57:
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 25
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 25
 
 
  857              		.align	2
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  514:Generated_Source\PSoC5/cyPm.c **** *  the wakeup occurs can be significantly shorter than the specified time.  If
  515:Generated_Source\PSoC5/cyPm.c **** *  the next call is made with the same wakeupTime value, then the wakeup will
  516:Generated_Source\PSoC5/cyPm.c **** *  occur the specified period after the previous wakeup occurred.
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 26
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 26
 
 
  517:Generated_Source\PSoC5/cyPm.c **** *
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  571:Generated_Source\PSoC5/cyPm.c **** *  \param PM_ALT_ACT_TIME_CTW_512MS        CTW: 512 ms
  572:Generated_Source\PSoC5/cyPm.c **** *  \param PM_ALT_ACT_TIME_CTW_1024MS       CTW: 1024 ms
  573:Generated_Source\PSoC5/cyPm.c **** *  \param PM_ALT_ACT_TIME_CTW_2048MS       CTW: 2048 ms
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 27
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 27
 
 
  574:Generated_Source\PSoC5/cyPm.c **** *  \param PM_ALT_ACT_TIME_CTW_4096MS       CTW: 4096 ms
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  885              		.cfi_startproc
  886              		@ args = 0, pretend = 0, frame = 8
  887              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 28
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 28
 
 
  888 0000 80B5     		push	{r7, lr}
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  660:Generated_Source\PSoC5/cyPm.c **** 
  661:Generated_Source\PSoC5/cyPm.c ****         /* 1PPS - save current and set new configuration */
  662:Generated_Source\PSoC5/cyPm.c ****         if(PM_ALT_ACT_TIME_ONE_PPS == wakeupTime)
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 29
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 29
 
 
  663:Generated_Source\PSoC5/cyPm.c ****         {
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  940 0052 9A71     		strb	r2, [r3, #6]
  686:Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG2_REG = ((uint8) ((wakeupSource >> 12u) & 0x01u));
  941              		.loc 1 686 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 30
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 30
 
 
  942 0054 174A     		ldr	r2, .L61+12
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  704:Generated_Source\PSoC5/cyPm.c ****     /* Restore wake up configuration */
  705:Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG0_REG = cyPmBackup.wakeupCfg0;
  979              		.loc 1 705 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 31
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 31
 
 
  980              		.thumb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  717:Generated_Source\PSoC5/cyPm.c **** *  Note Before calling this function, you must manually configure the power
  718:Generated_Source\PSoC5/cyPm.c **** *  mode of the source clocks for the timer that is used as the wakeup timer.
  719:Generated_Source\PSoC5/cyPm.c **** *
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 32
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 32
 
 
  720:Generated_Source\PSoC5/cyPm.c **** *  Note Before calling this function, you must prepare clock tree configuration
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  774:Generated_Source\PSoC5/cyPm.c **** *
  775:Generated_Source\PSoC5/cyPm.c **** *           Define                      Source
  776:Generated_Source\PSoC5/cyPm.c **** *  PM_SLEEP_SRC_NONE                None
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 33
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 33
 
 
  777:Generated_Source\PSoC5/cyPm.c **** *  PM_SLEEP_SRC_COMPARATOR0         Comparator 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1028              		.cfi_def_cfa_offset 8
  1029              		.cfi_offset 7, -8
  1030              		.cfi_offset 14, -4
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 34
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 34
 
 
  1031 0002 84B0     		sub	sp, sp, #16
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  852:Generated_Source\PSoC5/cyPm.c **** 
  853:Generated_Source\PSoC5/cyPm.c **** 
  854:Generated_Source\PSoC5/cyPm.c ****     /***********************************************************************
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 35
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 35
 
 
  855:Generated_Source\PSoC5/cyPm.c ****     * PSoC3 < TO6:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  909:Generated_Source\PSoC5/cyPm.c ****         /* Arguments expected to be 0 */
  910:Generated_Source\PSoC5/cyPm.c ****         CYASSERT(PM_SLEEP_TIME_NONE == wakeupTime);
  1059              		.loc 1 910 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 36
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 36
 
 
  1060 0036 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  945:Generated_Source\PSoC5/cyPm.c ****     #endif /* (CY_PSOC3) */
  946:Generated_Source\PSoC5/cyPm.c **** 
  947:Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 37
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 37
 
 
  948:Generated_Source\PSoC5/cyPm.c ****     /* Save and set new wake up configuration */
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  961:Generated_Source\PSoC5/cyPm.c **** 
  962:Generated_Source\PSoC5/cyPm.c **** 
  963:Generated_Source\PSoC5/cyPm.c ****     /*******************************************************************
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 38
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 38
 
 
  964:Generated_Source\PSoC5/cyPm.c ****     * Do not use the merge region below unless any component datasheet
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1146 00d0 264B     		ldr	r3, .L73+24
  1147 00d2 1B78     		ldrb	r3, [r3]
  1148 00d4 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 39
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 39
 
 
  1149 00d6 23F00703 		bic	r3, r3, #7
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1184              		.syntax unified
  1185 00fe 184B     		ldr	r3, .L73+12
  1186 0100 93F82D30 		ldrb	r3, [r3, #45]	@ zero_extendqisi2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 40
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 40
 
 
  1187 0104 012B     		cmp	r3, #1
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1041:Generated_Source\PSoC5/cyPm.c ****                 {
 1042:Generated_Source\PSoC5/cyPm.c ****                     CY_PM_PWRSYS_WAKE_TR2_REG &= (uint8)(~CY_PM_PWRSYS_WAKE_TR2_EN_BUZZ);
 1043:Generated_Source\PSoC5/cyPm.c ****                 }
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 41
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 41
 
 
 1044:Generated_Source\PSoC5/cyPm.c ****             }
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1249              		.section	.text.CyPmHibernate,"ax",%progbits
  1250              		.align	2
  1251              		.global	CyPmHibernate
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 42
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 42
 
 
  1252              		.thumb
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1097:Generated_Source\PSoC5/cyPm.c ****     CyPmHibernateEx(CY_PM_HIB_SRC_PICU);
  1267              		.loc 1 1097 0
  1268 0004 4020     		movs	r0, #64
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 43
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 43
 
 
  1269 0006 FFF7FEFF 		bl	CyPmHibernateEx
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1137:Generated_Source\PSoC5/cyPm.c **** *  No
 1138:Generated_Source\PSoC5/cyPm.c **** *
 1139:Generated_Source\PSoC5/cyPm.c **** * \sideeffect
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 44
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 44
 
 
 1140:Generated_Source\PSoC5/cyPm.c **** *  Applications must wait 20 us before re-entering hibernate or sleep after
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1308 001e 33D1     		bne	.L77
 1170:Generated_Source\PSoC5/cyPm.c ****         {
 1171:Generated_Source\PSoC5/cyPm.c ****             /* Disable hold off - no action on restore */
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 45
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 45
 
 
 1172:Generated_Source\PSoC5/cyPm.c ****             CY_PM_PWRSYS_SLP_TR_REG &= CY_PM_PWRSYS_SLP_TR_HIBSLP_HOLDOFF_MASK;
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1195:Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG1_REG = (((uint8) wakeupSource) & CY_PM_WAKEUP_SRC_CMPS_MASK);
  1340              		.loc 1 1195 0
  1341 005a 3C4A     		ldr	r2, .L84+16
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 46
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 46
 
 
  1342 005c FB88     		ldrh	r3, [r7, #6]	@ movhi
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1379              		.loc 1 1210 0
  1380 009c 2A4B     		ldr	r3, .L84+12
  1381 009e 0022     		movs	r2, #0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 47
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 47
 
 
  1382 00a0 83F82D20 		strb	r2, [r3, #45]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1228:Generated_Source\PSoC5/cyPm.c ****     CY_NOP;
  1419              		.loc 1 1228 0
  1420              	@ 1228 "Generated_Source\PSoC5\cyPm.c" 1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 48
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 48
 
 
  1421 00e2 00BF     		NOP
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1247:Generated_Source\PSoC5/cyPm.c **** 
 1248:Generated_Source\PSoC5/cyPm.c ****     /* Restore current wake up configuration */
 1249:Generated_Source\PSoC5/cyPm.c ****     CY_PM_WAKEUP_CFG0_REG = cyPmBackup.wakeupCfg0;
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 49
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 49
 
 
  1456              		.loc 1 1249 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1256:Generated_Source\PSoC5/cyPm.c **** 
 1257:Generated_Source\PSoC5/cyPm.c **** 
 1258:Generated_Source\PSoC5/cyPm.c **** /*******************************************************************************
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 50
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 50
 
 
 1259:Generated_Source\PSoC5/cyPm.c **** * Function Name: CyPmReadStatus
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1295:Generated_Source\PSoC5/cyPm.c ****     interruptStatus |= CY_PM_INT_SR_REG;
  1522              		.loc 1 1295 0
  1523 0012 104B     		ldr	r3, .L88
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 51
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 51
 
 
  1524 0014 1B78     		ldrb	r3, [r3]
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1570              		.align	2
  1571              		.thumb
  1572              		.thumb_func
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 52
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 52
 
 
  1573              		.type	CyPmHibSaveSet, %function
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1338:Generated_Source\PSoC5/cyPm.c ****         /* Disable I2C backup register */
 1339:Generated_Source\PSoC5/cyPm.c ****         CY_PM_PWRSYS_CR1_REG &= ((uint8)(~CY_PM_PWRSYS_CR1_I2CREG_BACKUP));
  1593              		.loc 1 1339 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 53
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 53
 
 
  1594 0012 2A4A     		ldr	r2, .L94
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1634 005c DBB2     		uxtb	r3, r3
  1635 005e 1A46     		mov	r2, r3
 1351:Generated_Source\PSoC5/cyPm.c ****                                 CY_PM_DISABLED : CY_PM_ENABLED;
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 54
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 54
 
 
  1636              		.loc 1 1351 0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1376:Generated_Source\PSoC5/cyPm.c **** 
 1377:Generated_Source\PSoC5/cyPm.c **** 
 1378:Generated_Source\PSoC5/cyPm.c ****     /* Make the same preparations for Hibernate and Sleep modes */
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 55
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 55
 
 
 1379:Generated_Source\PSoC5/cyPm.c ****     CyPmHibSlpSaveSet();
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1709              	CyPmHibRestore:
  1710              	.LFB8:
 1391:Generated_Source\PSoC5/cyPm.c **** 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 56
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 56
 
 
 1392:Generated_Source\PSoC5/cyPm.c **** 
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1735 001a 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
  1736 001c 012B     		cmp	r3, #1
  1737 001e 01D1     		bne	.L98
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 57
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 57
 
 
 1422:Generated_Source\PSoC5/cyPm.c ****     {
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1770              		.loc 1 1443 0
  1771 0056 00BF     		nop
  1772 0058 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 58
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 58
 
 
  1773              	.L101:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1806 000a 204A     		ldr	r2, .L108
  1807 000c 1F4B     		ldr	r3, .L108
  1808 000e 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 59
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 59
 
 
  1809 0010 DBB2     		uxtb	r3, r3
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1479:Generated_Source\PSoC5/cyPm.c ****         }   /* Required interval is already set */
 1480:Generated_Source\PSoC5/cyPm.c ****     }
 1481:Generated_Source\PSoC5/cyPm.c ****     else
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 60
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 60
 
 
 1482:Generated_Source\PSoC5/cyPm.c ****     {
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1888              		.size	CyPmCtwSetInterval, .-CyPmCtwSetInterval
  1889              		.section	.text.CyPmOppsSet,"ax",%progbits
  1890              		.align	2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 61
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 61
 
 
  1891              		.global	CyPmOppsSet
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1922 001e 23F02003 		bic	r3, r3, #32
  1923 0022 DBB2     		uxtb	r3, r3
  1924 0024 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 62
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 62
 
 
 1517:Generated_Source\PSoC5/cyPm.c **** 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1956 0000 80B5     		push	{r7, lr}
  1957              		.cfi_def_cfa_offset 8
  1958              		.cfi_offset 7, -8
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 63
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 63
 
 
  1959              		.cfi_offset 14, -4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  1998              		.loc 1 1554 0
  1999 0048 114A     		ldr	r2, .L120+4
  2000 004a FB79     		ldrb	r3, [r7, #7]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 64
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 64
 
 
  2001 004c 1370     		strb	r3, [r2]
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2036 0084 0837     		adds	r7, r7, #8
  2037              		.cfi_def_cfa_offset 8
  2038 0086 BD46     		mov	sp, r7
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 65
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 65
 
 
  2039              		.cfi_def_cfa_register 13
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2072 000c 5A72     		strb	r2, [r3, #9]
 1592:Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[1u]   = CY_GET_REG8(CYREG_SC0_SW2 );
  2073              		.loc 1 1592 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 66
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 66
 
 
  2074 000e 804B     		ldr	r3, .L126+8
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2120 005c 5A74     		strb	r2, [r3, #17]
 1601:Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[9u]   = CY_GET_REG8(CYREG_SC1_SW3 );
  2121              		.loc 1 1601 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 67
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 67
 
 
  2122 005e 744B     		ldr	r3, .L126+40
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2168 00ac 5A76     		strb	r2, [r3, #25]
 1610:Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[17u]  = CY_GET_REG8(CYREG_SC2_SW4 );
  2169              		.loc 1 1610 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 68
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 68
 
 
  2170 00ae 684B     		ldr	r3, .L126+72
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2216 00fe 83F82120 		strb	r2, [r3, #33]
 1619:Generated_Source\PSoC5/cyPm.c ****     cyPmBackup.scctData[25u]  = CY_GET_REG8(CYREG_SC3_SW6 );
  2217              		.loc 1 1619 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 69
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 69
 
 
  2218 0102 5B4B     		ldr	r3, .L126+104
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2262 014e 1A70     		strb	r2, [r3]
 1630:Generated_Source\PSoC5/cyPm.c **** 
 1631:Generated_Source\PSoC5/cyPm.c ****     CY_SET_REG8(CYREG_SC1_SW0 , 0u);
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 70
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 70
 
 
  2263              		.loc 1 1631 0
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2306 0190 1A70     		strb	r2, [r3]
 1643:Generated_Source\PSoC5/cyPm.c ****     CY_SET_REG8(CYREG_SC2_SW6 , 0u);
  2307              		.loc 1 1643 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 71
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 71
 
 
  2308 0192 304B     		ldr	r3, .L126+76
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1659:Generated_Source\PSoC5/cyPm.c **** 
 1660:Generated_Source\PSoC5/cyPm.c ****         /* Disable SWV before entering low power mode */
 1661:Generated_Source\PSoC5/cyPm.c ****         if(0u != (CY_PM_MLOGIC_DBG_REG & CY_PM_MLOGIC_DBG_SWV_CLK_EN))
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 72
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 72
 
 
 1662:Generated_Source\PSoC5/cyPm.c ****         {
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1697:Generated_Source\PSoC5/cyPm.c ****     }
 1698:Generated_Source\PSoC5/cyPm.c **** }
  2366              		.loc 1 1698 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 73
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 73
 
 
  2367 01f4 03E0     		b	.L125
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2420              		.align	2
  2421              		.thumb
  2422              		.thumb_func
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 74
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 74
 
 
  2423              		.type	CyPmHibSlpRestore, %function
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2456              		.loc 1 1719 0
  2457 0024 3F4B     		ldr	r3, .L131+20
  2458 0026 3B4A     		ldr	r2, .L131+4
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 75
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 75
 
 
  2459 0028 527B     		ldrb	r2, [r2, #13]	@ zero_extendqisi2
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2503 006e 294A     		ldr	r2, .L131+4
  2504 0070 927D     		ldrb	r2, [r2, #22]	@ zero_extendqisi2
  2505 0072 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 76
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 76
 
 
 1730:Generated_Source\PSoC5/cyPm.c **** 
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2549 00b8 D27F     		ldrb	r2, [r2, #31]	@ zero_extendqisi2
  2550 00ba 1A70     		strb	r2, [r3]
 1741:Generated_Source\PSoC5/cyPm.c ****     CY_SET_REG8(CYREG_SC3_SW3 , cyPmBackup.scctData[23u]);
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 77
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 77
 
 
  2551              		.loc 1 1741 0
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1766:Generated_Source\PSoC5/cyPm.c ****     {
 1767:Generated_Source\PSoC5/cyPm.c ****         CY_PM_BOOST_CR2_REG |= CY_PM_BOOST_CR2_EREFSEL_EXT;
  2581              		.loc 1 1767 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 78
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 78
 
 
  2582 00f8 224A     		ldr	r2, .L131+116
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2634              		.size	CyPmHibSlpRestore, .-CyPmHibSlpRestore
  2635              		.section	.text.CyPmHviLviSaveDisable,"ax",%progbits
  2636              		.align	2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 79
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 79
 
 
  2637              		.thumb
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1790:Generated_Source\PSoC5/cyPm.c ****         cyPmBackup.lvidRst = (0u == (CY_VD_PRES_CONTROL_REG & CY_VD_PRESD_EN)) ? \
  2671              		.loc 1 1790 0
  2672 002c 294B     		ldr	r3, .L141+12
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 80
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 80
 
 
  2673 002e 1B78     		ldrb	r3, [r3]
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2713 0078 83F82820 		strb	r2, [r3, #40]
 1804:Generated_Source\PSoC5/cyPm.c **** 
 1805:Generated_Source\PSoC5/cyPm.c ****         /* Save state of reset device at specified Vdda threshold */
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 81
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 81
 
 
 1806:Generated_Source\PSoC5/cyPm.c ****         cyPmBackup.lviaRst = (0u == (CY_VD_PRES_CONTROL_REG & CY_VD_PRESA_EN)) ? \
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
 1824:Generated_Source\PSoC5/cyPm.c ****     }
 1825:Generated_Source\PSoC5/cyPm.c **** }
  2749              		.loc 1 1825 0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 82
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 82
 
 
  2750 00ba 03E0     		b	.L140
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2787              		.loc 1 1841 0
  2788 0004 134B     		ldr	r3, .L148
  2789 0006 93F82530 		ldrb	r3, [r3, #37]	@ zero_extendqisi2
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 83
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 83
 
 
  2790 000a 012B     		cmp	r3, #1
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2830              		.cfi_endproc
  2831              	.LFE15:
  2832              		.size	CyPmHviLviRestore, .-CyPmHviLviRestore
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 84
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 84
 
 
  2833              		.bss
@@ -4997,8 +4997,8 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2846 000b 01       		.uleb128 0x1
  2847 000c 3E000000 		.4byte	.LASF87
  2848 0010 0C       		.byte	0xc
- 2849 0011 9C020000 		.4byte	.LASF88
- 2850 0015 AA030000 		.4byte	.LASF89
+ 2849 0011 CD020000 		.4byte	.LASF88
+ 2850 0015 C2010000 		.4byte	.LASF89
  2851 0019 00000000 		.4byte	.Ldebug_ranges0+0
  2852 001d 00000000 		.4byte	0
  2853 0021 00000000 		.4byte	.Ldebug_line0
@@ -5009,15 +5009,15 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2858 002c 02       		.uleb128 0x2
  2859 002d 01       		.byte	0x1
  2860 002e 08       		.byte	0x8
- 2861 002f E6030000 		.4byte	.LASF1
+ 2861 002f DB030000 		.4byte	.LASF1
  2862 0033 02       		.uleb128 0x2
  2863 0034 02       		.byte	0x2
  2864 0035 05       		.byte	0x5
- 2865 0036 1F040000 		.4byte	.LASF2
+ 2865 0036 14040000 		.4byte	.LASF2
  2866 003a 02       		.uleb128 0x2
  2867 003b 02       		.byte	0x2
  2868 003c 07       		.byte	0x7
- 2869 003d 7D020000 		.4byte	.LASF3
+ 2869 003d AE020000 		.4byte	.LASF3
  2870 0041 02       		.uleb128 0x2
  2871 0042 04       		.byte	0x4
  2872 0043 05       		.byte	0x5
@@ -5025,7 +5025,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2874 0048 02       		.uleb128 0x2
  2875 0049 04       		.byte	0x4
  2876 004a 07       		.byte	0x7
- 2877 004b 23020000 		.4byte	.LASF5
+ 2877 004b 54020000 		.4byte	.LASF5
  2878 004f 02       		.uleb128 0x2
  2879 0050 08       		.byte	0x8
  2880 0051 05       		.byte	0x5
@@ -5038,15 +5038,15 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2887 005e 04       		.byte	0x4
  2888 005f 05       		.byte	0x5
  2889 0060 696E7400 		.ascii	"int\000"
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 85
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 85
 
 
  2890 0064 02       		.uleb128 0x2
  2891 0065 04       		.byte	0x4
  2892 0066 07       		.byte	0x7
- 2893 0067 05020000 		.4byte	.LASF8
+ 2893 0067 36020000 		.4byte	.LASF8
  2894 006b 04       		.uleb128 0x4
- 2895 006c C2010000 		.4byte	.LASF9
+ 2895 006c F3010000 		.4byte	.LASF9
  2896 0070 02       		.byte	0x2
  2897 0071 9201     		.2byte	0x192
  2898 0073 2C000000 		.4byte	0x2c
@@ -5056,29 +5056,29 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2902 007d 9301     		.2byte	0x193
  2903 007f 3A000000 		.4byte	0x3a
  2904 0083 04       		.uleb128 0x4
- 2905 0084 CF010000 		.4byte	.LASF11
+ 2905 0084 00020000 		.4byte	.LASF11
  2906 0088 02       		.byte	0x2
  2907 0089 9401     		.2byte	0x194
  2908 008b 48000000 		.4byte	0x48
  2909 008f 02       		.uleb128 0x2
  2910 0090 04       		.byte	0x4
  2911 0091 04       		.byte	0x4
- 2912 0092 76030000 		.4byte	.LASF12
+ 2912 0092 A7030000 		.4byte	.LASF12
  2913 0096 02       		.uleb128 0x2
  2914 0097 08       		.byte	0x8
  2915 0098 04       		.byte	0x4
- 2916 0099 C8010000 		.4byte	.LASF13
+ 2916 0099 F9010000 		.4byte	.LASF13
  2917 009d 02       		.uleb128 0x2
  2918 009e 01       		.byte	0x1
  2919 009f 08       		.byte	0x8
- 2920 00a0 49040000 		.4byte	.LASF14
+ 2920 00a0 3E040000 		.4byte	.LASF14
  2921 00a4 04       		.uleb128 0x4
- 2922 00a5 E2040000 		.4byte	.LASF15
+ 2922 00a5 D7040000 		.4byte	.LASF15
  2923 00a9 02       		.byte	0x2
  2924 00aa 3402     		.2byte	0x234
  2925 00ac 48000000 		.4byte	0x48
  2926 00b0 04       		.uleb128 0x4
- 2927 00b1 99030000 		.4byte	.LASF16
+ 2927 00b1 CA030000 		.4byte	.LASF16
  2928 00b5 02       		.byte	0x2
  2929 00b6 3C02     		.2byte	0x23c
  2930 00b8 BC000000 		.4byte	0xbc
@@ -5087,28 +5087,28 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2933 00c1 02       		.uleb128 0x2
  2934 00c2 08       		.byte	0x8
  2935 00c3 04       		.byte	0x4
- 2936 00c4 32030000 		.4byte	.LASF17
+ 2936 00c4 63030000 		.4byte	.LASF17
  2937 00c8 02       		.uleb128 0x2
  2938 00c9 04       		.byte	0x4
  2939 00ca 07       		.byte	0x7
- 2940 00cb 19030000 		.4byte	.LASF18
+ 2940 00cb 4A030000 		.4byte	.LASF18
  2941 00cf 06       		.uleb128 0x6
- 2942 00d0 3C020000 		.4byte	.LASF35
+ 2942 00d0 6D020000 		.4byte	.LASF35
  2943 00d4 12       		.byte	0x12
  2944 00d5 03       		.byte	0x3
  2945 00d6 F8       		.byte	0xf8
  2946 00d7 9A010000 		.4byte	0x19a
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 86
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 86
 
 
  2947 00db 07       		.uleb128 0x7
- 2948 00dc 51030000 		.4byte	.LASF19
+ 2948 00dc 82030000 		.4byte	.LASF19
  2949 00e0 03       		.byte	0x3
  2950 00e1 FB       		.byte	0xfb
  2951 00e2 6B000000 		.4byte	0x6b
  2952 00e6 00       		.byte	0
  2953 00e7 07       		.uleb128 0x7
- 2954 00e8 58030000 		.4byte	.LASF20
+ 2954 00e8 89030000 		.4byte	.LASF20
  2955 00ec 03       		.byte	0x3
  2956 00ed FC       		.byte	0xfc
  2957 00ee 6B000000 		.4byte	0x6b
@@ -5120,7 +5120,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2963 00fa 6B000000 		.4byte	0x6b
  2964 00fe 02       		.byte	0x2
  2965 00ff 07       		.uleb128 0x7
- 2966 0100 1B020000 		.4byte	.LASF22
+ 2966 0100 4C020000 		.4byte	.LASF22
  2967 0104 03       		.byte	0x3
  2968 0105 FE       		.byte	0xfe
  2969 0106 6B000000 		.4byte	0x6b
@@ -5132,25 +5132,25 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  2975 0112 6B000000 		.4byte	0x6b
  2976 0116 04       		.byte	0x4
  2977 0117 08       		.uleb128 0x8
- 2978 0118 EB040000 		.4byte	.LASF24
+ 2978 0118 E0040000 		.4byte	.LASF24
  2979 011c 03       		.byte	0x3
  2980 011d 0001     		.2byte	0x100
  2981 011f 6B000000 		.4byte	0x6b
  2982 0123 05       		.byte	0x5
  2983 0124 08       		.uleb128 0x8
- 2984 0125 17050000 		.4byte	.LASF25
+ 2984 0125 0C050000 		.4byte	.LASF25
  2985 0129 03       		.byte	0x3
  2986 012a 0101     		.2byte	0x101
  2987 012c 6B000000 		.4byte	0x6b
  2988 0130 06       		.byte	0x6
  2989 0131 08       		.uleb128 0x8
- 2990 0132 6C030000 		.4byte	.LASF26
+ 2990 0132 9D030000 		.4byte	.LASF26
  2991 0136 03       		.byte	0x3
  2992 0137 0201     		.2byte	0x102
  2993 0139 6B000000 		.4byte	0x6b
  2994 013d 07       		.byte	0x7
  2995 013e 08       		.uleb128 0x8
- 2996 013f F4020000 		.4byte	.LASF27
+ 2996 013f 25030000 		.4byte	.LASF27
  2997 0143 03       		.byte	0x3
  2998 0144 0301     		.2byte	0x103
  2999 0146 6B000000 		.4byte	0x6b
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3001 014b 08       		.uleb128 0x8
  3002 014c A1010000 		.4byte	.LASF28
  3003 0150 03       		.byte	0x3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 87
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 87
 
 
  3004 0151 0401     		.2byte	0x104
@@ -5177,31 +5177,31 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3017 016d 77000000 		.4byte	0x77
  3018 0171 0C       		.byte	0xc
  3019 0172 08       		.uleb128 0x8
- 3020 0173 04040000 		.4byte	.LASF31
+ 3020 0173 F9030000 		.4byte	.LASF31
  3021 0177 03       		.byte	0x3
  3022 0178 0701     		.2byte	0x107
  3023 017a 6B000000 		.4byte	0x6b
  3024 017e 0E       		.byte	0xe
  3025 017f 08       		.uleb128 0x8
- 3026 0180 D6010000 		.4byte	.LASF32
+ 3026 0180 07020000 		.4byte	.LASF32
  3027 0184 03       		.byte	0x3
  3028 0185 0801     		.2byte	0x108
  3029 0187 6B000000 		.4byte	0x6b
  3030 018b 0F       		.byte	0xf
  3031 018c 08       		.uleb128 0x8
- 3032 018d 9A040000 		.4byte	.LASF33
+ 3032 018d 8F040000 		.4byte	.LASF33
  3033 0191 03       		.byte	0x3
  3034 0192 0901     		.2byte	0x109
  3035 0194 6B000000 		.4byte	0x6b
  3036 0198 10       		.byte	0x10
  3037 0199 00       		.byte	0
  3038 019a 04       		.uleb128 0x4
- 3039 019b 63020000 		.4byte	.LASF34
+ 3039 019b 94020000 		.4byte	.LASF34
  3040 019f 03       		.byte	0x3
  3041 01a0 0B01     		.2byte	0x10b
  3042 01a2 CF000000 		.4byte	0xcf
  3043 01a6 09       		.uleb128 0x9
- 3044 01a7 52020000 		.4byte	.LASF36
+ 3044 01a7 83020000 		.4byte	.LASF36
  3045 01ab 2F       		.byte	0x2f
  3046 01ac 03       		.byte	0x3
  3047 01ad 0E01     		.2byte	0x10e
@@ -5213,40 +5213,40 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3053 01bb 6B000000 		.4byte	0x6b
  3054 01bf 00       		.byte	0
  3055 01c0 08       		.uleb128 0x8
- 3056 01c1 13040000 		.4byte	.LASF38
+ 3056 01c1 08040000 		.4byte	.LASF38
  3057 01c5 03       		.byte	0x3
  3058 01c6 1101     		.2byte	0x111
  3059 01c8 6B000000 		.4byte	0x6b
  3060 01cc 01       		.byte	0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 88
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 88
 
 
  3061 01cd 08       		.uleb128 0x8
- 3062 01ce 3B040000 		.4byte	.LASF39
+ 3062 01ce 30040000 		.4byte	.LASF39
  3063 01d2 03       		.byte	0x3
  3064 01d3 1201     		.2byte	0x112
  3065 01d5 6B000000 		.4byte	0x6b
  3066 01d9 02       		.byte	0x2
  3067 01da 08       		.uleb128 0x8
- 3068 01db 0D030000 		.4byte	.LASF40
+ 3068 01db 3E030000 		.4byte	.LASF40
  3069 01df 03       		.byte	0x3
  3070 01e0 1401     		.2byte	0x114
  3071 01e2 6B000000 		.4byte	0x6b
  3072 01e6 03       		.byte	0x3
  3073 01e7 08       		.uleb128 0x8
- 3074 01e8 BA020000 		.4byte	.LASF41
+ 3074 01e8 EB020000 		.4byte	.LASF41
  3075 01ec 03       		.byte	0x3
  3076 01ed 1E01     		.2byte	0x11e
  3077 01ef 6B000000 		.4byte	0x6b
  3078 01f3 04       		.byte	0x4
  3079 01f4 08       		.uleb128 0x8
- 3080 01f5 C5020000 		.4byte	.LASF42
+ 3080 01f5 F6020000 		.4byte	.LASF42
  3081 01f9 03       		.byte	0x3
  3082 01fa 1F01     		.2byte	0x11f
  3083 01fc 6B000000 		.4byte	0x6b
  3084 0200 05       		.byte	0x5
  3085 0201 08       		.uleb128 0x8
- 3086 0202 D0020000 		.4byte	.LASF43
+ 3086 0202 01030000 		.4byte	.LASF43
  3087 0206 03       		.byte	0x3
  3088 0207 2001     		.2byte	0x120
  3089 0209 6B000000 		.4byte	0x6b
@@ -5264,28 +5264,28 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3101 0223 6B000000 		.4byte	0x6b
  3102 0227 08       		.byte	0x8
  3103 0228 08       		.uleb128 0x8
- 3104 0229 12020000 		.4byte	.LASF46
+ 3104 0229 43020000 		.4byte	.LASF46
  3105 022d 03       		.byte	0x3
  3106 022e 2501     		.2byte	0x125
  3107 0230 B8020000 		.4byte	0x2b8
  3108 0234 09       		.byte	0x9
  3109 0235 08       		.uleb128 0x8
- 3110 0236 35020000 		.4byte	.LASF47
+ 3110 0236 66020000 		.4byte	.LASF47
  3111 023a 03       		.byte	0x3
  3112 023b 2801     		.2byte	0x128
  3113 023d 6B000000 		.4byte	0x6b
  3114 0241 25       		.byte	0x25
  3115 0242 08       		.uleb128 0x8
- 3116 0243 0E050000 		.4byte	.LASF48
+ 3116 0243 03050000 		.4byte	.LASF48
  3117 0247 03       		.byte	0x3
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 89
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 89
 
 
  3118 0248 2901     		.2byte	0x129
  3119 024a 6B000000 		.4byte	0x6b
  3120 024e 26       		.byte	0x26
  3121 024f 08       		.uleb128 0x8
- 3122 0250 C1040000 		.4byte	.LASF49
+ 3122 0250 B6040000 		.4byte	.LASF49
  3123 0254 03       		.byte	0x3
  3124 0255 2A01     		.2byte	0x12a
  3125 0257 6B000000 		.4byte	0x6b
@@ -5303,31 +5303,31 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3137 0271 6B000000 		.4byte	0x6b
  3138 0275 29       		.byte	0x29
  3139 0276 08       		.uleb128 0x8
- 3140 0277 86030000 		.4byte	.LASF52
+ 3140 0277 B7030000 		.4byte	.LASF52
  3141 027b 03       		.byte	0x3
  3142 027c 2D01     		.2byte	0x12d
  3143 027e 6B000000 		.4byte	0x6b
  3144 0282 2A       		.byte	0x2a
  3145 0283 08       		.uleb128 0x8
- 3146 0284 FB040000 		.4byte	.LASF53
+ 3146 0284 F0040000 		.4byte	.LASF53
  3147 0288 03       		.byte	0x3
  3148 0289 2E01     		.2byte	0x12e
  3149 028b 6B000000 		.4byte	0x6b
  3150 028f 2B       		.byte	0x2b
  3151 0290 08       		.uleb128 0x8
- 3152 0291 FA010000 		.4byte	.LASF54
+ 3152 0291 2B020000 		.4byte	.LASF54
  3153 0295 03       		.byte	0x3
  3154 0296 3001     		.2byte	0x130
  3155 0298 6B000000 		.4byte	0x6b
  3156 029c 2C       		.byte	0x2c
  3157 029d 08       		.uleb128 0x8
- 3158 029e 4E040000 		.4byte	.LASF55
+ 3158 029e 43040000 		.4byte	.LASF55
  3159 02a2 03       		.byte	0x3
  3160 02a3 3101     		.2byte	0x131
  3161 02a5 6B000000 		.4byte	0x6b
  3162 02a9 2D       		.byte	0x2d
  3163 02aa 08       		.uleb128 0x8
- 3164 02ab E8020000 		.4byte	.LASF56
+ 3164 02ab 19030000 		.4byte	.LASF56
  3165 02af 03       		.byte	0x3
  3166 02b0 3301     		.2byte	0x133
  3167 02b2 6B000000 		.4byte	0x6b
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3172 02bd C8020000 		.4byte	0x2c8
  3173 02c1 0B       		.uleb128 0xb
  3174 02c2 C8000000 		.4byte	0xc8
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 90
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 90
 
 
  3175 02c6 1B       		.byte	0x1b
@@ -5349,7 +5349,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3180 02ce 3501     		.2byte	0x135
  3181 02d0 A6010000 		.4byte	0x1a6
  3182 02d4 0C       		.uleb128 0xc
- 3183 02d5 FE020000 		.4byte	.LASF67
+ 3183 02d5 2F030000 		.4byte	.LASF67
  3184 02d9 01       		.byte	0x1
  3185 02da 49       		.byte	0x49
  3186 02db 00000000 		.4byte	.LFB0
@@ -5366,7 +5366,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3197 02f6 9C       		.byte	0x9c
  3198 02f7 36030000 		.4byte	0x336
  3199 02fb 0E       		.uleb128 0xe
- 3200 02fc BA040000 		.4byte	.LASF58
+ 3200 02fc AF040000 		.4byte	.LASF58
  3201 0300 01       		.byte	0x1
  3202 0301 0E01     		.2byte	0x10e
  3203 0303 A4000000 		.4byte	0xa4
@@ -5382,7 +5382,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3213 0315 91       		.byte	0x91
  3214 0316 76       		.sleb128 -10
  3215 0317 0E       		.uleb128 0xe
- 3216 0318 DB020000 		.4byte	.LASF59
+ 3216 0318 0C030000 		.4byte	.LASF59
  3217 031c 01       		.byte	0x1
  3218 031d 1001     		.2byte	0x110
  3219 031f 77000000 		.4byte	0x77
@@ -5390,7 +5390,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3221 0324 91       		.byte	0x91
  3222 0325 6E       		.sleb128 -18
  3223 0326 0E       		.uleb128 0xe
- 3224 0327 3E030000 		.4byte	.LASF60
+ 3224 0327 6F030000 		.4byte	.LASF60
  3225 032b 01       		.byte	0x1
  3226 032c 1401     		.2byte	0x114
  3227 032e 4B030000 		.4byte	0x34b
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3229 0333 91       		.byte	0x91
  3230 0334 64       		.sleb128 -28
  3231 0335 00       		.byte	0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 91
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 91
 
 
  3232 0336 0A       		.uleb128 0xa
@@ -5413,7 +5413,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3241 034b 10       		.uleb128 0x10
  3242 034c 36030000 		.4byte	0x336
  3243 0350 0D       		.uleb128 0xd
- 3244 0351 8E030000 		.4byte	.LASF62
+ 3244 0351 BF030000 		.4byte	.LASF62
  3245 0355 01       		.byte	0x1
  3246 0356 7102     		.2byte	0x271
  3247 0358 00000000 		.4byte	.LFB2
@@ -5422,7 +5422,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3250 0361 9C       		.byte	0x9c
  3251 0362 85030000 		.4byte	0x385
  3252 0366 11       		.uleb128 0x11
- 3253 0367 D7040000 		.4byte	.LASF63
+ 3253 0367 CC040000 		.4byte	.LASF63
  3254 036b 01       		.byte	0x1
  3255 036c 7102     		.2byte	0x271
  3256 036e 77000000 		.4byte	0x77
@@ -5430,7 +5430,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3258 0373 91       		.byte	0x91
  3259 0374 76       		.sleb128 -10
  3260 0375 11       		.uleb128 0x11
- 3261 0376 5F030000 		.4byte	.LASF64
+ 3261 0376 90030000 		.4byte	.LASF64
  3262 037a 01       		.byte	0x1
  3263 037b 7102     		.2byte	0x271
  3264 037d 77000000 		.4byte	0x77
@@ -5439,7 +5439,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3267 0383 74       		.sleb128 -12
  3268 0384 00       		.byte	0
  3269 0385 0D       		.uleb128 0xd
- 3270 0386 7C030000 		.4byte	.LASF65
+ 3270 0386 AD030000 		.4byte	.LASF65
  3271 038a 01       		.byte	0x1
  3272 038b 3803     		.2byte	0x338
  3273 038d 00000000 		.4byte	.LFB3
@@ -5448,7 +5448,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3276 0396 9C       		.byte	0x9c
  3277 0397 C9030000 		.4byte	0x3c9
  3278 039b 11       		.uleb128 0x11
- 3279 039c D7040000 		.4byte	.LASF63
+ 3279 039c CC040000 		.4byte	.LASF63
  3280 03a0 01       		.byte	0x1
  3281 03a1 3803     		.2byte	0x338
  3282 03a3 6B000000 		.4byte	0x6b
@@ -5456,9 +5456,9 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3284 03a8 91       		.byte	0x91
  3285 03a9 6F       		.sleb128 -17
  3286 03aa 11       		.uleb128 0x11
- 3287 03ab 5F030000 		.4byte	.LASF64
+ 3287 03ab 90030000 		.4byte	.LASF64
  3288 03af 01       		.byte	0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 92
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 92
 
 
  3289 03b0 3803     		.2byte	0x338
@@ -5476,7 +5476,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3301 03c7 77       		.sleb128 -9
  3302 03c8 00       		.byte	0
  3303 03c9 12       		.uleb128 0x12
- 3304 03ca 5E040000 		.4byte	.LASF68
+ 3304 03ca 53040000 		.4byte	.LASF68
  3305 03ce 01       		.byte	0x1
  3306 03cf 4704     		.2byte	0x447
  3307 03d1 00000000 		.4byte	.LFB4
@@ -5484,7 +5484,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3309 03d9 01       		.uleb128 0x1
  3310 03da 9C       		.byte	0x9c
  3311 03db 0D       		.uleb128 0xd
- 3312 03dc 22030000 		.4byte	.LASF69
+ 3312 03dc 53030000 		.4byte	.LASF69
  3313 03e0 01       		.byte	0x1
  3314 03e1 8404     		.2byte	0x484
  3315 03e3 00000000 		.4byte	.LFB5
@@ -5493,7 +5493,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3318 03ec 9C       		.byte	0x9c
  3319 03ed 10040000 		.4byte	0x410
  3320 03f1 11       		.uleb128 0x11
- 3321 03f2 5F030000 		.4byte	.LASF64
+ 3321 03f2 90030000 		.4byte	.LASF64
  3322 03f6 01       		.byte	0x1
  3323 03f7 8404     		.2byte	0x484
  3324 03f9 77000000 		.4byte	0x77
@@ -5510,7 +5510,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3335 040e 77       		.sleb128 -9
  3336 040f 00       		.byte	0
  3337 0410 13       		.uleb128 0x13
- 3338 0411 8B040000 		.4byte	.LASF90
+ 3338 0411 80040000 		.4byte	.LASF90
  3339 0415 01       		.byte	0x1
  3340 0416 0505     		.2byte	0x505
  3341 0418 6B000000 		.4byte	0x6b
@@ -5518,12 +5518,12 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3343 0420 5C000000 		.4byte	.LFE6-.LFB6
  3344 0424 01       		.uleb128 0x1
  3345 0425 9C       		.byte	0x9c
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 93
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 93
 
 
  3346 0426 6A040000 		.4byte	0x46a
  3347 042a 11       		.uleb128 0x11
- 3348 042b F5010000 		.4byte	.LASF70
+ 3348 042b 26020000 		.4byte	.LASF70
  3349 042f 01       		.byte	0x1
  3350 0430 0505     		.2byte	0x505
  3351 0432 6B000000 		.4byte	0x6b
@@ -5531,7 +5531,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3353 0437 91       		.byte	0x91
  3354 0438 6F       		.sleb128 -17
  3355 0439 0E       		.uleb128 0xe
- 3356 043a 21050000 		.4byte	.LASF71
+ 3356 043a 16050000 		.4byte	.LASF71
  3357 043e 01       		.byte	0x1
  3358 043f 0705     		.2byte	0x507
  3359 0441 6B000000 		.4byte	0x6b
@@ -5556,7 +5556,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3378 0468 76       		.sleb128 -10
  3379 0469 00       		.byte	0
  3380 046a 14       		.uleb128 0x14
- 3381 046b C8040000 		.4byte	.LASF73
+ 3381 046b BD040000 		.4byte	.LASF73
  3382 046f 01       		.byte	0x1
  3383 0470 2A05     		.2byte	0x52a
  3384 0472 00000000 		.4byte	.LFB7
@@ -5564,7 +5564,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3386 047a 01       		.uleb128 0x1
  3387 047b 9C       		.byte	0x9c
  3388 047c 14       		.uleb128 0x14
- 3389 047d E6010000 		.4byte	.LASF74
+ 3389 047d 17020000 		.4byte	.LASF74
  3390 0481 01       		.byte	0x1
  3391 0482 7D05     		.2byte	0x57d
  3392 0484 00000000 		.4byte	.LFB8
@@ -5572,19 +5572,19 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3394 048c 01       		.uleb128 0x1
  3395 048d 9C       		.byte	0x9c
  3396 048e 0D       		.uleb128 0xd
- 3397 048f A7040000 		.4byte	.LASF75
+ 3397 048f 9C040000 		.4byte	.LASF75
  3398 0493 01       		.byte	0x1
  3399 0494 B505     		.2byte	0x5b5
  3400 0496 00000000 		.4byte	.LFB9
  3401 049a 94000000 		.4byte	.LFE9-.LFB9
  3402 049e 01       		.uleb128 0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 94
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 94
 
 
  3403 049f 9C       		.byte	0x9c
  3404 04a0 B4040000 		.4byte	0x4b4
  3405 04a4 11       		.uleb128 0x11
- 3406 04a5 90020000 		.4byte	.LASF76
+ 3406 04a5 C1020000 		.4byte	.LASF76
  3407 04a9 01       		.byte	0x1
  3408 04aa B505     		.2byte	0x5b5
  3409 04ac 6B000000 		.4byte	0x6b
@@ -5593,7 +5593,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3412 04b2 77       		.sleb128 -9
  3413 04b3 00       		.byte	0
  3414 04b4 12       		.uleb128 0x12
- 3415 04b5 9E030000 		.4byte	.LASF77
+ 3415 04b5 CF030000 		.4byte	.LASF77
  3416 04b9 01       		.byte	0x1
  3417 04ba E205     		.2byte	0x5e2
  3418 04bc 00000000 		.4byte	.LFB10
@@ -5610,7 +5610,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3429 04d7 9C       		.byte	0x9c
  3430 04d8 EC040000 		.4byte	0x4ec
  3431 04dc 11       		.uleb128 0x11
- 3432 04dd 6C040000 		.4byte	.LASF79
+ 3432 04dd 61040000 		.4byte	.LASF79
  3433 04e1 01       		.byte	0x1
  3434 04e2 0206     		.2byte	0x602
  3435 04e4 6B000000 		.4byte	0x6b
@@ -5619,7 +5619,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3438 04ea 77       		.sleb128 -9
  3439 04eb 00       		.byte	0
  3440 04ec 15       		.uleb128 0x15
- 3441 04ed 29040000 		.4byte	.LASF80
+ 3441 04ed 1E040000 		.4byte	.LASF80
  3442 04f1 01       		.byte	0x1
  3443 04f2 3406     		.2byte	0x634
  3444 04f4 00000000 		.4byte	.LFB12
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3457 0511 14010000 		.4byte	.LASF82
  3458 0515 01       		.byte	0x1
  3459 0516 F606     		.2byte	0x6f6
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 95
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 95
 
 
  3460 0518 00000000 		.4byte	.LFB14
@@ -5654,7 +5654,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3470 0532 01       		.uleb128 0x1
  3471 0533 9C       		.byte	0x9c
  3472 0534 16       		.uleb128 0x16
- 3473 0535 03050000 		.4byte	.LASF84
+ 3473 0535 F8040000 		.4byte	.LASF84
  3474 0539 01       		.byte	0x1
  3475 053a 1F       		.byte	0x1f
  3476 053b C8020000 		.4byte	0x2c8
@@ -5662,7 +5662,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3478 0540 03       		.byte	0x3
  3479 0541 00000000 		.4byte	cyPmBackup
  3480 0545 16       		.uleb128 0x16
- 3481 0546 F4030000 		.4byte	.LASF85
+ 3481 0546 E9030000 		.4byte	.LASF85
  3482 054a 01       		.byte	0x1
  3483 054b 20       		.byte	0x20
  3484 054c 9A010000 		.4byte	0x19a
@@ -5670,7 +5670,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3486 0551 03       		.byte	0x3
  3487 0552 30000000 		.4byte	cyPmClockBackup
  3488 0556 16       		.uleb128 0x16
- 3489 0557 78040000 		.4byte	.LASF86
+ 3489 0557 6D040000 		.4byte	.LASF86
  3490 055b 01       		.byte	0x1
  3491 055c 23       		.byte	0x23
  3492 055d 67050000 		.4byte	0x567
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3514 000d 11       		.uleb128 0x11
  3515 000e 01       		.uleb128 0x1
  3516 000f 10       		.uleb128 0x10
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 96
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 96
 
 
  3517 0010 17       		.uleb128 0x17
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3571 0046 3B       		.uleb128 0x3b
  3572 0047 0B       		.uleb128 0xb
  3573 0048 01       		.uleb128 0x1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 97
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 97
 
 
  3574 0049 13       		.uleb128 0x13
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3628 007f 13       		.uleb128 0x13
  3629 0080 00       		.byte	0
  3630 0081 00       		.byte	0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 98
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 98
 
 
  3631 0082 0B       		.uleb128 0xb
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3685 00ba 13       		.uleb128 0x13
  3686 00bb 00       		.byte	0
  3687 00bc 00       		.byte	0
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 99
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 99
 
 
  3688 00bd 0E       		.uleb128 0xe
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3742 00f3 00       		.byte	0
  3743 00f4 3F       		.uleb128 0x3f
  3744 00f5 19       		.uleb128 0x19
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 100
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 100
 
 
  3745 00f6 03       		.uleb128 0x3
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3799 012e 27       		.uleb128 0x27
  3800 012f 19       		.uleb128 0x19
  3801 0130 11       		.uleb128 0x11
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 101
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 101
 
 
  3802 0131 01       		.uleb128 0x1
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3856 0010 00000000 		.4byte	.LFB0
  3857 0014 88020000 		.4byte	.LFE0-.LFB0
  3858 0018 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 102
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 102
 
 
  3859 001c F0020000 		.4byte	.LFE1-.LFB1
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3913 0054 44000000 		.4byte	.LFE10
  3914 0058 00000000 		.4byte	.LFB11
  3915 005c 94000000 		.4byte	.LFE11
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 103
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 103
 
 
  3916 0060 00000000 		.4byte	.LFB12
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3942      74696F6E 
  3943              	.LASF57:
  3944 00cc 43595F50 		.ascii	"CY_PM_BACKUP_STRUCT\000"
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 104
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 104
 
 
  3944      4D5F4241 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3966      206C6F6E 
  3966      6720696E 
  3966      7400
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 105
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 105
 
 
  3967              	.LASF0:
@@ -6267,315 +6267,312 @@ ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 1
  3978      76695265 
  3978      73746F72 
  3978      6500
- 3979              	.LASF9:
- 3980 01c2 75696E74 		.ascii	"uint8\000"
- 3980      3800
- 3981              	.LASF13:
- 3982 01c8 646F7562 		.ascii	"double\000"
- 3982      6C6500
- 3983              	.LASF11:
- 3984 01cf 75696E74 		.ascii	"uint32\000"
- 3984      333200
- 3985              	.LASF32:
- 3986 01d6 786D687A 		.ascii	"xmhzEnableState\000"
- 3986      456E6162 
- 3986      6C655374 
- 3986      61746500 
- 3987              	.LASF74:
- 3988 01e6 4379506D 		.ascii	"CyPmHibRestore\000"
- 3988      48696252 
- 3988      6573746F 
- 3988      726500
- 3989              	.LASF70:
- 3990 01f5 6D61736B 		.ascii	"mask\000"
- 3990      00
- 3991              	.LASF54:
- 3992 01fa 696D6F41 		.ascii	"imoActFreq\000"
- 3992      63744672 
- 3992      657100
- 3993              	.LASF8:
- 3994 0205 756E7369 		.ascii	"unsigned int\000"
- 3994      676E6564 
- 3994      20696E74 
- 3994      00
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 106
+ 3979              	.LASF89:
+ 3980 01c2 433A5C47 		.ascii	"C:\\Git\\CyScope\\ScopeFreeSoC2\\ScopeFreeSoC2.cyds"
+ 3980      69745C43 
+ 3980      7953636F 
+ 3980      70655C53 
+ 3980      636F7065 
+ 3981 01f1 6E00     		.ascii	"n\000"
+ 3982              	.LASF9:
+ 3983 01f3 75696E74 		.ascii	"uint8\000"
+ 3983      3800
+ 3984              	.LASF13:
+ 3985 01f9 646F7562 		.ascii	"double\000"
+ 3985      6C6500
+ 3986              	.LASF11:
+ 3987 0200 75696E74 		.ascii	"uint32\000"
+ 3987      333200
+ 3988              	.LASF32:
+ 3989 0207 786D687A 		.ascii	"xmhzEnableState\000"
+ 3989      456E6162 
+ 3989      6C655374 
+ 3989      61746500 
+ 3990              	.LASF74:
+ 3991 0217 4379506D 		.ascii	"CyPmHibRestore\000"
+ 3991      48696252 
+ 3991      6573746F 
+ 3991      726500
+ 3992              	.LASF70:
+ 3993 0226 6D61736B 		.ascii	"mask\000"
+ 3993      00
+ 3994              	.LASF54:
+ 3995 022b 696D6F41 		.ascii	"imoActFreq\000"
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 106
 
 
- 3995              	.LASF46:
- 3996 0212 73636374 		.ascii	"scctData\000"
- 3996      44617461 
- 3996      00
- 3997              	.LASF22:
- 3998 021b 696D6F46 		.ascii	"imoFreq\000"
- 3998      72657100 
- 3999              	.LASF5:
- 4000 0223 6C6F6E67 		.ascii	"long unsigned int\000"
- 4000      20756E73 
- 4000      69676E65 
- 4000      6420696E 
- 4000      7400
- 4001              	.LASF47:
- 4002 0235 6C766964 		.ascii	"lvidEn\000"
- 4002      456E00
- 4003              	.LASF35:
- 4004 023c 6379506D 		.ascii	"cyPmClockBackupStruct\000"
- 4004      436C6F63 
- 4004      6B426163 
- 4004      6B757053 
- 4004      74727563 
- 4005              	.LASF36:
- 4006 0252 6379506D 		.ascii	"cyPmBackupStruct\000"
- 4006      4261636B 
- 4006      75705374 
- 4006      72756374 
- 4006      00
- 4007              	.LASF34:
- 4008 0263 43595F50 		.ascii	"CY_PM_CLOCK_BACKUP_STRUCT\000"
- 4008      4D5F434C 
- 4008      4F434B5F 
- 4008      4241434B 
- 4008      55505F53 
- 4009              	.LASF3:
- 4010 027d 73686F72 		.ascii	"short unsigned int\000"
- 4010      7420756E 
- 4010      7369676E 
- 4010      65642069 
- 4010      6E7400
- 4011              	.LASF76:
- 4012 0290 63747749 		.ascii	"ctwInterval\000"
- 4012      6E746572 
- 4012      76616C00 
- 4013              	.LASF88:
- 4014 029c 47656E65 		.ascii	"Generated_Source\\PSoC5\\cyPm.c\000"
- 4014      72617465 
- 4014      645F536F 
- 4014      75726365 
- 4014      5C50536F 
- 4015              	.LASF41:
- 4016 02ba 77616B65 		.ascii	"wakeupCfg0\000"
- 4016      75704366 
- 4016      673000
- 4017              	.LASF42:
- 4018 02c5 77616B65 		.ascii	"wakeupCfg1\000"
- 4018      75704366 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 107
+ 3995      63744672 
+ 3995      657100
+ 3996              	.LASF8:
+ 3997 0236 756E7369 		.ascii	"unsigned int\000"
+ 3997      676E6564 
+ 3997      20696E74 
+ 3997      00
+ 3998              	.LASF46:
+ 3999 0243 73636374 		.ascii	"scctData\000"
+ 3999      44617461 
+ 3999      00
+ 4000              	.LASF22:
+ 4001 024c 696D6F46 		.ascii	"imoFreq\000"
+ 4001      72657100 
+ 4002              	.LASF5:
+ 4003 0254 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4003      20756E73 
+ 4003      69676E65 
+ 4003      6420696E 
+ 4003      7400
+ 4004              	.LASF47:
+ 4005 0266 6C766964 		.ascii	"lvidEn\000"
+ 4005      456E00
+ 4006              	.LASF35:
+ 4007 026d 6379506D 		.ascii	"cyPmClockBackupStruct\000"
+ 4007      436C6F63 
+ 4007      6B426163 
+ 4007      6B757053 
+ 4007      74727563 
+ 4008              	.LASF36:
+ 4009 0283 6379506D 		.ascii	"cyPmBackupStruct\000"
+ 4009      4261636B 
+ 4009      75705374 
+ 4009      72756374 
+ 4009      00
+ 4010              	.LASF34:
+ 4011 0294 43595F50 		.ascii	"CY_PM_CLOCK_BACKUP_STRUCT\000"
+ 4011      4D5F434C 
+ 4011      4F434B5F 
+ 4011      4241434B 
+ 4011      55505F53 
+ 4012              	.LASF3:
+ 4013 02ae 73686F72 		.ascii	"short unsigned int\000"
+ 4013      7420756E 
+ 4013      7369676E 
+ 4013      65642069 
+ 4013      6E7400
+ 4014              	.LASF76:
+ 4015 02c1 63747749 		.ascii	"ctwInterval\000"
+ 4015      6E746572 
+ 4015      76616C00 
+ 4016              	.LASF88:
+ 4017 02cd 47656E65 		.ascii	"Generated_Source\\PSoC5\\cyPm.c\000"
+ 4017      72617465 
+ 4017      645F536F 
+ 4017      75726365 
+ 4017      5C50536F 
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 107
 
 
- 4018      673100
- 4019              	.LASF43:
- 4020 02d0 77616B65 		.ascii	"wakeupCfg2\000"
- 4020      75704366 
- 4020      673200
- 4021              	.LASF59:
- 4022 02db 636C6B42 		.ascii	"clkBusDivTmp\000"
- 4022      75734469 
- 4022      76546D70 
- 4022      00
- 4023              	.LASF56:
- 4024 02e8 626F6F73 		.ascii	"boostRefExt\000"
- 4024      74526566 
- 4024      45787400 
- 4025              	.LASF27:
- 4026 02f4 636C6B49 		.ascii	"clkImoSrc\000"
- 4026      6D6F5372 
- 4026      6300
- 4027              	.LASF67:
- 4028 02fe 4379506D 		.ascii	"CyPmSaveClocks\000"
- 4028      53617665 
- 4028      436C6F63 
- 4028      6B7300
- 4029              	.LASF40:
- 4030 030d 736C7054 		.ascii	"slpTrBypass\000"
- 4030      72427970 
- 4030      61737300 
- 4031              	.LASF18:
- 4032 0319 73697A65 		.ascii	"sizetype\000"
- 4032      74797065 
- 4032      00
- 4033              	.LASF69:
- 4034 0322 4379506D 		.ascii	"CyPmHibernateEx\000"
- 4034      48696265 
- 4034      726E6174 
- 4034      65457800 
- 4035              	.LASF17:
- 4036 0332 6C6F6E67 		.ascii	"long double\000"
- 4036      20646F75 
- 4036      626C6500 
- 4037              	.LASF60:
- 4038 033e 6379506D 		.ascii	"cyPmImoFreqMhz2Reg\000"
- 4038      496D6F46 
- 4038      7265714D 
- 4038      687A3252 
- 4038      656700
- 4039              	.LASF19:
- 4040 0351 656E436C 		.ascii	"enClkA\000"
- 4040      6B4100
- 4041              	.LASF20:
- 4042 0358 656E436C 		.ascii	"enClkD\000"
- 4042      6B4400
- 4043              	.LASF64:
- 4044 035f 77616B65 		.ascii	"wakeupSource\000"
- 4044      7570536F 
- 4044      75726365 
- 4044      00
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 108
+ 4018              	.LASF41:
+ 4019 02eb 77616B65 		.ascii	"wakeupCfg0\000"
+ 4019      75704366 
+ 4019      673000
+ 4020              	.LASF42:
+ 4021 02f6 77616B65 		.ascii	"wakeupCfg1\000"
+ 4021      75704366 
+ 4021      673100
+ 4022              	.LASF43:
+ 4023 0301 77616B65 		.ascii	"wakeupCfg2\000"
+ 4023      75704366 
+ 4023      673200
+ 4024              	.LASF59:
+ 4025 030c 636C6B42 		.ascii	"clkBusDivTmp\000"
+ 4025      75734469 
+ 4025      76546D70 
+ 4025      00
+ 4026              	.LASF56:
+ 4027 0319 626F6F73 		.ascii	"boostRefExt\000"
+ 4027      74526566 
+ 4027      45787400 
+ 4028              	.LASF27:
+ 4029 0325 636C6B49 		.ascii	"clkImoSrc\000"
+ 4029      6D6F5372 
+ 4029      6300
+ 4030              	.LASF67:
+ 4031 032f 4379506D 		.ascii	"CyPmSaveClocks\000"
+ 4031      53617665 
+ 4031      436C6F63 
+ 4031      6B7300
+ 4032              	.LASF40:
+ 4033 033e 736C7054 		.ascii	"slpTrBypass\000"
+ 4033      72427970 
+ 4033      61737300 
+ 4034              	.LASF18:
+ 4035 034a 73697A65 		.ascii	"sizetype\000"
+ 4035      74797065 
+ 4035      00
+ 4036              	.LASF69:
+ 4037 0353 4379506D 		.ascii	"CyPmHibernateEx\000"
+ 4037      48696265 
+ 4037      726E6174 
+ 4037      65457800 
+ 4038              	.LASF17:
+ 4039 0363 6C6F6E67 		.ascii	"long double\000"
+ 4039      20646F75 
+ 4039      626C6500 
+ 4040              	.LASF60:
+ 4041 036f 6379506D 		.ascii	"cyPmImoFreqMhz2Reg\000"
+ 4041      496D6F46 
+ 4041      7265714D 
+ 4041      687A3252 
+ 4041      656700
+ 4042              	.LASF19:
+ 4043 0382 656E436C 		.ascii	"enClkA\000"
+ 4043      6B4100
+ 4044              	.LASF20:
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 108
 
 
- 4045              	.LASF26:
- 4046 036c 696D6F43 		.ascii	"imoClkSrc\000"
- 4046      6C6B5372 
- 4046      6300
- 4047              	.LASF12:
- 4048 0376 666C6F61 		.ascii	"float\000"
- 4048      7400
- 4049              	.LASF65:
- 4050 037c 4379506D 		.ascii	"CyPmSleep\000"
- 4050      536C6565 
- 4050      7000
- 4051              	.LASF52:
- 4052 0386 6C766964 		.ascii	"lvidRst\000"
- 4052      52737400 
- 4053              	.LASF62:
- 4054 038e 4379506D 		.ascii	"CyPmAltAct\000"
- 4054      416C7441 
- 4054      637400
- 4055              	.LASF16:
- 4056 0399 72656738 		.ascii	"reg8\000"
- 4056      00
- 4057              	.LASF77:
- 4058 039e 4379506D 		.ascii	"CyPmOppsSet\000"
- 4058      4F707073 
- 4058      53657400 
- 4059              	.LASF89:
- 4060 03aa 433A5C43 		.ascii	"C:\\Cypress\\CyScope-master\\ScopeFreeSoC2\\ScopeFr"
- 4060      79707265 
- 4060      73735C43 
- 4060      7953636F 
- 4060      70652D6D 
- 4061 03d9 6565536F 		.ascii	"eeSoC2.cydsn\000"
- 4061      43322E63 
- 4061      7964736E 
- 4061      00
+ 4045 0389 656E436C 		.ascii	"enClkD\000"
+ 4045      6B4400
+ 4046              	.LASF64:
+ 4047 0390 77616B65 		.ascii	"wakeupSource\000"
+ 4047      7570536F 
+ 4047      75726365 
+ 4047      00
+ 4048              	.LASF26:
+ 4049 039d 696D6F43 		.ascii	"imoClkSrc\000"
+ 4049      6C6B5372 
+ 4049      6300
+ 4050              	.LASF12:
+ 4051 03a7 666C6F61 		.ascii	"float\000"
+ 4051      7400
+ 4052              	.LASF65:
+ 4053 03ad 4379506D 		.ascii	"CyPmSleep\000"
+ 4053      536C6565 
+ 4053      7000
+ 4054              	.LASF52:
+ 4055 03b7 6C766964 		.ascii	"lvidRst\000"
+ 4055      52737400 
+ 4056              	.LASF62:
+ 4057 03bf 4379506D 		.ascii	"CyPmAltAct\000"
+ 4057      416C7441 
+ 4057      637400
+ 4058              	.LASF16:
+ 4059 03ca 72656738 		.ascii	"reg8\000"
+ 4059      00
+ 4060              	.LASF77:
+ 4061 03cf 4379506D 		.ascii	"CyPmOppsSet\000"
+ 4061      4F707073 
+ 4061      53657400 
  4062              	.LASF1:
- 4063 03e6 756E7369 		.ascii	"unsigned char\000"
+ 4063 03db 756E7369 		.ascii	"unsigned char\000"
  4063      676E6564 
  4063      20636861 
  4063      7200
  4064              	.LASF85:
- 4065 03f4 6379506D 		.ascii	"cyPmClockBackup\000"
+ 4065 03e9 6379506D 		.ascii	"cyPmClockBackup\000"
  4065      436C6F63 
  4065      6B426163 
  4065      6B757000 
  4066              	.LASF31:
- 4067 0404 706C6C45 		.ascii	"pllEnableState\000"
+ 4067 03f9 706C6C45 		.ascii	"pllEnableState\000"
  4067      6E61626C 
  4067      65537461 
  4067      746500
  4068              	.LASF38:
- 4069 0413 696C6F31 		.ascii	"ilo1kEnable\000"
+ 4069 0408 696C6F31 		.ascii	"ilo1kEnable\000"
  4069      6B456E61 
  4069      626C6500 
  4070              	.LASF2:
- 4071 041f 73686F72 		.ascii	"short int\000"
+ 4071 0414 73686F72 		.ascii	"short int\000"
  4071      7420696E 
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 109
-
-
  4071      7400
  4072              	.LASF80:
- 4073 0429 4379506D 		.ascii	"CyPmHibSlpSaveSet\000"
+ 4073 041e 4379506D 		.ascii	"CyPmHibSlpSaveSet\000"
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 109
+
+
  4073      48696253 
  4073      6C705361 
  4073      76655365 
  4073      7400
  4074              	.LASF39:
- 4075 043b 696C6F31 		.ascii	"ilo100kEnable\000"
+ 4075 0430 696C6F31 		.ascii	"ilo100kEnable\000"
  4075      30306B45 
  4075      6E61626C 
  4075      6500
  4076              	.LASF14:
- 4077 0449 63686172 		.ascii	"char\000"
+ 4077 043e 63686172 		.ascii	"char\000"
  4077      00
  4078              	.LASF55:
- 4079 044e 696D6F41 		.ascii	"imoActFreq12Mhz\000"
+ 4079 0443 696D6F41 		.ascii	"imoActFreq12Mhz\000"
  4079      63744672 
  4079      65713132 
  4079      4D687A00 
  4080              	.LASF68:
- 4081 045e 4379506D 		.ascii	"CyPmHibernate\000"
+ 4081 0453 4379506D 		.ascii	"CyPmHibernate\000"
  4081      48696265 
  4081      726E6174 
  4081      6500
  4082              	.LASF79:
- 4083 046c 66747749 		.ascii	"ftwInterval\000"
+ 4083 0461 66747749 		.ascii	"ftwInterval\000"
  4083      6E746572 
  4083      76616C00 
  4084              	.LASF86:
- 4085 0478 6379506D 		.ascii	"cyPmImoFreqReg2Mhz\000"
+ 4085 046d 6379506D 		.ascii	"cyPmImoFreqReg2Mhz\000"
  4085      496D6F46 
  4085      72657152 
  4085      6567324D 
  4085      687A00
  4086              	.LASF90:
- 4087 048b 4379506D 		.ascii	"CyPmReadStatus\000"
+ 4087 0480 4379506D 		.ascii	"CyPmReadStatus\000"
  4087      52656164 
  4087      53746174 
  4087      757300
  4088              	.LASF33:
- 4089 049a 636C6B44 		.ascii	"clkDistDelay\000"
+ 4089 048f 636C6B44 		.ascii	"clkDistDelay\000"
  4089      69737444 
  4089      656C6179 
  4089      00
  4090              	.LASF75:
- 4091 04a7 4379506D 		.ascii	"CyPmCtwSetInterval\000"
+ 4091 049c 4379506D 		.ascii	"CyPmCtwSetInterval\000"
  4091      43747753 
  4091      6574496E 
  4091      74657276 
  4091      616C00
  4092              	.LASF58:
- 4093 04ba 73746174 		.ascii	"status\000"
+ 4093 04af 73746174 		.ascii	"status\000"
  4093      757300
  4094              	.LASF49:
- 4095 04c1 6C766961 		.ascii	"lviaEn\000"
+ 4095 04b6 6C766961 		.ascii	"lviaEn\000"
  4095      456E00
-ARM GAS  C:\Users\howe\AppData\Local\Temp\ccC3fSfD.s 			page 110
-
-
  4096              	.LASF73:
- 4097 04c8 4379506D 		.ascii	"CyPmHibSaveSet\000"
+ 4097 04bd 4379506D 		.ascii	"CyPmHibSaveSet\000"
  4097      48696253 
+ARM GAS  C:\Users\LANDRY~1\AppData\Local\Temp\ccN28hsN.s 			page 110
+
+
  4097      61766553 
  4097      657400
  4098              	.LASF63:
- 4099 04d7 77616B65 		.ascii	"wakeupTime\000"
+ 4099 04cc 77616B65 		.ascii	"wakeupTime\000"
  4099      75705469 
  4099      6D6500
  4100              	.LASF15:
- 4101 04e2 63797374 		.ascii	"cystatus\000"
+ 4101 04d7 63797374 		.ascii	"cystatus\000"
  4101      61747573 
  4101      00
  4102              	.LASF24:
- 4103 04eb 666C6173 		.ascii	"flashWaitCycles\000"
+ 4103 04e0 666C6173 		.ascii	"flashWaitCycles\000"
  4103      68576169 
  4103      74437963 
  4103      6C657300 
  4104              	.LASF53:
- 4105 04fb 6C766961 		.ascii	"lviaRst\000"
+ 4105 04f0 6C766961 		.ascii	"lviaRst\000"
  4105      52737400 
  4106              	.LASF84:
- 4107 0503 6379506D 		.ascii	"cyPmBackup\000"
+ 4107 04f8 6379506D 		.ascii	"cyPmBackup\000"
  4107      4261636B 
  4107      757000
  4108              	.LASF48:
- 4109 050e 6C766964 		.ascii	"lvidTrip\000"
+ 4109 0503 6C766964 		.ascii	"lvidTrip\000"
  4109      54726970 
  4109      00
  4110              	.LASF25:
- 4111 0517 696D6F45 		.ascii	"imoEnable\000"
+ 4111 050c 696D6F45 		.ascii	"imoEnable\000"
  4111      6E61626C 
  4111      6500
  4112              	.LASF71:
- 4113 0521 696E7465 		.ascii	"interruptStatus\000"
+ 4113 0516 696E7465 		.ascii	"interruptStatus\000"
  4113      72727570 
  4113      74537461 
  4113      74757300 
